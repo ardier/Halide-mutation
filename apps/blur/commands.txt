@@ -1,0 +1,48 @@
+# make the bin folder
+mkdir bin
+cd bin
+mkdir host
+cd ..
+
+/usr/local/llvm/bin/clang++ -O3 -std=c++17 \
+-I /Users/smadadi/Projects/halide_install_original/distrib/include/ \
+-I /Users/smadadi/Projects/halide_install_original/distrib/tools/ \
+-Wall -Werror -Wno-unused-function -Wcast-qual -Wignored-qualifiers \
+-Wno-comment -Wsign-compare -Wno-unknown-warning-option -Wno-psabi \
+-fvisibility=hidden \
+-S -emit-llvm halide_blur_generator.cpp \
+-o bin/host/halide_blur_generator.ll 
+
+/usr/local/llvm/bin/clang++ -O3 -std=c++17 \
+-I /Users/smadadi/Projects/halide_install_original/distrib/include/ \
+-I /Users/smadadi/Projects/halide_install_original/distrib/tools/ \
+-Wall -Werror -Wno-unused-function -Wcast-qual -Wignored-qualifiers \
+-Wno-comment -Wsign-compare -Wno-unknown-warning-option -Wno-psabi \
+-fvisibility=hidden \
+-S -emit-llvm /Users/smadadi/Projects/halide_install_original/distrib/tools/GenGen.cpp \
+-o bin/host/GenGen.ll
+
+/usr/local/llvm/bin/clang++ -O3 -std=c++17 \
+-I /Users/smadadi/Projects/halide_install_original/distrib/include/ \
+-I /Users/smadadi/Projects/halide_install_original/distrib/tools/ \
+-Wall -Werror -Wno-unused-function -Wcast-qual -Wignored-qualifiers \
+-Wno-comment -Wsign-compare -Wno-unknown-warning-option -Wno-psabi \
+-fvisibility=hidden \
+bin/host/halide_blur_generator.ll bin/host/GenGen.ll  \
+-o bin/host/halide_blur.generator \
+/Users/smadadi/Projects/halide_install_original/distrib/lib/libHalide.a \
+-L/usr/local/llvm/lib -ldl -lpthread -lz 
+
+bin/host/halide_blur.generator -g halide_blur -e assembly,bitcode,c_header,c_source,cpp_stub,featurization,llvm_assembly,object,python_extension,pytorch_wrapper,registration,schedule,static_library,stmt,stmt_html,conceptual_stmt,conceptual_stmt_html,compiler_log,hlpipe,device_code -o bin/host target=host 
+
+bin/host/halide_blur.generator -g halide_blur -e assembly,bitcode,c_header,c_source,cpp_stub,featurization,llvm_assembly,object,python_extension,pytorch_wrapper,registration,schedule,static_library,stmt,stmt_html,compiler_log -o bin/host target=host  
+
+ /usr/local/llvm/bin/clang++  -O3 -std=c++17 \
+-I /Users/smadadi/Projects/halide_install_original/distrib/include/ \
+-I /Users/smadadi/Projects/halide_install_original/distrib/tools/ \
+-Wall -Werror -Wno-unused-function -Wcast-qual -Wignored-qualifiers \
+-Wno-comment -Wsign-compare -Wno-unknown-warning-option -Wno-psabi \
+-fvisibility=hidden -c bin/host/halide_blur.halide_generated.cpp  -o halide_blur.o -fexperimental-new-pass-manager -g -grecord-command-line -fpass-plugin=/Users/smadadi/Projects/PSrepos/ps4/mutation/mull/build.dir/tools/mull-ir-frontend/mull-ir-frontend-14
+
+ /usr/local/llvm/bin/clang++ -O3 -std=c++17 -I /Users/smadadi/Projects/halide_install_original/distrib/include/ -I /Users/smadadi/Projects/halide_install_original/distrib/tools/  -Wall -Werror -Wno-unused-function -Wcast-qual -Wignored-qualifiers -Wno-comment -Wsign-compare -Wno-unknown-warning-option -Wno-psabi  -fvisibility=hidden  -Wall -O2 -Ibin/host test.cpp halide_blur.o -o bin/host/test -L/usr/local/llvm/lib -ldl -lpthread -lz  -fexperimental-new-pass-manager -g -grecord-command-line -fpass-plugin=/Users/smadadi/Projects/PSrepos/ps4/mutation/mull/build.dir/tools/mull-ir-frontend/mull-ir-frontend-14
+

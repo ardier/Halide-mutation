@@ -11,7 +11,7 @@ $(GENERATOR_BIN)/halide_blur.generator: halide_blur_generator.cpp $(GENERATOR_DE
 
 $(BIN)/%/halide_blur.a: $(GENERATOR_BIN)/halide_blur.generator
 	@mkdir -p $(@D)
-	$^ -g halide_blur -e $(GENERATOR_OUTPUTS) -o $(@D) target=$*
+	$^ -g halide_blur -e $(GENERATOR_OUTPUTS),object,cpp_stub,c_header,c_source -o $(@D) target=$*
 
 # g++ on OS X might actually be system clang without openmp
 CXX_VERSION=$(shell $(CXX) --version)
@@ -21,10 +21,16 @@ else
 OPENMP_FLAGS=
 endif
 
-# -O2 is faster than -O3 for this app (O3 unrolls too much)
-$(BIN)/%/test: $(BIN)/%/halide_blur.a test.cpp
+# check if "halide_blur.halide_generated.cpp" exists in the target directory and if yes compile it into halide_blur.o
+$(BIN)/%/halide_blur.o: $(BIN)/%/halide_blur.a
 	@mkdir -p $(@D)
-	$(CXX-$*) $(CXXFLAGS-$*) $(OPENMP_FLAGS) -Wall -O2 -I$(BIN)/$* test.cpp $(BIN)/$*/halide_blur.a -o $@ $(LDFLAGS-$*)
+	$(CXX-$*) $(CXXFLAGS-$*) -Wall -O2 -c $(@D)/halide_blur.halide_generated.cpp -o $@ $(OPENMP_FLAGS)
+
+
+# -O2 is faster than -O3 for this app (O3 unrolls too much)
+$(BIN)/%/test: $(BIN)/%/halide_blur.o test.cpp
+	@mkdir -p $(@D)
+	$(CXX-$*) $(CXXFLAGS-$*) $(OPENMP_FLAGS) -Wall -O2 -I$(BIN)/$* test.cpp $(BIN)/$*/halide_blur.o -o $@ $(LDFLAGS-$*)
 
 clean:
 	rm -rf $(BIN)

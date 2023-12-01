@@ -1,0 +1,21 @@
+timeout: 1000000000 # 10 seconds
+quiet: false # enables additional logging
+# excludePaths: ["test"]
+includePaths: ["halide_blur_mull.h"]
+mutators:
+    - Halide_add_to_mul
+    - Halide_add_to_sub
+    - Halide_add_to_div
+    - Halide_sub_to_add
+    - Halide_sub_to_mul
+    - Halide_sub_to_div
+    - Halide_mul_to_add
+    - Halide_mul_to_sub
+    - Halide_mul_to_div
+    - Halide_div_to_add
+    - Halide_div_to_sub
+    - Halide_div_to_mul
+
+debug:
+  printIR: true
+  printIRToFile: true
