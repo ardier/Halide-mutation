@@ -650,6 +650,7 @@ const char *const intrinsic_op_names[] = {
     "memoize_expr",
     "mod_round_to_zero",
     "mul_shift_right",
+    "mut_add_sub_intrinsic",
     "mux",
     "popcount",
     "prefetch",

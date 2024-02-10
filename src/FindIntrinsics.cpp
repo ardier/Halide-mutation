@@ -1289,6 +1289,24 @@ Expr lower_saturating_add(const Expr &a, const Expr &b) {
     }
 }
 
+Expr lower_mut_add_sub_intrinsic(const Expr &a, const Expr &b) {
+    // Lower mul_add and mul_sub intrinsics without using widening arithmetic,
+    // which may require types that aren't supported.
+    // TODO this currently only adds. Fix it
+    internal_assert(a.type() == b.type());
+    if (a.type().is_float()) {
+        return a + b;
+    } else if (a.type().is_uint()) {
+        return a + b;
+    } else if (a.type().is_int()) {
+        return a + b;
+    } else {
+        internal_error << "Bad type for mul_add_sub: " << a.type() << "\n";
+        return Expr();
+    }
+
+}
+
 Expr lower_saturating_sub(const Expr &a, const Expr &b) {
     // Lower saturating sub without using widening arithmetic, which may require
     // types that aren't supported.
@@ -1495,6 +1513,9 @@ Expr lower_intrinsic(const Call *op) {
     } else if (op->is_intrinsic(Call::saturating_add)) {
         internal_assert(op->args.size() == 2);
         return lower_saturating_add(op->args[0], op->args[1]);
+    } else if (op->is_intrinsic(Call::mut_add_sub_intrinsic)) {
+        internal_assert(op->args.size() == 2);
+        return lower_mut_add_sub_intrinsic(op->args[0], op->args[1]);
     } else if (op->is_intrinsic(Call::saturating_sub)) {
         internal_assert(op->args.size() == 2);
         return lower_saturating_sub(op->args[0], op->args[1]);

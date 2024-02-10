@@ -1601,6 +1601,26 @@ private:
                          narrow(clamp(widen(op->args[0]) + widen(op->args[1]), t.min(), t.max())) :
                          Expr();
             handle_expr_bounds(e);
+        } else if (op->is_intrinsic(Call::mut_add_sub_intrinsic)) {
+                internal_assert(op->args.size() == 2);
+                // Assuming you've got a function to check the environment variable at compile time,
+                // which is not usually the case. This is just for illustrative purposes.
+                bool should_add = check_env_variable_or_condition_for_add();
+
+                Expr e;
+                if (should_add) {
+                    // If adding, use the same bounds as for normal addition
+                    e = can_widen_all(op->args) ? 
+                        narrow(clamp(widen(op->args[0]) + widen(op->args[1]), t.min(), t.max())) :
+                        Expr();
+                } else {
+                    // If subtracting, adjust bounds analysis for subtraction
+                    e = can_widen_all(op->args) ?
+                        narrow(clamp(widen(op->args[0]) - widen(op->args[1]), t.min(), t.max())) :
+                        Expr();
+                }
+                handle_expr_bounds(e);
+        
         } else if (op->is_intrinsic(Call::saturating_sub)) {
             internal_assert(op->args.size() == 2);
             Expr e = can_widen_all(op->args) ?
@@ -1815,6 +1835,7 @@ private:
         internal_error << "Bounds of statement\n";
     }
 };
+
 
 // Version that exposes 'indent' is for internal use only
 Interval bounds_of_expr_in_scope_with_indent(const Expr &expr, const Scope<Interval> &scope, const FuncValueBounds &fb, bool const_bound, int indent) {
@@ -3414,6 +3435,22 @@ Expr span_of_bounds(const Interval &bounds) {
     } else {
         return bounds.max - bounds.min;
     }
+}
+
+bool check_env_variable_or_condition_for_add() {
+    // Retrieve the environment variable value
+    const char* envVar = std::getenv("MUT_ADD_SUB");
+
+    // Check if the variable is set to "1"
+    if (envVar != nullptr) {
+        std::string value = std::string(envVar);
+        if (value == "1") {
+            // Condition to subtract
+            return false;
+        }
+    }
+    // Default behavior is to add
+    return true;
 }
 
 namespace {

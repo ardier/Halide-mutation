@@ -1672,6 +1672,9 @@ Expr rounding_shift_right(Expr a, int b);
 /** Compute saturating_narrow(widen(a) + widen(b)) */
 Expr saturating_add(Expr a, Expr b);
 
+/** mut_add_sub_intrinsic*/
+Expr mut_add_sub_intrinsic(Expr a, Expr b);
+
 /** Compute saturating_narrow(widen(a) - widen(b)) */
 Expr saturating_sub(Expr a, Expr b);
 
@@ -1773,6 +1776,13 @@ HALIDE_ATTRIBUTE_DEPRECATED("This function has been moved out of the Halide::Int
 Expr saturating_add(const Expr &a, const Expr &b, T * = nullptr) {
     return Halide::saturating_add(a, b);
 }
+
+template<typename T = void>
+HALIDE_ATTRIBUTE_DEPRECATED("This function has been moved out of the Halide::Internal:: namespace into Halide::")
+Expr mut_add_sub_intrinsic(const Expr &a, const Expr &b, T * = nullptr) {
+    return Halide::mut_add_sub_intrinsic(a, b);
+}
+
 template<typename T = void>
 HALIDE_ATTRIBUTE_DEPRECATED("This function has been moved out of the Halide::Internal:: namespace into Halide::")
 Expr saturating_sub(const Expr &a, const Expr &b, T * = nullptr) {

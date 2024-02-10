@@ -1443,6 +1443,8 @@ struct Intrin {
             return widening_mul(arg0, arg1);
         } else if (intrin == Call::saturating_add) {
             return saturating_add(arg0, arg1);
+        } else if (intrin == Call::mut_add_sub_intrinsic){
+            return mut_add_sub_intrinsic(arg0, arg1);
         } else if (intrin == Call::saturating_sub) {
             return saturating_sub(arg0, arg1);
         } else if (intrin == Call::halving_add) {
@@ -1564,6 +1566,12 @@ template<typename A, typename B>
 auto saturating_add(A &&a, B &&b) noexcept -> Intrin<decltype(pattern_arg(a)), decltype(pattern_arg(b))> {
     return {Call::saturating_add, pattern_arg(a), pattern_arg(b)};
 }
+
+template<typename A, typename B>
+auto mut_add_sub_intrinsic(A &&a, B &&b) noexcept -> Intrin<decltype(pattern_arg(a)), decltype(pattern_arg(b))> {
+    return {Call::mut_add_sub_intrinsic, pattern_arg(a), pattern_arg(b)};
+}
+
 template<typename A, typename B>
 auto saturating_sub(A &&a, B &&b) noexcept -> Intrin<decltype(pattern_arg(a)), decltype(pattern_arg(b))> {
     return {Call::saturating_sub, pattern_arg(a), pattern_arg(b)};

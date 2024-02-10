@@ -1,6 +1,10 @@
 #include "Halide.h"
 
+using Halide::saturating_add;
+using Halide::mut_add_sub_intrinsic;
+
 namespace {
+
 
 enum class BlurGPUSchedule {
     Inline,          // Fully inlining schedule.
@@ -36,7 +40,9 @@ public:
         Var x("x"), y("y"), xi("xi"), yi("yi");
 
         // The algorithm
-        blur_x(x, y) = (input(x, y) + input(x + 1, y) + input(x + 2, y)) / 3;
+        // blur_x(x, y) = (input(x, y) + input(x + 1, y) + input(x + 2, y)) / 3;
+        blur_x(x, y) = (mut_add_sub_intrinsic(input(x, y), input(x + 1, y)) + input(x + 2, y)) / 3;
+        printf("Mut add sub intrinsic\n");
         blur_y(x, y) = (blur_x(x, y) + blur_x(x, y + 1) + blur_x(x, y + 2)) / 3;
 
         // How to schedule it

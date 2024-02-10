@@ -1266,6 +1266,13 @@ Expr saturating_add(Expr a, Expr b) {
     return Call::make(result_type, Call::saturating_add, {std::move(a), std::move(b)}, Call::PureIntrinsic);
 }
 
+Expr mut_add_sub_intrinsic(Expr a, Expr b) {
+    user_assert(a.defined() && b.defined()) << "mut_add_sub_intrinsic" << " of undefined Expr\n";
+    match_types(a, b);
+    Type result_type = a.type();
+    return Call::make(result_type, Call::mut_add_sub_intrinsic, {std::move(a), std::move(b)}, Call::PureIntrinsic);
+}
+
 Expr saturating_sub(Expr a, Expr b) {
     user_assert(a.defined() && b.defined()) << "saturating_sub of undefined Expr\n";
     match_types(a, b);

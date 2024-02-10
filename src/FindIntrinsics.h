@@ -24,8 +24,10 @@ Expr lower_rounding_shift_left(const Expr &a, const Expr &b);
 Expr lower_rounding_shift_right(const Expr &a, const Expr &b);
 
 Expr lower_saturating_add(const Expr &a, const Expr &b);
+Expr lower_mut_add_sub_intrinsic(const Expr &a, const Expr &b);
 Expr lower_saturating_sub(const Expr &a, const Expr &b);
 Expr lower_saturating_cast(const Type &t, const Expr &a);
+
 
 Expr lower_halving_add(const Expr &a, const Expr &b);
 Expr lower_halving_sub(const Expr &a, const Expr &b);
