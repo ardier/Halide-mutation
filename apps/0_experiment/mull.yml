@@ -1,0 +1,10 @@
+timeout: 10000 # 10 seconds
+quiet: false # enables additional logging
+# excludePaths: ["test"]
+# includePaths: ["halide_blur.o"]
+mutators:
+  - scalar_value_mutator
+debug:
+  printIR: true
+  printIRToFile: true
+  slowIRVerification: true

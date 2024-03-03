@@ -1,0 +1,78 @@
+module name=halide_dotProduct, target=x86-64-osx-avx-avx2-f16c-fma-sse41
+external_plus_metadata func halide_dotProduct (vectorA, vectorB, result) {
+assert(reinterpret<uint64>((struct halide_buffer_t *)vectorB.buffer) != (uint64)0, halide_error_buffer_argument_is_null("vectorB"))
+assert(reinterpret<uint64>((struct halide_buffer_t *)vectorA.buffer) != (uint64)0, halide_error_buffer_argument_is_null("vectorA"))
+assert(reinterpret<uint64>((struct halide_buffer_t *)result.buffer) != (uint64)0, halide_error_buffer_argument_is_null("result"))
+let result = (void *)_halide_buffer_get_host((struct halide_buffer_t *)result.buffer)
+let result.type = (uint32)_halide_buffer_get_type((struct halide_buffer_t *)result.buffer)
+let result.device_dirty = (uint1)_halide_buffer_get_device_dirty((struct halide_buffer_t *)result.buffer)
+let result.dimensions = _halide_buffer_get_dimensions((struct halide_buffer_t *)result.buffer)
+let result.min.0 = _halide_buffer_get_min((struct halide_buffer_t *)result.buffer, 0)
+let result.extent.0 = _halide_buffer_get_extent((struct halide_buffer_t *)result.buffer, 0)
+let result.stride.0 = _halide_buffer_get_stride((struct halide_buffer_t *)result.buffer, 0)
+let vectorA = (void *)_halide_buffer_get_host((struct halide_buffer_t *)vectorA.buffer)
+let vectorA.type = (uint32)_halide_buffer_get_type((struct halide_buffer_t *)vectorA.buffer)
+let vectorA.device_dirty = (uint1)_halide_buffer_get_device_dirty((struct halide_buffer_t *)vectorA.buffer)
+let vectorA.dimensions = _halide_buffer_get_dimensions((struct halide_buffer_t *)vectorA.buffer)
+let vectorA.min.0 = _halide_buffer_get_min((struct halide_buffer_t *)vectorA.buffer, 0)
+let vectorA.extent.0 = _halide_buffer_get_extent((struct halide_buffer_t *)vectorA.buffer, 0)
+let vectorA.stride.0 = _halide_buffer_get_stride((struct halide_buffer_t *)vectorA.buffer, 0)
+let vectorB = (void *)_halide_buffer_get_host((struct halide_buffer_t *)vectorB.buffer)
+let vectorB.type = (uint32)_halide_buffer_get_type((struct halide_buffer_t *)vectorB.buffer)
+let vectorB.device_dirty = (uint1)_halide_buffer_get_device_dirty((struct halide_buffer_t *)vectorB.buffer)
+let vectorB.dimensions = _halide_buffer_get_dimensions((struct halide_buffer_t *)vectorB.buffer)
+let vectorB.min.0 = _halide_buffer_get_min((struct halide_buffer_t *)vectorB.buffer, 0)
+let vectorB.extent.0 = _halide_buffer_get_extent((struct halide_buffer_t *)vectorB.buffer, 0)
+let vectorB.stride.0 = _halide_buffer_get_stride((struct halide_buffer_t *)vectorB.buffer, 0)
+if ((uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)result.buffer)) {
+ (struct halide_buffer_t *)_halide_buffer_init((struct halide_buffer_t *)result.buffer, (struct halide_dimension_t *)_halide_buffer_get_shape((struct halide_buffer_t *)result.buffer), reinterpret<(void *)>((uint64)0), (uint64)0, reinterpret<(struct halide_device_interface_t *)>((uint64)0), 2, 32, 1, (struct halide_dimension_t *)make_struct(0, 1, 1, 0), (uint64)0)
+}
+if ((uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)vectorA.buffer)) {
+ (struct halide_buffer_t *)_halide_buffer_init((struct halide_buffer_t *)vectorA.buffer, (struct halide_dimension_t *)_halide_buffer_get_shape((struct halide_buffer_t *)vectorA.buffer), reinterpret<(void *)>((uint64)0), (uint64)0, reinterpret<(struct halide_device_interface_t *)>((uint64)0), 2, 32, 1, (struct halide_dimension_t *)make_struct(vectorA.min.0, vectorA.extent.0, 1, 0), (uint64)0)
+}
+if ((uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)vectorB.buffer)) {
+ (struct halide_buffer_t *)_halide_buffer_init((struct halide_buffer_t *)vectorB.buffer, (struct halide_dimension_t *)_halide_buffer_get_shape((struct halide_buffer_t *)vectorB.buffer), reinterpret<(void *)>((uint64)0), (uint64)0, reinterpret<(struct halide_device_interface_t *)>((uint64)0), 2, 32, 1, (struct halide_dimension_t *)make_struct(vectorA.min.0, vectorA.extent.0, 1, 0), (uint64)0)
+}
+if (!((uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)vectorB.buffer) || ((uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)result.buffer) || (uint1)_halide_buffer_is_bounds_query((struct halide_buffer_t *)vectorA.buffer)))) {
+ assert(result.type == (uint32)73730, halide_error_bad_type("Output buffer result", result.type, (uint32)73730))
+ assert(result.dimensions == 1, halide_error_bad_dimensions("Output buffer result", result.dimensions, 1))
+ assert(vectorA.type == (uint32)73730, halide_error_bad_type("Input buffer vectorA", vectorA.type, (uint32)73730))
+ assert(vectorA.dimensions == 1, halide_error_bad_dimensions("Input buffer vectorA", vectorA.dimensions, 1))
+ assert(vectorB.type == (uint32)73730, halide_error_bad_type("Input buffer vectorB", vectorB.type, (uint32)73730))
+ assert(vectorB.dimensions == 1, halide_error_bad_dimensions("Input buffer vectorB", vectorB.dimensions, 1))
+ assert((result.min.0 <= 0) && (1 <= (result.extent.0 + result.min.0)), halide_error_access_out_of_bounds("Output buffer result", 0, 0, 0, result.min.0, (result.extent.0 + result.min.0) + -1))
+ assert(0 <= result.extent.0, halide_error_buffer_extents_negative("Output buffer result", 0, result.extent.0))
+ assert(0 <= vectorA.extent.0, halide_error_buffer_extents_negative("Input buffer vectorA", 0, vectorA.extent.0))
+ assert((vectorB.min.0 <= vectorA.min.0) && ((vectorA.extent.0 + vectorA.min.0) <= (vectorB.extent.0 + vectorB.min.0)), halide_error_access_out_of_bounds("Input buffer vectorB", 0, vectorA.min.0, (vectorA.extent.0 + vectorA.min.0) + -1, vectorB.min.0, (vectorB.extent.0 + vectorB.min.0) + -1))
+ assert(0 <= vectorB.extent.0, halide_error_buffer_extents_negative("Input buffer vectorB", 0, vectorB.extent.0))
+ assert(result.stride.0 == 1, halide_error_constraint_violated("result.stride.0", result.stride.0, "1", 1))
+ assert(vectorA.stride.0 == 1, halide_error_constraint_violated("vectorA.stride.0", vectorA.stride.0, "1", 1))
+ assert(vectorB.stride.0 == 1, halide_error_constraint_violated("vectorB.stride.0", vectorB.stride.0, "1", 1))
+ assert(uint64(result.extent.0) <= (uint64)2147483647, halide_error_buffer_allocation_too_large("result", uint64(result.extent.0), (uint64)2147483647))
+ assert(uint64(vectorA.extent.0) <= (uint64)2147483647, halide_error_buffer_allocation_too_large("vectorA", uint64(vectorA.extent.0), (uint64)2147483647))
+ assert(uint64(vectorB.extent.0) <= (uint64)2147483647, halide_error_buffer_allocation_too_large("vectorB", uint64(vectorB.extent.0), (uint64)2147483647))
+ assert(!result.device_dirty, halide_error_device_dirty_with_no_device_support("Output buffer result"))
+ assert(!vectorA.device_dirty, halide_error_device_dirty_with_no_device_support("Input buffer vectorA"))
+ assert(!vectorB.device_dirty, halide_error_device_dirty_with_no_device_support("Input buffer vectorB"))
+ assert(result != reinterpret<(void *)>((uint64)0), halide_error_host_is_null("Output buffer result"))
+ assert(vectorA != reinterpret<(void *)>((uint64)0), halide_error_host_is_null("Input buffer vectorA"))
+ assert(vectorB != reinterpret<(void *)>((uint64)0), halide_error_host_is_null("Input buffer vectorB"))
+ assert((0 <= result.min.0) && ((result.extent.0 + result.min.0) <= 1), halide_error_explicit_bounds_too_small("v0", "result", 0, 0, result.min.0, (result.extent.0 + result.min.0) + -1))
+ allocate sum[float32 * 1]
+ produce result {
+  produce sum {
+   sum[0] = 0.000000f
+   let t5 = vectorA.min.0 - vectorB.min.0
+   for (sum.s1.r6$x.rebased, 0, vectorA.extent.0) {
+    sum[0] = sum[0] + (vectorA[sum.s1.r6$x.rebased]*vectorB[sum.s1.r6$x.rebased + t5])
+   }
+  }
+  consume sum {
+   result[0] = sum[0]
+  }
+  free sum
+ }
+}
+}
+
+
