@@ -35,9 +35,11 @@ def _row(r: MutantResult) -> dict:
 
 
 class Runner:
-    def __init__(self, pipeline: Pipeline, keep_artifacts: bool = False):
+    def __init__(self, pipeline: Pipeline, keep_artifacts: bool = False,
+                 determinism_runs: int = 3):
         self.p = pipeline
         self.keep = keep_artifacts
+        self.determinism_runs = determinism_runs
 
     def run_app_arm(self, app: AppConfig, arm: str, log=print) -> List[MutantResult]:
         mutators = ARMS[arm]
@@ -68,7 +70,25 @@ class Runner:
             raise PipelineError(
                 f"{app.name}/{arm}: baseline driver failed (exit={code}, timeout={timed})")
         golden = self.p.oracle_signature(app, base_run, out)
-        log(f"[{app.name}/{arm}] baseline ok ({secs:.1f}s), golden={golden[:16]}")
+
+        # O2 treats any difference from the golden snapshot as a kill, so the
+        # app's own output must be reproducible first. Several of these
+        # pipelines schedule with .parallel(), and a nondeterministic baseline
+        # would turn every mutant into a false kill.
+        for i in range(1, self.determinism_runs):
+            rd = base / f"run-det{i}"
+            c, o, _, t = self.p.run_driver(app, driver, rd)
+            if t or c != 0:
+                raise PipelineError(
+                    f"{app.name}/{arm}: baseline run {i} failed (exit={c}, timeout={t})")
+            sig = self.p.oracle_signature(app, rd, o)
+            if sig != golden:
+                raise PipelineError(
+                    f"{app.name}/{arm}: baseline output is NOT deterministic "
+                    f"({golden[:16]} != {sig[:16]} on run {i}); O2 results would "
+                    f"be meaningless")
+        log(f"[{app.name}/{arm}] baseline ok ({secs:.1f}s), deterministic over "
+            f"{self.determinism_runs} runs, golden={golden[:16]}")
 
         workers = 1 if app.memory_heavy else 4
         results: List[MutantResult] = []

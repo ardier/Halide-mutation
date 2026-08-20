@@ -30,6 +30,8 @@ def main(argv=None) -> int:
     ap.add_argument("--csv", type=Path, default=None)
     ap.add_argument("--summary", type=Path, default=None)
     ap.add_argument("--keep-artifacts", action="store_true")
+    ap.add_argument("--determinism-runs", type=int, default=3,
+                    help="baseline runs that must agree before O2 is trusted")
     args = ap.parse_args(argv)
 
     halide_build = args.halide_build or (args.halide_root / "build")
@@ -45,7 +47,8 @@ def main(argv=None) -> int:
 
     pipeline = Pipeline(args.halide_root, halide_build, args.mull_output,
                         args.llvm_prefix, args.workdir)
-    runner = Runner(pipeline, keep_artifacts=args.keep_artifacts)
+    runner = Runner(pipeline, keep_artifacts=args.keep_artifacts,
+                    determinism_runs=args.determinism_runs)
 
     results = []
     failures = []
