@@ -1,0 +1,22 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,stage3,o1,o2,killed,exit_code,wall_seconds,note
+blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,53,24,OK,0,OK,SURVIVED,SURVIVED,0,0,0.57,
+blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,96,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.58,
+blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,109,18,GEN_ERROR,,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+blur,schedule,Halide_parallel_to_unroll,halide_blur_generator.cpp,92,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.56,
+blur,schedule,Halide_parallel_to_unroll,halide_blur_generator.cpp,105,18,GEN_ERROR,,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+blur,schedule,Halide_parallel_to_vectorize,halide_blur_generator.cpp,92,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.57,
+blur,schedule,Halide_parallel_to_vectorize,halide_blur_generator.cpp,105,18,GEN_ERROR,,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+blur,schedule,Halide_store_at_to_compute_at,halide_blur_generator.cpp,95,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.53,
+blur,schedule,Halide_store_at_to_compute_at,halide_blur_generator.cpp,108,18,OK,1,OK,SURVIVED,SURVIVED,0,0,0.52,
+blur,schedule,Halide_unroll_to_parallel,halide_blur_generator.cpp,65,22,OK,0,OK,SURVIVED,SURVIVED,0,0,0.53,
+blur,schedule,Halide_unroll_to_parallel,halide_blur_generator.cpp,76,22,OK,0,OK,SURVIVED,SURVIVED,0,0,0.53,
+blur,schedule,Halide_unroll_to_vectorize,halide_blur_generator.cpp,65,22,OK,0,OK,SURVIVED,SURVIVED,0,0,0.48,
+blur,schedule,Halide_unroll_to_vectorize,halide_blur_generator.cpp,76,22,OK,0,OK,SURVIVED,SURVIVED,0,0,0.51,
+blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,93,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.51,
+blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,97,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.51,
+blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,106,18,GEN_ERROR,,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,110,18,OK,1,OK,SURVIVED,SURVIVED,0,0,0.53,
+blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,93,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.54,
+blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,97,18,OK,0,OK,SURVIVED,SURVIVED,0,0,0.54,
+blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,106,18,OK,1,OK,SURVIVED,SURVIVED,0,0,0.54,
+blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,110,18,OK,1,OK,SURVIVED,SURVIVED,0,0,0.44,

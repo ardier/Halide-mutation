@@ -1,0 +1,62 @@
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628341 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 39:37 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628374 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 39:47 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628410 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 39:55 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628460 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 39:65 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628492 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 40:38 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628526 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 40:52 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628561 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 40:57 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628603 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_div 40:71 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628635 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 39:37 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628667 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 39:47 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628699 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 39:55 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628734 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 39:65 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628751 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 40:38 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628787 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 40:52 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628840 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 40:57 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628874 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_mul 40:71 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628894 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 39:37 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628929 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 39:47 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628949 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 39:55 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 628985 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 39:65 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629004 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 40:38 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629063 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 40:52 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629111 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 40:57 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629196 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_add_to_sub 40:71 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629215 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_add 39:74 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629250 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_add 40:77 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629299 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_mul 39:74 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629340 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_mul 40:77 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629376 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_sub 39:74 (exit 134)
+/tmp/claude-1000/-home-ardi-project-dsl-mutants-halide/79c69961-ec65-41df-a717-1c36536a2c1f/scratchpad/killsweep.sh: line 29: 629412 Aborted                 timeout 120 "$d/test" > /dev/null 2>&1
+KILLED     Halide_div_to_sub 40:77 (exit 134)
+
+total=30 killed=30 survived=0 gen_error=0 build_error=0

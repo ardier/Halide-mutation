@@ -1,0 +1,48 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+blur            schedule       21       4      0     13    4       0       0     0   0.0%   0.0%
+harris          schedule       50       7      0     34    9       2       3     3  22.2%  33.3%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                schedule       71      11      0     47   13       2       3     3  15.4%  23.1%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_compute_at_to_store_at     schedule       12       4      8    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        3       2      1    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        3       2      1    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        5       0      1    4       2       2   50.0%
+Halide_unroll_to_parallel         schedule       13       0     13    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule       13       0     13    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule       11       3      5    3       0       0    0.0%
+Halide_vectorize_to_unroll        schedule       11       0      5    6       0       1   16.7%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  blur            schedule   Halide_compute_at_to_store_at   halide_blur_generator.cpp:109:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_parallel_to_unroll       halide_blur_generator.cpp:105:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_parallel_to_vectorize    halide_blur_generator.cpp:105:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_vectorize_to_parallel    halide_blur_generator.cpp:106:18GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:115:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:118:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:121:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_unroll       harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_vectorize    harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:119:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:122:22   GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
