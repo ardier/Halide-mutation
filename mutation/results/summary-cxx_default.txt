@@ -1,0 +1,91 @@
+====================================================================================================
+ARM C REVIVAL: cxx_default (stock Mull C++ operators) applied to Halide's emitted C++
+====================================================================================================
+
+Mechanism: mull-ir-frontend-14, -fpass-plugin, mutators=[cxx_default] (increment, arithmetic,
+comparison, boundary, calls -- explicitly NOT halide_mutator/halide_boundary_conditions/
+halide_special_calls; see mull-ps/lib/Mutators/MutatorsFactory.cpp:242-256), compiled directly
+against the .halide_generated.cpp files in mutation/lowered-cpp/{blur,harris}/. One instrumented
+object per app, all mutants embedded behind env-var dispatch, linked once against the app's own
+real test driver (apps/blur/test.cpp, apps/harris/filter.cpp), one process re-run per mutant.
+
+Oracles: blur -- O1 only (test.cpp's own internal assert/abort; the app has no separate golden-image
+artifact). harris -- O1 (exit code) and O2 (byte-compare of out.png against a baseline snapshot,
+apps/harris/filter.cpp has no internal assertion of its own).
+
+"generator-specific only" = mutation points inside the parallel-for-closures + main pipeline
+function body, i.e. survey.py's genspec region (blur: source lines 3467-4204; harris: 3467-4581).
+Excludes both the 3466-line boilerplate/runtime prefix and the tiny _argv/_metadata wrapper tail.
+See mutation/lowered-cpp/README.md for the boilerplate-boundary methodology.
+
+"arithmetic-family only" = cxx_add_to_sub, cxx_sub_to_add, cxx_mul_to_div, cxx_div_to_mul -- the
+subset of cxx_default's operators with a direct shape-match to (half of) Halide's 12-operator
+legacy arithmetic group, for the closest available like-for-like comparison against blur's
+Halide-native arithmetic run.
+
+====================================================================================================
+BLUR
+====================================================================================================
+arm                                            mutants  killed   kill-rate
+----------------------------------------------------------------------------------------------------
+Halide-native arithmetic (IR route, 12 ops)         30      30       100.0%   <- mutation/results/blur-arithmetic-killsweep.txt
+cxx_default on emitted C++, whole file             347     123        35.4%
+cxx_default on emitted C++, generator-specific     331     118        35.6%
+cxx_default, arithmetic-family only (whole file)   177      56        31.6%   <- closest like-for-like slice
+
+====================================================================================================
+HARRIS
+====================================================================================================
+arm                                                 mutants  O1kill   O1%    O2kill   O2%
+----------------------------------------------------------------------------------------------------
+Halide-native schedule (IR route, 8 ops, effective)      9       2   22.2%       3   33.3%   <- mutation/results/summary-schedule.txt
+  (of 50 generated; 7 genKill + 34 equiv-at-target excluded, no C++ sibling exists for this family)
+cxx_default on emitted C++, whole file                 591     101   17.1%     101   17.1%
+cxx_default on emitted C++, generator-specific         574      97   16.9%      97   16.9%
+cxx_default, arithmetic-family only (whole file)       391      44   11.3%      44   11.3%
+
+Note: harris's only completed Halide-native run so far is the *schedule* family (no C++ sibling
+exists at all for vectorize/unroll/parallel/compute_at/store_at), so it is not operator-matched
+against cxx_default the way blur's arithmetic run is -- it is reported side by side in the same
+Table-5/6 shape the thesis used, not conflated as the same mutation family. harris O1 and O2 are
+identical on every single mutant in this run (0 mutants where they disagree) -- every surviving
+mutant (exit 0) also produced a byte-identical out.png; every non-zero exit was already an O1 kill.
+Worth flagging rather than glossing over: this is a stronger O1/O2 alignment than the Halide-native
+schedule run showed (O1=2 vs O2=3, i.e. it found a mutant O1 missed) -- open question whether this
+run's larger N (591) genuinely contains zero silent-corruption cases, or whether the fixed single
+input image (apps/images/rgba.png) just doesn't exercise the pixel regions/value ranges most of
+these particular mutation sites affect.
+
+====================================================================================================
+HEADLINE FINDING
+====================================================================================================
+Blur gives the cleanest apples-to-apples read since both arms mutate the same conceptual operation
+(arithmetic swap) on the same underlying box-filter algorithm: **100% kill at the Halide-DSL level
+vs. ~32-35% kill at the emitted-C++ level**, even restricting to the same 4 operator kinds and to
+the generator-specific code region. This is a real, measured instance of exactly the gap the thesis
+observed and could not explain.
+
+Restricting to the generator-specific region barely moves the number (35.4% -> 35.6% for blur,
+17.1% -> 16.9% for harris) -- so the earlier README's hypothesis that boilerplate *lines* were
+diluting the count is only a small part of the story. The bigger effect: Halide's 12 arithmetic
+operators are pairwise swaps applied to just 2 source expressions in blur's 2-line box-filter
+algorithm (every mutant hits one of 2 real computation sites -> any swap breaks the filter, and the
+test's own assert catches practically all of it). The *same 4* operator kinds, applied to the
+*emitted* code, land on 177 distinct call/instruction sites -- Halide's lowering (vectorization,
+tiling, boundary-clamp branches) turns each single source-level arithmetic expression into many
+duplicated/lane-parallel/tile-edge-case emitted instances. Most of those duplicates are not
+individually output-determining for a given run (masked by later combination, redundant across
+SIMD lanes, or only reachable on tile-boundary inputs the fixed random 2568x1922 test image may not
+stress) -- so a large fraction of them survive by construction, not because they're equivalent
+mutations of the *algorithm*, but because the specific emitted-code instantiation dilutes each
+algorithmic decision across many low-stakes copies. This is a stronger and more specific claim than
+"boilerplate contaminates the count" -- it says the emitted C++ is a much easier mutation-testing
+target than the DSL source *for the same conceptual edit*, independent of boilerplate line count.
+
+Implication for reviving arm C: filtering to the generator-specific *region* (as recommended in
+mutation/lowered-cpp/README.md) is still correct and cheap, but is not sufficient on its own to make
+the comparison fair. A meaningful C++-arm mutant count for Table 5/6 purposes should also account for
+site multiplicity introduced by lowering (e.g. weight/dedupe mutants by how many distinct emitted
+sites trace back to the same original DSL-source expression, if that mapping can be recovered) --
+otherwise every future C++-arm number will look artificially weaker than the Halide-native arm
+simply because Halide's compiler expands one source line into many.
