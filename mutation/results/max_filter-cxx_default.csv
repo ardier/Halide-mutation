@@ -1,0 +1,12 @@
+app,arm,mutator,file,line,column,region,exit_code,o1_killed,o2_killed,wall_seconds
+max_filter,cxx_default_on_emitted_cpp,cxx_lt_to_ge,max_filter.halide_generated.cpp,3870,59,generator_specific,0,0,0,4.668
+max_filter,cxx_default_on_emitted_cpp,cxx_mul_to_div,max_filter.halide_generated.cpp,3913,33,generator_specific,0,0,0,56.099
+max_filter,cxx_default_on_emitted_cpp,cxx_replace_scalar_call,max_filter.halide_generated.cpp,4006,17,generator_specific,-6,1,1,1.254
+max_filter,cxx_default_on_emitted_cpp,cxx_add_to_sub,max_filter.halide_generated.cpp,3720,25,generator_specific,0,0,0,52.927
+max_filter,cxx_default_on_emitted_cpp,cxx_replace_scalar_call,max_filter.halide_generated.cpp,4126,14,generator_specific,0,0,0,51.775
+max_filter,cxx_default_on_emitted_cpp,cxx_sub_to_add,max_filter.halide_generated.cpp,3644,20,generator_specific,0,0,0,56.530
+max_filter,cxx_default_on_emitted_cpp,cxx_ne_to_eq,max_filter.halide_generated.cpp,2529,15,boilerplate,0,0,0,53.379
+max_filter,cxx_default_on_emitted_cpp,cxx_mul_to_div,max_filter.halide_generated.cpp,3938,32,generator_specific,0,0,0,54.926
+max_filter,cxx_default_on_emitted_cpp,cxx_add_to_sub,max_filter.halide_generated.cpp,3801,25,generator_specific,0,0,0,54.820
+max_filter,cxx_default_on_emitted_cpp,cxx_lt_to_ge,max_filter.halide_generated.cpp,3843,53,generator_specific,0,0,0,58.850
+max_filter,cxx_default_on_emitted_cpp,cxx_add_to_sub,max_filter.halide_generated.cpp,3780,28,generator_specific,0,0,0,58.808
