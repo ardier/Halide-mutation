@@ -1,0 +1,87 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,28,48,OK,1,1,OK,SURVIVED,KILLED,1,0,2.67,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,23,55,OK,1,1,OK,SURVIVED,KILLED,1,0,2.82,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,24,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.06,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,48,OK,1,1,OK,SURVIVED,KILLED,1,0,2.61,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,29,53,OK,1,1,OK,SURVIVED,KILLED,1,0,2.73,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,54,OK,1,1,OK,SURVIVED,KILLED,1,0,2.63,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,54,OK,1,1,OK,SURVIVED,KILLED,1,0,2.61,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,31,53,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.23,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,37,50,OK,1,1,OK,SURVIVED,KILLED,1,0,2.67,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,33,53,OK,1,1,OK,SURVIVED,KILLED,1,0,3.11,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,34,48,OK,1,1,OK,SURVIVED,KILLED,1,0,2.85,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,38,55,OK,1,1,OK,SURVIVED,KILLED,1,0,2.81,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,1,0,2.51,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,47,OK,1,1,OK,SURVIVED,KILLED,1,0,2.93,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,1,0,2.64,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,40,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.00,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,47,OK,1,1,OK,SURVIVED,KILLED,1,0,2.97,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,42,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.18,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,23,55,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,43,47,OK,1,1,OK,SURVIVED,KILLED,1,0,2.99,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,28,48,OK,1,1,OK,SURVIVED,KILLED,1,0,2.72,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,24,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.09,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,29,53,OK,1,1,OK,SURVIVED,KILLED,1,0,3.19,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,48,OK,1,1,OK,SURVIVED,KILLED,1,0,2.78,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,31,53,OK,1,1,OK,SURVIVED,KILLED,1,0,2.97,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.37,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.61,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,33,53,OK,1,1,OK,SURVIVED,KILLED,1,0,3.30,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.55,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,37,50,OK,1,1,OK,SURVIVED,KILLED,1,0,5.67,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,38,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.72,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,34,48,OK,1,1,OK,SURVIVED,KILLED,1,0,6.59,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,1,0,5.84,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,47,OK,1,1,OK,SURVIVED,KILLED,1,0,5.66,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,40,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.08,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,47,OK,1,1,OK,SURVIVED,KILLED,1,0,5.88,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,42,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.26,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,1,0,6.13,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,43,47,OK,1,1,OK,SURVIVED,KILLED,1,0,6.00,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,23,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.75,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,24,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.81,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.79,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,29,53,OK,1,1,OK,SURVIVED,KILLED,1,0,5.78,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,28,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.81,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,54,OK,1,1,OK,SURVIVED,KILLED,1,0,5.91,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.95,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,31,53,OK,1,1,OK,SURVIVED,KILLED,1,0,6.01,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,54,OK,1,1,OK,SURVIVED,KILLED,1,0,5.93,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,33,53,OK,1,1,OK,SURVIVED,KILLED,1,0,6.01,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,34,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.96,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,38,55,OK,1,1,OK,SURVIVED,KILLED,1,0,6.30,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,37,50,OK,1,1,OK,SURVIVED,KILLED,1,0,6.51,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,47,OK,1,1,OK,SURVIVED,KILLED,1,0,6.44,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,1,0,6.51,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,47,OK,1,1,OK,SURVIVED,KILLED,1,0,6.42,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,40,55,OK,1,1,OK,SURVIVED,KILLED,1,0,4.25,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,1,0,6.22,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,42,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.09,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,32,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,43,47,OK,1,1,OK,SURVIVED,KILLED,1,0,4.77,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,32,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,49,37,OK,1,1,OK,SURVIVED,KILLED,1,0,6.00,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_add,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,11.16,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,49,37,OK,1,1,OK,SURVIVED,KILLED,1,0,7.38,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,32,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_div_to_mul,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,5.99,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,49,37,OK,1,1,OK,SURVIVED,KILLED,1,0,8.39,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_div_to_sub,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,5.95,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,37,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,28,OK,1,1,OK,SURVIVED,KILLED,1,0,7.15,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,73,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,23,30,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,24,30,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,25,30,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,28,35,OK,1,1,OK,SURVIVED,KILLED,1,0,6.57,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,31,35,OK,1,1,OK,SURVIVED,KILLED,1,0,5.33,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,29,35,OK,1,1,OK,SURVIVED,KILLED,1,0,6.58,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,33,35,OK,1,1,OK,SURVIVED,KILLED,1,0,6.08,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,37,35,OK,1,1,OK,SURVIVED,KILLED,1,0,4.26,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,38,35,OK,1,1,OK,SURVIVED,KILLED,1,0,6.15,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,42,35,OK,1,1,OK,SURVIVED,KILLED,1,0,7.09,emitted header differs from baseline; driver recompiled
