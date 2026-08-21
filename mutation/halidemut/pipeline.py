@@ -193,9 +193,26 @@ class Pipeline:
                 raise PipelineError(f"{app.name}: GenGen.cpp failed\n"
                                     + proc.stderr.decode(errors="replace")[-2000:])
 
+        # Extra shared-support source files (e.g. fft's fft.cpp) compiled
+        # plain, no instrumentation, no mutants seeded in them -- see
+        # AppConfig.extra_generator_sources.
+        extra_objs = []
+        for i, src in enumerate(app.extra_generator_sources):
+            extra_obj = outdir / f"extra{i}.o"
+            if not extra_obj.exists():
+                proc = self._run(
+                    [self.cxx, *self._cxx_flags(app), "-O1", "-g", "-c",
+                     str(self.halide_root / src), "-o", str(extra_obj)],
+                    timeout=900,
+                )
+                if proc.returncode != 0:
+                    raise PipelineError(f"{app.name}: {src} failed\n"
+                                        + proc.stderr.decode(errors="replace")[-2000:])
+            extra_objs.append(str(extra_obj))
+
         generator = outdir / f"{app.name}.generator"
         proc = self._run(
-            [self.cxx, str(gen_obj), str(gengen_obj), "-o", str(generator),
+            [self.cxx, str(gen_obj), str(gengen_obj), *extra_objs, "-o", str(generator),
              "-L", self.halide_lib, "-lHalide", f"-Wl,-rpath,{self.halide_lib}",
              "-lpthread", "-ldl"],
             timeout=900,
@@ -232,14 +249,15 @@ class Pipeline:
         target = "host-no_runtime" if app.needs_runtime else "host"
         jobs = [
             [str(generator), "-g", app.generator_name, "-e", "static_library,h,stmt",
-             "-f", app.function_name, "-o", str(dest), f"target={target}"],
+             "-f", app.function_name, "-o", str(dest), f"target={target}",
+             *app.generator_params],
         ]
         if app.needs_auto_variant:
             # Deliberately no autoscheduler= argument; see apps.py.
             jobs.append(
                 [str(generator), "-g", app.generator_name, "-e", "static_library,h",
                  "-f", f"{app.function_name}_auto_schedule", "-o", str(dest),
-                 "target=host-no_runtime"]
+                 "target=host-no_runtime", *app.generator_params]
             )
         if app.needs_runtime:
             jobs.append([str(generator), "-r", "runtime", "-o", str(dest), "target=host"])

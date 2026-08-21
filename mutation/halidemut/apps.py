@@ -75,6 +75,21 @@ class AppConfig:
     extra_driver_link: List[str] = field(default_factory=list)
     """Extra files inside the artifact directory to compile into the driver."""
 
+    generator_params: List[str] = field(default_factory=list)
+    """Extra ``key=value`` GeneratorParam arguments appended to every generator
+    invocation in stage 2 (e.g. resize's ``interpolation_type=box``). Needed
+    for generators that define one template class instantiated many ways via
+    CMake's ``add_halide_library ... PARAMS``; here we pick one representative
+    instantiation rather than building all of them."""
+
+    extra_generator_sources: List[str] = field(default_factory=list)
+    """Extra source files, relative to the Halide source root, compiled
+    *without* Mull instrumentation and linked into the generator binary
+    alongside the (instrumented) ``generator_source``. Only needed when a
+    generator's CMake target lists more than one SOURCES file where the extra
+    file is shared support code (e.g. fft's ``fft.cpp``) rather than another
+    registered generator. Mutants are not seeded in these files."""
+
 
 APPS = {
     # Self-checking: generates random input and compares the Halide pipeline
@@ -268,6 +283,119 @@ APPS = {
         output_artifact="out.png",
         run_timeout=900,
     ),
+
+    # ---- second wave (never swept in the first corpus pass) --------------
+    # All three below were flagged for a BoundaryConditions-family census hit
+    # (3 call sites each) that had never actually been run through the
+    # pipeline. Same driver shape as bilateral_grid/harris/unsharp: shipped
+    # driver prints "Success!" with no real output assertion (weak O1),
+    # O2 is the real oracle here.
+    "interpolate": AppConfig(
+        name="interpolate",
+        generator_source="apps/interpolate/interpolate_generator.cpp",
+        generator_name="interpolate",
+        function_name="interpolate",
+        driver_source="apps/interpolate/filter.cpp",
+        driver_args=["{input}", "{output}"],
+        input_image="apps/images/rgba.png",
+        output_artifact="out.png",
+    ),
+    "local_laplacian": AppConfig(
+        name="local_laplacian",
+        generator_source="apps/local_laplacian/local_laplacian_generator.cpp",
+        generator_name="local_laplacian",
+        function_name="local_laplacian",
+        driver_source="apps/local_laplacian/process.cpp",
+        driver_args=["{input}", "8", "1", "1", "10", "{output}"],
+        input_image="apps/images/rgb.png",
+        output_artifact="out.png",
+    ),
+    "stencil_chain": AppConfig(
+        name="stencil_chain",
+        generator_source="apps/stencil_chain/stencil_chain_generator.cpp",
+        generator_name="stencil_chain",
+        function_name="stencil_chain",
+        driver_source="apps/stencil_chain/process.cpp",
+        driver_args=["{input}", "10", "{output}"],
+        input_image="apps/images/rgb.png",
+        output_artifact="out.png",
+    ),
+
+    # ---- second wave, single representative instantiation ----------------
+    # These three generators are each built by CMake as several separate
+    # libraries from the same generator class (resize: 24 GeneratorParam
+    # combinations; fft: 4 direction/type combinations; wavelet: 4 distinct
+    # generator *classes* in one binary). The shipped driver links every
+    # variant at once. Rather than reproduce that, each gets one representative
+    # instantiation, selected via ``generator_params``/``generator_name``, and
+    # a small *added* driver (not a modified shipped file) that exercises just
+    # that one function. This undercounts each app's true mutant population
+    # (only one instantiation's schedule/arithmetic is mutated) but is the
+    # cheapest way to get a real, honest data point instead of skipping them.
+    "resize": AppConfig(
+        name="resize",
+        generator_source="apps/resize/resize_generator.cpp",
+        generator_name="resize",
+        function_name="resize_box_uint8_down",
+        generator_params=["interpolation_type=box", "input.type=uint8", "upsample=false"],
+        driver_source="apps/resize/mutation_driver.cpp",
+        driver_args=["{input}", "{output}"],
+        needs_auto_variant=False,
+        input_image="apps/images/rgb.png",
+        output_artifact="out.png",
+    ),
+    "fft": AppConfig(
+        name="fft",
+        generator_source="apps/fft/fft_generator.cpp",
+        generator_name="fft",
+        function_name="fft_forward_r2c",
+        generator_params=["direction=samples_to_frequency", "size0=16", "size1=16",
+                          "gain=0.00390625", "input_number_type=real",
+                          "output_number_type=complex"],
+        # fft.cpp is the shared FFT-network-construction helper that
+        # fft_generator.cpp calls into; it is real DSL-building code, but
+        # compiling it uninstrumented keeps stage 1 to one clean pass. See
+        # AppConfig.extra_generator_sources.
+        extra_generator_sources=["apps/fft/fft.cpp"],
+        driver_source="apps/fft/mutation_driver.cpp",
+        driver_args=[],
+        needs_auto_variant=False,
+        needs_image_io=False,
+        input_image=None,
+        output_artifact=None,
+    ),
+    "wavelet": AppConfig(
+        name="wavelet",
+        # wavelet.generator is 4 independent registered generator classes
+        # compiled together; only haar_x (the one with a BoundaryConditions
+        # call) is instrumented and built here. Representative of 1 of 4.
+        generator_source="apps/wavelet/haar_x_generator.cpp",
+        generator_name="haar_x",
+        function_name="haar_x",
+        driver_source="apps/wavelet/mutation_driver.cpp",
+        driver_args=["{input}", "{output}"],
+        needs_auto_variant=False,
+        input_image="apps/images/gray.png",
+        output_artifact="out.png",
+    ),
+}
+
+# GPU-only; every schedule call (`gpu_blocks`/`gpu_threads`) is unconditional
+# (no `using_autoscheduler()`-style host branch), confirmed by direct
+# inspection of apps/cuda_mat_mul/mat_mul_generator.cpp -- generating at
+# target=host would fail before any mutation-relevant step runs. Out of scope
+# per the standing x86-only (target=host) decision; not attempted.
+#
+# linear_blur_generator.cpp #includes 3 build-generated `.stub.h` files
+# (from linear_to_srgb/simple_blur/srgb_to_linear) that do not exist until
+# those sibling generators have themselves been built by CMake -- the same
+# build-ordering dependency already documented as the one parse failure in
+# halide_src_rewrite's corpus run. Reproducing that ordering (build 3
+# generators, generate their stubs, only then compile the 4th) is real extra
+# machinery for a single low-priority app; not attempted this pass.
+SKIPPED = {
+    "cuda_mat_mul": "GPU-only schedule, no host branch (see mat_mul_generator.cpp:38-43)",
+    "linear_blur": "linear_blur_generator.cpp needs 3 sibling generators' build-generated .stub.h first",
 }
 
 # `compositing` is listed in the thesis's Table 4 but does not exist in this
