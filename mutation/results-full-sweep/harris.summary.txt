@@ -1,0 +1,53 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+harris          arithmetic    237       0      0     48  189       0     189   189   0.0% 100.0%
+harris          schedule       50       7      0     34    9       2       4     4  22.2%  44.4%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    237       0      0     48  189       0     189   189   0.0% 100.0%
+                schedule       50       7      0     34    9       2       4     4  22.2%  44.4%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     37       0      0   37       0      37  100.0%
+Halide_add_to_mul                 arithmetic     37       0      0   37       0      37  100.0%
+Halide_add_to_sub                 arithmetic     37       0      0   37       0      37  100.0%
+Halide_mul_to_add                 arithmetic     24       0     16    8       0       8  100.0%
+Halide_mul_to_div                 arithmetic     24       0     16    8       0       8  100.0%
+Halide_mul_to_sub                 arithmetic     24       0     16    8       0       8  100.0%
+Halide_sub_to_add                 arithmetic     18       0      0   18       0      18  100.0%
+Halide_sub_to_div                 arithmetic     18       0      0   18       0      18  100.0%
+Halide_sub_to_mul                 arithmetic     18       0      0   18       0      18  100.0%
+Halide_compute_at_to_store_at     schedule        9       3      6    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        3       0      0    3       2       2   66.7%
+Halide_unroll_to_parallel         schedule       11       0     11    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule       11       0     11    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        7       2      3    2       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        7       0      3    4       0       2   50.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:115:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:118:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:121:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_unroll       harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_vectorize    harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:119:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:122:22   GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these

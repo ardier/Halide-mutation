@@ -1,1 +1,38 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+bilateral_grid,schedule,Halide_compute_at_to_store_at,bilateral_grid_generator.cpp,128,19,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bilateral_grid,schedule,Halide_compute_at_to_store_at,bilateral_grid_generator.cpp,141,19,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bilateral_grid,schedule,Halide_compute_at_to_store_at,bilateral_grid_generator.cpp,132,23,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bilateral_grid,schedule,Halide_parallel_to_unroll,bilateral_grid_generator.cpp,138,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bilateral_grid,schedule,Halide_parallel_to_vectorize,bilateral_grid_generator.cpp,138,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bilateral_grid,schedule,Halide_compute_at_to_store_at,bilateral_grid_generator.cpp,119,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_compute_at_to_store_at,bilateral_grid_generator.cpp,100,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,101,77,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,109,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,116,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_parallel_to_unroll,bilateral_grid_generator.cpp,148,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,8.33,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,131,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,9.42,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,101,77,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,109,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_parallel_to_vectorize,bilateral_grid_generator.cpp,148,18,OK,1,1,OK,SURVIVED,KILLED,1,0,9.39,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,140,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,11.33,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,116,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,146,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,10.68,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,108,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,115,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,119,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,131,18,OK,1,1,OK,SURVIVED,KILLED,1,0,3.37,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,140,18,OK,1,1,OK,SURVIVED,KILLED,1,0,3.43,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,135,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.55,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_vectorize,bilateral_grid_generator.cpp,146,18,OK,1,1,OK,SURVIVED,KILLED,1,0,3.37,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,108,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,115,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,119,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,130,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.26,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,139,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,8.40,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,130,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.36,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,139,18,OK,1,1,OK,SURVIVED,KILLED,1,0,3.44,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,145,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,12.34,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,149,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.80,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,145,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.31,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,149,18,OK,1,1,OK,SURVIVED,KILLED,1,0,38.76,emitted header differs from baseline; driver recompiled
+bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,135,18,OK,1,1,OK,KILLED,KILLED,1,,300.11,run timeout
