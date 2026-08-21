@@ -1,0 +1,89 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+hist            arithmetic     90       0      0     13   31       0      31    31   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic     90       0      0     13   31       0      31    31   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      7       0      0    7       0       7  100.0%
+Halide_add_to_mul                 arithmetic      7       0      0    7       0       7  100.0%
+Halide_add_to_sub                 arithmetic      7       0      0    7       0       7  100.0%
+Halide_div_to_add                 arithmetic      2       0      1    1       0       1  100.0%
+Halide_div_to_mul                 arithmetic      2       0      0    2       0       2  100.0%
+Halide_div_to_sub                 arithmetic      2       0      1    1       0       1  100.0%
+Halide_mul_to_add                 arithmetic     13       0      9    4       0       4  100.0%
+Halide_mul_to_div                 arithmetic     10       0      2    2       0       2  100.0%
+Halide_mul_to_sub                 arithmetic     13       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic      9       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic      9       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic      9       0      0    0       0       0     n/a
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  hist            arithmetic Halide_mul_to_div               hist_generator.cpp:51:57      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_div               hist_generator.cpp:52:49      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_div               hist_generator.cpp:52:77      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_div               hist_generator.cpp:53:48      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_div               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_div               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:17:27      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:18:27      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:19:27      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:23:34      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:27:34      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:49:45      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:49:73      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:51:57      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:52:49      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:52:77      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               hist_generator.cpp:53:48      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_mul_to_sub               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:23:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:27:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:43:28      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:51:50      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:52:40      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:52:61      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:52:68      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:52:89      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_add               hist_generator.cpp:53:60      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:23:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:27:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:43:28      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:51:50      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:52:40      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:52:61      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:52:68      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:52:89      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_div               hist_generator.cpp:53:60      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:23:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:27:23      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:43:28      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:51:50      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:52:40      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:52:61      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:52:68      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:52:89      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            arithmetic Halide_sub_to_mul               hist_generator.cpp:53:60      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  hist/schedule
+  hist/generated
