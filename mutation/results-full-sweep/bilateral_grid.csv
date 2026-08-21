@@ -36,3 +36,20 @@ bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,
 bilateral_grid,schedule,Halide_vectorize_to_unroll,bilateral_grid_generator.cpp,145,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.31,emitted header differs from baseline; driver recompiled
 bilateral_grid,schedule,Halide_vectorize_to_parallel,bilateral_grid_generator.cpp,149,18,OK,1,1,OK,SURVIVED,KILLED,1,0,38.76,emitted header differs from baseline; driver recompiled
 bilateral_grid,schedule,Halide_unroll_to_parallel,bilateral_grid_generator.cpp,135,18,OK,1,1,OK,KILLED,KILLED,1,,300.11,run timeout
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,25,52,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,33,56,OK,1,1,OK,SURVIVED,KILLED,1,0,2.68,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,34,60,OK,1,1,OK,SURVIVED,KILLED,1,0,2.71,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,35,56,OK,1,1,OK,SURVIVED,KILLED,1,0,2.68,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,22,73,OK,1,1,OK,SURVIVED,KILLED,1,0,3.07,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,22,40,OK,1,1,OK,SURVIVED,KILLED,1,0,3.30,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,36,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.16,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,36,60,OK,1,1,OK,SURVIVED,KILLED,1,0,2.69,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,38,52,OK,1,1,OK,SURVIVED,KILLED,1,0,3.28,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,37,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.32,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.30,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,40,52,OK,1,1,OK,SURVIVED,KILLED,1,0,3.41,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,41,38,OK,1,1,OK,SURVIVED,KILLED,1,0,3.28,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.13,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,42,38,OK,1,1,OK,SURVIVED,KILLED,1,0,3.31,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,43,52,OK,1,1,OK,SURVIVED,KILLED,1,0,3.32,emitted header differs from baseline; driver recompiled
+bilateral_grid,arithmetic,Halide_add_to_div,bilateral_grid_generator.cpp,44,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.31,emitted header differs from baseline; driver recompiled
