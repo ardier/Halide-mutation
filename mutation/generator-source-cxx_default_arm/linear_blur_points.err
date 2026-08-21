@@ -1,0 +1,17 @@
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+HandleTopLevelDecl: Looking at function: halide_type_of
+apps/linear_blur/linear_blur_generator.cpp:2:10: fatal error: 'linear_to_srgb.stub.h' file not found
+#include "linear_to_srgb.stub.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
