@@ -1,0 +1,9 @@
+blur raw_candidates=2310
+iir_blur raw_candidates=3184
+harris raw_candidates=4031
+conv_layer raw_candidates=4804
+max_filter raw_candidates=3836
+hist raw_candidates=4533
+unsharp raw_candidates=5675
+bilateral_grid raw_candidates=9858
+depthwise_separable_conv raw_candidates=11606

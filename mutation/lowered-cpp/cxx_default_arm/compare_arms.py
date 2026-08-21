@@ -17,7 +17,10 @@ Arm C rows come from `mutation/results-arm-c/`, produced by `arm_c_swsec.py`.
 The two arms count different things, and the table keeps them separate rather
 than pretending otherwise:
 
-  * "points" is every mutation point the frontend reported. It is the number
+  * "C mutants" is every mutation point stock cxx_default found in the emitted
+    file, whether or not the sweep got to all of them; "C n" in the kill-rate
+    table is how many actually got a verdict. They differ only where a row is
+    marked partial. "points" is every mutation point the frontend reported. It is the number
     the thesis's own "C++/Halide Mutants Ratio" column compares, so the ratio
     is computed on it.
   * "eval" is how many of those points actually got a verdict. Arm C evaluates
@@ -133,6 +136,18 @@ def arm_a_app_stats(app, by_arm, census):
     return total
 
 
+def load_arm_c_meta(d):
+    """Per-app sweep metadata, so a partially swept benchmark reports its true
+    mutation-point total (for the count ratio) alongside how many of those
+    points actually got a verdict (for the kill rate)."""
+    meta = {}
+    for name in sorted(os.listdir(d)):
+        if name.endswith("-sweep.json"):
+            m = json.load(open(os.path.join(d, name)))
+            meta[m["app"]] = m
+    return meta
+
+
 def load_arm_c(d):
     by_app = defaultdict(list)
     for name in sorted(os.listdir(d)):
@@ -181,6 +196,7 @@ def main():
     a_stats = {app: arm_a_app_stats(app, by_arm, census)
                for app in apps_seen | set(census)}
     c_rows = load_arm_c(args.arm_c)
+    c_meta = load_arm_c_meta(args.arm_c)
 
     out = []
     def p(s=""):
@@ -200,25 +216,30 @@ def main():
         cr = c_rows.get(app, [])
         c = arm_c_stats(cr)
         cg = arm_c_stats(cr, "generator_specific")
+        m = c_meta.get(app, {})
+        c_total = m.get("mutants", c["points"])
         if app in BLOCKED:
             status = BLOCKED[app]
         elif not cr:
             status = "arm C missing"
         else:
-            status = ""
+            status = ("" if m.get("status", "COMPLETE") == "COMPLETE"
+                      else f"partial: {c['points']} of {c_total} swept "
+                           f"(shuffled order, so an unbiased sample)")
             tot["n"] += 1
             tot["A_pts"] += a["points"]; tot["A_eval"] += a["evaluated"]
             tot["A_eff"] += a["eff"]; tot["A_o1"] += a["o1_eff"]; tot["A_o2"] += a["o2_eff"]
+            tot["C_tot"] += c_total
             tot["C_pts"] += c["points"]; tot["C_o1"] += c["o1"]; tot["C_o2"] += c["o2"]
             tot["Cg_pts"] += cg["points"]; tot["Cg_o1"] += cg["o1"]; tot["Cg_o2"] += cg["o2"]
         p(f"{app:<26}{a['points']:>7}{a['evaluated']:>7}{a['eff']:>7}"
-          f"{c['points']:>11}{cg['points']:>11}"
-          f"{ratio(c['points'], a['points']):>9}{ratio(c['points'], a['eff']):>9}  {status}")
+          f"{c_total:>11}{cg['points']:>11}"
+          f"{ratio(c_total, a['points']):>9}{ratio(c_total, a['eff']):>9}  {status}")
     CORPUS_LABEL = f"CORPUS ({tot['n']} comparable)"
     p("-" * W)
     p(f"{CORPUS_LABEL:<26}{tot['A_pts']:>7}{tot['A_eval']:>7}{tot['A_eff']:>7}"
-      f"{tot['C_pts']:>11}{tot['Cg_pts']:>11}"
-      f"{ratio(tot['C_pts'], tot['A_pts']):>9}{ratio(tot['C_pts'], tot['A_eff']):>9}")
+      f"{tot['C_tot']:>11}{tot['Cg_pts']:>11}"
+      f"{ratio(tot['C_tot'], tot['A_pts']):>9}{ratio(tot['C_tot'], tot['A_eff']):>9}")
     p()
 
     p("=" * W)

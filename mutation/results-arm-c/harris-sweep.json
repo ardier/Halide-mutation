@@ -1,0 +1,14 @@
+{
+  "app": "harris",
+  "status": "COMPLETE",
+  "mutants": 591,
+  "swept": 591,
+  "o1_killed": 105,
+  "o2_killed": 404,
+  "o2_independent": true,
+  "baseline_seconds": 0.72,
+  "sweep_seconds": 17.8,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/harris-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 61.0
+}

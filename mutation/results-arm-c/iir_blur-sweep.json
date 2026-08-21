@@ -1,0 +1,14 @@
+{
+  "app": "iir_blur",
+  "status": "COMPLETE",
+  "mutants": 471,
+  "swept": 471,
+  "o1_killed": 112,
+  "o2_killed": 246,
+  "o2_independent": true,
+  "baseline_seconds": 8.91,
+  "sweep_seconds": 96.4,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/iir_blur-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 27.3
+}

@@ -1,0 +1,14 @@
+{
+  "app": "depthwise_separable_conv",
+  "status": "COMPLETE",
+  "mutants": 1822,
+  "swept": 1822,
+  "o1_killed": 166,
+  "o2_killed": 166,
+  "o2_independent": false,
+  "baseline_seconds": 0.43,
+  "sweep_seconds": 53.3,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/depthwise_separable_conv-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 734.9
+}

@@ -1,0 +1,14 @@
+{
+  "app": "blur",
+  "status": "COMPLETE",
+  "mutants": 347,
+  "swept": 347,
+  "o1_killed": 123,
+  "o2_killed": 123,
+  "o2_independent": false,
+  "baseline_seconds": 0.6,
+  "sweep_seconds": 7.0,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/blur-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 19.4
+}

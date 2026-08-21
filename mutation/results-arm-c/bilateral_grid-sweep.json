@@ -1,0 +1,14 @@
+{
+  "app": "bilateral_grid",
+  "status": "COMPLETE",
+  "mutants": 1348,
+  "swept": 1348,
+  "o1_killed": 259,
+  "o2_killed": 886,
+  "o2_independent": true,
+  "baseline_seconds": 25.03,
+  "sweep_seconds": 1759.2,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/bilateral_grid-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 332.0
+}

@@ -1,0 +1,14 @@
+{
+  "app": "hist",
+  "status": "COMPLETE",
+  "mutants": 647,
+  "swept": 647,
+  "o1_killed": 106,
+  "o2_killed": 320,
+  "o2_independent": true,
+  "baseline_seconds": 6.42,
+  "sweep_seconds": 135.5,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/hist-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 70.9
+}

@@ -1,0 +1,121 @@
+==========================================================================================================================
+HALIDE-NATIVE (arm A, 65 operators) vs. EMITTED-C++ (arm C, stock cxx_default) -- mutant counts
+==========================================================================================================================
+benchmark                   A pts A eval  A eff  C mutants C gen-spec  C/A pts  C/A eff  status
+--------------------------------------------------------------------------------------------------------------------------
+bgu                            86     12     10          0          0        -        -  blocked: Halide C backend emits invalid C++ (float8 -> float)
+bilateral_grid                238     54     34       1348       1312     5.7x    39.6x  
+blur                           51     51     34        347        331     6.8x    10.2x  
+camera_pipe                   609     37     29          0          0        -        -  blocked: Halide C backend emits invalid C++ (void -> uint16_t)
+conv_layer                     19     19     14        837        820    44.1x    59.8x  
+depthwise_separable_conv      141     90     37       1822       1789    12.9x    49.2x  
+harris                        287    101     60        591        574     2.1x     9.8x  
+hist                          149     99     56        647        617     4.3x    11.6x  
+iir_blur                       56     53     42        471        448     8.4x    11.2x  
+lens_blur                      14     14     14          0          0        -        -  skipped: instrumentation compile killed at 2h04m / 84GB, no output
+max_filter                     78     72     65        605        571     7.8x     9.3x  
+nl_means                       44     41     28       2128       1229    48.4x    76.0x  partial: 1250 of 2128 swept (shuffled order, so an unbiased sample)
+unsharp                       179    118     87        828        795     4.6x     9.5x  
+--------------------------------------------------------------------------------------------------------------------------
+CORPUS (10 comparable)       1242    698    457       9624       8486     7.7x    21.1x
+
+==========================================================================================================================
+KILL RATES -- arm A over effective mutants, arm C over all evaluated mutants
+==========================================================================================================================
+benchmark                   A eff   A O1   A O2     C n   C O1   C O2     A O1%  A O2%  C O1%  C O2%
+--------------------------------------------------------------------------------------------------------------------------
+bilateral_grid                 34      1     18    1348    259    886      2.9%  52.9%  19.2%  65.7%
+blur                           34     30     30     347    123    123     88.2%  88.2%  35.4%  35.4%
+conv_layer                     14      6      6     837    178    178     42.9%  42.9%  21.3%  21.3%
+depthwise_separable_conv       37      0      0    1822    166    166      0.0%   0.0%   9.1%   9.1%
+harris                         60      2     54     591    105    404      3.3%  90.0%  17.8%  68.4%
+hist                           56      0     40     647    106    320      0.0%  71.4%  16.4%  49.5%
+iir_blur                       42      3     37     471    112    246      7.1%  88.1%  23.8%  52.2%
+max_filter                     65      2     49     605    128    324      3.1%  75.4%  21.2%  53.6%
+nl_means                       28      0     12    1250    277    888      0.0%  42.9%  22.2%  71.0%
+unsharp                        87      0     80     828    150    466      0.0%  92.0%  18.1%  56.3%
+--------------------------------------------------------------------------------------------------------------------------
+CORPUS (10 comparable)        457     44    326    8746   1604   4001      9.6%  71.3%  18.3%  45.7%
+
+==========================================================================================================================
+DENOMINATOR SENSITIVITY -- the two arms do not filter equivalent mutants the same way
+==========================================================================================================================
+Arm A can tell an equivalent mutant from a real one for free: Halide
+compiles in stages, so the mutated generator's emitted .stmt can be
+diffed against the baseline's before any test runs. 200 of its 1,983
+points corpus-wide are provably equivalent at target=host and 51 are
+killed by the Halide compiler itself. Arm C has no such stage -- the
+emitted .cpp already is the lowered pipeline -- so nothing distinguishes
+an equivalent emitted-C++ mutant from a live one short of running it.
+That asymmetry is itself a property of multi-stage DSL compilation, but
+it means arm A's rate is over a cleaner denominator, so both are shown.
+
+arm A, over effective mutants                   457      44     326     9.6%    71.3%
+arm A, over all evaluated (incl. equivalent)    698      93     375    13.3%    53.7%
+arm C, over all mutants (no equiv filter)      8746    1604    4001    18.3%    45.7%
+  (arm A equivalent-at-host / compiler-killed)    192      49
+
+==========================================================================================================================
+LIKE-FOR-LIKE: ARITHMETIC OPERATORS ONLY
+(the closest match to the thesis's own framing -- arm A's 12 pairwise
+ +-*/ swaps on Halide::Expr against the 4 arithmetic swaps stock
+ cxx_default actually ships. Same source expressions, same algorithm,
+ one mutated before Halide lowers it and one after.)
+==========================================================================================================================
+benchmark                   A pts  A eff   A O1%   A O2%    C n  C gspec   C O1%   C O2%  C/A pts  C/A eff
+--------------------------------------------------------------------------------------------------------------------------
+bilateral_grid                195     10    0.0%  100.0%    991      991   13.6%   69.4%     5.1x    99.1x
+blur                           30     30  100.0%  100.0%    177      177   31.6%   31.6%     5.9x     5.9x
+conv_layer                      9      9   66.7%   66.7%    331      331   15.7%   15.7%    36.8x    36.8x
+depthwise_separable_conv       33      0      -       -     967      967    3.6%    3.6%    29.3x        -
+harris                        237     51    0.0%  100.0%    391      391   12.3%   81.1%     1.6x     7.7x
+hist                           90     31    0.0%  100.0%    333      333    8.4%   46.5%     3.7x    10.7x
+iir_blur                       39     36    8.3%   97.2%    188      188   18.6%   54.3%     4.8x     5.2x
+max_filter                     51     42    4.8%   90.5%    304      304   15.5%   54.9%     6.0x     7.2x
+nl_means                        7      7    0.0%  100.0%    873      873   14.3%   73.2%   124.7x   124.7x
+unsharp                       147     74    0.0%  100.0%    519      519   12.5%   62.0%     3.5x     7.0x
+--------------------------------------------------------------------------------------------------------------------------
+CORPUS (10 comparable)        838    290   14.1%   97.2%   5074     5074   12.3%   49.9%     6.1x    17.5x
+  ... generator-specific                                   5074            12.3%   49.9%     6.1x    17.5x
+
+==========================================================================================================================
+ARM C BY EMITTED-FILE REGION -- whole file vs. generator-specific only
+(the boilerplate prefix is byte-identical across independently lowered
+ generators; see ../survey.py and bucket_mutants.py for the split)
+==========================================================================================================================
+benchmark                   boiler n     O1%     O2%  gen-spec n     O1%     O2%  wrapper n     O1%     O2%
+--------------------------------------------------------------------------------------------------------------------------
+bilateral_grid                    35   25.7%   48.6%        1312   19.1%   66.2%          1    0.0%    0.0%
+blur                              15   33.3%   33.3%         331   35.6%   35.6%          1    0.0%    0.0%
+conv_layer                        16   18.8%   18.8%         820   21.3%   21.3%          1    0.0%    0.0%
+depthwise_separable_conv          32   15.6%   15.6%        1789    9.0%    9.0%          1    0.0%    0.0%
+harris                            16   25.0%   31.2%         574   17.6%   69.5%          1    0.0%    0.0%
+hist                              29   17.2%   41.4%         617   16.4%   49.9%          1    0.0%    0.0%
+iir_blur                          22   31.8%   59.1%         448   23.4%   52.0%          1    0.0%    0.0%
+max_filter                        33   15.2%   54.5%         571   21.5%   53.6%          1    0.0%    0.0%
+nl_means                          20   15.0%   55.0%        1229   22.3%   71.4%          1    0.0%    0.0%
+unsharp                           32   15.6%   53.1%         795   18.2%   56.5%          1    0.0%    0.0%
+--------------------------------------------------------------------------------------------------------------------------
+CORPUS (10 comparable)           250   20.4%   42.4%        8486   18.3%   45.9%         10    0.0%    0.0%
+
+==========================================================================================================================
+ARM C BY MUTATOR (whole corpus)
+==========================================================================================================================
+mutator                                  n     O1     O2     O1%     O2%
+--------------------------------------------------------------------------------------------------------------------------
+cxx_add_to_sub                        2972    428   1490   14.4%   50.1%
+cxx_mul_to_div                        1520    152    866   10.0%   57.0%
+cxx_replace_scalar_call               1210    251    356   20.7%   29.4%
+cxx_sub_to_add                         534     41    162    7.7%   30.3%
+cxx_remove_void_call                   416      0     11    0.0%    2.6%
+cxx_lt_to_le                           309     62    119   20.1%   38.5%
+cxx_lt_to_ge                           298     24    177    8.1%   59.4%
+cxx_le_to_gt                           281    152    213   54.1%   75.8%
+cxx_le_to_lt                           280      5     47    1.8%   16.8%
+cxx_post_inc_to_post_dec               212    157    175   74.1%   82.5%
+cxx_eq_to_ne                           208    124    135   59.6%   64.9%
+cxx_gt_to_ge                           175      0     16    0.0%    9.1%
+cxx_gt_to_le                           172    116    128   67.4%   74.4%
+cxx_ne_to_eq                           108     86     90   79.6%   83.3%
+cxx_div_to_mul                          48      5     15   10.4%   31.2%
+cxx_rem_to_div                           3      1      1   33.3%   33.3%

@@ -1,0 +1,14 @@
+{
+  "app": "nl_means",
+  "status": "PARTIAL(budget)",
+  "mutants": 2128,
+  "swept": 1250,
+  "o1_killed": 277,
+  "o2_killed": 888,
+  "o2_independent": true,
+  "baseline_seconds": 89.33,
+  "sweep_seconds": 4073.5,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/nl_means-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 2689.3
+}

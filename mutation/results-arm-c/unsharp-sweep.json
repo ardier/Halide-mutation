@@ -1,0 +1,14 @@
+{
+  "app": "unsharp",
+  "status": "COMPLETE",
+  "mutants": 828,
+  "swept": 828,
+  "o1_killed": 150,
+  "o2_killed": 466,
+  "o2_independent": true,
+  "baseline_seconds": 2.1,
+  "sweep_seconds": 67.2,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/unsharp-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 173.9
+}

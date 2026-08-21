@@ -1,0 +1,14 @@
+{
+  "app": "max_filter",
+  "status": "COMPLETE",
+  "mutants": 605,
+  "swept": 605,
+  "o1_killed": 128,
+  "o2_killed": 324,
+  "o2_independent": true,
+  "baseline_seconds": 92.07,
+  "sweep_seconds": 2184.9,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/max_filter-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 83.4
+}

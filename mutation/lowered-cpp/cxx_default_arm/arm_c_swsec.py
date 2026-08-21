@@ -441,8 +441,9 @@ def sweep(app, budget=BUDGET, jobs=None):
                sweep_seconds=round(time.time() - t0, 1), csv=out_csv,
                raw_candidates=meta.get("raw_candidates"),
                compile_seconds=meta.get("compile_seconds"))
-    with open(f"{scratch}/sweep.json", "w") as f:
-        json.dump(res, f, indent=2)
+    for path in (f"{scratch}/sweep.json", f"{RESULTS}/{app}-sweep.json"):
+        with open(path, "w") as f:
+            json.dump(res, f, indent=2)
     print(f"SWEPT {app} [{status}]: {swept}/{len(mutants)} "
           f"o1={o1k} o2={o2k} ({res['sweep_seconds']}s)", flush=True)
     return res

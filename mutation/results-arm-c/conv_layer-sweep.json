@@ -1,0 +1,14 @@
+{
+  "app": "conv_layer",
+  "status": "COMPLETE",
+  "mutants": 837,
+  "swept": 837,
+  "o1_killed": 178,
+  "o2_killed": 178,
+  "o2_independent": false,
+  "baseline_seconds": 80.98,
+  "sweep_seconds": 2340.6,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc/mutation/results-arm-c/conv_layer-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 78.9
+}
