@@ -21,7 +21,23 @@ killed, per "timebox and move on." Concretely slow, not stuck: `stencil_chain`'s
 *generate* step (`stencil_chain.generator -e static_library,h,stmt`) alone takes 3.5+ minutes
 of active CPU time per invocation (confirmed via `ps` CPU-time samples 90s apart, both
 growing steadily) -- consistent with what the app's name suggests, a long chain of stencil
-stages that costs real compile time per lowering, not a hang. Arm C's `interpolate` build
+stages that costs real compile time per lowering, not a hang: `stencil_chain_generator.cpp`
+defaults `GeneratorParam<int> stencils` to **32**, and each stage is a 5x5 (25-term)
+weighted-sum accumulation over the previous stage (`for i in -2..2, for j in -2..2: e +=
+((i+3)*(j+3)) * stages.back()(x+i,y+j)`) -- 32 x 25 = 800 arithmetic `Expr` nodes in the
+realized pipeline, entirely from *one* source line executed inside a compile-time (C++-level,
+not Halide-level) nested loop. **This is itself a real density-methodology finding, not just
+a performance footnote**: the standalone tool's source-level mutation-point count for
+`stencil_chain` is only 9 (`halide_arith_swap`) -- because the mutator counts distinct
+*source* operator tokens, and the accumulation's `+=`/`*`/`*` are three tokens written once,
+unrolled 800 times at generator-execution time. A mutant-count-vs-file-size sanity check would
+never see this from the source alone; the actual mutated-graph size (and the compile cost
+that comes with it) only shows up once the generator actually runs. Worth carrying forward
+as a second, complementary density heuristic alongside line-count: source-level operator-token
+density can systematically *under*-represent apps that build their pipeline through a
+compile-time loop, exactly the shape several of the Halide tutorial lessons this project
+also cares about use (`lesson_09_update_definitions`, `lesson_18_parallel_associative_reductions`).
+Arm C's `interpolate` build
 similarly ran past 12 minutes on the single instrumented-compile step, in the same range as
 the original corpus's documented ~9-minute heavy-compile cost for `camera_pipe`, likely
 worsened here by CPU contention with the concurrently-running `stencil_chain` sweep. Numbers
