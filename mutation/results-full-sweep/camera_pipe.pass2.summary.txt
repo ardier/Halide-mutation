@@ -1,0 +1,536 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+camera_pipe     arithmetic    502       0      0      0    9       0       9     9   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    502       0      0      0    9       0       9     9   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     56       0      0    9       0       9  100.0%
+Halide_add_to_mul                 arithmetic     58       0      0    0       0       0     n/a
+Halide_add_to_sub                 arithmetic     58       0      0    0       0       0     n/a
+Halide_div_to_add                 arithmetic     25       0      0    0       0       0     n/a
+Halide_div_to_mul                 arithmetic     24       0      0    0       0       0     n/a
+Halide_div_to_sub                 arithmetic     25       0      0    0       0       0     n/a
+Halide_mul_to_add                 arithmetic     39       0      0    0       0       0     n/a
+Halide_mul_to_div                 arithmetic     40       0      0    0       0       0     n/a
+Halide_mul_to_sub                 arithmetic     39       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic     46       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic     46       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic     46       0      0    0       0       0     n/a
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:99:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:100:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:100:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:111:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:112:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:112:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:113:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:115:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:116:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:116:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:117:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:122:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:123:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:123:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:124:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:126:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:127:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:127:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:128:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:242:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:243:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:257:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:258:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:259:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:259:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:270:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:285:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:285:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:285:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:286:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:286:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:286:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:287:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:287:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:287:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:301:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:326:57NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:327:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:330:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:362:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:363:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:390:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:393:88NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:401:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:412:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               camera_pipe_generator.cpp:412:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_div               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:18:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:18:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:72:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:73:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:77:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:78:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:90:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:94:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:96:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:97:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:97:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:99:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:100:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:100:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:111:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:112:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:112:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:113:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:115:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:116:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:116:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:117:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:122:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:123:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:123:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:124:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:126:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:127:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:127:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:128:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:242:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:243:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:257:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:258:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:259:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:259:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:270:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:285:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:285:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:285:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:286:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:286:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:286:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:287:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:287:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:287:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:301:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:326:57NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:327:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:330:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:362:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:363:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:390:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:393:88NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:401:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:412:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               camera_pipe_generator.cpp:412:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_mul               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:18:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:18:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:72:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:73:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:77:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:78:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:90:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:94:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:96:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:97:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:97:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:99:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:100:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:100:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:111:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:112:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:112:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:113:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:115:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:116:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:116:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:117:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:122:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:123:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:123:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:124:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:126:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:127:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:127:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:128:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:242:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:243:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:257:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:258:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:259:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:259:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:270:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:285:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:285:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:285:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:286:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:286:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:286:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:287:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:287:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:287:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:301:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:326:57NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:327:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:330:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:362:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:363:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:390:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:393:88NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:401:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:412:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               camera_pipe_generator.cpp:412:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_add_to_sub               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:18:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:27:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:27:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:33:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:33:58NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:269:24NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:269:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:289:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:290:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:291:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:316:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:317:40NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:323:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:359:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:363:92NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:401:91NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:453:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:454:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:511:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:515:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:525:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:576:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               camera_pipe_generator.cpp:577:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               Halide.h:13294:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_add               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:18:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:27:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:27:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:33:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:33:58NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:269:24NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:269:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:289:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:290:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:291:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:316:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:317:40NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:323:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:359:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:363:92NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:401:91NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:453:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:454:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:511:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:515:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:525:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:576:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               camera_pipe_generator.cpp:577:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_mul               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:18:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:27:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:27:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:33:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:33:58NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:269:24NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:269:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:289:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:290:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:291:25NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:316:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:317:40NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:323:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:359:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:363:92NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:401:91NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:453:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:454:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:511:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:515:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:525:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:576:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               camera_pipe_generator.cpp:577:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               Halide.h:13294:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_div_to_sub               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:256:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:256:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:257:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:257:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:258:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:258:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:259:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:259:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:270:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:270:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:271:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:285:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:285:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:285:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:286:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:286:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:286:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:287:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:287:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:287:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:318:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:321:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:326:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:326:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:326:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:327:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:327:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:327:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:330:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:363:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:363:87NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:372:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:401:65NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:453:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:454:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:515:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:576:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               camera_pipe_generator.cpp:577:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_add               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:256:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:256:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:257:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:257:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:258:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:258:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:259:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:259:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:270:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:270:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:271:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:285:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:285:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:285:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:286:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:286:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:286:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:287:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:287:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:287:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:318:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:321:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:326:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:326:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:326:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:327:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:327:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:327:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:330:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:363:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:363:87NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:372:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:401:65NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:453:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:454:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:515:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:576:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               camera_pipe_generator.cpp:577:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_div               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:256:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:256:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:257:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:257:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:258:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:258:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:259:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:259:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:270:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:270:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:271:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:285:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:285:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:285:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:286:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:286:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:286:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:287:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:287:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:287:82NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:318:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:321:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:326:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:326:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:326:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:327:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:327:27NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:327:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:330:42NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:363:61NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:363:87NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:372:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:401:65NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:453:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:454:47NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:515:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:576:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               camera_pipe_generator.cpp:577:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_mul_to_sub               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:70:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:71:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:79:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:80:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:89:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:89:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:90:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:93:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:93:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:94:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:96:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:99:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:111:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:111:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:112:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:113:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:115:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:115:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:116:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:117:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:122:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:122:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:123:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:124:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:126:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:126:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:127:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:128:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:242:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:243:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:269:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:270:68NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:316:36NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:317:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:318:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:321:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:326:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:326:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:326:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:326:69NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:363:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:390:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:393:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               camera_pipe_generator.cpp:396:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               Halide.h:13282:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_add               Halide.h:13285:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:70:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:71:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:79:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:80:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:89:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:89:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:90:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:93:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:93:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:94:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:96:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:99:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:111:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:111:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:112:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:113:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:115:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:115:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:116:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:117:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:122:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:122:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:123:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:124:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:126:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:126:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:127:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:128:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:242:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:243:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:269:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:270:68NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:316:36NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:317:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:318:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:321:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:326:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:326:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:326:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:326:69NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:363:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:390:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:393:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               camera_pipe_generator.cpp:396:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               Halide.h:13282:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_div               Halide.h:13285:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:70:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:71:37NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:79:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:80:34NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:89:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:89:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:90:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:93:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:93:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:94:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:96:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:99:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:111:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:111:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:112:55NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:113:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:115:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:115:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:116:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:117:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:122:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:122:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:123:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:124:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:126:32NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:126:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:127:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:128:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:242:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:243:29NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:269:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:270:68NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:316:36NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:317:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:318:19NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:321:35NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:326:26NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:326:39NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:326:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:326:69NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:363:81NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:390:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:393:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               camera_pipe_generator.cpp:396:51NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               Halide.h:13282:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     arithmetic Halide_sub_to_mul               Halide.h:13285:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  camera_pipe/schedule
+  camera_pipe/generated
