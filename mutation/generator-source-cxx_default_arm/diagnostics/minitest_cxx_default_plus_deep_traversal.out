@@ -1,0 +1,4 @@
+Recording mutation point: cxx_init_const:minitest.cpp:3:13 (end: 3:14) TYPE:int HALIDE_TYPE:0
+Recording mutation point: cxx_init_const:minitest.cpp:8:31 (end: 8:32) TYPE:int HALIDE_TYPE:0
+Recording mutation point: cxx_init_const:minitest.cpp:11:33 (end: 11:34) TYPE:int HALIDE_TYPE:0
+Recording mutation point: cxx_init_const:minitest.cpp:13:32 (end: 13:33) TYPE:int HALIDE_TYPE:0

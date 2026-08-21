@@ -1,0 +1,7 @@
+mutators:
+  - cxx_default
+  - halide_boundary_conditions
+timeout: 99999999
+quiet: false
+includePaths:
+  - .*

@@ -1,0 +1,19 @@
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-14/bin/clang++ -std=c++17 -fsyntax-only -g -grecord-command-line -fplugin=/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so -I /home/ardi/project/dsl_mutants/halide/Halide-mutation/build/include -I /home/ardi/project/dsl_mutants/halide/Halide-mutation/tools -c /home/ardi/project/dsl_mutants/halide/Halide-mutation/apps/camera_pipe/camera_pipe_generator.cpp
+1.	/home/ardi/project/dsl_mutants/halide/Halide-mutation/build/include/Halide.h:29020:1: current parser token 'namespace'
+ #0 0x0000727ca56aa98a llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/lib/x86_64-linux-gnu/libLLVM-14.so.1+0xeaa98a)
+ #1 0x0000727ca56a87df llvm::sys::RunSignalHandlers() (/lib/x86_64-linux-gnu/libLLVM-14.so.1+0xea87df)
+ #2 0x0000727ca56a9cfe llvm::sys::CleanupOnSignal(unsigned long) (/lib/x86_64-linux-gnu/libLLVM-14.so.1+0xea9cfe)
+ #3 0x0000727ca55cfa48 (/lib/x86_64-linux-gnu/libLLVM-14.so.1+0xdcfa48)
+ #4 0x0000727ca4045330 (/lib/x86_64-linux-gnu/libc.so.6+0x45330)
+ #5 0x0000727cabf27903 clang::Expr::getExprLoc() const (/lib/x86_64-linux-gnu/libclang-cpp.so.14+0xd27903)
+ #6 0x0000727ca4714a42 mull::cxx::ASTMutationsSearchVisitor::VisitVarDecl(clang::VarDecl*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x3aa42)
+ #7 0x0000727ca473d6c9 clang::RecursiveASTVisitor<mull::cxx::ASTMutationsSearchVisitor>::TraverseVarDecl(clang::VarDecl*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x636c9)
+ #8 0x0000727ca4721568 clang::RecursiveASTVisitor<mull::cxx::ASTMutationsSearchVisitor>::dataTraverseNode(clang::Stmt*, llvm::SmallVectorImpl<llvm::PointerIntPair<clang::Stmt*, 1u, bool, llvm::PointerLikeTypeTraits<clang::Stmt*>, llvm::PointerIntPairInfo<clang::Stmt*, 1u, llvm::PointerLikeTypeTraits<clang::Stmt*> > > >*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x47568)
+ #9 0x0000727ca471c334 clang::RecursiveASTVisitor<mull::cxx::ASTMutationsSearchVisitor>::TraverseStmt(clang::Stmt*, llvm::SmallVectorImpl<llvm::PointerIntPair<clang::Stmt*, 1u, bool, llvm::PointerLikeTypeTraits<clang::Stmt*>, llvm::PointerIntPairInfo<clang::Stmt*, 1u, llvm::PointerLikeTypeTraits<clang::Stmt*> > > >*) (.constprop.0) MullClangPlugin.cpp:0:0
+#10 0x0000727ca473987e clang::RecursiveASTVisitor<mull::cxx::ASTMutationsSearchVisitor>::TraverseFunctionHelper(clang::FunctionDecl*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x5f87e)
+#11 0x0000727ca473998b clang::RecursiveASTVisitor<mull::cxx::ASTMutationsSearchVisitor>::TraverseFunctionDecl(clang::FunctionDecl*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x5f98b)
+#12 0x0000727ca4739c0e mull::cxx::MullASTConsumer::mutateFunction(clang::FunctionDecl*) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x5fc0e)
+#13 0x0000727ca4739fbb mull::cxx::MullASTConsumer::mutateNestedFunctions(clang::Decl*) (.part.0) MullClangPlugin.cpp:0:0
+#14 0x0000727ca473a232 mull::cxx::MullASTConsumer::HandleTopLevelDecl(clang::DeclGroupRef) (/home/ardi/project/dsl_mutants/halide/mull-ps/output/libmull-cxx-frontend-14.so+0x60232)
