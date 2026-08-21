@@ -1,0 +1,67 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+iir_blur        arithmetic     36       0      0      0   19       0      19    19   0.0% 100.0%
+iir_blur        schedule       17       5      0      6    6       0       2     2   0.0%  33.3%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic     36       0      0      0   19       0      19    19   0.0% 100.0%
+                schedule       17       5      0      6    6       0       2     2   0.0%  33.3%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      3       0      0    3       0       3  100.0%
+Halide_add_to_mul                 arithmetic      3       0      0    3       0       3  100.0%
+Halide_add_to_sub                 arithmetic      3       0      0    3       0       3  100.0%
+Halide_mul_to_add                 arithmetic      4       0      0    4       0       4  100.0%
+Halide_mul_to_div                 arithmetic      4       0      0    4       0       4  100.0%
+Halide_mul_to_sub                 arithmetic      2       0      0    2       0       2  100.0%
+Halide_sub_to_add                 arithmetic      5       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic      6       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic      6       0      0    0       0       0     n/a
+Halide_compute_at_to_store_at     schedule        3       1      2    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        2       2      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        2       2      0    0       0       0     n/a
+Halide_unroll_to_parallel         schedule        2       0      2    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule        2       0      2    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        3       0      0    3       0       2   66.7%
+Halide_vectorize_to_unroll        schedule        3       0      0    3       0       0    0.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  iir_blur        arithmetic Halide_sub_to_add               iir_blur_generator.cpp:25:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_add               iir_blur_generator.cpp:25:34  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_add               iir_blur_generator.cpp:27:27  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_add               iir_blur_generator.cpp:27:32  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_add               iir_blur_generator.cpp:29:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:23:23  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:25:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:25:34  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:27:27  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:27:32  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_div               iir_blur_generator.cpp:29:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:23:23  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:25:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:25:34  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:27:27  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:27:32  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        arithmetic Halide_sub_to_mul               iir_blur_generator.cpp:29:12  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  iir_blur        schedule   Halide_compute_at_to_store_at   iir_blur_generator.cpp:51:18  GEN_ERROR/OK  killed at generation time
+  iir_blur        schedule   Halide_parallel_to_unroll       iir_blur_generator.cpp:46:18  GEN_ERROR/OK  killed at generation time
+  iir_blur        schedule   Halide_parallel_to_unroll       iir_blur_generator.cpp:47:18  GEN_ERROR/OK  killed at generation time
+  iir_blur        schedule   Halide_parallel_to_vectorize    iir_blur_generator.cpp:46:18  GEN_ERROR/OK  killed at generation time
+  iir_blur        schedule   Halide_parallel_to_vectorize    iir_blur_generator.cpp:47:18  GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these

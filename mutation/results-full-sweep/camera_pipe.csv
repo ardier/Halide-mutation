@@ -1,0 +1,25 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,33,17,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,27,17,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,82,21,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.88,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,75,21,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.00,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,130,21,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.77,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,119,21,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.91,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,325,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.92,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,16,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.43,emitted header differs from baseline; driver recompiled
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,39,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.07,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,321,15,OK,1,1,OK,SURVIVED,KILLED,1,0,2.10,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,246,22,OK,1,1,OK,SURVIVED,KILLED,1,0,3.47,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,355,33,OK,1,1,OK,KILLED,KILLED,1,-6,1.41,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,330,34,OK,1,1,OK,SURVIVED,KILLED,1,0,2.97,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,361,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,362,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,33,17,OK,1,1,OK,SURVIVED,KILLED,1,0,3.06,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,27,17,OK,1,1,OK,SURVIVED,KILLED,1,0,1.03,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,75,21,OK,1,1,OK,SURVIVED,KILLED,1,0,3.85,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,82,21,OK,1,1,OK,SURVIVED,KILLED,1,0,4.97,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,119,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.67,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,130,21,OK,1,1,OK,SURVIVED,KILLED,1,0,3.01,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,16,OK,1,1,OK,SURVIVED,KILLED,1,0,0.45,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,325,14,OK,1,1,OK,SURVIVED,KILLED,1,0,4.57,emitted header differs from baseline; driver recompiled
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,39,OK,1,1,OK,SURVIVED,KILLED,1,0,2.63,emitted header differs from baseline; driver recompiled

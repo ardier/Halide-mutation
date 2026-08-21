@@ -1,1 +1,29 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+nl_means,boundary_conditions,Halide_repeat_edge_to_repeat_image,nl_means_generator.cpp,27,24,OK,1,1,OK,SURVIVED,KILLED,1,0,11.24,emitted header differs from baseline; driver recompiled
+nl_means,boundary_conditions,Halide_repeat_edge_to_mirror_image,nl_means_generator.cpp,27,24,OK,1,1,OK,SURVIVED,KILLED,1,0,11.86,emitted header differs from baseline; driver recompiled
+nl_means,boundary_conditions,Halide_repeat_edge_to_mirror_interior,nl_means_generator.cpp,27,24,OK,1,1,OK,SURVIVED,KILLED,1,0,12.44,emitted header differs from baseline; driver recompiled
+nl_means,select_clamp,Halide_clamp_swap_bounds,nl_means_generator.cpp,63,13,OK,1,1,OK,SURVIVED,KILLED,1,0,2.00,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,114,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,138,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,141,15,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,143,33,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,152,20,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_parallel_to_unroll,nl_means_generator.cpp,136,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,120,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_parallel_to_vectorize,nl_means_generator.cpp,136,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+nl_means,schedule,Halide_compute_at_to_store_at,nl_means_generator.cpp,124,15,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_unroll_to_parallel,nl_means_generator.cpp,98,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_unroll_to_parallel,nl_means_generator.cpp,108,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_unroll_to_vectorize,nl_means_generator.cpp,98,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_unroll_to_vectorize,nl_means_generator.cpp,108,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+nl_means,schedule,Halide_unroll_to_parallel,nl_means_generator.cpp,146,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,9.79,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_unroll_to_vectorize,nl_means_generator.cpp,146,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,10.21,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_unroll_to_vectorize,nl_means_generator.cpp,150,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,13.57,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_parallel,nl_means_generator.cpp,137,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,13.59,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_unroll_to_parallel,nl_means_generator.cpp,150,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,79.43,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_parallel,nl_means_generator.cpp,140,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,27.90,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_parallel,nl_means_generator.cpp,147,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,13.38,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_parallel,nl_means_generator.cpp,151,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,12.94,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_parallel,nl_means_generator.cpp,153,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,12.92,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,137,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,10.61,emitted header differs from baseline; driver recompiled
+nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,140,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,14.44,emitted header differs from baseline; driver recompiled

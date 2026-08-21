@@ -1,1 +1,54 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+iir_blur,schedule,Halide_compute_at_to_store_at,iir_blur_generator.cpp,51,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+iir_blur,schedule,Halide_parallel_to_unroll,iir_blur_generator.cpp,46,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+iir_blur,schedule,Halide_parallel_to_unroll,iir_blur_generator.cpp,47,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+iir_blur,schedule,Halide_parallel_to_vectorize,iir_blur_generator.cpp,46,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+iir_blur,schedule,Halide_parallel_to_vectorize,iir_blur_generator.cpp,47,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+iir_blur,schedule,Halide_compute_at_to_store_at,iir_blur_generator.cpp,79,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_compute_at_to_store_at,iir_blur_generator.cpp,108,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_unroll_to_parallel,iir_blur_generator.cpp,91,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_unroll_to_parallel,iir_blur_generator.cpp,94,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_unroll_to_vectorize,iir_blur_generator.cpp,91,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_unroll_to_vectorize,iir_blur_generator.cpp,94,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+iir_blur,schedule,Halide_vectorize_to_parallel,iir_blur_generator.cpp,56,18,OK,1,1,OK,SURVIVED,KILLED,1,0,42.56,emitted header differs from baseline; driver recompiled
+iir_blur,schedule,Halide_vectorize_to_parallel,iir_blur_generator.cpp,59,18,OK,1,1,OK,SURVIVED,KILLED,1,0,45.22,emitted header differs from baseline; driver recompiled
+iir_blur,schedule,Halide_vectorize_to_parallel,iir_blur_generator.cpp,45,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,47.89,emitted header differs from baseline; driver recompiled
+iir_blur,schedule,Halide_vectorize_to_unroll,iir_blur_generator.cpp,45,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,21.68,emitted header differs from baseline; driver recompiled
+iir_blur,schedule,Halide_vectorize_to_unroll,iir_blur_generator.cpp,56,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,18.07,emitted header differs from baseline; driver recompiled
+iir_blur,schedule,Halide_vectorize_to_unroll,iir_blur_generator.cpp,59,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,14.85,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_div,iir_blur_generator.cpp,29,47,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_div,iir_blur_generator.cpp,25,42,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_div,iir_blur_generator.cpp,29,39,OK,1,1,OK,SURVIVED,KILLED,1,0,16.34,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_mul,iir_blur_generator.cpp,25,42,OK,1,1,OK,SURVIVED,KILLED,1,0,3.25,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_mul,iir_blur_generator.cpp,29,47,OK,1,1,OK,SURVIVED,KILLED,1,0,3.68,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_mul,iir_blur_generator.cpp,29,39,OK,1,1,OK,SURVIVED,KILLED,1,0,20.91,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_sub,iir_blur_generator.cpp,25,42,OK,1,1,OK,SURVIVED,KILLED,1,0,20.45,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_sub,iir_blur_generator.cpp,29,47,OK,1,1,OK,SURVIVED,KILLED,1,0,20.42,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_add_to_sub,iir_blur_generator.cpp,29,39,OK,1,1,OK,SURVIVED,KILLED,1,0,20.39,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_add,iir_blur_generator.cpp,25,21,OK,1,1,OK,SURVIVED,KILLED,1,0,22.27,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_add,iir_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,1,0,21.38,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_add,iir_blur_generator.cpp,25,50,OK,1,1,OK,SURVIVED,KILLED,1,0,23.70,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_add,iir_blur_generator.cpp,29,55,OK,1,1,OK,SURVIVED,KILLED,1,0,19.64,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_div,iir_blur_generator.cpp,25,21,OK,1,1,OK,SURVIVED,KILLED,1,0,21.23,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_div,iir_blur_generator.cpp,25,50,OK,1,1,OK,SURVIVED,KILLED,1,0,22.19,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_div,iir_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,1,0,19.82,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_sub,iir_blur_generator.cpp,25,21,OK,1,1,OK,SURVIVED,KILLED,1,0,13.05,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_div,iir_blur_generator.cpp,29,55,OK,1,1,OK,SURVIVED,KILLED,1,0,21.67,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_mul_to_sub,iir_blur_generator.cpp,25,50,OK,1,1,OK,SURVIVED,KILLED,1,0,22.71,emitted header differs from baseline; driver recompiled
+iir_blur,arithmetic,Halide_sub_to_add,iir_blur_generator.cpp,25,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_add,iir_blur_generator.cpp,25,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_add,iir_blur_generator.cpp,27,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_add,iir_blur_generator.cpp,27,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_add,iir_blur_generator.cpp,29,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,25,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,25,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,27,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,27,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_div,iir_blur_generator.cpp,29,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,25,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,25,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,27,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,27,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+iir_blur,arithmetic,Halide_sub_to_mul,iir_blur_generator.cpp,29,12,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
