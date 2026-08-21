@@ -1,0 +1,43 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+depthwise_separable_convschedule       86       5      0     48   33       0       0     0   0.0%   0.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                schedule       86       5      0     48   33       0       0     0   0.0%   0.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_compute_at_to_store_at     schedule        7       3      4    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_unroll_to_parallel         schedule       32       0     21   11       0       0    0.0%
+Halide_unroll_to_vectorize        schedule       32       0     21   11       0       0    0.0%
+Halide_vectorize_to_parallel      schedule        7       0      1    6       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        6       0      1    5       0       0    0.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  depthwise_separable_convschedule   Halide_compute_at_to_store_at   depthwise_separable_conv_generator.cpp:246:33GEN_ERROR/OK  killed at generation time
+  depthwise_separable_convschedule   Halide_compute_at_to_store_at   depthwise_separable_conv_generator.cpp:260:18GEN_ERROR/OK  killed at generation time
+  depthwise_separable_convschedule   Halide_compute_at_to_store_at   depthwise_separable_conv_generator.cpp:273:18GEN_ERROR/OK  killed at generation time
+  depthwise_separable_convschedule   Halide_parallel_to_unroll       depthwise_separable_conv_generator.cpp:244:18GEN_ERROR/OK  killed at generation time
+  depthwise_separable_convschedule   Halide_parallel_to_vectorize    depthwise_separable_conv_generator.cpp:244:18GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  depthwise_separable_conv/arithmetic
+  depthwise_separable_conv/generated

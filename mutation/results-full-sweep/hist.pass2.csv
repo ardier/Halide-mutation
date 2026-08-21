@@ -4,3 +4,42 @@ hist,arithmetic,Halide_add_to_div,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KI
 hist,arithmetic,Halide_add_to_div,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,5.81,emitted header differs from baseline; driver recompiled
 hist,arithmetic,Halide_add_to_div,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.97,emitted header differs from baseline; driver recompiled
 hist,arithmetic,Halide_add_to_div,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,3.40,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,4.97,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,5.74,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,2.42,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,1,0,2.01,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,1,0,6.38,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.12,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,5.84,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,3.47,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,6.97,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,7.00,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,1,0,5.84,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,4.62,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,4.27,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_add,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,6.51,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_add,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.92,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_sub,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_mul,hist_generator.cpp,49,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.72,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,17,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_mul,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.32,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,18,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,19,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_sub,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,49,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,77,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,53,48,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,73,OK,1,1,OK,SURVIVED,KILLED,1,0,5.69,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.11,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,1,0,5.35,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,17,27,OK,1,1,OK,SURVIVED,KILLED,1,0,6.38,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,18,27,OK,1,1,OK,SURVIVED,KILLED,1,0,4.34,emitted header differs from baseline; driver recompiled
