@@ -1,0 +1,6 @@
+mutators:
+  - cxx_default
+timeout: 99999999
+quiet: false
+includePaths:
+  - .*
