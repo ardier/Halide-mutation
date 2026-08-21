@@ -1,0 +1,97 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+unsharp         arithmetic    144       0      0     12   74       0      74    74   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    144       0      0     12   74       0      74    74   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     20       0      0   20       0      20  100.0%
+Halide_add_to_mul                 arithmetic     20       0      0   20       0      20  100.0%
+Halide_add_to_sub                 arithmetic     20       0      0   20       0      20  100.0%
+Halide_div_to_add                 arithmetic      4       0      2    2       0       2  100.0%
+Halide_div_to_mul                 arithmetic      4       0      2    2       0       2  100.0%
+Halide_div_to_sub                 arithmetic      4       0      2    2       0       2  100.0%
+Halide_mul_to_add                 arithmetic     15       0      6    8       0       8  100.0%
+Halide_mul_to_div                 arithmetic     18       0      0    0       0       0     n/a
+Halide_mul_to_sub                 arithmetic     18       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic      7       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic      7       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic      7       0      0    0       0       0     n/a
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  unsharp         arithmetic Halide_mul_to_add               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:18:28   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:18:37   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:18:45   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:18:73   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:23:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:24:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:25:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:28:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:29:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:31:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:33:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:37:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:38:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:40:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:42:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:46:27   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               unsharp_generator.cpp:51:39   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_div               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:18:28   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:18:37   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:18:45   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:18:73   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:23:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:24:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:25:30   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:28:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:29:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:31:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:33:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:37:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:38:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:40:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:42:35   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:46:27   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               unsharp_generator.cpp:51:39   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_mul_to_sub               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:29:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:31:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:33:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:38:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:40:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:42:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_add               unsharp_generator.cpp:46:40   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:29:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:31:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:33:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:38:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:40:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:42:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_div               unsharp_generator.cpp:46:40   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:29:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:31:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:33:48   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:38:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:40:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:42:47   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  unsharp         arithmetic Halide_sub_to_mul               unsharp_generator.cpp:46:40   NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
