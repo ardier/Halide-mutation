@@ -23,7 +23,10 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path("/home/ardi/project/dsl_mutants/halide")
-HAL = ROOT / "Halide-mutation"
+HAL = ROOT / "Halide-mutation-wip-c"
+# The Halide build tree is untracked, so it lives in the original worktree
+# only and is shared rather than duplicated.
+BUILD = ROOT / "Halide-mutation" / "build"
 WORK = ROOT / "sweep-work"
 RES = WORK / "results"
 LOGS = WORK / "logs"
@@ -103,6 +106,7 @@ def run_app(app, workers):
     cmd = [
         sys.executable, "-m", "halidemut",
         "--halide-root", str(HAL),
+        "--halide-build", str(BUILD),
         "--mull-output", str(ROOT / "mull-ps" / "output"),
         "--workdir", str(WORK / "run" / app),
         "--apps", app,

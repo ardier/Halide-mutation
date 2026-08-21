@@ -1,0 +1,71 @@
+[1/84] blur                      select_clamp              0  
+[2/84] blur                      boundary_conditions       0  
+[3/84] blur                      if_then_else              0  
+[4/84] blur                      generated                 0  
+[5/84] bilateral_grid            boundary_conditions       3  
+[6/84] blur                      schedule                 21  
+[7/84] bilateral_grid            generated                 1  
+[8/84] blur                      arithmetic               30  
+[9/84] bilateral_grid            select_clamp              2  
+[10/84] bilateral_grid            if_then_else              0  
+[11/84] harris                    generated                 0  
+[12/84] harris                    boundary_conditions       0  
+[13/84] harris                    select_clamp              0  
+[14/84] harris                    if_then_else              0  
+[15/84] unsharp                   schedule                 27  
+[16/84] bilateral_grid            schedule                 37  
+[17/84] unsharp                   boundary_conditions       3  
+[18/84] unsharp                   generated                 2  
+[19/84] unsharp                   select_clamp              0  
+[20/84] harris                    schedule                 50  
+[21/84] unsharp                   if_then_else              0  
+[22/84] camera_pipe               generated                22  
+[23/84] camera_pipe               boundary_conditions       0  
+[24/84] camera_pipe               select_clamp             15  
+[25/84] camera_pipe               if_then_else              9  
+[26/84] camera_pipe               schedule                 64  
+[27/84] unsharp                   arithmetic              147  
+[28/84] bgu                       generated                12  
+[29/84] harris                    arithmetic              237  
+[30/84] bgu                       boundary_conditions       6  
+[31/84] bgu                       select_clamp              4  
+[32/84] bgu                       if_then_else             -1  ERR
+      bgu/if_then_else: instrumentation failed
+      at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking at function: constant_fold_cmp_op
+      HandleTopLevelDecl: Looking a
+[33/84] c_backend                 arithmetic               27  
+[34/84] c_backend                 schedule                  2  
+[35/84] c_backend                 generated                 1  
+[36/84] c_backend                 boundary_conditions       0  
+[37/84] c_backend                 select_clamp              2  
+[38/84] c_backend                 if_then_else              0  
+[39/84] conv_layer                arithmetic                9  
+[40/84] conv_layer                generated                 2  
+[41/84] conv_layer                boundary_conditions       0  
+[42/84] bilateral_grid            arithmetic              198  
+[43/84] conv_layer                select_clamp              0  
+[44/84] conv_layer                if_then_else              0  
+[45/84] conv_layer                schedule                 67  
+[46/84] depthwise_separable_conv  arithmetic               33  
+[47/84] depthwise_separable_conv  boundary_conditions       0  
+[48/84] depthwise_separable_conv  generated                17  
+[49/84] depthwise_separable_conv  select_clamp              3  
+[50/84] depthwise_separable_conv  if_then_else              1  
+[51/84] bgu                       schedule                 65  
+[52/84] hist                      generated                 2  
+[53/84] hist                      boundary_conditions       0  
+[54/84] hist                      select_clamp              6  
+[55/84] hist                      if_then_else              0  
+[56/84] depthwise_separable_conv  schedule                 87  
+[57/84] iir_blur                  arithmetic               39  
+[58/84] iir_blur                  schedule                 17  
+[59/84] iir_blur                  generated                 0  
+[60/84] camera_pipe               arithmetic              507  

@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path("/home/ardi/project/dsl_mutants/halide")
 WORK = ROOT / "sweep-work"
-sys.path.insert(0, str(ROOT / "Halide-mutation" / "mutation"))
+sys.path.insert(0, str(ROOT / "Halide-mutation-wip-c" / "mutation"))
 from halidemut.apps import APPS, ARMS, ARM_FAMILY, ARM_ROUTE  # noqa: E402
 
 CENSUS = json.loads((WORK / "census" / "census.json").read_text())

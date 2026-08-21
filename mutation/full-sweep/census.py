@@ -11,14 +11,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path("/home/ardi/project/dsl_mutants/halide")
-sys.path.insert(0, str(ROOT / "Halide-mutation" / "mutation"))
+sys.path.insert(0, str(ROOT / "Halide-mutation-wip-c" / "mutation"))
 
 from halidemut.apps import APPS, ARMS, ARM_ROUTE
 from halidemut.pipeline import Pipeline, PipelineError
 
 WORK = Path("/home/ardi/project/dsl_mutants/halide/sweep-work/census")
 pipeline = Pipeline(
-    halide_root=ROOT / "Halide-mutation",
+    halide_root=ROOT / "Halide-mutation-wip-c",
+    # The build tree is untracked and shared: it is not duplicated per
+    # worktree, so point at the original explicitly.
     halide_build=ROOT / "Halide-mutation" / "build",
     mull_output=ROOT / "mull-ps" / "output",
     llvm_prefix=Path("/usr/lib/llvm-14"),
