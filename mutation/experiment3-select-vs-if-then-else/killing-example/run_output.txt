@@ -1,0 +1,15 @@
+Using Halide build at: /dev/shm/ardi_dslmut/halide-build
+
+=== ORIGINAL (select) ===
+required input extent (bounds query) = [0, 100010), extent=100010
+build = ORIGINAL (select)
+test 'required extent covers both branches (>= 100010)': PASS
+exit code: 0
+
+=== MUTANT (if_then_else) ===
+required input extent (bounds query) = [0, 10), extent=10
+build = MUTANT (if_then_else)
+test 'required extent covers both branches (>= 100010)': FAIL
+exit code: 1
+
+VERDICT: mutant KILLED (test passes on original, fails on mutant).
