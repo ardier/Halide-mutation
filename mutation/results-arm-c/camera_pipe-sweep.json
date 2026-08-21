@@ -1,0 +1,14 @@
+{
+  "app": "camera_pipe",
+  "status": "COMPLETE",
+  "mutants": 1163,
+  "swept": 1163,
+  "o1_killed": 224,
+  "o2_killed": 948,
+  "o2_independent": true,
+  "baseline_seconds": 2.38,
+  "sweep_seconds": 117.9,
+  "csv": "/mnt/scratch1/ardi/dsl_mut/HM-armc-fix/mutation/results-arm-c/camera_pipe-cxx_default.csv",
+  "raw_candidates": null,
+  "compile_seconds": 413.4
+}

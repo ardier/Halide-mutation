@@ -12,10 +12,35 @@ many of each does the benchmark's own test suite kill.
 
 Full tables: `COMPARISON.txt` (regenerate with
 `python3 ../lowered-cpp/cxx_default_arm/compare_arms.py`). Per-mutant data:
-`<app>-cxx_default.csv`. Per-app run metadata: `<app>-sweep.json`. The three
-benchmarks with no arm-C data: `BLOCKED.md`.
+`<app>-cxx_default.csv`. Per-app run metadata: `<app>-sweep.json`. The two
+benchmarks with no arm-C data, and `camera_pipe`'s unblocking: `BLOCKED.md`.
 
-## Coverage
+## Update (2026-08-21): `camera_pipe` unblocked, 11 of 13 now comparable
+
+`camera_pipe` was excluded below as one of two "Halide C backend emits invalid
+C++" benchmarks. It no longer is: the specific bug (`.prefetch()` lowering to
+a `void` result assigned to `uint16_t`) is fixed upstream in Halide v21, and
+the same one-line transformation v21's C backend applies automatically was
+reproduced mechanically on this arm's own (older) toolchain — add-only, no
+existing expression touched, verified compile-clean before/after with a bare
+`clang++ -fsyntax-only`. Full detail and the exact diff: `BLOCKED.md`.
+
+Full sweep, same mechanism as the other 10: **1,163 mutants, 100% swept, O1
+19.3% (224), O2 81.5% (948)** — `camera_pipe-cxx_default.csv` /
+`camera_pipe-sweep.json`. The numbers in the rest of this document (coverage,
+headline mutant count, headline kill rate, like-for-like arithmetic, cost
+table) were written before this and describe the 10-benchmark corpus; they are
+left as originally reported rather than silently edited. `COMPARISON.txt` is
+regenerated and reflects all 11 comparable benchmarks — read it, not the
+prose below, for current totals.
+
+`bgu`, the other C-backend-invalid benchmark, has its compile error fixed the
+same way but still produces no arm-C data, for an unrelated, separately
+diagnosed reason (Mull's own instrumentation does not complete in practical
+time on its emitted file). `BLOCKED.md` has the full writeup, including why
+this is a different failure mode from `lens_blur`'s.
+
+## Coverage (as of the original 10-benchmark run; see update above for `camera_pipe`)
 
 10 of the 13 Table-4 benchmarks have arm-C data; 9 of those are complete sweeps
 of every mutation point, `nl_means` is 1250 of 2128 in shuffled order. Before
@@ -124,10 +149,22 @@ earlier truncated runs wherever those got far enough to report a total
 | bilateral_grid | 5,973 | 9,858 | 1,348 | 332 | 1,759 |
 | depthwise_separable_conv | 7,064 | 11,606 | 1,822 | 735 | 53 |
 | nl_means | 7,554 | — | 2,128 | 2,689 | 4,074 (59% swept) |
+| camera_pipe (unblocked) | 6,337 | 1,163 | 1,163 | 413 | 118 |
 | lens_blur | 14,805 | — | — | >7,470, stopped | — |
+| bgu (compile fixed, instrument not tractable) | 16,164 | — | — | >5,220, stopped (2 attempts) | — |
 
 Instrumentation cost is superlinear in emitted-file size and is what stops
 `lens_blur`: 2 h 04 min at 84 GB RSS with no output, on a machine with 8x the
 RAM of the one that OOM-killed the same step. Sweep cost is dominated by how
 long the benchmark's own driver runs, not by mutant count — `depthwise_separable_conv`
 sweeps 1,822 mutants in 53 s while `max_filter` needs 36 minutes for 605.
+`camera_pipe`, once unblocked, instruments in line with its size (bigger than
+`nl_means`'s line count would suggest, but far denser in resolved candidates
+per line than the RAM-heavy tail below it). `bgu` is a distinct, worse case
+than `lens_blur` on the same axis: its emitted file is the largest in the
+corpus (16,164 lines), and unlike `lens_blur` it does not fail on memory (RSS
+plateaus safely near 73 GB) — it fails on wall-clock time in Mull's
+single-threaded mutation-application phase. See `BLOCKED.md` for the full
+two-attempt account (a stack-overflow crash on the first attempt, fixed by
+raising the process stack limit; a ~87-minute run that still had not finished
+on the second).
