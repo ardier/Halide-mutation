@@ -1,1 +1,2 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+lens_blur,arithmetic,Halide_add_to_div,lens_blur_generator.cpp,34,60,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.14,emitted header differs from baseline; driver recompiled
