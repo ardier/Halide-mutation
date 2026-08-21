@@ -1,0 +1,8 @@
+[HalideReplacement] irm::Halide_add_assign_to_sub_assign at apps/bilateral_grid/bilateral_grid_generator.cpp:29:32: applied
+[HalideReplacement] mutate() calls: total=1
+[HalideReplacement]   applied                      1
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

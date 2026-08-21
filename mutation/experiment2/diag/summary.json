@@ -1,0 +1,47 @@
+{
+  "blur__arithmetic": {
+    "n_mutants": 30
+  },
+  "blur__schedule": {
+    "n_mutants": 21
+  },
+  "blur__generated": {
+    "n_mutants": 0
+  },
+  "bilateral_grid__arithmetic": {
+    "n_mutants": 198
+  },
+  "bilateral_grid__schedule": {
+    "n_mutants": 37
+  },
+  "bilateral_grid__generated": {
+    "n_mutants": 1
+  },
+  "harris__arithmetic": {
+    "n_mutants": 236
+  },
+  "harris__schedule": {
+    "n_mutants": 50
+  },
+  "harris__generated": {
+    "n_mutants": 0
+  },
+  "camera_pipe__arithmetic": {
+    "n_mutants": 507
+  },
+  "camera_pipe__schedule": {
+    "n_mutants": 64
+  },
+  "camera_pipe__generated": {
+    "n_mutants": 22
+  },
+  "unsharp__arithmetic": {
+    "n_mutants": 147
+  },
+  "unsharp__schedule": {
+    "n_mutants": 27
+  },
+  "unsharp__generated": {
+    "n_mutants": 2
+  }
+}

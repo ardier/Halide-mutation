@@ -1,0 +1,352 @@
+[
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:81:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 81,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:87:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 87,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:91:20",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 91,
+    "column": 20
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:94:20",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 94,
+    "column": 20
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:99:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 99,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:104:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 104,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:115:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 115,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:118:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 118,
+    "column": 22
+  },
+  {
+    "key": "Halide_compute_at_to_store_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:121:22",
+    "mutator": "Halide_compute_at_to_store_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 121,
+    "column": 22
+  },
+  {
+    "key": "Halide_parallel_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:112:22",
+    "mutator": "Halide_parallel_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 112,
+    "column": 22
+  },
+  {
+    "key": "Halide_parallel_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:112:22",
+    "mutator": "Halide_parallel_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 112,
+    "column": 22
+  },
+  {
+    "key": "Halide_store_at_to_compute_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:114:22",
+    "mutator": "Halide_store_at_to_compute_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 114,
+    "column": 22
+  },
+  {
+    "key": "Halide_store_at_to_compute_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:117:20",
+    "mutator": "Halide_store_at_to_compute_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 117,
+    "column": 20
+  },
+  {
+    "key": "Halide_store_at_to_compute_at:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:120:20",
+    "mutator": "Halide_store_at_to_compute_at",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 120,
+    "column": 20
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:80:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 80,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:84:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 84,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:85:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 85,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:89:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 89,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:90:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 90,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:93:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 93,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:96:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 96,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:101:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 101,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:102:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 102,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:106:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 106,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:107:22",
+    "mutator": "Halide_unroll_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 107,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:80:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 80,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:84:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 84,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:85:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 85,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:89:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 89,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:90:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 90,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:93:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 93,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:96:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 96,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:101:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 101,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:102:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 102,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:106:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 106,
+    "column": 22
+  },
+  {
+    "key": "Halide_unroll_to_vectorize:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:107:22",
+    "mutator": "Halide_unroll_to_vectorize",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 107,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:88:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 88,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:100:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 100,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:105:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 105,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:113:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 113,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:116:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 116,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:119:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 119,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_parallel:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:122:22",
+    "mutator": "Halide_vectorize_to_parallel",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 122,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:88:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 88,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:100:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 100,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:105:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 105,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:113:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 113,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:116:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 116,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:119:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 119,
+    "column": 22
+  },
+  {
+    "key": "Halide_vectorize_to_unroll:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp:122:22",
+    "mutator": "Halide_vectorize_to_unroll",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/harris/harris_generator.cpp",
+    "line": 122,
+    "column": 22
+  }
+]

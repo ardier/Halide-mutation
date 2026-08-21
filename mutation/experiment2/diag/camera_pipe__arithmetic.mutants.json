@@ -1,0 +1,3551 @@
+[
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:43",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:47",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:72:32",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 72,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:73:34",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 73,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:77:35",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 77,
+    "column": 35
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:78:37",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 78,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:33",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:33",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:59",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:33",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:59",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:33",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:62",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:32",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:62",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:51",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:62",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:32",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:62",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:51",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:55",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:32",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:55",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:44",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:44",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:32",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:44",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:33",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:43",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:46",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 46
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:45",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:45",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:43",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:27",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:47",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:67",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:27",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:47",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:67",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:27",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:47",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:67",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:301:21",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 301,
+    "column": 21
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:57",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:31",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 31
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:51",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:362:34",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 362,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:75",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:81",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 81
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:88",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 88
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:48",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:29",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 29
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:37",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:43",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:47",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:72:32",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 72,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:73:34",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 73,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:77:35",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 77,
+    "column": 35
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:78:37",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 78,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:33",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:33",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:59",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:33",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:59",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:33",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:62",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:32",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:62",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:51",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:62",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:32",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:62",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:51",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:55",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:32",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:55",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:44",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:44",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:32",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:44",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:33",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:43",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:46",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 46
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:45",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:45",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:43",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:27",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:47",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:67",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:27",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:47",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:67",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:27",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:47",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:67",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:301:21",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 301,
+    "column": 21
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:57",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:31",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 31
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:51",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:362:34",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 362,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:75",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:81",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 81
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:88",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 88
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:48",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:29",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 29
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:37",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:43",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:47",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:72:32",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 72,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:73:34",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 73,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:77:35",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 77,
+    "column": 35
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:78:37",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 78,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:33",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:33",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:59",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:33",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:97:59",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 97,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:33",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:100:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 100,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:62",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:32",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:62",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:51",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:62",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:32",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:62",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 62
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:51",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:55",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:32",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:55",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:44",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:44",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:32",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 32
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:44",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 44
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:33",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 33
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:43",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:46",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 46
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:45",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:45",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:43",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 43
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:27",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:47",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:67",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:27",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:47",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:67",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:27",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 27
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:47",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:67",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:301:21",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 301,
+    "column": 21
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:57",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:31",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 31
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:51",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 51
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:362:34",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 362,
+    "column": 34
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:75",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:81",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 81
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:88",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 88
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:48",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:29",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 29
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:412:37",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 412,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:52",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:42",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:55",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 55
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:45",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 45
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:58",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 58
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:24",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 24
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:48",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 48
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:289:25",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 289,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:290:25",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 290,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:291:25",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 291,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:26",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 26
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:40",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 40
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:323:27",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 323,
+    "column": 27
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:359:22",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 359,
+    "column": 22
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:92",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 92
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:91",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 91
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:41",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:42",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:511:52",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 511,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:34",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 34
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:525:43",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 525,
+    "column": 43
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:39",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 39
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:38",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 38
+  },
+  {
+    "key": "Halide_div_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13294:25",
+    "mutator": "Halide_div_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13294,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:52",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:42",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:55",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 55
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:45",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 45
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:58",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 58
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:24",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 24
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:48",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 48
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:289:25",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 289,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:290:25",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 290,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:291:25",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 291,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:26",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 26
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:40",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 40
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:323:27",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 323,
+    "column": 27
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:359:22",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 359,
+    "column": 22
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:92",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 92
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:91",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 91
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:41",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:42",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:511:52",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 511,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:34",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 34
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:525:43",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 525,
+    "column": 43
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:39",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 39
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:38",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 38
+  },
+  {
+    "key": "Halide_div_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13294:25",
+    "mutator": "Halide_div_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13294,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:18:52",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 18,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:42",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:27:55",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 27,
+    "column": 55
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:45",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 45
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:33:58",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 33,
+    "column": 58
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:24",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 24
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:48",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 48
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:289:25",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 289,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:290:25",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 290,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:291:25",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 291,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:26",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 26
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:40",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 40
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:323:27",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 323,
+    "column": 27
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:359:22",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 359,
+    "column": 22
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:92",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 92
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:91",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 91
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:41",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:42",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 42
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:511:52",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 511,
+    "column": 52
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:34",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 34
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:525:43",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 525,
+    "column": 43
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:39",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 39
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:38",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 38
+  },
+  {
+    "key": "Halide_div_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13294:25",
+    "mutator": "Halide_div_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13294,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:41",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:48",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:41",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:41",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:48",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:41",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:35",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:63",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:271:38",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 271,
+    "column": 38
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:42",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:62",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:82",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:42",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:62",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:82",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:42",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:62",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:82",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:26",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 26
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:45",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 45
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:31",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 31
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:44",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 44
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:61",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:23",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 23
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:27",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 27
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:35",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:42",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:61",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:87",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 87
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:372:54",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 372,
+    "column": 54
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:65",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 65
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:46",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 46
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:47",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 47
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:39",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 39
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13288:25",
+    "mutator": "Halide_mul_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13288,
+    "column": 25
+  },
+  {
+    "key": "Halide_mul_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13291:20",
+    "mutator": "Halide_mul_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13291,
+    "column": 20
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:41",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:48",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:41",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:41",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:48",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:41",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:35",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:63",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:271:38",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 271,
+    "column": 38
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:42",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:62",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:82",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:42",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:62",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:82",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:42",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:62",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:82",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:26",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 26
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:45",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 45
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:31",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 31
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:44",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 44
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:61",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:23",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 23
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:27",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 27
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:35",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:42",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:61",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:87",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 87
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:372:54",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 372,
+    "column": 54
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:65",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 65
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:46",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 46
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:47",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 47
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:39",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 39
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13288:25",
+    "mutator": "Halide_mul_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13288,
+    "column": 25
+  },
+  {
+    "key": "Halide_mul_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13291:20",
+    "mutator": "Halide_mul_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13291,
+    "column": 20
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:41",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:256:48",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 256,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:41",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:257:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 257,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:41",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:258:48",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 258,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:41",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 41
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:259:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 259,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:35",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:63",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:271:38",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 271,
+    "column": 38
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:42",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:62",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:285:82",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 285,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:42",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:62",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:286:82",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 286,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:42",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:62",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 62
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:287:82",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 287,
+    "column": 82
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:26",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 26
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:45",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 45
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:31",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 31
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:44",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 44
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:61",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:23",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 23
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:27",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 27
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:327:35",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 327,
+    "column": 35
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:330:42",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 330,
+    "column": 42
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:61",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 61
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:87",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 87
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:372:54",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 372,
+    "column": 54
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:401:65",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 401,
+    "column": 65
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:453:46",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 453,
+    "column": 46
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:454:47",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 454,
+    "column": 47
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:515:39",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 515,
+    "column": 39
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:576:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 576,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:577:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 577,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13288:25",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13288,
+    "column": 25
+  },
+  {
+    "key": "Halide_mul_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13291:20",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13291,
+    "column": 20
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:70:35",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 70,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:71:37",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 71,
+    "column": 37
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:79:32",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 79,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:80:34",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 80,
+    "column": 34
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:56",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 56
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:45",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:59",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:59",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:32",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:55",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:55",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:44",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:32",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:44",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:44",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:32",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:62",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:62",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:51",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:32",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:62",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:62",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:51",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:26",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:29",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 29
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:33",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:68",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 68
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:36",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 36
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:19",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:19",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:35",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:26",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:39",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 39
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:52",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 52
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:69",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 69
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:81",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 81
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:45",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:44",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:396:51",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 396,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13282:25",
+    "mutator": "Halide_sub_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13282,
+    "column": 25
+  },
+  {
+    "key": "Halide_sub_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13285:20",
+    "mutator": "Halide_sub_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13285,
+    "column": 20
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:70:35",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 70,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:71:37",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 71,
+    "column": 37
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:79:32",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 79,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:80:34",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 80,
+    "column": 34
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:56",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 56
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:45",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:59",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:59",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:32",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:55",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:55",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:44",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:32",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:44",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:44",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:32",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:62",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:62",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:51",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:32",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:62",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:62",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:51",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:26",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:29",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 29
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:33",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:68",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 68
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:36",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 36
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:19",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:19",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:35",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:26",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:39",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 39
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:52",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 52
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:69",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 69
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:81",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 81
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:45",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:44",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:396:51",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 396,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13282:25",
+    "mutator": "Halide_sub_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13282,
+    "column": 25
+  },
+  {
+    "key": "Halide_sub_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13285:20",
+    "mutator": "Halide_sub_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13285,
+    "column": 20
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:70:35",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 70,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:71:37",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 71,
+    "column": 37
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:79:32",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 79,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:80:34",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 80,
+    "column": 34
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:89:56",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 89,
+    "column": 56
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:90:45",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 90,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:93:59",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 93,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:94:59",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 94,
+    "column": 59
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:96:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 96,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:99:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 99,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:32",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:111:55",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 111,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:112:55",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 112,
+    "column": 55
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:113:44",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 113,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:32",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:115:44",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 115,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:116:44",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 116,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:117:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 117,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:32",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:122:62",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 122,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:123:62",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 123,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:124:51",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 124,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:32",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 32
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:126:62",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 126,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:127:62",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 127,
+    "column": 62
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:128:51",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 128,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:242:26",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 242,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:243:29",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 243,
+    "column": 29
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:269:33",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 269,
+    "column": 33
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:270:68",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 270,
+    "column": 68
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:316:36",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 316,
+    "column": 36
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:317:19",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 317,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:318:19",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 318,
+    "column": 19
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:321:35",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 321,
+    "column": 35
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:26",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 26
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:39",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 39
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:52",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 52
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:326:69",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 326,
+    "column": 69
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:363:81",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 363,
+    "column": 81
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:390:45",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 390,
+    "column": 45
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:393:44",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 393,
+    "column": 44
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp:396:51",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/camera_pipe/camera_pipe_generator.cpp",
+    "line": 396,
+    "column": 51
+  },
+  {
+    "key": "Halide_sub_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13282:25",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13282,
+    "column": 25
+  },
+  {
+    "key": "Halide_sub_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13285:20",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13285,
+    "column": 20
+  }
+]

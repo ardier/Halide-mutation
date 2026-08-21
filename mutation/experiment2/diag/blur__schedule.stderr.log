@@ -1,0 +1,28 @@
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/blur/halide_blur_generator.cpp:53:24: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/blur/halide_blur_generator.cpp:96:18: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/blur/halide_blur_generator.cpp:109:18: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/blur/halide_blur_generator.cpp:92:18: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/blur/halide_blur_generator.cpp:105:18: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/blur/halide_blur_generator.cpp:92:18: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/blur/halide_blur_generator.cpp:105:18: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/blur/halide_blur_generator.cpp:95:18: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/blur/halide_blur_generator.cpp:108:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/blur/halide_blur_generator.cpp:65:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/blur/halide_blur_generator.cpp:76:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/blur/halide_blur_generator.cpp:65:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/blur/halide_blur_generator.cpp:76:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/blur/halide_blur_generator.cpp:93:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/blur/halide_blur_generator.cpp:97:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/blur/halide_blur_generator.cpp:106:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/blur/halide_blur_generator.cpp:110:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/blur/halide_blur_generator.cpp:93:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/blur/halide_blur_generator.cpp:97:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/blur/halide_blur_generator.cpp:106:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/blur/halide_blur_generator.cpp:110:18: applied
+[HalideReplacement] mutate() calls: total=21
+[HalideReplacement]   applied                      21
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

@@ -1,0 +1,29 @@
+[HalideReplacement] irm::Halide_div_assign_to_mul_assign at apps/camera_pipe/camera_pipe_generator.cpp:313:12: applied
+[HalideReplacement] irm::Halide_div_assign_to_mul_assign at apps/camera_pipe/camera_pipe_generator.cpp:314:12: applied
+[HalideReplacement] irm::Halide_gt_to_ge at apps/camera_pipe/camera_pipe_generator.cpp:332:48: applied
+[HalideReplacement] irm::Halide_gt_to_le at apps/camera_pipe/camera_pipe_generator.cpp:332:48: applied
+[HalideReplacement] irm::Halide_le_to_gt at apps/camera_pipe/camera_pipe_generator.cpp:332:25: applied
+[HalideReplacement] irm::Halide_le_to_lt at apps/camera_pipe/camera_pipe_generator.cpp:332:25: applied
+[HalideReplacement] irm::Halide_rem_to_div at apps/camera_pipe/camera_pipe_generator.cpp:360:21: applied
+[HalideReplacement] irm::Halide_max_to_min at /dev/shm/ardi_dslmut/halide16-build/include/Halide.h:16267:12: applied
+[HalideReplacement] irm::Halide_lt_to_ge at apps/camera_pipe/camera_pipe_generator.cpp:75:34: applied
+[HalideReplacement] irm::Halide_lt_to_ge at apps/camera_pipe/camera_pipe_generator.cpp:82:34: applied
+[HalideReplacement] irm::Halide_lt_to_ge at apps/camera_pipe/camera_pipe_generator.cpp:119:34: applied
+[HalideReplacement] irm::Halide_lt_to_ge at apps/camera_pipe/camera_pipe_generator.cpp:130:34: applied
+[HalideReplacement] irm::Halide_lt_to_le at apps/camera_pipe/camera_pipe_generator.cpp:75:34: applied
+[HalideReplacement] irm::Halide_lt_to_le at apps/camera_pipe/camera_pipe_generator.cpp:82:34: applied
+[HalideReplacement] irm::Halide_lt_to_le at apps/camera_pipe/camera_pipe_generator.cpp:119:34: applied
+[HalideReplacement] irm::Halide_lt_to_le at apps/camera_pipe/camera_pipe_generator.cpp:130:34: applied
+[HalideReplacement] irm::Halide_eq_to_ne at apps/camera_pipe/camera_pipe_generator.cpp:33:32: applied
+[HalideReplacement] irm::Halide_rem_to_div at apps/camera_pipe/camera_pipe_generator.cpp:33:27: applied
+[HalideReplacement] irm::Halide_eq_to_ne at apps/camera_pipe/camera_pipe_generator.cpp:27:32: applied
+[HalideReplacement] irm::Halide_rem_to_div at apps/camera_pipe/camera_pipe_generator.cpp:27:27: applied
+[HalideReplacement] irm::Halide_gt_to_ge at /dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13306:25: applied
+[HalideReplacement] irm::Halide_gt_to_le at /dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13306:25: applied
+[HalideReplacement] mutate() calls: total=22
+[HalideReplacement]   applied                      22
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

@@ -1,0 +1,44 @@
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/bilateral_grid/bilateral_grid_generator.cpp:101:43: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/bilateral_grid/bilateral_grid_generator.cpp:120:26: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/bilateral_grid/bilateral_grid_generator.cpp:129:19: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/bilateral_grid/bilateral_grid_generator.cpp:133:23: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/bilateral_grid/bilateral_grid_generator.cpp:142:19: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:139:18: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:149:18: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:139:18: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:149:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:102:77: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:110:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:117:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:132:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:136:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:141:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:147:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:102:77: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:110:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:117:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:132:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:136:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:141:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/bilateral_grid/bilateral_grid_generator.cpp:147:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:109:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:116:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:120:57: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:131:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:140:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:146:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/bilateral_grid/bilateral_grid_generator.cpp:150:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:109:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:116:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:120:57: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:131:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:140:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:146:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/bilateral_grid/bilateral_grid_generator.cpp:150:18: applied
+[HalideReplacement] mutate() calls: total=37
+[HalideReplacement]   applied                      37
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

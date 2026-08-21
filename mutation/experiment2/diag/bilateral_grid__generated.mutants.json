@@ -1,0 +1,9 @@
+[
+  {
+    "key": "Halide_add_assign_to_sub_assign:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:29:32",
+    "mutator": "Halide_add_assign_to_sub_assign",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 29,
+    "column": 32
+  }
+]

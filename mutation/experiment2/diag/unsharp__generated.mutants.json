@@ -1,0 +1,16 @@
+[
+  {
+    "key": "Halide_negate_to_bitwise_not:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/unsharp/unsharp_generator.cpp:18:25",
+    "mutator": "Halide_negate_to_bitwise_not",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/unsharp/unsharp_generator.cpp",
+    "line": 18,
+    "column": 25
+  },
+  {
+    "key": "Halide_negate_to_not:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/unsharp/unsharp_generator.cpp:18:25",
+    "mutator": "Halide_negate_to_not",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/unsharp/unsharp_generator.cpp",
+    "line": 18,
+    "column": 25
+  }
+]

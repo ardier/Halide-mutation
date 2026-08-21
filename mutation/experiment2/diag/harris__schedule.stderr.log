@@ -1,0 +1,57 @@
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:81:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:87:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:91:20: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:94:20: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:99:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:104:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:115:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:118:22: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/harris/harris_generator.cpp:121:22: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/harris/harris_generator.cpp:112:22: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/harris/harris_generator.cpp:112:22: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/harris/harris_generator.cpp:114:22: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/harris/harris_generator.cpp:117:20: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/harris/harris_generator.cpp:120:20: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:80:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:84:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:85:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:89:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:90:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:93:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:96:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:101:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:102:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:106:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/harris/harris_generator.cpp:107:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:80:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:84:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:85:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:89:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:90:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:93:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:96:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:101:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:102:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:106:22: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/harris/harris_generator.cpp:107:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:88:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:100:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:105:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:113:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:116:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:119:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/harris/harris_generator.cpp:122:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:88:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:100:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:105:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:113:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:116:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:119:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/harris/harris_generator.cpp:122:22: applied
+[HalideReplacement] mutate() calls: total=50
+[HalideReplacement]   applied                      50
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

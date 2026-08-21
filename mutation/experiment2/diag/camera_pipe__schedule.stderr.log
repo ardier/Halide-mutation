@@ -1,0 +1,71 @@
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:476:16: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:480:19: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:487:18: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:493:23: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:531:14: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:540:14: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:548:14: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:557:14: applied
+[HalideReplacement] irm::Halide_parallel_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:528:14: applied
+[HalideReplacement] irm::Halide_parallel_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:528:14: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/camera_pipe/camera_pipe_generator.cpp:532:14: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/camera_pipe/camera_pipe_generator.cpp:541:14: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/camera_pipe/camera_pipe_generator.cpp:549:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:473:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:477:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:481:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:489:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:490:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:494:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:497:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:527:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:537:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:545:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:553:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:554:14: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:560:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:473:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:477:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:481:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:489:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:490:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:494:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:497:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:527:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:537:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:545:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:553:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:554:14: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:560:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:526:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:536:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:544:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:552:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:559:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:526:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:536:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:544:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:552:14: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:559:14: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:162:19: applied
+[HalideReplacement] irm::Halide_compute_at_to_store_at at apps/camera_pipe/camera_pipe_generator.cpp:174:19: applied
+[HalideReplacement] irm::Halide_store_at_to_compute_at at apps/camera_pipe/camera_pipe_generator.cpp:175:22: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:165:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:168:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:184:18: applied
+[HalideReplacement] irm::Halide_unroll_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:186:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:165:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:168:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:184:18: applied
+[HalideReplacement] irm::Halide_unroll_to_vectorize at apps/camera_pipe/camera_pipe_generator.cpp:186:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:176:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_parallel at apps/camera_pipe/camera_pipe_generator.cpp:183:18: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:176:22: applied
+[HalideReplacement] irm::Halide_vectorize_to_unroll at apps/camera_pipe/camera_pipe_generator.cpp:183:18: applied
+[HalideReplacement] mutate() calls: total=64
+[HalideReplacement]   applied                      64
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

@@ -1,0 +1,212 @@
+[
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:37",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:47",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:55",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:65",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 65
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:38",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:57",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:71",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 71
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:37",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:47",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:55",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:65",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 65
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:38",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:57",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:71",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 71
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:37",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 37
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:47",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 47
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:55",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 55
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:65",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 65
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:38",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:57",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 57
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:71",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 71
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:74",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 74
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:77",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 77
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:74",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 74
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:77",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 77
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:39:74",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 39,
+    "column": 74
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp:40:77",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/blur/halide_blur_generator.cpp",
+    "line": 40,
+    "column": 77
+  }
+]

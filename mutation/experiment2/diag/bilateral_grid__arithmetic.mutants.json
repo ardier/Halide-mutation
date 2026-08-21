@@ -1,0 +1,1388 @@
+[
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:40",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 40
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:73",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 73
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:60",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:48",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:60",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:37:48",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 37,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:38",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:42:38",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 42,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:52",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:41",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:56",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:47:41",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 47,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:60:59",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 60,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:41",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:63",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:71",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 71
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:45",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:63",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:75",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:41",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:49",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 49
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:67",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:75",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:83",
+    "mutator": "Halide_add_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 83
+  },
+  {
+    "key": "Halide_add_to_div:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_div",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:40",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 40
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:73",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 73
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:60",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:48",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:60",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:37:48",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 37,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:38",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:42:38",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 42,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:52",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:41",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:56",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:47:41",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 47,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:60:59",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 60,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:41",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:63",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:71",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 71
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:45",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:63",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:75",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:41",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:49",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 49
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:67",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:75",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:83",
+    "mutator": "Halide_add_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 83
+  },
+  {
+    "key": "Halide_add_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:40",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 40
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:73",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 73
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:60",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:48",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:60",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 60
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:37:48",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 37,
+    "column": 48
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:38",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:42:38",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 42,
+    "column": 38
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:52",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 52
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:41",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:56",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 56
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:47:41",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 47,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:60:59",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 60,
+    "column": 59
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:41",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:63",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:61:71",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 61,
+    "column": 71
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:45",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 45
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:63",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 63
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:62:75",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 62,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:41",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 41
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:49",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 49
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:67",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 67
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:75",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 75
+  },
+  {
+    "key": "Halide_add_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:63:83",
+    "mutator": "Halide_add_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 63,
+    "column": 83
+  },
+  {
+    "key": "Halide_add_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13276:25",
+    "mutator": "Halide_add_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13276,
+    "column": 25
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:56",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 56
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:89",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 89
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:41",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:31",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 31
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:54:44",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 54,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:55:44",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 55,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:56:21",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 56,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:57:21",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 57,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:67:54",
+    "mutator": "Halide_div_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 67,
+    "column": 54
+  },
+  {
+    "key": "Halide_div_to_add:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_add",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:56",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 56
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:89",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 89
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:41",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:31",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 31
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:54:44",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 54,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:55:44",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 55,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:56:21",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 56,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:57:21",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 57,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:67:54",
+    "mutator": "Halide_div_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 67,
+    "column": 54
+  },
+  {
+    "key": "Halide_div_to_mul:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_mul",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:56",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 56
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:89",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 89
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:41",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 41
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:31",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 31
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:54:44",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 54,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:55:44",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 55,
+    "column": 44
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:56:21",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 56,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:57:21",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 57,
+    "column": 21
+  },
+  {
+    "key": "Halide_div_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:67:54",
+    "mutator": "Halide_div_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 67,
+    "column": 54
+  },
+  {
+    "key": "Halide_div_to_sub:/dev/shm/ardi_dslmut/halide16-build/include/Halide.h:13297:20",
+    "mutator": "Halide_div_to_sub",
+    "path": "/dev/shm/ardi_dslmut/halide16-build/include/Halide.h",
+    "line": 13297,
+    "column": 20
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:30",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 30
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:63",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:33",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 33
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:56",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:56",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:48",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:48",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:52",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:23",
+    "mutator": "Halide_mul_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 23
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:30",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 30
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:63",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:33",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 33
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:56",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:56",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:48",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:48",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:52",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:23",
+    "mutator": "Halide_mul_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 23
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:30",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 30
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:63",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 63
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:25:33",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 25,
+    "column": 33
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:56",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:35:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 35,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:36:56",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 36,
+    "column": 56
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:40:48",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 40,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:41:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 41,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:45:48",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 45,
+    "column": 48
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:46:52",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 46,
+    "column": 52
+  },
+  {
+    "key": "Halide_mul_to_sub:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:51:23",
+    "mutator": "Halide_mul_to_sub",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 51,
+    "column": 23
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:46",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 46
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:79",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 79
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:48",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:48",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:38",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:38",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:41",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:41",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_add:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:53:22",
+    "mutator": "Halide_sub_to_add",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 53,
+    "column": 22
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:46",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 46
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:79",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 79
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:48",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:48",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:38",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:38",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:41",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:41",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_div:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:53:22",
+    "mutator": "Halide_sub_to_div",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 53,
+    "column": 22
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:46",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 46
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:22:79",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 22,
+    "column": 79
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:33:48",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 33,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:34:48",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 34,
+    "column": 48
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:38:38",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 38,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:39:38",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 39,
+    "column": 38
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:43:41",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 43,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:44:41",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 44,
+    "column": 41
+  },
+  {
+    "key": "Halide_sub_to_mul:/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp:53:22",
+    "mutator": "Halide_sub_to_mul",
+    "path": "/mnt/scratch1/ardi/dsl_mut/HM-arith/apps/bilateral_grid/bilateral_grid_generator.cpp",
+    "line": 53,
+    "column": 22
+  }
+]

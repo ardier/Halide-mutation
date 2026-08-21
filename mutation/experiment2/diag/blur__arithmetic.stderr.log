@@ -1,0 +1,37 @@
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:39:47: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:39:37: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:39:65: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:39:55: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:40:52: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:40:38: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:40:71: applied
+[HalideReplacement] irm::Halide_AddToDiv at apps/blur/halide_blur_generator.cpp:40:57: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:39:47: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:39:37: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:39:65: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:39:55: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:40:52: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:40:38: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:40:71: applied
+[HalideReplacement] irm::Halide_AddToMul at apps/blur/halide_blur_generator.cpp:40:57: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:39:47: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:39:37: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:39:65: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:39:55: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:40:52: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:40:38: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:40:71: applied
+[HalideReplacement] irm::Halide_AddToSub at apps/blur/halide_blur_generator.cpp:40:57: applied
+[HalideReplacement] irm::Halide_DivToAdd at apps/blur/halide_blur_generator.cpp:39:74: applied
+[HalideReplacement] irm::Halide_DivToAdd at apps/blur/halide_blur_generator.cpp:40:77: applied
+[HalideReplacement] irm::Halide_DivToMul at apps/blur/halide_blur_generator.cpp:39:74: applied
+[HalideReplacement] irm::Halide_DivToMul at apps/blur/halide_blur_generator.cpp:40:77: applied
+[HalideReplacement] irm::Halide_DivToSub at apps/blur/halide_blur_generator.cpp:39:74: applied
+[HalideReplacement] irm::Halide_DivToSub at apps/blur/halide_blur_generator.cpp:40:77: applied
+[HalideReplacement] mutate() calls: total=30
+[HalideReplacement]   applied                      30
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0

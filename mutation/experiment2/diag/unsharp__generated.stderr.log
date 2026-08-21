@@ -1,0 +1,9 @@
+[HalideReplacement] irm::Halide_negate_to_bitwise_not at apps/unsharp/unsharp_generator.cpp:18:25: applied
+[HalideReplacement] irm::Halide_negate_to_not at apps/unsharp/unsharp_generator.cpp:18:25: applied
+[HalideReplacement] mutate() calls: total=2
+[HalideReplacement]   applied                      2
+[HalideReplacement]   skip_no_callee               0
+[HalideReplacement]   skip_no_module               0
+[HalideReplacement]   skip_sibling_absent_local    0
+[HalideReplacement]   skip_type_mismatch           0
+[HalideReplacement]   skip_sibling_bodyless        0
