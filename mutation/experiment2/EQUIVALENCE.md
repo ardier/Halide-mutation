@@ -10,6 +10,18 @@ survives every test written so far is a mutant nobody has killed *yet*. The
 argument is what makes it resolved; the measurement is what makes the argument
 credible.
 
+Where possible the measurement is a **same-site positive control**: a sibling
+mutant at the identical source location, produced by a different operator, that
+the same test *does* kill. That rules out the obvious alternative explanation —
+that the test simply cannot see anything at that line. Three of the entries
+below have one:
+
+| site | equivalent, survives | sibling at the same site, killed |
+|---|---|---|
+| `max_filter` 38:57 | `add_to_div`, `add_to_mul` (`2t+1 -> 2t`) | `add_to_sub` (`2t+1 -> 2t-1`) |
+| `max_filter` 54:43 | `add_to_sub` (`x+dx -> x-dx`) | `add_to_div`, `add_to_mul` |
+| `max_filter` `Halide.h` 13312 | `lt_to_le` | `lt_to_ge` |
+
 ---
 
 ## 1-2. `max_filter` 38:57 — `Halide_add_to_div`, `Halide_add_to_mul`
@@ -211,6 +223,43 @@ difference has to come from instruction selection (FMA contraction, vector
 width) below Halide. A structural "the directive is on a pure loop dimension"
 test is therefore necessary but *not* sufficient for float pipelines, and no
 equivalence is claimed for them here.
+
+## 8. `max_filter` 29:41 — `Halide_add_to_mul`
+
+```cpp
+RDom r(-radius, input_.height() + radius, 1, slices - 1);
+```
+
+becomes `input_.height() * radius`, enlarging the reduction domain's first
+extent from `H + 26` to `26H`, so `r.x` runs over `[-26, 26H - 26)` instead of
+`[-26, H)`.
+
+**Argument.** The enlarged domain updates `vert_log` at rows `[H, 26H - 26)`
+that the original leaves at its pure definition, `vert_log(x, y, c, 0) =
+input(x, y, c)`. Those rows are exactly where the extra work lands, and they are
+also exactly where it cannot matter.
+
+`input` here is `repeat_edge(input_, ...)`, so `input(x, y, c) = input(x, H-1, c)`
+for every `y >= H - 1`: the tail is constant in `y`. `vert_log(x, y, c, k)` is a
+maximum over the row range `[y, y + 2^k - 1]`, and a maximum over a set of equal
+values is that value, so for `y >= H - 1` the updated entry equals
+`input(x, H-1, c)` -- which is precisely the pure-definition value the original
+leaves there. Updating those rows therefore writes back what was already there.
+
+The rows the consumer actually reads are `[y - t, y + t]` for `y` in `[0, H)` and
+`t` in `[4, 27]`, i.e. at most `[-27, H + 26]`; every read above `H - 1` falls in
+the constant tail. Rows below `H` are updated identically by both versions --
+same `r.x` minimum, same recurrence over `r.y`.
+
+So the mutant does 26x the work and produces the same image. It is a
+performance mutant wearing an arithmetic mutant's clothes, and only an O3-style
+oracle could see it.
+
+**Confirmation.** Survives `apps/max_filter/mutation_test.cpp`, the exact C++
+reference over the entire 30-pixel border band -- the region where a difference
+in the boundary tail would have to appear. The same test kills
+`Halide_add_to_sub` and `Halide_add_to_div` at the neighbouring sites, so it is
+not a case of the test being blind.
 
 ---
 
