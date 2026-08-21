@@ -108,3 +108,8 @@ max_filter,generated,Halide_lt_to_le,Halide.h,13312,25,before,OK,1,1,OK,SURVIVED
 max_filter,generated,Halide_max_to_min,max_filter_generator.cpp,46,28,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.63,
 max_filter,generated,Halide_max_to_min,Halide.h,16267,12,before,OK,1,1,OK,SURVIVED,KILLED,1,0,2.01,
 max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,31,67,after,OK,1,1,OK,KILLED,KILLED,1,1,0.44,
+max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,45,62,after,OK,1,1,OK,KILLED,KILLED,1,1,0.43,
+max_filter,generated,Halide_lt_to_ge,Halide.h,13312,25,after,OK,1,1,OK,KILLED,KILLED,1,1,0.43,
+max_filter,generated,Halide_lt_to_le,Halide.h,13312,25,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.43,
+max_filter,generated,Halide_max_to_min,max_filter_generator.cpp,46,28,after,OK,1,1,OK,KILLED,KILLED,1,1,0.47,
+max_filter,generated,Halide_max_to_min,Halide.h,16267,12,after,OK,1,1,OK,KILLED,KILLED,1,1,0.44,

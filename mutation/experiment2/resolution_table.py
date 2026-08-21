@@ -56,6 +56,8 @@ EQUIVALENT_BY_ARGUMENT = {
     ("c_backend", "Halide_vectorize_to_parallel", "21", "26"): "EQUIVALENCE.md 6-7",
     ("c_backend", "Halide_vectorize_to_unroll", "21", "26"): "EQUIVALENCE.md 6-7",
     ("max_filter", "Halide_add_to_mul", "29", "41"): "EQUIVALENCE.md 8",
+    ("lens_blur", "Halide_add_to_sub", "98", "73"): "EQUIVALENCE.md 3b",
+    ("lens_blur", "Halide_add_to_sub", "99", "81"): "EQUIVALENCE.md 3b",
 }
 # select -> if_then_else: every effective mutant of this operator is argued
 # output-equivalent in RESULTS.md, so it is matched by operator rather than
@@ -109,8 +111,29 @@ def classify(k, r, killed):
     return "unresolved"
 
 
+def audit(rows, killed):
+    """A claimed-equivalent mutant that something killed means the claim is wrong.
+
+    Equivalence here is an argument, and an argument can be mistaken. Any kill
+    anywhere in the corpus is a counterexample, so check for one explicitly
+    rather than letting the `killed` precedence quietly paper over it.
+    """
+    bad = []
+    for k in killed:
+        app, arm, mutator, fn, line, col = k
+        if mutator in EQUIVALENT_OPERATORS or (app, mutator, line, col) in EQUIVALENT_BY_ARGUMENT:
+            bad.append(k)
+    if bad:
+        print("*** EQUIVALENCE CLAIM FALSIFIED -- a mutant argued equivalent was killed:")
+        for k in bad:
+            print("      ", k)
+        print("*** fix EQUIVALENCE.md before trusting the table below\n")
+    return bad
+
+
 def main():
     rows, killed = load()
+    audit(rows, killed)
     tally = collections.defaultdict(collections.Counter)
     unresolved = collections.defaultdict(list)
     for k, r in rows.items():

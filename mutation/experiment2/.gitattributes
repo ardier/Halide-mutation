@@ -1,0 +1,3 @@
+# Result CSVs are written by long-running sweeps; never let git line-ending
+# normalisation rewrite them in the working tree while a run is appending.
+*.csv -text

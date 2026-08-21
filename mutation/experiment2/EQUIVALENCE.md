@@ -96,6 +96,40 @@ finite by construction, so no NaN reaches the reduction.
 **Confirmation.** Byte-identical output in the sweep and under the exact
 reference test.
 
+## 3b. `lens_blur` 98:73 and 99:81 — `Halide_add_to_sub`
+
+```cpp
+RDom r(-maximum_blur_radius, 2 * maximum_blur_radius + 1);
+worst_case_bokeh_radius_y(x, y) = maximum(bokeh_radius(x, y + r));
+worst_case_bokeh_radius(x, y)   = maximum(worst_case_bokeh_radius_y(x + r, y));
+```
+
+Both mutants turn `+ r` into `- r`.
+
+These two were not in the original target list: the sweep never evaluated
+`lens_blur`'s arithmetic arm (it recorded one point and left the rest
+unevaluated), so they surfaced only when this round ran that arm. They are
+reported as newly *surfaced*, not as something previously missed.
+
+**Argument.** Identical in form to entry 3, and simpler. `RDom r(-R, 2R + 1)`
+spans `[-R, R]`, symmetric about zero, so `r -> -r` is a bijection of the
+reduction domain onto itself. The reduction variable appears only as a
+coordinate offset — there is no second `r`-dependent argument to keep in step,
+as there was in entry 3 — so re-indexing turns the mutant's term set into
+exactly the original's. `maximum` depends only on the set of terms and selects an
+operand rather than computing one, so the result is identical bit for bit.
+
+The same NaN caveat as entry 3 applies and is satisfied for the same reason:
+`bokeh_radius` derives from the depth estimate, which is finite.
+
+Degenerate case, for completeness: if `maximum_blur_radius` is 0 the domain is
+the single point `r = 0` and `y + r` and `y - r` are literally the same
+expression.
+
+**Confirmation.** Both survive `apps/lens_blur/mutation_test2.cpp`, the
+odd-disparity stereo test that kills `add_to_div` at 34:60 in the same run — so
+the test is demonstrably not blind to this benchmark's arithmetic.
+
 ## 4. `max_filter` `Halide.h` 13312:25 — `Halide_lt_to_le`
 
 The mutated `<` is inside Halide's own header, in
