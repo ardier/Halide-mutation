@@ -17,9 +17,26 @@ deployed at `halide_src_rewrite/` on swsec01) as a cross-check.
 `a19b397bf`..`610470fb4`, see below for more). **Update: `stencil_chain`'s Arm A sweep finished after this report was first written**
 (all 6 arms, see the per-family table below -- its `schedule` arm is the first in this
 whole second wave where O1 and O2 agree exactly at a nonzero rate, 20.0%/20.0%, 1/5
-effective). All 3 Arm C builds (`interpolate`/`local_laplacian`/`stencil_chain`) were
-still running on swsec01 when this report was written -- left running unattended (nohup, survives disconnect) rather than
-killed, per "timebox and move on." Concretely slow, not stuck: `stencil_chain`'s per-mutant
+effective).
+
+**Arm C: definitively finished, and it FAILED on all 3 apps -- a real, precedented
+result, not an open question.** Each app's own `lower` phase succeeded quickly (3.8-8.0s,
+emitted .cpp is 538KB-1.0MB), but the `build` phase's Mull-instrumented compile of that
+emitted C++ (`mull-ir-frontend` IR-route pass plugin) hit the harness's own 1200s
+(`ARMC_BUDGET`) timeout on **every single one** -- `interpolate` and `local_laplacian`
+and `stencil_chain` all timed out at essentially the same wall-clock instant
+(1199.9997xxx seconds, i.e. the budget itself, not a hang). This is the same cost
+category the original 13-app corpus already documented (only 2/13 apps ever got a fully
+complete Arm C run there, even without a hard per-app timeout in some of those
+invocations) -- Mull's IR-route instrumentation of *emitted* (already-lowered,
+boilerplate-heavy) C++ is consistently the most expensive compile in this whole
+toolchain, and a 20-minute budget was not enough for any of these 3 apps specifically.
+Raising `ARMC_BUDGET` well past 1200s (the original corpus runs that succeeded used up
+to 7200s) is the direct next step if Arm C coverage for this second wave is wanted, not
+further investigation into a bug -- there isn't one.
+
+**Why `stencil_chain`'s own Arm A sweep (which did finish) took so long is worth explaining
+too, separately from Arm C's timeout above.** Its per-mutant
 *generate* step (`stencil_chain.generator -e static_library,h,stmt`) alone takes 3.5+ minutes
 of active CPU time per invocation (confirmed via `ps` CPU-time samples 90s apart, both
 growing steadily) -- consistent with what the app's name suggests, a long chain of stencil
@@ -50,9 +67,9 @@ fabricated or extrapolated to cover the gap.
 
 | app | Arm A | Arm B | Arm C | standalone tool |
 |---|---|---|---|---|
-| interpolate | done, all 6 arms | done (100% halide_library) | still running on swsec01, not completed | done |
-| local_laplacian | done, all 6 arms | done (100% halide_library) | queued, not reached (Arm C runs apps sequentially, interpolate first) | done |
-| stencil_chain | done, all 6 arms | done (100% halide_library) | queued, not reached | done |
+| interpolate | done, all 6 arms | done (100% halide_library) | FAILED: instrumented-compile timeout at 1200s (see below) | done |
+| local_laplacian | done, all 6 arms | done (100% halide_library) | FAILED: instrumented-compile timeout at 1200s | done |
+| stencil_chain | done, all 6 arms | done (100% halide_library) | FAILED: instrumented-compile timeout at 1200s | done |
 | resize | done, all 6 arms (1 representative instantiation) | done (100% halide_library) | not attempted -- harness has no GeneratorParam support | done |
 | fft | done, all 6 arms (1 representative instantiation) | done (100% halide_library) | not attempted -- harness has no multi-source-file support | done |
 | wavelet | done, all 6 arms (haar_x, 1 of 4 sibling generators) | done (100% halide_library) | not attempted (same reasons as resize/fft would apply if scaled to all 4) | done |
