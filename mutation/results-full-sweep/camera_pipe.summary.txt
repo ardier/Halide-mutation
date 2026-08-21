@@ -1,0 +1,104 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+camera_pipe     if_then_else    9       0      0      2    7       0       0     0   0.0%   0.0%
+camera_pipe     schedule       61       1      0      3    0       0       0     0    n/a    n/a
+camera_pipe     select_clamp   15       0      0      2   13       1      13    13   7.7% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                if_then_else    9       0      0      2    7       0       0     0   0.0%   0.0%
+                schedule       61       1      0      3    0       0       0     0    n/a    n/a
+                select_clamp   15       0      0      2   13       1      13    13   7.7% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_select_to_if_then_else     if_then_else    9       0      2    7       0       0    0.0%
+Halide_compute_at_to_store_at     schedule        7       1      3    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       0      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       0      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        4       0      0    0       0       0     n/a
+Halide_unroll_to_parallel         schedule       17       0      0    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule       17       0      0    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        7       0      0    0       0       0     n/a
+Halide_vectorize_to_unroll        schedule        7       0      0    0       0       0     n/a
+Halide_clamp_swap_bounds          select_clamp    6       0      2    4       1       4  100.0%
+Halide_select_swap_branches       select_clamp    9       0      0    9       0       9  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  camera_pipe     schedule   Halide_compute_at_to_store_at   camera_pipe_generator.cpp:174:19GEN_ERROR/OK  killed at generation time
+  camera_pipe     schedule   Halide_compute_at_to_store_at   camera_pipe_generator.cpp:540:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_compute_at_to_store_at   camera_pipe_generator.cpp:548:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_compute_at_to_store_at   camera_pipe_generator.cpp:557:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_parallel_to_unroll       camera_pipe_generator.cpp:528:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_parallel_to_vectorize    camera_pipe_generator.cpp:528:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_store_at_to_compute_at   camera_pipe_generator.cpp:175:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_store_at_to_compute_at   camera_pipe_generator.cpp:532:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_store_at_to_compute_at   camera_pipe_generator.cpp:541:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_store_at_to_compute_at   camera_pipe_generator.cpp:549:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:165:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:168:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:184:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:186:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:473:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:477:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:481:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:489:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:490:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:494:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:497:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:527:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:537:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:545:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:553:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:554:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_parallel       camera_pipe_generator.cpp:560:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:165:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:168:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:184:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:186:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:473:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:477:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:481:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:489:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:490:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:494:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:497:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:527:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:537:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:545:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:553:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:554:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_unroll_to_vectorize      camera_pipe_generator.cpp:560:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:176:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:183:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:526:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:536:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:544:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:552:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_parallel    camera_pipe_generator.cpp:559:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:176:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:183:18NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:526:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:536:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:544:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:552:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  camera_pipe     schedule   Halide_vectorize_to_unroll      camera_pipe_generator.cpp:559:14NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  camera_pipe/generated
+  camera_pipe/arithmetic

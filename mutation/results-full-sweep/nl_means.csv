@@ -32,3 +32,4 @@ nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,142,18,OK,1,
 nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,147,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.79,emitted header differs from baseline; driver recompiled
 nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,151,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.75,emitted header differs from baseline; driver recompiled
 nl_means,schedule,Halide_vectorize_to_unroll,nl_means_generator.cpp,153,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.67,emitted header differs from baseline; driver recompiled
+nl_means,generated,Halide_negate_to_bitwise_not,nl_means_generator.cpp,40,24,OK,1,1,OK,SURVIVED,KILLED,1,0,7.09,emitted header differs from baseline; driver recompiled
