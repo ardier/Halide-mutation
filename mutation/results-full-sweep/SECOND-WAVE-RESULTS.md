@@ -14,9 +14,11 @@ deployed at `halide_src_rewrite/` on swsec01) as a cross-check.
 
 `interpolate`, `local_laplacian`, `resize`, `fft`, `wavelet` (Arm A); all 9 Arm B runs; all
 10 standalone-tool census runs: **complete, committed** (`apps-expansion`, commits
-`a19b397bf`..`610470fb4`, see below for more). `stencil_chain`'s Arm A sweep and all 3 Arm C
-builds (`interpolate`/`local_laplacian`/`stencil_chain`) were still running on swsec01 when
-this report was written -- left running unattended (nohup, survives disconnect) rather than
+`a19b397bf`..`610470fb4`, see below for more). **Update: `stencil_chain`'s Arm A sweep finished after this report was first written**
+(all 6 arms, see the per-family table below -- its `schedule` arm is the first in this
+whole second wave where O1 and O2 agree exactly at a nonzero rate, 20.0%/20.0%, 1/5
+effective). All 3 Arm C builds (`interpolate`/`local_laplacian`/`stencil_chain`) were
+still running on swsec01 when this report was written -- left running unattended (nohup, survives disconnect) rather than
 killed, per "timebox and move on." Concretely slow, not stuck: `stencil_chain`'s per-mutant
 *generate* step (`stencil_chain.generator -e static_library,h,stmt`) alone takes 3.5+ minutes
 of active CPU time per invocation (confirmed via `ps` CPU-time samples 90s apart, both
@@ -48,9 +50,9 @@ fabricated or extrapolated to cover the gap.
 
 | app | Arm A | Arm B | Arm C | standalone tool |
 |---|---|---|---|---|
-| interpolate | done, all 6 arms | done (100% halide_library) | done | done |
-| local_laplacian | done, all 6 arms | done (100% halide_library) | attempted | done |
-| stencil_chain | done, all 6 arms | done (100% halide_library) | attempted | done |
+| interpolate | done, all 6 arms | done (100% halide_library) | still running on swsec01, not completed | done |
+| local_laplacian | done, all 6 arms | done (100% halide_library) | queued, not reached (Arm C runs apps sequentially, interpolate first) | done |
+| stencil_chain | done, all 6 arms | done (100% halide_library) | queued, not reached | done |
 | resize | done, all 6 arms (1 representative instantiation) | done (100% halide_library) | not attempted -- harness has no GeneratorParam support | done |
 | fft | done, all 6 arms (1 representative instantiation) | done (100% halide_library) | not attempted -- harness has no multi-source-file support | done |
 | wavelet | done, all 6 arms (haar_x, 1 of 4 sibling generators) | done (100% halide_library) | not attempted (same reasons as resize/fft would apply if scaled to all 4) | done |
@@ -60,7 +62,7 @@ fabricated or extrapolated to cover the gap.
 ## Arm A: per-family effective mutants and kill rates
 
 Same shape as the existing 14-app corpus table (`operator family | route | eff | O1% | O2%`).
-`stencil_chain`'s sweep was still running when this was written (its arithmetic arm alone
+`stencil_chain`'s sweep has since finished (numbers below); its arithmetic arm alone
 was taking >10 min due to a visibly slower per-mutant generate step -- consistent with a
 literal "chain of stencils" generator doing more compile-time lowering work per mutant than
 the others); its numbers are appended in a follow-up commit once it finishes rather than
