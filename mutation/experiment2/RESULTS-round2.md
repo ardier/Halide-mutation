@@ -41,7 +41,23 @@ disparities.
 
 ## Resolution by family
 
-<!-- TABLE -->
+| family | evaluated | killed | by compiler | equivalent | unresolved | resolved | was unresolved |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Arithmetic | 464 | 429 | 0 | 35 | **0** | 100.0% | 32 |
+| Schedule directive | 345 | 13 | 50 | 172 | **110** | 68.1% | 115 |
+| Relational & bitwise | 30 | 27 | 1 | 2 | **0** | 100.0% | 4 |
+| BoundaryConditions | 27 | 25 | 0 | 2 | **0** | 100.0% | 0 |
+| select / clamp | 41 | 39 | 0 | 2 | **0** | 100.0% | 0 |
+| select -> if_then_else | 13 | 0 | 0 | 13 | **0** | 100.0% | 0 |
+| **corpus** | 920 | 533 | 51 | 226 | **110** | 88.0% | 151 |
+
+Five of the six families are now fully resolved. Schedule directives are the only
+family with anything left, and the remaining 110 are discussed below.
+
+Evaluated counts grew from 793 to 920 because these runs reached mutants the
+original sweep had recorded as `NOT_RUN` and correctly excluded from its rates —
+notably `depthwise_separable_conv`'s arithmetic and relational arms and part of
+`lens_blur`'s arithmetic arm.
 
 ## New tests
 
