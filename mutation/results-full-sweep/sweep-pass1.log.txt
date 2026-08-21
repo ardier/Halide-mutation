@@ -1,0 +1,48 @@
+[04:04:12] == blur: start (2 arms: schedule,arithmetic, workers=3)
+[04:04:12] == bilateral_grid: start (5 arms: boundary_conditions,select_clamp,schedule,generated,arithmetic, workers=3)
+[04:04:12] == harris: start (2 arms: schedule,arithmetic, workers=3)
+[04:04:12] == bgu: start (6 arms: boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic, workers=2)
+[04:06:09] == blur: OK in 1.9 min
+[04:06:09] == unsharp: start (4 arms: boundary_conditions,schedule,generated,arithmetic, workers=3)
+[04:14:34] == harris: TIMEBOX in 10.4 min
+[04:14:34] == c_backend: start (4 arms: select_clamp,schedule,generated,arithmetic, workers=3)
+[04:15:16] == bilateral_grid: TIMEBOX in 11.1 min
+[04:15:16] == conv_layer: start (3 arms: schedule,generated,arithmetic, workers=3)
+[04:16:06] == bgu: TIMEBOX in 11.9 min
+[04:16:07] == lens_blur: start (6 arms: boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic, workers=2)
+[04:16:38] == unsharp: TIMEBOX in 10.5 min
+[04:16:38] == depthwise_separable_conv: start (5 arms: if_then_else,select_clamp,schedule,generated,arithmetic, workers=3)
+[04:17:05] == c_backend: OK in 2.5 min
+[04:17:05] == hist: start (4 arms: select_clamp,schedule,generated,arithmetic, workers=3)
+[04:26:49] == depthwise_separable_conv: TIMEBOX in 10.2 min
+[04:26:49] == iir_blur: start (6 arms: boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic, workers=3)
+[04:27:48] == hist: TIMEBOX in 10.7 min
+[04:27:48] == max_filter: start (6 arms: boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic, workers=3)
+[04:28:16] == conv_layer: exceeded 13 min hard limit, killing
+[04:28:16] == conv_layer: HARD_KILL in 13.0 min
+[04:28:16] == nl_means: start (6 arms: boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic, workers=3)
+[04:29:07] == lens_blur: exceeded 13 min hard limit, killing
+[04:29:07] == lens_blur: HARD_KILL in 13.0 min
+[04:29:07] == camera_pipe: start (5 arms: if_then_else,select_clamp,schedule,generated,arithmetic, workers=2)
+[04:37:20] == iir_blur: TIMEBOX in 10.5 min
+[04:38:36] == max_filter: TIMEBOX in 10.8 min
+[04:39:13] == camera_pipe: TIMEBOX in 10.1 min
+[04:39:13] ### lane heavy complete
+[04:39:20] == nl_means: TIMEBOX in 11.1 min
+[04:39:20] ### lane normal complete
+
+=== sweep done ===
+  blur                        OK              1.9 min   schedule,arithmetic
+  bilateral_grid              TIMEBOX        11.1 min   boundary_conditions,select_clamp,schedule,generated,arithmetic
+  harris                      TIMEBOX        10.4 min   schedule,arithmetic
+  unsharp                     TIMEBOX        10.5 min   boundary_conditions,schedule,generated,arithmetic
+  c_backend                   OK              2.5 min   select_clamp,schedule,generated,arithmetic
+  conv_layer                  HARD_KILL      13.0 min   schedule,generated,arithmetic
+  depthwise_separable_conv    TIMEBOX        10.2 min   if_then_else,select_clamp,schedule,generated,arithmetic
+  hist                        TIMEBOX        10.7 min   select_clamp,schedule,generated,arithmetic
+  iir_blur                    TIMEBOX        10.5 min   boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic
+  max_filter                  TIMEBOX        10.8 min   boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic
+  nl_means                    TIMEBOX        11.1 min   boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic
+  bgu                         TIMEBOX        11.9 min   boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic
+  lens_blur                   HARD_KILL      13.0 min   boundary_conditions,if_then_else,select_clamp,schedule,generated,arithmetic
+  camera_pipe                 TIMEBOX        10.1 min   if_then_else,select_clamp,schedule,generated,arithmetic
