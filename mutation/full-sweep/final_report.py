@@ -186,6 +186,37 @@ def main():
     for arm, op in inert:
         out.append(f"    {op:<42}({ARM_FAMILY[arm]})")
 
+    # O2 only means something for apps whose driver saves an output artifact.
+    # For the rest it falls back to normalised stdout, which carries no pipeline
+    # output, so it can only differ from O1 when the program also misbehaves.
+    blind = sorted(a for a in APPS if not APPS[a].output_artifact)
+    eff_rows = [r for r in rows if r["stage2"] == "OK" and r["stage3"] == "OK"
+                and r["stmt_differs"] == "1"]
+    disagree = {}
+    for r in eff_rows:
+        d = disagree.setdefault(r["app"], [0, 0])
+        d[0] += 1
+        d[1] += (r["o1"] != r["o2"])
+    out.append("")
+    out.append("=" * 120)
+    out.append("ORACLE INDEPENDENCE")
+    out.append("=" * 120)
+    out.append("O2 compares the driver's saved output against a golden "
+               "snapshot. Where a driver saves no artifact it falls back to")
+    out.append("normalised stdout, which carries no pipeline output -- so O2 "
+               "cannot diverge from O1 and its column is really O1 again.")
+    out.append("")
+    for app in sorted(disagree):
+        n, dis = disagree[app]
+        tag = ("no output artifact: O2 == O1 by construction"
+               if app in blind else "")
+        out.append(f"  {app:<26}eff={n:<5}O1 != O2 on {dis:<5}{tag}")
+    out.append("")
+    out.append(f"Apps with no output artifact ({len(blind)}): "
+               f"{', '.join(blind)}")
+    out.append("Their O2 figures above should be read as O1, and the corpus O2 "
+               "rate is correspondingly conservative.")
+
     out.append("")
     out.append("raw     = mutation points recorded for this cell")
     out.append("notRun  = real mutation points the benchmark's wall-clock "

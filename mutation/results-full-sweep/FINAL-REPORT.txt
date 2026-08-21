@@ -202,6 +202,30 @@ Operators with no mutation point anywhere in the swept corpus: 32 of 65
     Halide_mirror_interior_to_repeat_image    (BoundaryConditions)
     Halide_mirror_interior_to_mirror_image    (BoundaryConditions)
 
+========================================================================================================================
+ORACLE INDEPENDENCE
+========================================================================================================================
+O2 compares the driver's saved output against a golden snapshot. Where a driver saves no artifact it falls back to
+normalised stdout, which carries no pipeline output -- so O2 cannot diverge from O1 and its column is really O1 again.
+
+  bgu                       eff=10   O1 != O2 on 10   
+  bilateral_grid            eff=34   O1 != O2 on 17   
+  blur                      eff=34   O1 != O2 on 0    no output artifact: O2 == O1 by construction
+  c_backend                 eff=32   O1 != O2 on 0    no output artifact: O2 == O1 by construction
+  camera_pipe               eff=29   O1 != O2 on 21   
+  conv_layer                eff=14   O1 != O2 on 0    no output artifact: O2 == O1 by construction
+  depthwise_separable_conv  eff=37   O1 != O2 on 0    no output artifact: O2 == O1 by construction
+  harris                    eff=60   O1 != O2 on 52   
+  hist                      eff=56   O1 != O2 on 40   
+  iir_blur                  eff=42   O1 != O2 on 34   
+  lens_blur                 eff=14   O1 != O2 on 9    
+  max_filter                eff=65   O1 != O2 on 47   
+  nl_means                  eff=28   O1 != O2 on 12   
+  unsharp                   eff=87   O1 != O2 on 80   
+
+Apps with no output artifact (4): blur, c_backend, conv_layer, depthwise_separable_conv
+Their O2 figures above should be read as O1, and the corpus O2 rate is correspondingly conservative.
+
 raw     = mutation points recorded for this cell
 notRun  = real mutation points the benchmark's wall-clock budget never reached. Excluded from every rate.
 genKill = the Halide compiler itself rejected the mutant -- a kill category only staged compilation produces
