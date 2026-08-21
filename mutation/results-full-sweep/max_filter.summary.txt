@@ -1,0 +1,115 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+max_filter      arithmetic     48       0      0      0    1       0       0     0   0.0%   0.0%
+max_filter      boundary_conditions    3       0      0      0    3       0       1     1   0.0%  33.3%
+max_filter      generated       6       0      0      0    6       0       5     5   0.0%  83.3%
+max_filter      if_then_else    1       0      0      0    1       0       0     0   0.0%   0.0%
+max_filter      schedule       12       4      0      0    8       0       0     0   0.0%   0.0%
+max_filter      select_clamp    5       0      0      0    5       0       5     5   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic     48       0      0      0    1       0       0     0   0.0%   0.0%
+                boundary_conditions    3       0      0      0    3       0       1     1   0.0%  33.3%
+                generated       6       0      0      0    6       0       5     5   0.0%  83.3%
+                if_then_else    1       0      0      0    1       0       0     0   0.0%   0.0%
+                schedule       12       4      0      0    8       0       0     0   0.0%   0.0%
+                select_clamp    5       0      0      0    5       0       5     5   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      4       0      0    1       0       0    0.0%
+Halide_add_to_mul                 arithmetic      7       0      0    0       0       0     n/a
+Halide_add_to_sub                 arithmetic      7       0      0    0       0       0     n/a
+Halide_div_to_add                 arithmetic      2       0      0    0       0       0     n/a
+Halide_div_to_mul                 arithmetic      2       0      0    0       0       0     n/a
+Halide_div_to_sub                 arithmetic      2       0      0    0       0       0     n/a
+Halide_mul_to_add                 arithmetic      3       0      0    0       0       0     n/a
+Halide_mul_to_div                 arithmetic      3       0      0    0       0       0     n/a
+Halide_mul_to_sub                 arithmetic      3       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic      5       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic      5       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic      5       0      0    0       0       0     n/a
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       0    0.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       0    0.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_lshift_to_rshift           generated       2       0      0    2       0       2  100.0%
+Halide_lt_to_ge                   generated       1       0      0    1       0       1  100.0%
+Halide_lt_to_le                   generated       1       0      0    1       0       0    0.0%
+Halide_max_to_min                 generated       2       0      0    2       0       2  100.0%
+Halide_select_to_if_then_else     if_then_else    1       0      0    1       0       0    0.0%
+Halide_compute_at_to_store_at     schedule        2       2      0    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        4       0      0    4       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        4       0      0    4       0       0    0.0%
+Halide_clamp_swap_bounds          select_clamp    4       0      0    4       0       4  100.0%
+Halide_select_swap_branches       select_clamp    1       0      0    1       0       1  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  max_filter      arithmetic Halide_add_to_div               max_filter_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_div               max_filter_generator.cpp:50:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_div               max_filter_generator.cpp:54:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:29:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:31:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:38:57NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:45:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:50:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_mul               max_filter_generator.cpp:54:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:29:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:31:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:38:57NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:45:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:50:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_add_to_sub               max_filter_generator.cpp:54:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_add               max_filter_generator.cpp:38:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_add               Halide.h:13294:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_mul               max_filter_generator.cpp:38:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_mul               Halide.h:13294:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_sub               max_filter_generator.cpp:38:62NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_div_to_sub               Halide.h:13294:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_add               max_filter_generator.cpp:38:53NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_add               max_filter_generator.cpp:50:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_add               max_filter_generator.cpp:50:50NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_div               max_filter_generator.cpp:38:53NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_div               max_filter_generator.cpp:50:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_div               max_filter_generator.cpp:50:50NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_sub               max_filter_generator.cpp:38:53NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_sub               max_filter_generator.cpp:50:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_mul_to_sub               max_filter_generator.cpp:50:50NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_add               max_filter_generator.cpp:30:64NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_add               max_filter_generator.cpp:31:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_add               max_filter_generator.cpp:31:105NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_add               max_filter_generator.cpp:44:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_add               max_filter_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_div               max_filter_generator.cpp:30:64NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_div               max_filter_generator.cpp:31:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_div               max_filter_generator.cpp:31:105NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_div               max_filter_generator.cpp:44:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_div               max_filter_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:30:64NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:31:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:31:105NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:44:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      schedule   Halide_compute_at_to_store_at   max_filter_generator.cpp:107:26GEN_ERROR/OK  killed at generation time
+  max_filter      schedule   Halide_compute_at_to_store_at   max_filter_generator.cpp:112:22GEN_ERROR/OK  killed at generation time
+  max_filter      schedule   Halide_parallel_to_unroll       max_filter_generator.cpp:105:22GEN_ERROR/OK  killed at generation time
+  max_filter      schedule   Halide_parallel_to_vectorize    max_filter_generator.cpp:105:22GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
