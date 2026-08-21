@@ -1,0 +1,42 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+max_filter      arithmetic     48       0      0      3   42       2      38    38   4.8%  90.5%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic     48       0      0      3   42       2      38    38   4.8%  90.5%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      7       0      0    7       0       6   85.7%
+Halide_add_to_mul                 arithmetic      7       0      0    7       1       5   71.4%
+Halide_add_to_sub                 arithmetic      7       0      0    7       0       6   85.7%
+Halide_div_to_add                 arithmetic      2       0      1    1       0       1  100.0%
+Halide_div_to_mul                 arithmetic      2       0      1    1       0       1  100.0%
+Halide_div_to_sub                 arithmetic      2       0      1    1       0       1  100.0%
+Halide_mul_to_add                 arithmetic      3       0      0    3       0       3  100.0%
+Halide_mul_to_div                 arithmetic      3       0      0    3       1       3  100.0%
+Halide_mul_to_sub                 arithmetic      3       0      0    3       0       3  100.0%
+Halide_sub_to_add                 arithmetic      5       0      0    5       0       5  100.0%
+Halide_sub_to_div                 arithmetic      4       0      0    4       0       4  100.0%
+Halide_sub_to_mul                 arithmetic      3       0      0    0       0       0     n/a
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:31:105NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:44:43NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  max_filter      arithmetic Halide_sub_to_mul               max_filter_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these

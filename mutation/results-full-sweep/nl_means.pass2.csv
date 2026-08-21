@@ -1,0 +1,7 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,32,72,OK,1,1,OK,SURVIVED,KILLED,1,0,15.89,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,32,64,OK,1,1,OK,SURVIVED,KILLED,1,0,21.98,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,60,90,OK,1,1,OK,SURVIVED,KILLED,1,0,20.06,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,60,103,OK,1,1,OK,SURVIVED,KILLED,1,0,17.87,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_mul,nl_means_generator.cpp,32,64,OK,1,1,OK,SURVIVED,KILLED,1,0,20.15,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_mul,nl_means_generator.cpp,32,72,OK,1,1,OK,SURVIVED,KILLED,1,0,13.23,emitted header differs from baseline; driver recompiled
