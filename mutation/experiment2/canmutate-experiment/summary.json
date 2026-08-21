@@ -1,0 +1,14 @@
+{
+  "bilateral_grid__arithmetic": {
+    "n_mutants": 165
+  },
+  "harris__arithmetic": {
+    "n_mutants": 189
+  },
+  "camera_pipe__arithmetic": {
+    "n_mutants": 497
+  },
+  "unsharp__arithmetic": {
+    "n_mutants": 123
+  }
+}
