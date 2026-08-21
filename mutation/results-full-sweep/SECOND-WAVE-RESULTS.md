@@ -88,6 +88,8 @@ delaying everything else.
 | fft | arithmetic/generated/BoundaryConditions/select-clamp/if_then_else | -- | 0 | -- | -- |
 | wavelet (haar_x) | arithmetic | IR | 27 | 0.0% | 100.0% |
 | wavelet | BoundaryConditions | AST | 3 | **0.0%** | **0.0%** |
+| stencil_chain | arithmetic | IR | 5 (9 raw, matches the standalone tool exactly) | 0.0% | 100.0% |
+| stencil_chain | schedule/generated/BoundaryConditions/select-clamp/if_then_else | -- | still running | -- | -- |
 
 `local_laplacian`'s select/clamp result (33.3% O1) is the **first select/clamp point in the
 entire corpus this sprint that a shipped test's own O1 oracle catches** -- every other
