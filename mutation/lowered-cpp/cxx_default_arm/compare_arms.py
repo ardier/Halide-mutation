@@ -59,6 +59,14 @@ CORPUS = ["bgu", "bilateral_grid", "blur", "camera_pipe", "conv_layer",
 # do not compile as plain C++ at all, with no mutation tool involved.
 C_BACKEND_BROKEN = {"camera_pipe", "bgu"}
 
+# Stock cxx_default's arithmetic swaps. Note the asymmetry, which is a real
+# finding and not a configuration slip: Mull ships 4 arithmetic operators
+# (+<->- and *<->/ in both directions), while arm A's arithmetic family has all
+# 12 ordered pairs over + - * / on Halide::Expr. The like-for-like table below
+# compares these two sets on the same source expressions.
+ARITH_CXX = {"cxx_add_to_sub", "cxx_sub_to_add", "cxx_mul_to_div",
+             "cxx_div_to_mul"}
+
 
 def load_arm_a(d):
     merged = {}
@@ -142,7 +150,10 @@ def pct(k, n):
 
 
 def ratio(c, a):
-    return f"{c / a:6.1f}x" if a else "     -"
+    """C++ mutants per Halide mutant -- the thesis's "C++/Halide Mutants
+    Ratio". Blank rather than 0.0x when arm C produced nothing for a
+    benchmark, since that means "not measurable here", not "zero"."""
+    return f"{c / a:6.1f}x" if a and c else "      -"
 
 
 def main():
@@ -190,6 +201,7 @@ def main():
             status = "arm C missing"
         else:
             status = ""
+            tot["n"] += 1
             tot["A_pts"] += a["points"]; tot["A_eval"] += a["evaluated"]
             tot["A_eff"] += a["eff"]; tot["A_o1"] += a["o1_eff"]; tot["A_o2"] += a["o2_eff"]
             tot["C_pts"] += c["points"]; tot["C_o1"] += c["o1"]; tot["C_o2"] += c["o2"]
@@ -197,8 +209,9 @@ def main():
         p(f"{app:<26}{a['points']:>7}{a['evaluated']:>7}{a['eff']:>7}"
           f"{c['points']:>11}{cg['points']:>11}"
           f"{ratio(c['points'], a['points']):>9}{ratio(c['points'], a['eff']):>9}  {status}")
+    CORPUS_LABEL = f"CORPUS ({tot['n']} comparable)"
     p("-" * W)
-    p(f"{'CORPUS (11 comparable)':<26}{tot['A_pts']:>7}{tot['A_eval']:>7}{tot['A_eff']:>7}"
+    p(f"{CORPUS_LABEL:<26}{tot['A_pts']:>7}{tot['A_eval']:>7}{tot['A_eff']:>7}"
       f"{tot['C_pts']:>11}{tot['Cg_pts']:>11}"
       f"{ratio(tot['C_pts'], tot['A_pts']):>9}{ratio(tot['C_pts'], tot['A_eff']):>9}")
     p()
@@ -219,10 +232,88 @@ def main():
           f"{pct(a['o1_eff'], a['eff']):>7}{pct(a['o2_eff'], a['eff']):>7}"
           f"{pct(c['o1'], c['points']):>7}{pct(c['o2'], c['points']):>7}")
     p("-" * W)
-    p(f"{'CORPUS (11 comparable)':<26}{tot['A_eff']:>7}{tot['A_o1']:>7}{tot['A_o2']:>7}"
+    p(f"{CORPUS_LABEL:<26}{tot['A_eff']:>7}{tot['A_o1']:>7}{tot['A_o2']:>7}"
       f"{tot['C_pts']:>8}{tot['C_o1']:>7}{tot['C_o2']:>7}   "
       f"{pct(tot['A_o1'], tot['A_eff']):>7}{pct(tot['A_o2'], tot['A_eff']):>7}"
       f"{pct(tot['C_o1'], tot['C_pts']):>7}{pct(tot['C_o2'], tot['C_pts']):>7}")
+    p()
+
+    p("=" * W)
+    p("DENOMINATOR SENSITIVITY -- the two arms do not filter equivalent mutants the same way")
+    p("=" * W)
+    p("Arm A can tell an equivalent mutant from a real one for free: Halide")
+    p("compiles in stages, so the mutated generator's emitted .stmt can be")
+    p("diffed against the baseline's before any test runs. 200 of its 1,983")
+    p("points corpus-wide are provably equivalent at target=host and 51 are")
+    p("killed by the Halide compiler itself. Arm C has no such stage -- the")
+    p("emitted .cpp already is the lowered pipeline -- so nothing distinguishes")
+    p("an equivalent emitted-C++ mutant from a live one short of running it.")
+    p("That asymmetry is itself a property of multi-stage DSL compilation, but")
+    p("it means arm A's rate is over a cleaner denominator, so both are shown.")
+    p()
+    ev = defaultdict(int)
+    for app in CORPUS:
+        if app in C_BACKEND_BROKEN or not c_rows.get(app):
+            continue
+        a = a_stats.get(app, defaultdict(int))
+        for k in ("evaluated", "eff", "o1", "o2", "o1_eff", "o2_eff",
+                  "equiv", "gen_kill"):
+            ev[k] += a[k]
+    p(f"{'arm A, over effective mutants':<44}"
+      f"{tot['A_eff']:>7}{tot['A_o1']:>8}{tot['A_o2']:>8}"
+      f"{pct(tot['A_o1'], tot['A_eff']):>9}{pct(tot['A_o2'], tot['A_eff']):>9}")
+    p(f"{'arm A, over all evaluated (incl. equivalent)':<44}"
+      f"{ev['evaluated']:>7}{ev['o1']:>8}{ev['o2']:>8}"
+      f"{pct(ev['o1'], ev['evaluated']):>9}{pct(ev['o2'], ev['evaluated']):>9}")
+    p(f"{'arm C, over all mutants (no equiv filter)':<44}"
+      f"{tot['C_pts']:>7}{tot['C_o1']:>8}{tot['C_o2']:>8}"
+      f"{pct(tot['C_o1'], tot['C_pts']):>9}{pct(tot['C_o2'], tot['C_pts']):>9}")
+    p(f"{'  (arm A equivalent-at-host / compiler-killed)':<44}"
+      f"{ev['equiv']:>7}{ev['gen_kill']:>8}")
+    p()
+
+    p("=" * W)
+    p("LIKE-FOR-LIKE: ARITHMETIC OPERATORS ONLY")
+    p("(the closest match to the thesis's own framing -- arm A's 12 pairwise")
+    p(" +-*/ swaps on Halide::Expr against the 4 arithmetic swaps stock")
+    p(" cxx_default actually ships. Same source expressions, same algorithm,")
+    p(" one mutated before Halide lowers it and one after.)")
+    p("=" * W)
+    p(f"{'benchmark':<26}{'A pts':>7}{'A eff':>7}{'A O1%':>8}{'A O2%':>8}"
+      f"{'C n':>7}{'C gspec':>9}{'C O1%':>8}{'C O2%':>8}{'C/A pts':>9}{'C/A eff':>9}")
+    p("-" * W)
+    at = defaultdict(int)
+    for app in CORPUS:
+        if app in C_BACKEND_BROKEN or not c_rows.get(app):
+            continue
+        arows = by_arm.get((app, "arithmetic"), [])
+        a = arm_a_stats(arows)
+        if not arows:
+            n = census.get(app, {}).get("arithmetic", {}).get("n", 0)
+            a["points"] = n
+        ca = [r for r in c_rows[app] if r["mutator"] in ARITH_CXX]
+        cag = [r for r in ca if r["region"] == "generator_specific"]
+        c = arm_c_stats(ca)
+        cg = arm_c_stats(cag)
+        at["A_pts"] += a["points"]; at["A_eff"] += a["eff"]
+        at["A_o1"] += a["o1_eff"]; at["A_o2"] += a["o2_eff"]
+        at["C_n"] += c["points"]; at["C_o1"] += c["o1"]; at["C_o2"] += c["o2"]
+        at["Cg_n"] += cg["points"]; at["Cg_o1"] += cg["o1"]; at["Cg_o2"] += cg["o2"]
+        p(f"{app:<26}{a['points']:>7}{a['eff']:>7}"
+          f"{pct(a['o1_eff'], a['eff']):>8}{pct(a['o2_eff'], a['eff']):>8}"
+          f"{c['points']:>7}{cg['points']:>9}"
+          f"{pct(c['o1'], c['points']):>8}{pct(c['o2'], c['points']):>8}"
+          f"{ratio(c['points'], a['points']):>9}{ratio(c['points'], a['eff']):>9}")
+    p("-" * W)
+    p(f"{CORPUS_LABEL:<26}{at['A_pts']:>7}{at['A_eff']:>7}"
+      f"{pct(at['A_o1'], at['A_eff']):>8}{pct(at['A_o2'], at['A_eff']):>8}"
+      f"{at['C_n']:>7}{at['Cg_n']:>9}"
+      f"{pct(at['C_o1'], at['C_n']):>8}{pct(at['C_o2'], at['C_n']):>8}"
+      f"{ratio(at['C_n'], at['A_pts']):>9}{ratio(at['C_n'], at['A_eff']):>9}")
+    p(f"{'  ... generator-specific':<26}{'':>7}{'':>7}{'':>8}{'':>8}"
+      f"{at['Cg_n']:>7}{'':>9}"
+      f"{pct(at['Cg_o1'], at['Cg_n']):>8}{pct(at['Cg_o2'], at['Cg_n']):>8}"
+      f"{ratio(at['Cg_n'], at['A_pts']):>9}{ratio(at['Cg_n'], at['A_eff']):>9}")
     p()
 
     p("=" * W)
@@ -249,7 +340,7 @@ def main():
           f"{cells[1]['points']:>12}{pct(cells[1]['o1'], cells[1]['points']):>8}{pct(cells[1]['o2'], cells[1]['points']):>8}"
           f"{cells[2]['points']:>11}{pct(cells[2]['o1'], cells[2]['points']):>8}{pct(cells[2]['o2'], cells[2]['points']):>8}")
     p("-" * W)
-    p(f"{'CORPUS (11 comparable)':<26}"
+    p(f"{CORPUS_LABEL:<26}"
       f"{agg['boilerplate']['n']:>10}{pct(agg['boilerplate']['o1'], agg['boilerplate']['n']):>8}"
       f"{pct(agg['boilerplate']['o2'], agg['boilerplate']['n']):>8}"
       f"{agg['generator_specific']['n']:>12}{pct(agg['generator_specific']['o1'], agg['generator_specific']['n']):>8}"

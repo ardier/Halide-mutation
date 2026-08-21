@@ -8,9 +8,9 @@ group, link it into the app's real driver, run one process per mutant behind
 Mull's env-var dispatch), with three changes that the bigger machine makes
 possible/necessary:
 
-1. **No 10-minute timebox.** A per-app budget (default 45 min) covers
+1. **No 10-minute timebox.** A per-app budget (default 2h) covers
    compile+link+baseline+sweep so one stuck app cannot eat the session, but it
-   is ~4.5x the old one and the sweep is no longer the part that overruns.
+   is 12x the old one and the sweep is no longer the part that overruns.
 2. **Parallel sweep.** Mutants are independent processes over one shared
    instrumented binary; they are dispatched over a worker pool instead of a
    `for` loop. `HL_NUM_THREADS` is pinned (default 2) for the baseline *and*
@@ -64,13 +64,20 @@ LOWERED = f"{REPO}/mutation/lowered-cpp"
 IMG_CFLAGS = ["-I/usr/include/libpng16"]
 IMG_LIBS = ["-lpng16", "-ljpeg"]
 
-BUDGET = int(os.environ.get("ARMC_BUDGET", "2700"))
+BUDGET = int(os.environ.get("ARMC_BUDGET", "7200"))
 HL_THREADS = os.environ.get("ARMC_HL_THREADS", "2")
 JOBS = int(os.environ.get("ARMC_JOBS", "40"))
 
 sys.path.insert(0, LOWERED)
 from cxx_default_arm.bucket_mutants import region_bounds, classify  # noqa: E402
 
+# The trailing `timing_iterations` argument of the drivers that take one is set
+# to 1, not the 10 their usage strings suggest. It is purely a benchmark repeat
+# count -- `benchmark(timing_iterations, k, ...)` re-runs an already-deterministic
+# pipeline and reports the minimum -- so it changes wall time and nothing else.
+# At 10, bilateral_grid runs its pipeline 200 times per mutant (100 manual, 100
+# auto-scheduled) for a 224s baseline; at 1 the same verdict costs ~22s.
+#
 # artifact:  None -> the driver writes no comparable output file, so O2 has
 #            nothing independent to check and falls back to O1 (same
 #            convention arm A used for blur/c_backend/conv_layer/dwsc).
@@ -97,7 +104,7 @@ APPS = {
                        artifact="output"),
     "bilateral_grid": dict(gen="bilateral_grid", func="bilateral_grid",
                            driver="apps/bilateral_grid/filter.cpp",
-                           args=["{input}", "{output}", "0.1", "10"],
+                           args=["{input}", "{output}", "0.1", "1"],
                            image="apps/images/gray.png", artifact="output", heavy=True),
     "conv_layer": dict(gen="conv_layer", func="conv_layer", driver="apps/conv_layer/process.cpp",
                        args=[], image=None, artifact=None),
@@ -106,10 +113,10 @@ APPS = {
                                      driver="apps/depthwise_separable_conv/process.cpp",
                                      args=[], image=None, artifact=None, heavy=True),
     "nl_means": dict(gen="nl_means", func="nl_means", driver="apps/nl_means/process.cpp",
-                     args=["{input}", "7", "7", "0.12", "10", "{output}"],
+                     args=["{input}", "7", "7", "0.12", "1", "{output}"],
                      image="apps/images/rgb.png", artifact="output", heavy=True),
     "lens_blur": dict(gen="lens_blur", func="lens_blur", driver="apps/lens_blur/process.cpp",
-                      args=["{input}", "32", "13", "0.5", "32", "3", "{output}"],
+                      args=["{input}", "32", "13", "0.5", "32", "1", "{output}"],
                       image="apps/images/rgb_small.png", artifact="output", heavy=True),
     # Both of the following fail to compile as plain C++ regardless of mutation
     # -- verified with a bare `clang++ -c`. Kept in the table so `verify` can
@@ -324,7 +331,7 @@ def sweep(app, budget=BUDGET, jobs=None):
     binary = meta["binary"]
     emitted = meta["emitted"]
     mutants = [l.strip() for l in open(f"{scratch}/mutants.txt") if l.strip()]
-    workers = jobs or (12 if c["heavy"] else JOBS)
+    workers = jobs or (24 if c["heavy"] else JOBS)
     image = f"{REPO}/{c['image']}" if c["image"] else None
     base_env = dict(os.environ, HL_NUM_THREADS=HL_THREADS)
 
