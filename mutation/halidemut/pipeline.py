@@ -258,19 +258,55 @@ class Pipeline:
 
     # -- stage 3 ----------------------------------------------------------
 
-    def build_driver(self, app: AppConfig, artifacts: Path, out: Path) -> bool:
+    def _driver_libs(self, app: AppConfig, artifacts: Path) -> List[str]:
         libs = [str(artifacts / f"{app.function_name}.a")]
         if app.needs_auto_variant:
             libs.append(str(artifacts / f"{app.function_name}_auto_schedule.a"))
         if app.needs_runtime:
             libs.append(str(artifacts / "runtime.a"))
+        return libs
 
+    def header_signature(self, app: AppConfig, artifacts: Path) -> str:
+        """Digest of everything the driver *compiles against*, as opposed to
+        links. Used to decide whether a prebuilt driver object is still valid
+        for this mutant."""
+        h = hashlib.sha256()
+        for p in sorted(artifacts.glob("*.h")):
+            h.update(p.name.encode())
+            h.update(p.read_bytes())
+        return h.hexdigest()
+
+    def compile_driver_object(self, app: AppConfig, artifacts: Path,
+                              out: Path) -> bool:
+        """Compile the app's driver TU once, against the baseline headers."""
+        cmd = [self.cxx, *self._cxx_flags(app, extra_includes=[str(artifacts)]),
+               "-O2", "-Wall", "-c", str(self.halide_root / app.driver_source),
+               "-o", str(out)]
+        proc = self._run(cmd, timeout=900)
+        return proc.returncode == 0
+
+    def build_driver(self, app: AppConfig, artifacts: Path, out: Path,
+                     driver_object: Optional[Path] = None) -> bool:
+        """Link the app's driver against one mutant's artifacts.
+
+        ``driver_object`` is a prebuilt object for the driver TU. Every mutant
+        of an app emits the same header -- the mutation changes the schedule or
+        the arithmetic inside the pipeline, not its C signature -- so the driver
+        TU compiles to the same object every time and only the link differs.
+        The caller is responsible for having checked header_signature; if the
+        headers ever did differ, the object is not reused.
+        """
+        libs = self._driver_libs(app, artifacts)
         extra_sources = [str(artifacts / f) for f in app.extra_driver_link]
 
-        cmd = [self.cxx, *self._cxx_flags(app, extra_includes=[str(artifacts)]),
-               "-O2", "-Wall", str(self.halide_root / app.driver_source),
-               *extra_sources, *libs,
-               "-o", str(out), "-lpthread", "-ldl"]
+        if driver_object is not None and not extra_sources:
+            cmd = [self.cxx, str(driver_object), *libs,
+                   "-o", str(out), "-lpthread", "-ldl"]
+        else:
+            cmd = [self.cxx, *self._cxx_flags(app, extra_includes=[str(artifacts)]),
+                   "-O2", "-Wall", str(self.halide_root / app.driver_source),
+                   *extra_sources, *libs,
+                   "-o", str(out), "-lpthread", "-ldl"]
         if app.needs_image_io:
             cmd += ["-ljpeg", "-lpng", "-lz"]
         proc = self._run(cmd, timeout=900)
