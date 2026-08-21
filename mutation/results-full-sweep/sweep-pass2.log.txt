@@ -1,0 +1,41 @@
+[04:42:32] gaps in 12 apps: bilateral_grid:arithmetic; harris:arithmetic; unsharp:arithmetic; camera_pipe:arithmetic,schedule,generated; bgu:arithmetic,schedule,generated; conv_layer:arithmetic,generated; depthwise_separable_conv:schedule,arithmetic,generated; hist:arithmetic,schedule,generated; iir_blur:arithmetic; lens_blur:arithmetic,schedule,generated; max_filter:arithmetic; nl_means:arithmetic,generated
+[04:42:32] == bilateral_grid: start (arithmetic, workers=3)
+[04:42:32] == harris: start (arithmetic, workers=3)
+[04:42:32] == unsharp: start (arithmetic, workers=3)
+[04:42:32] == bgu: start (arithmetic,schedule,generated, workers=2)
+[04:53:02] == harris: TIMEBOX in 10.5 min
+[04:53:02] == conv_layer: start (arithmetic,generated, workers=3)
+[04:53:09] == unsharp: TIMEBOX in 10.6 min
+[04:53:09] == depthwise_separable_conv: start (schedule,arithmetic,generated, workers=3)
+[04:53:09] == bilateral_grid: TIMEBOX in 10.6 min
+[04:53:09] == hist: start (arithmetic,schedule,generated, workers=3)
+[04:59:32] == bgu: HARD_KILL in 17.0 min
+[04:59:32] == lens_blur: start (arithmetic,schedule,generated, workers=2)
+[05:03:15] == depthwise_separable_conv: TIMEBOX in 10.1 min
+[05:03:15] == iir_blur: start (arithmetic, workers=3)
+[05:03:38] == hist: TIMEBOX in 10.5 min
+[05:03:38] == max_filter: start (arithmetic, workers=3)
+[05:04:46] == conv_layer: TIMEBOX in 11.7 min
+[05:04:46] == nl_means: start (arithmetic,generated, workers=3)
+[05:14:42] == max_filter: TIMEBOX in 11.1 min
+[05:14:55] == iir_blur: TIMEBOX in 11.7 min
+[05:16:32] == lens_blur: HARD_KILL in 17.0 min
+[05:16:32] == camera_pipe: start (arithmetic,schedule,generated, workers=2)
+[05:21:46] == nl_means: HARD_KILL in 17.0 min
+[05:21:46] ### lane normal complete
+[05:26:48] == camera_pipe: TIMEBOX in 10.3 min
+[05:26:48] ### lane heavy complete
+
+=== pass 2 done ===
+  bilateral_grid              TIMEBOX        10.6 min   arithmetic
+  harris                      TIMEBOX        10.5 min   arithmetic
+  unsharp                     TIMEBOX        10.6 min   arithmetic
+  conv_layer                  TIMEBOX        11.7 min   arithmetic,generated
+  depthwise_separable_conv    TIMEBOX        10.1 min   schedule,arithmetic,generated
+  hist                        TIMEBOX        10.5 min   arithmetic,schedule,generated
+  iir_blur                    TIMEBOX        11.7 min   arithmetic
+  max_filter                  TIMEBOX        11.1 min   arithmetic
+  nl_means                    HARD_KILL      17.0 min   arithmetic,generated
+  bgu                         HARD_KILL      17.0 min   arithmetic,schedule,generated
+  lens_blur                   HARD_KILL      17.0 min   arithmetic,schedule,generated
+  camera_pipe                 TIMEBOX        10.3 min   arithmetic,schedule,generated
