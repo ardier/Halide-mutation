@@ -7,3 +7,4 @@ conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,96,18
 conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,180,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,83.49,emitted header differs from baseline; driver recompiled
 conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,85.91,emitted header differs from baseline; driver recompiled
 conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,178,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,71.75,emitted header differs from baseline; driver recompiled
+conv_layer,schedule,Halide_parallel_to_vectorize,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,333.19,emitted header differs from baseline; driver recompiled
