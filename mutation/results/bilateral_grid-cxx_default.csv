@@ -1,0 +1,4 @@
+app,arm,mutator,file,line,column,region,exit_code,o1_killed,o2_killed,wall_seconds
+bilateral_grid,cxx_default_on_emitted_cpp,cxx_sub_to_add,bilateral_grid.halide_generated.cpp,3931,28,generator_specific,-9,1,1,60.064
+bilateral_grid,cxx_default_on_emitted_cpp,cxx_lt_to_le,bilateral_grid.halide_generated.cpp,3270,30,boilerplate,-9,1,1,60.065
+bilateral_grid,cxx_default_on_emitted_cpp,cxx_add_to_sub,bilateral_grid.halide_generated.cpp,3876,71,generator_specific,-9,1,1,60.064
