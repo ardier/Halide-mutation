@@ -134,6 +134,20 @@ APPS = {
     "bgu": dict(gen="bgu", func="bgu", driver="apps/bgu/filter.cpp",
                 args=["{input}", "{output}"], image="apps/images/rgb.png",
                 artifact="output", heavy=True, backend_broken=True),
+
+    # ---- second wave (never swept in the first 13-app corpus pass) -------
+    "interpolate": dict(gen="interpolate", func="interpolate",
+                        driver="apps/interpolate/filter.cpp",
+                        args=["{input}", "{output}"],
+                        image="apps/images/rgba.png", artifact="output"),
+    "local_laplacian": dict(gen="local_laplacian", func="local_laplacian",
+                            driver="apps/local_laplacian/process.cpp",
+                            args=["{input}", "8", "1", "1", "1", "{output}"],
+                            image="apps/images/rgb.png", artifact="output"),
+    "stencil_chain": dict(gen="stencil_chain", func="stencil_chain",
+                          driver="apps/stencil_chain/process.cpp",
+                          args=["{input}", "1", "{output}"],
+                          image="apps/images/rgb.png", artifact="output"),
 }
 
 SWEEPABLE = [a for a, c in APPS.items() if not c.get("backend_broken")]
