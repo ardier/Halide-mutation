@@ -1,19 +1,160 @@
 app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-depthwise_separable_conv,if_then_else,Halide_select_to_if_then_else,depthwise_separable_conv_generator.cpp,41,13,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.62,
+depthwise_separable_conv,if_then_else,Halide_select_to_if_then_else,depthwise_separable_conv_generator.cpp,41,13,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,
 depthwise_separable_conv,if_then_else,Halide_select_to_if_then_else,depthwise_separable_conv_generator.cpp,41,13,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,38,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.60,
-depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,39,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.64,
-depthwise_separable_conv,select_clamp,Halide_select_swap_branches,depthwise_separable_conv_generator.cpp,41,13,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,
+depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,38,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,
+depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,39,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.27,
+depthwise_separable_conv,select_clamp,Halide_select_swap_branches,depthwise_separable_conv_generator.cpp,41,13,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.77,
 depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,38,26,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
 depthwise_separable_conv,select_clamp,Halide_clamp_swap_bounds,depthwise_separable_conv_generator.cpp,39,26,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
 depthwise_separable_conv,select_clamp,Halide_select_swap_branches,depthwise_separable_conv_generator.cpp,41,13,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
-depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,57,41,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.98,
-depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,70,41,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.87,
-depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,287,50,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.59,
+depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,57,41,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.59,
+depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,70,41,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.00,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,287,50,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.14,
 depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,288,53,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
-depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,289,64,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
-depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,290,64,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.13,
-depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,34,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.94,
-depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,63,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.98,
-depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,37,34,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.76,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,289,64,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.14,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,290,64,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.14,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,34,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.58,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,63,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,37,34,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.27,
 depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,287,55,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,288,90,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,289,69,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
+depthwise_separable_conv,generated,Halide_lt_to_ge,depthwise_separable_conv_generator.cpp,36,39,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.26,
+depthwise_separable_conv,generated,Halide_lt_to_ge,depthwise_separable_conv_generator.cpp,37,39,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.59,
+depthwise_separable_conv,generated,Halide_lt_to_le,depthwise_separable_conv_generator.cpp,36,39,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.59,
+depthwise_separable_conv,generated,Halide_lt_to_le,depthwise_separable_conv_generator.cpp,37,39,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.69,
+depthwise_separable_conv,generated,Halide_max_to_min,Halide.h,13221,12,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.00,
+depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,57,41,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_add_assign_to_sub_assign,depthwise_separable_conv_generator.cpp,70,41,after,OK,1,1,OK,KILLED,KILLED,1,1,0.01,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,287,50,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.10,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,288,53,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.10,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,289,64,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.10,
+depthwise_separable_conv,generated,Halide_eq_to_ne,depthwise_separable_conv_generator.cpp,290,64,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.10,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,34,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,36,63,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,37,34,after,OK,1,1,OK,KILLED,KILLED,1,1,0.01,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,287,55,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.09,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,288,90,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.45,
+depthwise_separable_conv,generated,Halide_logical_and_to_or,depthwise_separable_conv_generator.cpp,289,69,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.12,
+depthwise_separable_conv,generated,Halide_lt_to_ge,depthwise_separable_conv_generator.cpp,36,39,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_lt_to_ge,depthwise_separable_conv_generator.cpp,37,39,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_lt_to_le,depthwise_separable_conv_generator.cpp,36,39,after,OK,1,1,OK,KILLED,KILLED,1,1,0.01,
+depthwise_separable_conv,generated,Halide_lt_to_le,depthwise_separable_conv_generator.cpp,37,39,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
+depthwise_separable_conv,generated,Halide_max_to_min,Halide.h,13221,12,after,OK,1,1,OK,KILLED,KILLED,1,1,0.01,
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,124,33,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,151,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,160,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,169,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,246,33,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,260,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,273,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_unroll,depthwise_separable_conv_generator.cpp,244,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_vectorize,depthwise_separable_conv_generator.cpp,244,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,120,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,121,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,122,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,126,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,127,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,128,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,130,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,131,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,132,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,135,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,154,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,155,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,164,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,165,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,166,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,170,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,171,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,172,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,175,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,176,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,177,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,241,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.72,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,242,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.61,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,248,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.68,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,249,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.05,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,253,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.06,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,254,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.04,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,263,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.80,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,264,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.03,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,268,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.30,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,269,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.96,
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,276,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.37,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,120,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,121,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,122,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,126,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,127,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,128,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,130,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,131,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,132,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,135,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,154,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,155,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,164,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,165,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,166,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,170,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,171,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,172,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,175,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,176,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,177,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,241,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.84,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,242,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.35,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,248,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,249,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.89,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,253,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.92,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,254,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.72,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,263,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,264,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.83,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,268,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.97,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,269,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.71,
+depthwise_separable_conv,schedule,Halide_unroll_to_vectorize,depthwise_separable_conv_generator.cpp,276,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.28,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,153,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,240,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.66,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,247,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.31,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,252,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,40.12,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,261,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.86,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,266,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.27,
+depthwise_separable_conv,schedule,Halide_vectorize_to_parallel,depthwise_separable_conv_generator.cpp,275,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,15.93,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,153,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,240,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.27,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,247,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.99,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,252,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.59,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,261,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.47,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,266,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.12,
+depthwise_separable_conv,schedule,Halide_vectorize_to_unroll,depthwise_separable_conv_generator.cpp,275,18,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.31,
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,124,33,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,151,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,160,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,169,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,246,33,after,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,260,18,after,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,273,18,after,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_unroll,depthwise_separable_conv_generator.cpp,244,18,after,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_vectorize,depthwise_separable_conv_generator.cpp,244,18,after,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,120,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,121,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,122,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,126,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,127,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,128,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,130,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,131,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,132,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,135,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,154,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,155,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,164,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,165,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,166,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,170,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,171,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,172,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,175,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,176,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,177,18,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
