@@ -1,0 +1,53 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+bilateral_grid  boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+bilateral_grid  generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+bilateral_grid  schedule       37       5      0     14   18       1       3     3   5.6%  16.7%
+bilateral_grid  select_clamp    2       0      0      0    2       0       2     2   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+                generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+                schedule       37       5      0     14   18       1       3     3   5.6%  16.7%
+                select_clamp    2       0      0      0    2       0       2     2   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_add_assign_to_sub_assign   generated       1       0      0    1       0       0    0.0%
+Halide_compute_at_to_store_at     schedule        5       3      2    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        2       1      0    1       0       0    0.0%
+Halide_parallel_to_vectorize      schedule        2       1      0    1       0       0    0.0%
+Halide_unroll_to_parallel         schedule        7       0      3    4       1       1   25.0%
+Halide_unroll_to_vectorize        schedule        7       0      3    4       0       0    0.0%
+Halide_vectorize_to_parallel      schedule        7       0      3    4       0       1   25.0%
+Halide_vectorize_to_unroll        schedule        7       0      3    4       0       1   25.0%
+Halide_clamp_swap_bounds          select_clamp    2       0      0    2       0       2  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  bilateral_grid  schedule   Halide_compute_at_to_store_at   bilateral_grid_generator.cpp:129:19GEN_ERROR/OK  killed at generation time
+  bilateral_grid  schedule   Halide_compute_at_to_store_at   bilateral_grid_generator.cpp:133:23GEN_ERROR/OK  killed at generation time
+  bilateral_grid  schedule   Halide_compute_at_to_store_at   bilateral_grid_generator.cpp:142:19GEN_ERROR/OK  killed at generation time
+  bilateral_grid  schedule   Halide_parallel_to_unroll       bilateral_grid_generator.cpp:139:18GEN_ERROR/OK  killed at generation time
+  bilateral_grid  schedule   Halide_parallel_to_vectorize    bilateral_grid_generator.cpp:139:18GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  bilateral_grid/arithmetic
