@@ -66,6 +66,15 @@ class AppConfig:
     memory_heavy: bool = False
     """Run this app's mutants serially rather than in the shared pool."""
 
+    extra_gen_jobs: List[List[str]] = field(default_factory=list)
+    """Extra generator invocations, as argv fragments appended after the
+    generator path. ``{outdir}`` is substituted with the artifact directory.
+    Only c_backend needs this: its driver links a second, C-backend-emitted
+    copy of the same pipeline alongside the native one."""
+
+    extra_driver_link: List[str] = field(default_factory=list)
+    """Extra files inside the artifact directory to compile into the driver."""
+
 
 APPS = {
     # Self-checking: generates random input and compares the Halide pipeline
@@ -131,10 +140,147 @@ APPS = {
         generate_timeout=1200,
         memory_heavy=True,
     ),
+    # ---- the remaining Table-4 apps that exist in this checkout ----------
+    # Flagged RAM-heavy by the thesis (needed swap at 32GB).
+    "bgu": AppConfig(
+        name="bgu",
+        generator_source="apps/bgu/bgu_generator.cpp",
+        generator_name="bgu",
+        function_name="bgu",
+        driver_source="apps/bgu/filter.cpp",
+        driver_args=["{input}", "{output}"],
+        input_image="apps/images/rgb.png",
+        output_artifact="out.png",
+        run_timeout=600,
+        generate_timeout=1200,
+        memory_heavy=True,
+    ),
+    # The only app in the corpus whose shipped driver is a differential
+    # oracle: it runs the same pipeline through the LLVM backend and through
+    # the C backend and asserts the two agree. Both copies are emitted by the
+    # same (mutated) generator run, so the comparison is blind to generator
+    # mutation by construction -- see the notes in the run report.
+    "c_backend": AppConfig(
+        name="c_backend",
+        generator_source="apps/c_backend/pipeline_generator.cpp",
+        generator_name="pipeline",
+        function_name="pipeline_native",
+        driver_source="apps/c_backend/run.cpp",
+        driver_args=[],
+        needs_auto_variant=False,
+        needs_runtime=False,
+        input_image=None,
+        output_artifact=None,
+        needs_image_io=False,
+        extra_gen_jobs=[
+            ["-g", "pipeline", "-o", "{outdir}", "-f", "pipeline_c",
+             "-e", "c_source,c_header", "target=host"],
+        ],
+        extra_driver_link=["pipeline_c.halide_generated.cpp"],
+    ),
+    "conv_layer": AppConfig(
+        name="conv_layer",
+        generator_source="apps/conv_layer/conv_layer_generator.cpp",
+        generator_name="conv_layer",
+        function_name="conv_layer",
+        driver_source="apps/conv_layer/process.cpp",
+        driver_args=[],
+        needs_runtime=False,
+        input_image=None,
+        output_artifact=None,
+        needs_image_io=False,
+        run_timeout=900,
+        generate_timeout=1200,
+    ),
+    "depthwise_separable_conv": AppConfig(
+        name="depthwise_separable_conv",
+        generator_source=(
+            "apps/depthwise_separable_conv/depthwise_separable_conv_generator.cpp"),
+        generator_name="depthwise_separable_conv",
+        function_name="depthwise_separable_conv",
+        driver_source="apps/depthwise_separable_conv/process.cpp",
+        driver_args=[],
+        needs_runtime=False,
+        input_image=None,
+        output_artifact=None,
+        needs_image_io=False,
+        run_timeout=900,
+    ),
+    "hist": AppConfig(
+        name="hist",
+        generator_source="apps/hist/hist_generator.cpp",
+        generator_name="hist",
+        function_name="hist",
+        driver_source="apps/hist/filter.cpp",
+        driver_args=["{input}", "{output}"],
+        input_image="apps/images/rgba.png",
+        output_artifact="out.png",
+    ),
+    "iir_blur": AppConfig(
+        name="iir_blur",
+        generator_source="apps/iir_blur/iir_blur_generator.cpp",
+        generator_name="iir_blur",
+        function_name="iir_blur",
+        driver_source="apps/iir_blur/filter.cpp",
+        driver_args=["{input}", "{output}"],
+        input_image="apps/images/rgba.png",
+        output_artifact="out.png",
+    ),
+    # Flagged RAM-heavy by the thesis (needed swap at 32GB).
+    "lens_blur": AppConfig(
+        name="lens_blur",
+        generator_source="apps/lens_blur/lens_blur_generator.cpp",
+        generator_name="lens_blur",
+        function_name="lens_blur",
+        driver_source="apps/lens_blur/process.cpp",
+        # The app's own Makefile passes 3 timing iterations; 1 is used here.
+        # That argument drives only the benchmark loop, not the output.
+        driver_args=["{input}", "32", "13", "0.5", "32", "1", "{output}"],
+        needs_runtime=False,
+        input_image="apps/images/rgb_small.png",
+        output_artifact="out.png",
+        run_timeout=900,
+        generate_timeout=1800,
+        memory_heavy=True,
+    ),
+    "max_filter": AppConfig(
+        name="max_filter",
+        generator_source="apps/max_filter/max_filter_generator.cpp",
+        generator_name="max_filter",
+        function_name="max_filter",
+        driver_source="apps/max_filter/filter.cpp",
+        driver_args=["{input}", "{output}"],
+        input_image="apps/images/rgba.png",
+        output_artifact="out.png",
+        run_timeout=600,
+    ),
+    "nl_means": AppConfig(
+        name="nl_means",
+        generator_source="apps/nl_means/nl_means_generator.cpp",
+        generator_name="nl_means",
+        function_name="nl_means",
+        driver_source="apps/nl_means/process.cpp",
+        # As for lens_blur: the app's Makefile passes 10 timing iterations,
+        # 1 is used here. Timing only; the saved image is unaffected.
+        driver_args=["{input}", "7", "7", "0.12", "1", "{output}"],
+        needs_runtime=False,
+        input_image="apps/images/rgb.png",
+        output_artifact="out.png",
+        run_timeout=900,
+    ),
+}
+
+# `compositing` is listed in the thesis's Table 4 but does not exist in this
+# Halide checkout: it lives only on the upstream side branch
+# `abadams/compositing_app` and was never merged into release/16.x. The corpus
+# reachable here is therefore 14 apps, not 15.
+MISSING_FROM_CHECKOUT = {
+    "compositing": "only on upstream branch abadams/compositing_app; not in release/16.x",
 }
 
 
-# The two experiment arms.
+# The experiment arms: the full 65-operator Halide-native set, split by
+# operator family. Two mutation routes are involved -- see ARM_ROUTE.
 ARMS = {
     # The legacy 12 arithmetic operators: pairwise + - * / on Halide::Expr.
     # Every one has a direct C++ sibling.
@@ -152,4 +298,73 @@ ARMS = {
         "Halide_parallel_to_vectorize", "Halide_parallel_to_unroll",
         "Halide_compute_at_to_store_at", "Halide_store_at_to_compute_at",
     ],
+    # The census-driven expansion: every Mull C++ mutator for which Halide::Expr
+    # was empirically confirmed to overload the operator. Relational, logical,
+    # bitwise, compound-assignment, min/max and the negation family.
+    "generated": [
+        "Halide_eq_to_ne", "Halide_ne_to_eq",
+        "Halide_ge_to_gt", "Halide_ge_to_lt",
+        "Halide_gt_to_ge", "Halide_gt_to_le",
+        "Halide_le_to_gt", "Halide_le_to_lt",
+        "Halide_lt_to_ge", "Halide_lt_to_le",
+        "Halide_and_to_or", "Halide_or_to_and", "Halide_xor_to_or",
+        "Halide_logical_and_to_or", "Halide_logical_or_to_and",
+        "Halide_lshift_to_rshift", "Halide_rshift_to_lshift",
+        "Halide_rem_to_div",
+        "Halide_min_to_max", "Halide_max_to_min",
+        "Halide_add_assign_to_sub_assign", "Halide_sub_assign_to_add_assign",
+        "Halide_mul_assign_to_div_assign", "Halide_div_assign_to_mul_assign",
+        "Halide_not_to_negate", "Halide_not_to_bitwise_not",
+        "Halide_negate_to_not", "Halide_negate_to_bitwise_not",
+        "Halide_bitwise_not_to_not", "Halide_bitwise_not_to_negate",
+    ],
+    # AST route from here down.
+    "boundary_conditions": [
+        "Halide_repeat_edge_to_repeat_image",
+        "Halide_repeat_edge_to_mirror_image",
+        "Halide_repeat_edge_to_mirror_interior",
+        "Halide_repeat_image_to_repeat_edge",
+        "Halide_repeat_image_to_mirror_image",
+        "Halide_repeat_image_to_mirror_interior",
+        "Halide_mirror_image_to_repeat_edge",
+        "Halide_mirror_image_to_repeat_image",
+        "Halide_mirror_image_to_mirror_interior",
+        "Halide_mirror_interior_to_repeat_edge",
+        "Halide_mirror_interior_to_repeat_image",
+        "Halide_mirror_interior_to_mirror_image",
+    ],
+    "select_clamp": [
+        "Halide_select_swap_branches",
+        "Halide_clamp_swap_bounds",
+    ],
+    # Reported on its own: its yield is site-dependent (Halide's simplifier
+    # folds the mutated intrinsic back to a Select wherever it can prove both
+    # branches safe), so pooling it with select/clamp would hide that.
+    "if_then_else": [
+        "Halide_select_to_if_then_else",
+    ],
+}
+
+# Which frontend instruments the generator TU for each arm. The IR route is a
+# `-fpass-plugin=` LLVM pass matching mangled callee names; the AST route is a
+# `-fplugin=` Clang plugin rewriting real AST nodes through Sema. Both share
+# mull.yml, the env-var dispatch and the mutant-key format, so only stage 1
+# differs.
+ARM_ROUTE = {
+    "arithmetic": "ir",
+    "schedule": "ir",
+    "generated": "ir",
+    "boundary_conditions": "ast",
+    "select_clamp": "ast",
+    "if_then_else": "ast",
+}
+
+# Human-readable family names for the report.
+ARM_FAMILY = {
+    "arithmetic": "arithmetic",
+    "schedule": "schedule directive",
+    "generated": "relational/logical/bitwise/compound",
+    "boundary_conditions": "BoundaryConditions",
+    "select_clamp": "select/clamp",
+    "if_then_else": "select->if_then_else",
 }

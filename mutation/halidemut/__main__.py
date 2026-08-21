@@ -4,13 +4,14 @@ from __future__ import annotations
 
 import argparse
 import sys
+import time
 import traceback
 from pathlib import Path
 
 from .apps import APPS, ARMS
 from .pipeline import Pipeline, PipelineError
 from .report import summarise
-from .run import Runner, write_csv
+from .run import Budget, Runner, StreamingCSV, write_csv
 
 
 def main(argv=None) -> int:
@@ -32,6 +33,19 @@ def main(argv=None) -> int:
     ap.add_argument("--keep-artifacts", action="store_true")
     ap.add_argument("--determinism-runs", type=int, default=3,
                     help="baseline runs that must agree before O2 is trusted")
+    ap.add_argument("--workers", type=int, default=4,
+                    help="parallel mutants for normal apps")
+    ap.add_argument("--heavy-workers", type=int, default=1,
+                    help="parallel mutants for apps marked memory_heavy")
+    ap.add_argument("--budget-seconds", type=float, default=None,
+                    help="wall-clock budget for this invocation. Arms are run "
+                         "in --arms order and evaluation stops when the budget "
+                         "is gone; unevaluated mutants are recorded as NOT_RUN "
+                         "rather than dropped.")
+    ap.add_argument("--no-skip-equivalent", action="store_true",
+                    help="build and run mutants whose emitted .stmt is "
+                         "byte-identical to baseline instead of classifying "
+                         "them as equivalent-at-this-target up front")
     args = ap.parse_args(argv)
 
     halide_build = args.halide_build or (args.halide_root / "build")
@@ -47,15 +61,27 @@ def main(argv=None) -> int:
 
     pipeline = Pipeline(args.halide_root, halide_build, args.mull_output,
                         args.llvm_prefix, args.workdir)
+
+    sink = StreamingCSV(args.csv) if args.csv else None
     runner = Runner(pipeline, keep_artifacts=args.keep_artifacts,
-                    determinism_runs=args.determinism_runs)
+                    determinism_runs=args.determinism_runs,
+                    workers=args.workers, heavy_workers=args.heavy_workers,
+                    skip_equivalent=not args.no_skip_equivalent,
+                    sink=sink)
+
+    budget = Budget(args.budget_seconds)
 
     results = []
     failures = []
+    skipped = []
     for app_name in app_names:
         for arm in arm_names:
+            if budget.expired():
+                skipped.append((app_name, arm))
+                continue
             try:
-                results += runner.run_app_arm(APPS[app_name], arm)
+                results += runner.run_app_arm(APPS[app_name], arm,
+                                              budget=budget)
             except PipelineError as exc:
                 print(f"!! {app_name}/{arm}: {exc}", file=sys.stderr)
                 failures.append((app_name, arm, str(exc)))
@@ -63,8 +89,8 @@ def main(argv=None) -> int:
                 traceback.print_exc()
                 failures.append((app_name, arm, "unexpected harness error"))
 
-    if args.csv:
-        write_csv(results, args.csv)
+    if sink is not None:
+        sink.close()
         print(f"\nwrote {args.csv} ({len(results)} rows)")
 
     text = summarise(results)
@@ -72,6 +98,10 @@ def main(argv=None) -> int:
         text += "\nSETUP FAILURES (no mutants evaluated)\n"
         for app, arm, msg in failures:
             text += f"  {app}/{arm}: {msg.splitlines()[0][:160]}\n"
+    if skipped:
+        text += "\nNOT REACHED (wall-clock budget exhausted first)\n"
+        for app, arm in skipped:
+            text += f"  {app}/{arm}\n"
     print("\n" + text)
     if args.summary:
         args.summary.parent.mkdir(parents=True, exist_ok=True)
