@@ -1,0 +1,7 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+bgu,boundary_conditions,Halide_repeat_edge_to_mirror_image,bgu_generator.cpp,278,31,OK,1,1,OK,SURVIVED,KILLED,1,0,3.12,emitted header differs from baseline; driver recompiled
+bgu,boundary_conditions,Halide_repeat_edge_to_mirror_image,bgu_generator.cpp,279,34,OK,1,1,OK,SURVIVED,KILLED,1,0,3.84,emitted header differs from baseline; driver recompiled
+bgu,boundary_conditions,Halide_repeat_edge_to_mirror_interior,bgu_generator.cpp,278,31,OK,1,1,OK,SURVIVED,KILLED,1,0,3.54,emitted header differs from baseline; driver recompiled
+bgu,boundary_conditions,Halide_repeat_edge_to_mirror_interior,bgu_generator.cpp,279,34,OK,1,1,OK,SURVIVED,KILLED,1,0,3.79,emitted header differs from baseline; driver recompiled
+bgu,boundary_conditions,Halide_repeat_edge_to_repeat_image,bgu_generator.cpp,278,31,OK,1,1,OK,SURVIVED,KILLED,1,0,4.87,emitted header differs from baseline; driver recompiled
+bgu,boundary_conditions,Halide_repeat_edge_to_repeat_image,bgu_generator.cpp,279,34,OK,1,1,OK,SURVIVED,KILLED,1,0,4.60,emitted header differs from baseline; driver recompiled

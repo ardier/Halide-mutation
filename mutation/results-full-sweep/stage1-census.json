@@ -171,9 +171,11 @@
    "error": null
   },
   "if_then_else": {
-   "n": -1,
-   "per_op": {},
-   "error": "instrumentation failed"
+   "n": 1,
+   "per_op": {
+    "Halide_select_to_if_then_else": 1
+   },
+   "error": null
   },
   "schedule": {
    "n": 65,

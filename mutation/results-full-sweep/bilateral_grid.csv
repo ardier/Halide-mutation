@@ -1,0 +1,6 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+bilateral_grid,boundary_conditions,Halide_repeat_edge_to_mirror_interior,bilateral_grid_generator.cpp,18,24,OK,1,1,OK,SURVIVED,KILLED,1,0,8.92,emitted header differs from baseline; driver recompiled
+bilateral_grid,boundary_conditions,Halide_repeat_edge_to_repeat_image,bilateral_grid_generator.cpp,18,24,OK,1,1,OK,SURVIVED,KILLED,1,0,9.10,emitted header differs from baseline; driver recompiled
+bilateral_grid,boundary_conditions,Halide_repeat_edge_to_mirror_image,bilateral_grid_generator.cpp,18,24,OK,1,1,OK,SURVIVED,KILLED,1,0,9.06,emitted header differs from baseline; driver recompiled
+bilateral_grid,select_clamp,Halide_clamp_swap_bounds,bilateral_grid_generator.cpp,23,15,OK,1,1,OK,SURVIVED,KILLED,1,0,7.48,emitted header differs from baseline; driver recompiled
+bilateral_grid,select_clamp,Halide_clamp_swap_bounds,bilateral_grid_generator.cpp,50,15,OK,1,1,OK,SURVIVED,KILLED,1,0,7.26,emitted header differs from baseline; driver recompiled

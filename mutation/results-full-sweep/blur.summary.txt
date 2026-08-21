@@ -1,0 +1,47 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+blur            arithmetic     30       0      0      0   30      30      30    30 100.0% 100.0%
+blur            schedule       21       4      0     13    4       0       0     0   0.0%   0.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic     30       0      0      0   30      30      30    30 100.0% 100.0%
+                schedule       21       4      0     13    4       0       0     0   0.0%   0.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      8       0      0    8       8       8  100.0%
+Halide_add_to_mul                 arithmetic      8       0      0    8       8       8  100.0%
+Halide_add_to_sub                 arithmetic      8       0      0    8       8       8  100.0%
+Halide_div_to_add                 arithmetic      2       0      0    2       2       2  100.0%
+Halide_div_to_mul                 arithmetic      2       0      0    2       2       2  100.0%
+Halide_div_to_sub                 arithmetic      2       0      0    2       2       2  100.0%
+Halide_compute_at_to_store_at     schedule        3       1      2    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        2       1      1    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        2       1      1    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        2       0      1    1       0       0    0.0%
+Halide_unroll_to_parallel         schedule        2       0      2    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule        2       0      2    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        4       1      2    1       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        4       0      2    2       0       0    0.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  blur            schedule   Halide_compute_at_to_store_at   halide_blur_generator.cpp:109:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_parallel_to_unroll       halide_blur_generator.cpp:105:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_parallel_to_vectorize    halide_blur_generator.cpp:105:18GEN_ERROR/OK  killed at generation time
+  blur            schedule   Halide_vectorize_to_parallel    halide_blur_generator.cpp:106:18GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
