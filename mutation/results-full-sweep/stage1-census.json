@@ -1,0 +1,309 @@
+{
+ "blur": {
+  "select_clamp": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 21,
+   "per_op": {},
+   "error": null
+  },
+  "arithmetic": {
+   "n": 30,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "bilateral_grid": {
+  "boundary_conditions": {
+   "n": 3,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 1,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 37,
+   "per_op": {},
+   "error": null
+  },
+  "arithmetic": {
+   "n": 198,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "harris": {
+  "generated": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 50,
+   "per_op": {},
+   "error": null
+  },
+  "arithmetic": {
+   "n": 237,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "unsharp": {
+  "schedule": {
+   "n": 27,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 3,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "arithmetic": {
+   "n": 147,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "camera_pipe": {
+  "generated": {
+   "n": 22,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 15,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 9,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 64,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "bgu": {
+  "generated": {
+   "n": 12,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 6,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 4,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": -1,
+   "per_op": {},
+   "error": "instrumentation failed"
+  },
+  "schedule": {
+   "n": 65,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "c_backend": {
+  "arithmetic": {
+   "n": 27,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 1,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "conv_layer": {
+  "arithmetic": {
+   "n": 9,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 67,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "depthwise_separable_conv": {
+  "arithmetic": {
+   "n": 33,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "generated": {
+   "n": 17,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 3,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 1,
+   "per_op": {},
+   "error": null
+  },
+  "schedule": {
+   "n": 87,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "hist": {
+  "generated": {
+   "n": 2,
+   "per_op": {},
+   "error": null
+  },
+  "boundary_conditions": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  },
+  "select_clamp": {
+   "n": 6,
+   "per_op": {},
+   "error": null
+  },
+  "if_then_else": {
+   "n": 0,
+   "per_op": {},
+   "error": null
+  }
+ },
+ "iir_blur": {
+  "arithmetic": {
+   "n": 39,
+   "per_op": {},
+   "error": null
+  }
+ }
+}
