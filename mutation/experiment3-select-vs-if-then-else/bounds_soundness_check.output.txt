@@ -1,0 +1,6 @@
+Halide's own infer_input_bounds says: in_ite needs [0,10) extent=10
+Realizing f_ite over x in [0,20) with EXACTLY that buffer...
+realize() SUCCEEDED (no crash, no assertion). out = 111111 111112 111113 111114 111115 111116 111117 111118 111119 111120 0 4 0 0 0 0 -4096 -1 -4096 -1 
+-> for x>=10 (else branch), output should be in_ite(x+100000), which is
+   OUTSIDE the declared/allocated buffer. If those values look like plausible
+   garbage/reused-memory rather than a clean crash, that's a soundness gap.

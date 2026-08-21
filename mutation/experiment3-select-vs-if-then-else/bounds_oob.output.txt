@@ -1,0 +1,18 @@
+=== .stmt dump ===
+wrote /tmp/f_select.stmt and /tmp/f_ite.stmt
+
+=== bounds query, output domain x in [0,10) ===
+select    : in_sel required range = [0, 100010)  (extent 100010)
+if_then_else: in_ite required range = [0, 10)  (extent 10)
+
+=== oracle: assert required extent covers the union of BOTH branches ===
+test on ORIGINAL (select)      : required extent=100010 -> PASS (matches eager expectation)
+same test on MUTANT (if_then_else): required extent=10 -> FAIL (mutant needs far less input)
+
+=== VERDICT ===
+DISTINGUISHING: test passes on original, fails on mutant.
+
+=== execution test: realize with buffer sized to the LAZY-only extent [0,10) ===
+if_then_else (mutant)  realize() with small buffer: SUCCEEDED, out(0..9)=1000 1001 1002 1003 1004 1005 1006 1007 1008 1009 
+select (original)      realize() with small buffer: THREW: Error: Input buffer in_sel is accessed at 100009, which is beyond the max (9) in dimension 0
+

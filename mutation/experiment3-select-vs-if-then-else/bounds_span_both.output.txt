@@ -1,0 +1,3 @@
+domain x in [0,20): select required range = [0,100020) extent=100020
+domain x in [0,20): if_then_else required range = [0,10) extent=10
+DIFFERENT extent -> gap survives even with both branches in-domain
