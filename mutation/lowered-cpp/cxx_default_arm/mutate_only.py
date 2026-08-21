@@ -100,8 +100,16 @@ def mutate(app):
         f.write("mutators:\n  - cxx_default\ntimeout: 99999999\nquiet: false\nincludePaths:\n  - .*\n")
     env = dict(os.environ, MULL_CONFIG=yml)
     mut_o = f"{scratch}/{app}_cxx.o"
+    # The cxx_default compile (Mull's junk-detector re-parse dominates) scales
+    # with file size -- bigger emitted files (bilateral_grid, camera_pipe, bgu,
+    # lens_blur) genuinely need more than a flat 240s, confirmed by a manual
+    # diagnostic run (bilateral_grid: ~390s, exit 0, not stuck). Give it
+    # whatever remains of this app's own 10-minute budget rather than an
+    # arbitrary flat cap, so it fails only when the app's real budget is spent.
+    remaining = max(60, DEADLINE_SECONDS - (time.time() - t_start))
     run([CLANG, "-std=c++17", "-O1", "-g", "-grecord-command-line",
-         f"-fpass-plugin={MULL_IR}", "-c", emitted_cpp, "-o", mut_o], env=env)
+         f"-fpass-plugin={MULL_IR}", "-c", emitted_cpp, "-o", mut_o],
+        env=env, timeout=remaining)
 
     strings_out = subprocess.run(["strings", mut_o], capture_output=True, text=True).stdout
     pattern = re.compile(rf"^cxx_[a-z_]+:{re.escape(emitted_cpp)}:\d+:\d+$", re.M)
