@@ -5,3 +5,4 @@ nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,60,90,OK,1,1,OK,SUR
 nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,60,103,OK,1,1,OK,SURVIVED,KILLED,1,0,17.87,emitted header differs from baseline; driver recompiled
 nl_means,arithmetic,Halide_add_to_mul,nl_means_generator.cpp,32,64,OK,1,1,OK,SURVIVED,KILLED,1,0,20.15,emitted header differs from baseline; driver recompiled
 nl_means,arithmetic,Halide_add_to_mul,nl_means_generator.cpp,32,72,OK,1,1,OK,SURVIVED,KILLED,1,0,13.23,emitted header differs from baseline; driver recompiled
+nl_means,arithmetic,Halide_add_to_div,nl_means_generator.cpp,45,47,OK,1,1,OK,SURVIVED,KILLED,1,0,580.38,emitted header differs from baseline; driver recompiled
