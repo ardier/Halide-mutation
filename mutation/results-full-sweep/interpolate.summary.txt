@@ -1,0 +1,70 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+interpolate     arithmetic    123       0      0     20  103       4     100   100   3.9%  97.1%
+interpolate     boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+interpolate     generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+interpolate     if_then_else    1       0      0      1    0       0       0     0    n/a    n/a
+interpolate     schedule       51       6      0     31   14       1       1     1   7.1%   7.1%
+interpolate     select_clamp    3       0      0      0    3       0       3     3   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    123       0      0     20  103       4     100   100   3.9%  97.1%
+                boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+                generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+                if_then_else    1       0      0      1    0       0       0     0    n/a    n/a
+                schedule       51       6      0     31   14       1       1     1   7.1%   7.1%
+                select_clamp    3       0      0      0    3       0       3     3   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     11       0      0   11       0      11  100.0%
+Halide_add_to_mul                 arithmetic     11       0      0   11       0      11  100.0%
+Halide_add_to_sub                 arithmetic     11       0      0   11       0      11  100.0%
+Halide_div_to_add                 arithmetic     10       0      2    8       0       7   87.5%
+Halide_div_to_mul                 arithmetic     10       0      0   10       4       9   90.0%
+Halide_div_to_sub                 arithmetic     10       0      2    8       0       7   87.5%
+Halide_mul_to_add                 arithmetic     14       0      4   10       0      10  100.0%
+Halide_mul_to_div                 arithmetic     14       0      2   12       0      12  100.0%
+Halide_mul_to_sub                 arithmetic     14       0      2   12       0      12  100.0%
+Halide_sub_to_add                 arithmetic      6       0      3    3       0       3  100.0%
+Halide_sub_to_div                 arithmetic      6       0      3    3       0       3  100.0%
+Halide_sub_to_mul                 arithmetic      6       0      2    4       0       4  100.0%
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_lt_to_le                   generated       1       0      0    1       0       0    0.0%
+Halide_select_to_if_then_else     if_then_else    1       0      1    0       0       0     n/a
+Halide_compute_at_to_store_at     schedule        5       2      3    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        2       2      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        2       2      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        2       0      0    2       0       0    0.0%
+Halide_unroll_to_parallel         schedule       16       0     14    2       0       0    0.0%
+Halide_unroll_to_vectorize        schedule       16       0     14    2       0       0    0.0%
+Halide_vectorize_to_parallel      schedule        4       0      0    4       1       1   25.0%
+Halide_vectorize_to_unroll        schedule        4       0      0    4       0       0    0.0%
+Halide_clamp_swap_bounds          select_clamp    2       0      0    2       0       2  100.0%
+Halide_select_swap_branches       select_clamp    1       0      0    1       0       1  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  interpolate     schedule   Halide_compute_at_to_store_at   interpolate_generator.cpp:165:22GEN_ERROR/OK  killed at generation time
+  interpolate     schedule   Halide_compute_at_to_store_at   interpolate_generator.cpp:184:26GEN_ERROR/OK  killed at generation time
+  interpolate     schedule   Halide_parallel_to_unroll       interpolate_generator.cpp:153:26GEN_ERROR/OK  killed at generation time
+  interpolate     schedule   Halide_parallel_to_unroll       interpolate_generator.cpp:179:22GEN_ERROR/OK  killed at generation time
+  interpolate     schedule   Halide_parallel_to_vectorize    interpolate_generator.cpp:153:26GEN_ERROR/OK  killed at generation time
+  interpolate     schedule   Halide_parallel_to_vectorize    interpolate_generator.cpp:179:22GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
