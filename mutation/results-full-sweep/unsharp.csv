@@ -1,0 +1,33 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.71,emitted header differs from baseline; driver recompiled
+unsharp,boundary_conditions,Halide_repeat_edge_to_repeat_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.91,emitted header differs from baseline; driver recompiled
+unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_interior,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.58,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,80,23,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,98,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,101,24,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,104,23,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_parallel_to_unroll,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_parallel_to_vectorize,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,86,24,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,102,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,81,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,99,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.30,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.93,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.43,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.83,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.60,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.30,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,KILLED,1,0,3.09,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.01,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,KILLED,1,0,4.49,emitted header differs from baseline; driver recompiled
+unsharp,generated,Halide_negate_to_not,unsharp_generator.cpp,18,25,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+unsharp,generated,Halide_negate_to_bitwise_not,unsharp_generator.cpp,18,25,OK,1,1,OK,SURVIVED,KILLED,1,0,2.96,emitted header differs from baseline; driver recompiled

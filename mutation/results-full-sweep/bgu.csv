@@ -5,3 +5,8 @@ bgu,boundary_conditions,Halide_repeat_edge_to_mirror_interior,bgu_generator.cpp,
 bgu,boundary_conditions,Halide_repeat_edge_to_mirror_interior,bgu_generator.cpp,279,34,OK,1,1,OK,SURVIVED,KILLED,1,0,3.79,emitted header differs from baseline; driver recompiled
 bgu,boundary_conditions,Halide_repeat_edge_to_repeat_image,bgu_generator.cpp,278,31,OK,1,1,OK,SURVIVED,KILLED,1,0,4.87,emitted header differs from baseline; driver recompiled
 bgu,boundary_conditions,Halide_repeat_edge_to_repeat_image,bgu_generator.cpp,279,34,OK,1,1,OK,SURVIVED,KILLED,1,0,4.60,emitted header differs from baseline; driver recompiled
+bgu,if_then_else,Halide_select_to_if_then_else,bgu_generator.cpp,255,13,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,select_clamp,Halide_clamp_swap_bounds,bgu_generator.cpp,486,19,OK,1,1,OK,SURVIVED,KILLED,1,0,4.33,emitted header differs from baseline; driver recompiled
+bgu,select_clamp,Halide_clamp_swap_bounds,bgu_generator.cpp,307,19,OK,1,1,OK,SURVIVED,KILLED,1,0,4.61,emitted header differs from baseline; driver recompiled
+bgu,select_clamp,Halide_clamp_swap_bounds,bgu_generator.cpp,507,26,OK,1,1,OK,SURVIVED,KILLED,1,0,1.74,emitted header differs from baseline; driver recompiled
+bgu,select_clamp,Halide_select_swap_branches,bgu_generator.cpp,255,13,OK,1,1,OK,SURVIVED,KILLED,1,0,5.19,emitted header differs from baseline; driver recompiled

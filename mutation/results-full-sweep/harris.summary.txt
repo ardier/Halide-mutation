@@ -1,0 +1,271 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+harris          arithmetic    234       0      0      0   16       0      16    16   0.0% 100.0%
+harris          schedule       50       7      0     34    9       2       3     3  22.2%  33.3%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    234       0      0      0   16       0      16    16   0.0% 100.0%
+                schedule       50       7      0     34    9       2       3     3  22.2%  33.3%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     34       0      0   16       0      16  100.0%
+Halide_add_to_mul                 arithmetic     37       0      0    0       0       0     n/a
+Halide_add_to_sub                 arithmetic     37       0      0    0       0       0     n/a
+Halide_mul_to_add                 arithmetic     24       0      0    0       0       0     n/a
+Halide_mul_to_div                 arithmetic     24       0      0    0       0       0     n/a
+Halide_mul_to_sub                 arithmetic     24       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic     18       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic     18       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic     18       0      0    0       0       0     n/a
+Halide_compute_at_to_store_at     schedule        9       3      6    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        3       0      0    3       2       2   66.7%
+Halide_unroll_to_parallel         schedule       11       0     11    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule       11       0     11    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        7       2      3    2       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        7       0      3    4       0       1   25.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:29:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:29:62    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:29:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:30:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:30:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:30:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:30:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:33:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:33:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:33:89    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:34:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:34:59    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:34:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:35:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:35:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:35:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:35:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_div               harris_generator.cpp:59:33    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:8:28     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:8:42     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:8:55     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:8:60     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:9:24     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:9:34     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:9:43     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:9:48     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:16    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:28    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:42    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:48    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:10:55    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:23:47    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:24:47    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:28:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:28:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:28:89    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:29:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:29:62    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:29:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:30:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:30:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:30:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:30:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:33:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:33:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:33:89    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:34:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:34:59    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:34:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:35:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:35:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:35:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:35:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_mul               harris_generator.cpp:59:33    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:8:28     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:8:42     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:8:55     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:8:60     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:9:24     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:9:34     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:9:43     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:9:48     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:16    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:28    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:42    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:48    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:10:55    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:23:47    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:24:47    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:28:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:28:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:28:89    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:29:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:29:62    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:29:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:30:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:30:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:30:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:30:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:33:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:33:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:33:89    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:34:50    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:34:59    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:34:81    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:35:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:35:54    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:35:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:35:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_add_to_sub               harris_generator.cpp:59:33    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:23:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:24:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:25:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:28:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:28:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:29:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:29:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:30:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:30:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:33:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:33:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:34:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:34:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:35:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:35:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:38:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:41:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:44:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:56:31    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:56:55    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:61:42    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               harris_generator.cpp:61:56    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_add               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:23:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:24:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:25:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:28:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:28:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:29:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:29:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:30:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:30:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:33:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:33:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:34:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:34:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:35:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:35:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:38:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:41:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:44:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:56:31    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:56:55    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:61:42    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               harris_generator.cpp:61:56    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_div               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:23:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:24:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:25:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:28:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:28:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:29:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:29:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:30:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:30:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:33:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:33:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:34:35    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:34:67    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:35:39    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:35:75    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:38:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:41:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:44:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:56:31    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:56:55    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:61:42    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               harris_generator.cpp:61:56    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               Halide.h:13288:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_mul_to_sub               Halide.h:13291:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:8:16     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:8:23     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:8:34     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:8:48     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:9:19     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:10:23    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:28:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:28:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:28:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:29:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:30:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:33:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:33:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:33:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:34:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:35:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:56:43    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_add               harris_generator.cpp:61:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:8:16     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:8:23     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:8:34     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:8:48     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:9:19     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:10:23    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:28:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:28:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:28:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:29:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:30:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:33:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:33:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:33:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:34:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:35:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:56:43    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_div               harris_generator.cpp:61:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:8:16     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:8:23     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:8:34     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:8:48     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:9:19     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:10:23    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:28:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:28:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:28:63    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:29:30    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:30:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:33:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:33:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:33:70    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:34:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:35:27    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:56:43    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          arithmetic Halide_sub_to_mul               harris_generator.cpp:61:34    NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:115:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:118:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_compute_at_to_store_at   harris_generator.cpp:121:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_unroll       harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_parallel_to_vectorize    harris_generator.cpp:112:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:119:22   GEN_ERROR/OK  killed at generation time
+  harris          schedule   Halide_vectorize_to_parallel    harris_generator.cpp:122:22   GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
