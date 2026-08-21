@@ -1,0 +1,5 @@
+app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,after,OK,1,1,OK,KILLED,KILLED,1,1,0.02,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,after,OK,1,1,OK,KILLED,KILLED,1,1,0.02,
