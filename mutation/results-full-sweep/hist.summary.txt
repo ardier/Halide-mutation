@@ -1,0 +1,45 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+hist            schedule       51       2      0     28   19       0       3     3   0.0%  15.8%
+hist            select_clamp    6       0      0      0    6       0       6     6   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                schedule       51       2      0     28   19       0       3     3   0.0%  15.8%
+                select_clamp    6       0      0      0    6       0       6     6   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_compute_at_to_store_at     schedule       10       2      8    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        3       0      0    3       0       0    0.0%
+Halide_parallel_to_vectorize      schedule        3       0      0    3       0       2   66.7%
+Halide_unroll_to_parallel         schedule        6       0      3    3       0       0    0.0%
+Halide_unroll_to_vectorize        schedule        6       0      3    3       0       0    0.0%
+Halide_vectorize_to_parallel      schedule       13       0      7    6       0       0    0.0%
+Halide_vectorize_to_unroll        schedule       10       0      7    1       0       1  100.0%
+Halide_clamp_swap_bounds          select_clamp    6       0      0    6       0       6  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  hist            schedule   Halide_compute_at_to_store_at   hist_generator.cpp:181:22     GEN_ERROR/OK  killed at generation time
+  hist            schedule   Halide_compute_at_to_store_at   hist_generator.cpp:188:27     GEN_ERROR/OK  killed at generation time
+  hist            schedule   Halide_vectorize_to_unroll      hist_generator.cpp:197:22     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  hist            schedule   Halide_vectorize_to_unroll      hist_generator.cpp:207:22     NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  hist/generated
+  hist/arithmetic

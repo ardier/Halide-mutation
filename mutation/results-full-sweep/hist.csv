@@ -47,3 +47,12 @@ hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,194,22,OK,1,1,OK,S
 hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,197,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.92,emitted header differs from baseline; driver recompiled
 hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,84,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,207,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.21,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,93,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,159,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,160,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,161,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,167,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,162,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,182,22,OK,1,1,OK,SURVIVED,KILLED,1,0,6.96,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,197,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,207,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
