@@ -175,14 +175,14 @@ representative instantiation) if resize gets revisited.
 **Yes, and the direction is informative.** The existing headline number (14-app corpus,
 `Halide-mutation@wip-c`) is **n=27 effective, 0.0% O1, 81.5% O2** (22/27 killed by the
 golden-output oracle, consistent across all 6 apps that had this family at all). Adding this
-second wave's completed apps (interpolate +3, local_laplacian +3, wavelet +3 -- stencil_chain
-still pending, expect +3 more once it lands, since the standalone tool independently confirms
-3 `BoundaryConditions` call sites there too):
+second wave's four completed apps with this family (interpolate +3, local_laplacian +3,
+wavelet +3, stencil_chain +3 -- all 6 second-wave Arm A apps are now done, and exactly 4 of
+them turned out to have `BoundaryConditions::repeat_edge` calls):
 
-- **n: 27 -> 36** effective mutants (33% more data for this family from 3 apps alone).
+- **n: 27 -> 39** effective mutants (44% more data for this family, from 4 apps).
 - **O1: 0.0% -> 0.0%**, unchanged -- the "every shipped test misses this family" claim gets
   *stronger* with more apps, not weaker.
-- **O2: 81.5% -> 77.8%** (28/36), a real move, driven entirely by `wavelet`'s 3/3 survivors --
+- **O2: 81.5% -> 79.5%** (31/39), a real move, driven entirely by `wavelet`'s 3/3 survivors --
   the first exception found anywhere in the corpus to the previously-universal "O2 catches
   BoundaryConditions mutants" pattern. This is worth investigating rather than averaging away:
   either `wavelet`'s boundary mutants are genuinely equivalent for this driver's input shape
