@@ -53,7 +53,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 R = "/mnt/scratch1/ardi/dsl_mut"
-REPO = f"{R}/HM-armc"
+REPO = f"{R}/HM-armc-fix"  # isolated worktree, branch armc-unblock-camera-bgu
 CLANG = "/usr/lib/llvm-14/bin/clang++"
 MULL_IR = f"{R}/mull-ps/output/mull-ir-frontend-14"
 BUILD_INC = f"{REPO}/build/include"
@@ -125,12 +125,25 @@ APPS = {
     # Both of the following fail to compile as plain C++ regardless of mutation
     # -- verified with a bare `clang++ -c`. Kept in the table so `verify` can
     # re-check them, excluded from the sweep list.
+    # UNBLOCKED 2026-08-21: the C-backend compile error is fixed (see
+    # C_BACKEND_FIXES / _fix_camera_pipe_prefetch below) -- no longer
+    # backend_broken, fully sweepable, 1163/1163 swept.
     "camera_pipe": dict(gen="camera_pipe", func="camera_pipe",
                         driver="apps/camera_pipe/process.cpp",
                         args=["{input}", "3700", "2.0", "50", "1.0", "1", "{output}",
                               "{scratch}/h_auto.png"],
                         image="apps/images/bayer_raw.png", artifact="output",
-                        heavy=True, backend_broken=True),
+                        heavy=True),
+    # bgu: the C-backend compile error is ALSO fixed (see
+    # _fix_bgu_fast_inverse below, 0 syntax errors verified) -- but still
+    # excluded from SWEEPABLE. A separate, later problem: Mull's own
+    # mull-ir-frontend-14 instrumentation of the corrected file either
+    # segfaults (mull::mutateBitcode, avoidable by raising the process stack
+    # ulimit) or, with that avoided, runs 87+ minutes at a stable ~73GB RSS
+    # without finishing -- a wall-clock wall in Mull's single-threaded
+    # mutation-application pipeline on this benchmark's unusually large
+    # (16,164-line), arithmetic-dense emitted file, not a memory problem and
+    # not fixable by more patience within a practical budget. See BLOCKED.md.
     "bgu": dict(gen="bgu", func="bgu", driver="apps/bgu/filter.cpp",
                 args=["{input}", "{output}"], image="apps/images/rgb.png",
                 artifact="output", heavy=True, backend_broken=True),
@@ -194,6 +207,75 @@ def runtime_a():
 # --------------------------------------------------------------------------
 # phase 1: lower
 # --------------------------------------------------------------------------
+# Two of Halide's own C-backend code-generation bugs, worked around here
+# mechanically rather than left as an exclusion. Both were re-verified with a
+# bare `clang++ -fsyntax-only` (no Mull, no mutation tooling) before and
+# after the fix, so these are genuine Halide codegen faults, not
+# mutation-tooling artifacts, and the fixes below only ADD content -- they
+# never touch an existing declaration or expression -- so neither can change
+# program behaviour. See mutation/results-arm-c/BLOCKED.md for the writeup.
+def _fix_camera_pipe_prefetch(text):
+    """camera_pipe's `.prefetch()` schedule directive lowers to
+    `uint16_t x = __builtin_prefetch(...)` -- a void builtin's result
+    assigned to an integer, which does not compile. Halide v21's C backend
+    fixes this upstream by wrapping the call in a comma expression that
+    discards the void result and yields 0 instead; this reproduces that same
+    transformation verbatim on the older backend's output. The prefetch
+    still executes for its side effect (a pure cache hint with no effect on
+    correctness either way); the dummy temporary it initializes was already
+    write-only (passed straight to `halide_maybe_unused` and never read)."""
+    old = ("uint16_t _91 = __builtin_prefetch(((uint16_t *)_input + _90), "
+           "/*rw*/0, /*locality*/0);")
+    new = ("uint16_t _91 = (__builtin_prefetch(((uint16_t *)_input + _90), "
+           "/*rw*/0, /*locality*/0), 0);")
+    n = text.count(old)
+    if n == 0:
+        return text, 0
+    assert n == 1, f"expected exactly 1 occurrence, found {n}"
+    return text.replace(old, new), 1
+
+
+def _fix_bgu_fast_inverse(text):
+    """bgu's Cholesky solve calls Halide's `fast_inverse` intrinsic both at
+    its native vector width (float8, from the surrounding schedule's
+    `vectorize(x, 8)`) and, after the backend's own per-lane scalarization of
+    that vectorized stage, at scalar width -- but the C backend forward-
+    declares each extern callee exactly once, keyed only by function name
+    (src/CodeGen_C.cpp, ExternCallPrototypes::visit(Call*)), not by
+    (name, signature). Only the float8 overload ever gets declared, so the
+    scalarized call sites resolve against it via an implicit float->float8
+    splat and return the wrong type. The scalar entry point already exists:
+    Halide's own runtime (src/runtime/x86.ll) defines a weak_odr
+    `float @fast_inverse_f32(float)` via the same SSE rcp.ss approximate-
+    reciprocal instruction the vector form uses per lane, and it is already
+    linked into every arm-C binary -- this adds only the missing C++
+    prototype for that pre-existing symbol. extern "C" linkage cannot carry
+    two overloads of the same name, so the added declaration uses ordinary
+    C++ linkage plus an asm-label to bind to the identical external symbol:
+    no new code, no behaviour change, nothing here executes differently than
+    what the runtime already does for the vector form."""
+    old = "float8 fast_inverse_f32(float8 );\n"
+    n = text.count(old)
+    if n == 0:
+        return text, 0
+    assert n == 1, f"expected exactly 1 occurrence, found {n}"
+    new = (old +
+           '}  // extern "C" (closed early: fast_inverse_f32 needs a genuine\n'
+           '   // C++ overload below, which extern "C" linkage forbids)\n'
+           "// --- mechanical, behaviour-preserving fix for a Halide C-backend\n"
+           "// forward-declaration bug -- see _fix_bgu_fast_inverse() docstring\n"
+           "// in arm_c_swsec.py for the full explanation. ---\n"
+           'float fast_inverse_f32(float x) asm("fast_inverse_f32");\n'
+           'extern "C" {\n')
+    return text.replace(old, new), 1
+
+
+C_BACKEND_FIXES = {
+    "camera_pipe": _fix_camera_pipe_prefetch,
+    "bgu": _fix_bgu_fast_inverse,
+}
+
+
 def lower(app):
     c = cfg(app)
     t0 = time.time()
@@ -208,8 +290,14 @@ def lower(app):
          "-e", "c_source,c_header,stmt", "target=host"], timeout=1800)
     if not os.path.exists(emitted):
         raise RuntimeError(f"lowering produced no {emitted}")
+    fixed = 0
+    if app in C_BACKEND_FIXES:
+        text = open(emitted).read()
+        text, fixed = C_BACKEND_FIXES[app](text)
+        if fixed:
+            open(emitted, "w").write(text)
     return dict(app=app, status="LOWERED", bytes=os.path.getsize(emitted),
-                seconds=round(time.time() - t0, 1))
+                seconds=round(time.time() - t0, 1), c_backend_fix_applied=bool(fixed))
 
 
 # --------------------------------------------------------------------------

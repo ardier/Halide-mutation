@@ -61,8 +61,10 @@ CORPUS = ["bgu", "bilateral_grid", "blur", "camera_pipe", "conv_layer",
 # Benchmarks with no arm-C data, and the specific reason for each. See
 # ../../results-arm-c/BLOCKED.md for the evidence behind these one-liners.
 BLOCKED = {
-    "camera_pipe": "blocked: Halide C backend emits invalid C++ (void -> uint16_t)",
-    "bgu": "blocked: Halide C backend emits invalid C++ (float8 -> float)",
+    # camera_pipe: UNBLOCKED 2026-08-21 -- see mutation/lowered-cpp/camera_pipe
+    # fix comments and results-arm-c/BLOCKED.md. Full sweep now in this table.
+    "bgu": "blocked: emitted C++ compile error fixed, but Mull instrumentation "
+           "does not complete in practical time on this file (see BLOCKED.md)",
     "lens_blur": "skipped: instrumentation compile killed at 2h04m / 84GB, no output",
 }
 C_BACKEND_BROKEN = set(BLOCKED)
