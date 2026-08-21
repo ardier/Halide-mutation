@@ -1,0 +1,58 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+nl_means        boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+nl_means        generated       4       0      0      0    1       0       1     1   0.0% 100.0%
+nl_means        schedule       29       6      0      7   16       0       0     0   0.0%   0.0%
+nl_means        select_clamp    1       0      0      0    1       0       1     1   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+                generated       4       0      0      0    1       0       1     1   0.0% 100.0%
+                schedule       29       6      0      7   16       0       0     0   0.0%   0.0%
+                select_clamp    1       0      0      0    1       0       1     1   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_negate_to_bitwise_not      generated       1       0      0    1       0       1  100.0%
+Halide_negate_to_not              generated       3       0      0    0       0       0     n/a
+Halide_compute_at_to_store_at     schedule        7       4      3    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_unroll_to_parallel         schedule        4       0      2    2       0       0    0.0%
+Halide_unroll_to_vectorize        schedule        4       0      2    2       0       0    0.0%
+Halide_vectorize_to_parallel      schedule        6       0      0    6       0       0    0.0%
+Halide_vectorize_to_unroll        schedule        6       0      0    6       0       0    0.0%
+Halide_clamp_swap_bounds          select_clamp    1       0      0    1       0       1  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  nl_means        generated  Halide_negate_to_not            nl_means_generator.cpp:40:24  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  nl_means        generated  Halide_negate_to_not            nl_means_generator.cpp:56:20  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  nl_means        generated  Halide_negate_to_not            nl_means_generator.cpp:56:53  NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  nl_means        schedule   Halide_compute_at_to_store_at   nl_means_generator.cpp:138:22 GEN_ERROR/OK  killed at generation time
+  nl_means        schedule   Halide_compute_at_to_store_at   nl_means_generator.cpp:141:15 GEN_ERROR/OK  killed at generation time
+  nl_means        schedule   Halide_compute_at_to_store_at   nl_means_generator.cpp:143:33 GEN_ERROR/OK  killed at generation time
+  nl_means        schedule   Halide_compute_at_to_store_at   nl_means_generator.cpp:152:20 GEN_ERROR/OK  killed at generation time
+  nl_means        schedule   Halide_parallel_to_unroll       nl_means_generator.cpp:136:18 GEN_ERROR/OK  killed at generation time
+  nl_means        schedule   Halide_parallel_to_vectorize    nl_means_generator.cpp:136:18 GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  nl_means/arithmetic
