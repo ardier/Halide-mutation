@@ -35,8 +35,13 @@ LOGS.mkdir(parents=True, exist_ok=True)
 
 CENSUS = json.loads((WORK / "census" / "census.json").read_text())
 
-HEAVY = [a for a in ["bgu", "lens_blur", "camera_pipe"] if a in CENSUS]
-NORMAL = [a for a in CENSUS if a not in HEAVY]
+# The app list comes from the pipeline's own config, not from the census: the
+# census is incomplete and an app missing from it still has to be swept.
+sys.path.insert(0, str(HAL / "mutation"))
+from halidemut.apps import APPS  # noqa: E402
+
+HEAVY = [a for a in ["bgu", "lens_blur", "camera_pipe"] if a in APPS]
+NORMAL = [a for a in APPS if a not in HEAVY]
 
 # Novel operators first. If a benchmark runs out of budget the truncation lands
 # on the legacy arithmetic arm, which is both the largest and the one already
@@ -92,8 +97,22 @@ def commit(app, status, dur, arms):
 
 
 def arms_for(app):
-    have = {arm for arm, d in CENSUS[app].items() if d["n"] > 0}
-    return [a for a in ARM_PRIORITY if a in have]
+    """Arms worth running for an app.
+
+    A censused arm that recorded zero mutation points is skipped: the census is
+    the record that it was zero. An arm with no census entry is *not* assumed
+    zero -- it is run. Censusing it separately would cost exactly the same
+    instrumentation compile as running it, so there is nothing to save by
+    finding out first, and guessing from the source text risks silently
+    dropping real mutants.
+    """
+    census = CENSUS.get(app, {})
+    out = []
+    for arm in ARM_PRIORITY:
+        entry = census.get(arm)
+        if entry is None or entry["n"] != 0:
+            out.append(arm)
+    return out
 
 
 def run_app(app, workers):
