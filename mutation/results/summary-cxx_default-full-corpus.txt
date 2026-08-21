@@ -1,0 +1,165 @@
+====================================================================================================
+ARM C SCALE-UP: cxx_default on emitted C++, full x86-buildable corpus (2026-08-21)
+====================================================================================================
+
+Scope: thesis Table 4's 15 entries, minus "C backend" (the technique's own demo
+app, not a real benchmark) and "compositing" (does not exist in this
+Halide-mutation apps/ tree -- removed from upstream at some point, confirmed
+by directory listing, not a build failure). 13 real x86-buildable benchmarks
+attempted: blur, harris, bilateral_grid, camera_pipe, unsharp, bgu, conv_layer,
+depthwise_separable_conv, hist, iir_blur, lens_blur, max_filter, nl_means.
+
+Mechanism unchanged from the blur/harris pilot (mutation/lowered-cpp/README.md,
+mutation/lowered-cpp/cxx_default_arm/README.md): lower via `-e c_source,c_header`,
+compile the emitted .cpp with Mull's stock cxx_default group via
+mull-ir-frontend, link against the app's own real driver, sweep mutants via
+env-var dispatch. Split into two phases per coordinator directive: lower_only.py
+(fast, 100% reliable, 3-7s/app) and mutate_only.py (compile+link+baseline+sweep,
+10-minute wall-clock budget per app, scoped to this phase only).
+
+====================================================================================================
+PART 1 -- BOILERPLATE VS. GENERATOR-SPECIFIC SPLIT (all 13 lowered apps)
+====================================================================================================
+
+Every one of the 13 emitted files, independent of mutation-sweep outcome,
+shares the exact same byte-identical 3,466-line boilerplate prefix found in
+the original 5-app pilot -- confirmed to hold even as the corpus nearly
+tripled. `survey.py` output (reproducible: `python3 survey.py <app>...` from
+mutation/lowered-cpp/):
+
+app                        total_lines  total_bytes  boiler_%  genspec_%
+----------------------------------------------------------------------------
+blur                              4261       161744     81.3%      17.3%
+harris                            4656       175835     74.4%      23.9%
+max_filter                        4673       176245     74.2%      24.2%
+iir_blur                          4800       177755     72.2%      25.9%
+hist                               5009       190139     69.2%      29.3%
+unsharp                           5104       192977     67.9%      30.6%
+conv_layer                        5557       209250     62.4%      35.3%
+bilateral_grid                    5973       225190     58.0%      40.5%
+camera_pipe                       6337       262703     54.7%      41.7%
+nl_means                          7554       308692     45.9%      52.4%
+depthwise_separable_conv          7064       271615     49.1%      49.4%
+lens_blur                        14805       608313     23.4%      75.4%
+bgu                               16144       636197     21.5%      77.5%
+
+Confirms and sharpens the pilot's finding: boilerplate fraction runs from
+21.5% (bgu) to 81.3% (blur) across a nearly-3x-larger sample -- inversely
+correlated with generator complexity/emitted-file size, not a fixed
+constant. The 3,466-line boundary itself is completely stable across all 13
+files regardless of size, so it remains a reliable, reusable, mechanical
+cutoff for filtering future arm-C mutants to the generator-specific region.
+
+====================================================================================================
+PART 2 -- MUTATION SWEEP RESULTS (cxx_default, O1 [+O2 where available])
+====================================================================================================
+
+app              status              total_mut  swept  o1_killed  o2_killed  killed_%(swept)
+--------------------------------------------------------------------------------------------
+blur             COMPLETE                  347    347        123        n/a          35.4%
+harris           COMPLETE                  591    591        101        101          17.1%
+unsharp          PARTIAL(timeboxed)        828    173         32         32          18.5%
+hist             PARTIAL(timeboxed)        647    173         35         35          20.2%
+iir_blur         PARTIAL(timeboxed)        471     90         18         18          20.0%
+conv_layer       PARTIAL(timeboxed)        837     10          5        n/a          50.0%*
+max_filter       PARTIAL(timeboxed)        605     11          1          1           9.1%*
+bilateral_grid   PARTIAL(timeboxed)       1348      3          3          3         100.0%*
+camera_pipe      FAILED (C-backend bug)     n/a    n/a        n/a        n/a             --
+bgu              FAILED (C-backend bug)     n/a    n/a        n/a        n/a             --
+depthwise_conv   FAILED (compile timeout)   n/a      0        n/a        n/a             --
+nl_means         FAILED (compile timeout)   n/a      0        n/a        n/a             --
+lens_blur        FAILED (OOM, killed)       n/a      0        n/a        n/a             --
+
+(*) marks samples under ~15 mutants -- too small to treat as a rate, reported
+for completeness only, not for comparison.
+
+"generator-specific-only" sub-slice, where a sweep produced enough data to be
+meaningful (blur, harris, unsharp, hist, iir_blur):
+
+app          genspec_swept  genspec_killed  genspec_%    whole-file_%
+------------------------------------------------------------------------
+blur                   331             118      35.6%          35.4%
+harris                 574              97      16.9%          17.1%
+unsharp                167              32      19.2%          18.5%
+hist                   166              32      19.3%          20.2%
+iir_blur                83              17      20.5%          20.0%
+
+As in the pilot, restricting to the generator-specific region barely moves
+the kill rate for any app that got a real sweep sample (within ~1 point in
+every case) -- the boilerplate-dilution concern is real for raw *mutant
+counts* (as Part 1 shows) but does not materially change the *kill rate*
+number itself for these five.
+
+====================================================================================================
+WHY EACH FAILURE/BLOCKER HAPPENED (not vague, checked)
+====================================================================================================
+
+- **camera_pipe** -- genuine Halide C-backend code-generation bug, verified
+  independent of Mull with a *plain* `clang++ -c` (no mutation plugin at
+  all): the emitted C++ contains
+  `uint16_t _91 = __builtin_prefetch(((uint16_t*)_input + _90), 0, 0);` --
+  `__builtin_prefetch` returns `void`, assigned to a `uint16_t`. Traces
+  directly to `camera_pipe_generator.cpp:533`'s `.prefetch(input, y, y, 2)`
+  schedule call. Not fixable without editing the generator source (out of
+  scope per the "don't touch apps/*/.cpp" constraint) or patching Halide's
+  C backend itself.
+
+- **bgu** -- a second, different genuine C-backend bug, also verified with a
+  plain compile: `float _7343 = fast_inverse_f32(_7342);` where
+  `fast_inverse_f32` returns `float8` (`NativeVector<float,8>`), not
+  `float` -- a vectorized fast-inverse-sqrt-style intrinsic whose scalar
+  call site doesn't get properly de-vectorized in emission. 20+ instances
+  in the file (compiler stopped after `-ferror-limit`).
+
+- **depthwise_separable_conv**, **nl_means** -- the cxx_default compile step
+  (via mull-ir-frontend, Mull's own junk-detector/instruction-selection)
+  exceeded the full 600s mutation budget by itself, with zero mutants
+  recovered. Both loaded fine in Part 1's survey (lowering isn't the
+  problem), and neither showed a compiler error -- this is a genuine "too
+  slow for this budget" case, not a bug. Not retried further per the
+  "don't sink hours into one stubborn app" guidance; a materially larger
+  timeout (or precompiled/cached Clang AST reuse) would likely resolve it.
+
+- **lens_blur** -- killed deliberately mid-compile after its process hit
+  ~25GB RSS (77% of the machine's 31GB), which was actively driving
+  available memory toward zero (275MB free, climbing swap) while the other
+  concurrent agent's sweep was also running. This is the RAM-heavy behavior
+  the thesis itself flagged for this app (and bgu, compositing) -- real,
+  reproduced, and consistent with the coordinator's warning. Not retried;
+  doing so risks the same OOM exposure for the whole shared machine.
+  Revisiting this one specifically needs either more RAM headroom (run
+  alone, nothing else on the machine) or a memory-bounded subprocess
+  (`ulimit`/cgroup) rather than a plain timeout.
+
+- **bilateral_grid** -- needed three attempts, but for one clear, now-fixed
+  reason, not three different problems: its cxx_default compile genuinely
+  takes ~450-460s (confirmed via an isolated diagnostic run with *no*
+  timeout at all, which completed cleanly at exit 0 in ~390s, actively
+  consuming CPU throughout -- not hung, not contention-blocked). The first
+  two attempts failed only because this orchestrator's original per-step
+  timeout was a flat 240s, too short for this file specifically. Fixed by
+  scaling the compile-step timeout to whatever remains of the app's own
+  10-minute budget (mutate_only.py, committed). The third attempt then
+  succeeded mechanically, but left only ~180s of the 10-minute budget for
+  sweeping 1,348 mutants (only 3 completed -- each individual bilateral_grid
+  mutant run is itself slow, image-processing-heavy). So: one legitimate,
+  now-understood-and-fixed root cause (this app's file is simply larger and
+  slower to compile than blur/harris/hist/etc.), not a recurring mystery.
+
+====================================================================================================
+COVERAGE SUMMARY
+====================================================================================================
+
+- 2/13 apps fully swept: blur, harris (both already complete before this
+  scale-up pass).
+- 6/13 apps partially swept with a real (if small, timeboxed) sample:
+  unsharp, hist, iir_blur, conv_layer, max_filter, bilateral_grid.
+- 5/13 apps produced zero mutation-sweep data: camera_pipe, bgu (both hard
+  C-backend bugs, not retryable without touching generator source or
+  Halide's own C backend), depthwise_separable_conv, nl_means (compile
+  exceeds the time budget), lens_blur (exceeds the memory budget).
+- 13/13 apps successfully lowered and surveyed for the boilerplate split
+  (Part 1) -- that measurement doesn't depend on the mutation step at all,
+  so it's complete across the whole corpus regardless of sweep outcome.
+- 1/15 thesis benchmarks unavailable in this Halide tree entirely
+  (compositing).
