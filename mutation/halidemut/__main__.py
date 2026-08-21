@@ -32,6 +32,14 @@ def main(argv=None) -> int:
     ap.add_argument("--keep-artifacts", action="store_true")
     ap.add_argument("--determinism-runs", type=int, default=3,
                     help="baseline runs that must agree before O2 is trusted")
+    ap.add_argument("--workers", type=int, default=4,
+                    help="parallel mutants for normal apps")
+    ap.add_argument("--heavy-workers", type=int, default=1,
+                    help="parallel mutants for apps marked memory_heavy")
+    ap.add_argument("--no-skip-equivalent", action="store_true",
+                    help="build and run mutants whose emitted .stmt is "
+                         "byte-identical to baseline instead of classifying "
+                         "them as equivalent-at-this-target up front")
     args = ap.parse_args(argv)
 
     halide_build = args.halide_build or (args.halide_root / "build")
@@ -48,7 +56,9 @@ def main(argv=None) -> int:
     pipeline = Pipeline(args.halide_root, halide_build, args.mull_output,
                         args.llvm_prefix, args.workdir)
     runner = Runner(pipeline, keep_artifacts=args.keep_artifacts,
-                    determinism_runs=args.determinism_runs)
+                    determinism_runs=args.determinism_runs,
+                    workers=args.workers, heavy_workers=args.heavy_workers,
+                    skip_equivalent=not args.no_skip_equivalent)
 
     results = []
     failures = []

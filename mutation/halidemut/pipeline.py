@@ -132,8 +132,14 @@ class Pipeline:
 
     # -- stage 1 ----------------------------------------------------------
 
-    def stage1(self, app: AppConfig, arm: str, mutators: List[str]) -> tuple[Path, List[Mutant]]:
+    def stage1(self, app: AppConfig, arm: str, mutators: List[str],
+               route: str = "ir") -> tuple[Path, List[Mutant]]:
         """Instrument the generator TU and link a generator binary.
+
+        ``route`` selects the frontend: "ir" loads the LLVM pass plugin, "ast"
+        loads the Clang AST plugin. Both read the same mull.yml (via
+        MULL_CONFIG) and both embed env-var-keyed mutants into the object, so
+        everything downstream of here is shared.
 
         Returns the generator path and the mutants Mull recorded.
         """
@@ -149,15 +155,23 @@ class Pipeline:
 
         gen_obj = outdir / "generator.o"
         env = dict(os.environ, MULL_CONFIG=str(config))
-        # -grecord-command-line is required: Mull's junk detector re-parses the
-        # source and reconstructs the compile flags from the recorded command
-        # line. Without it the include paths are lost, the re-parse cannot find
-        # Halide.h, and every mutation point is discarded as junk.
+        # -grecord-command-line is required on the IR route: Mull's junk
+        # detector re-parses the source and reconstructs the compile flags from
+        # the recorded command line. Without it the include paths are lost, the
+        # re-parse cannot find Halide.h, and every mutation point is discarded
+        # as junk. The AST route needs no junk detection -- it has exact source
+        # locations from the AST -- but the flag is harmless there.
         # Only one source file per invocation -- Mull rejects a recorded command
         # line that yields more than one compiler job.
+        if route == "ir":
+            plugin = [f"-fpass-plugin={self.mull_output / 'mull-ir-frontend-14'}"]
+        elif route == "ast":
+            plugin = [f"-fplugin={self.mull_output / 'libmull-cxx-frontend-14.so'}"]
+        else:
+            raise PipelineError(f"unknown mutation route {route!r}")
         cmd = [
             self.cxx, *self._cxx_flags(app), "-O1", "-g", "-grecord-command-line",
-            f"-fpass-plugin={self.mull_output / 'mull-ir-frontend-14'}",
+            *plugin,
             "-c", str(self.halide_root / app.generator_source),
             "-o", str(gen_obj),
         ]
@@ -229,6 +243,9 @@ class Pipeline:
             )
         if app.needs_runtime:
             jobs.append([str(generator), "-r", "runtime", "-o", str(dest), "target=host"])
+        for extra in app.extra_gen_jobs:
+            jobs.append([str(generator)]
+                        + [a.replace("{outdir}", str(dest)) for a in extra])
 
         for cmd in jobs:
             try:
@@ -248,8 +265,11 @@ class Pipeline:
         if app.needs_runtime:
             libs.append(str(artifacts / "runtime.a"))
 
+        extra_sources = [str(artifacts / f) for f in app.extra_driver_link]
+
         cmd = [self.cxx, *self._cxx_flags(app, extra_includes=[str(artifacts)]),
-               "-O2", "-Wall", str(self.halide_root / app.driver_source), *libs,
+               "-O2", "-Wall", str(self.halide_root / app.driver_source),
+               *extra_sources, *libs,
                "-o", str(out), "-lpthread", "-ldl"]
         if app.needs_image_io:
             cmd += ["-ljpeg", "-lpng", "-lz"]

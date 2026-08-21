@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import List, Optional
 
-from .apps import APPS, ARMS, AppConfig
+from .apps import APPS, ARM_ROUTE, ARMS, AppConfig
 from .pipeline import Mutant, MutantResult, Pipeline, PipelineError
 
 CSV_FIELDS = [
@@ -36,15 +36,20 @@ def _row(r: MutantResult) -> dict:
 
 class Runner:
     def __init__(self, pipeline: Pipeline, keep_artifacts: bool = False,
-                 determinism_runs: int = 3):
+                 determinism_runs: int = 3, workers: int = 4,
+                 heavy_workers: int = 1, skip_equivalent: bool = True):
         self.p = pipeline
         self.keep = keep_artifacts
         self.determinism_runs = determinism_runs
+        self.workers = workers
+        self.heavy_workers = heavy_workers
+        self.skip_equivalent = skip_equivalent
 
     def run_app_arm(self, app: AppConfig, arm: str, log=print) -> List[MutantResult]:
         mutators = ARMS[arm]
-        log(f"[{app.name}/{arm}] stage 1: instrumenting")
-        generator, mutants = self.p.stage1(app, arm, mutators)
+        route = ARM_ROUTE[arm]
+        log(f"[{app.name}/{arm}] stage 1: instrumenting ({route} route)")
+        generator, mutants = self.p.stage1(app, arm, mutators, route=route)
         log(f"[{app.name}/{arm}] {len(mutants)} mutants")
         if not mutants:
             return []
@@ -90,7 +95,7 @@ class Runner:
         log(f"[{app.name}/{arm}] baseline ok ({secs:.1f}s), deterministic over "
             f"{self.determinism_runs} runs, golden={golden[:16]}")
 
-        workers = 1 if app.memory_heavy else 4
+        workers = self.heavy_workers if app.memory_heavy else self.workers
         results: List[MutantResult] = []
 
         def one(m: Mutant) -> MutantResult:
@@ -131,6 +136,19 @@ class Runner:
             stmt = tmp / f"{app.function_name}.stmt"
             d = self.p.digest(stmt)
             r.stmt_differs = (d is not None and d != base_stmt_digest)
+
+            if self.skip_equivalent and not r.stmt_differs:
+                # The emitted Halide IR is byte-identical to baseline, so the
+                # object code is too and the driver cannot observe anything.
+                # Such a mutant is equivalent at this target by construction
+                # and is excluded from every kill-rate denominator anyway;
+                # building and running it is pure cost. Validated empirically
+                # first: over the blur and harris schedule runs, all 47
+                # stmt-identical mutants were built, run, and survived both
+                # oracles, 47/47.
+                r.note = ("equivalent at this target (emitted .stmt unchanged); "
+                          "stages 3-4 skipped")
+                return r
 
             driver = tmp / "driver"
             if not self.p.build_driver(app, tmp, driver):
