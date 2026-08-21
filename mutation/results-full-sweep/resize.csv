@@ -1,0 +1,242 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,28,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,29,59,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,100,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,28,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,129,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,130,70,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,101,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,100,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,29,59,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,101,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,129,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,130,70,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,29,59,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,28,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,134,67,OK,1,1,OK,KILLED,KILLED,1,-6,0.13,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,133,69,OK,1,1,OK,KILLED,KILLED,1,-6,0.13,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,116,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,115,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,Halide.h,13276,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.24,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,110,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_div,resize_generator.cpp,109,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,129,66,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,116,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,115,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,130,70,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,110,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,109,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.59,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,133,69,OK,1,1,OK,SURVIVED,KILLED,1,0,0.60,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_mul,resize_generator.cpp,134,67,OK,1,1,OK,SURVIVED,KILLED,1,0,0.59,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_add,resize_generator.cpp,35,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_add,resize_generator.cpp,39,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_mul,Halide.h,13276,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.51,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_add,resize_generator.cpp,90,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_mul,resize_generator.cpp,35,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_mul,resize_generator.cpp,39,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,101,27,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,100,27,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,115,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.18,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,116,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,109,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,133,69,OK,1,1,OK,KILLED,KILLED,1,-6,0.13,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,110,71,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_sub,resize_generator.cpp,35,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_sub,resize_generator.cpp,39,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_add_to_sub,resize_generator.cpp,134,67,OK,1,1,OK,KILLED,KILLED,1,-6,0.13,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,24,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_add,resize_generator.cpp,121,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.39,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_add,resize_generator.cpp,122,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.40,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_add_to_sub,Halide.h,13276,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_add,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,25,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,28,41,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,28,60,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,29,39,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_mul,resize_generator.cpp,90,55,OK,1,1,OK,SURVIVED,KILLED,1,0,0.28,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_mul,resize_generator.cpp,121,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.38,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,29,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,29,67,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,39,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,95,74,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_mul,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.31,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_mul,resize_generator.cpp,122,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.38,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,129,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,130,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_div_to_sub,resize_generator.cpp,90,55,OK,1,1,OK,SURVIVED,KILLED,1,0,0.28,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_sub,resize_generator.cpp,121,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_sub,resize_generator.cpp,122,54,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_div_to_sub,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.28,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,24,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,25,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,28,60,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,28,41,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,29,39,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,29,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,29,67,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,39,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,97,80,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,100,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,129,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,130,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,101,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.56,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,115,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,116,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.51,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,133,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.40,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,resize_generator.cpp,134,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.41,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.23,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,24,19,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,25,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,28,41,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,28,60,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,29,39,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,29,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,29,67,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,39,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,115,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.21,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,116,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.18,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,101,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.34,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,100,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.39,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,97,80,OK,1,1,OK,SURVIVED,KILLED,1,0,0.45,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,95,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.45,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,129,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,133,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.22,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,130,53,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,19,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,resize_generator.cpp,134,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.20,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,28,47,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_div,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.45,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,29,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,29,72,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,95,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.21,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,97,80,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,100,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,115,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,101,35,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,116,74,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,134,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,resize_generator.cpp,133,53,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,Halide.h,13285,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,19,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,28,47,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,29,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,29,72,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,100,58,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,101,58,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,107,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.20,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,108,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.20,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,100,58,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,101,58,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,109,75,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,115,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,110,75,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,Halide.h,13285,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,19,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_add,resize_generator.cpp,116,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,28,47,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,29,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,29,72,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_add,Halide.h,13282,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,100,58,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,101,58,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,109,75,OK,1,1,OK,SURVIVED,KILLED,1,0,0.30,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,Halide.h,13285,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,108,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.51,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,107,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.48,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,110,75,OK,1,1,OK,SURVIVED,KILLED,1,0,0.36,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,Halide.h,13282,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.26,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,116,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.53,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_div,resize_generator.cpp,115,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,107,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.49,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,108,59,OK,1,1,OK,SURVIVED,KILLED,1,0,0.50,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,115,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,109,75,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,116,63,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,resize_generator.cpp,110,75,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,arithmetic,Halide_sub_to_mul,Halide.h,13282,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.52,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,150,14,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,153,14,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,161,14,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,192,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,164,14,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,167,14,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,189,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_parallel_to_unroll,resize_generator.cpp,186,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_parallel_to_vectorize,resize_generator.cpp,186,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,schedule,Halide_parallel_to_vectorize,resize_generator.cpp,174,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,181,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_compute_at_to_store_at,resize_generator.cpp,177,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_unroll_to_parallel,resize_generator.cpp,182,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_parallel_to_unroll,resize_generator.cpp,174,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_unroll_to_vectorize,resize_generator.cpp,182,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,175,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,179,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_unroll_to_parallel,resize_generator.cpp,193,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_unroll_to_vectorize,resize_generator.cpp,230,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_unroll_to_parallel,resize_generator.cpp,226,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_unroll_to_parallel,resize_generator.cpp,230,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,151,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_unroll_to_vectorize,resize_generator.cpp,226,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,154,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.59,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,158,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,162,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_unroll_to_vectorize,resize_generator.cpp,193,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.53,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,169,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.66,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,165,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.67,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,175,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,179,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,190,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.21,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,154,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.71,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,151,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.76,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,158,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,165,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,162,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,169,14,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,190,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_parallel,resize_generator.cpp,187,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.41,emitted header differs from baseline; driver recompiled
+resize,schedule,Halide_vectorize_to_unroll,resize_generator.cpp,187,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.53,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,208,51,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,216,52,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,204,46,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,210,50,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,209,50,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,203,47,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,217,51,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,218,51,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,207,48,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,212,50,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.57,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,215,49,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,205,51,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,206,51,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,211,47,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.60,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,213,52,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,214,52,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,220,51,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,207,53,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_eq_to_ne,resize_generator.cpp,219,48,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,208,56,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,209,55,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,210,55,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,211,52,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,215,54,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,216,57,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,217,56,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,218,56,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,219,53,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+resize,generated,Halide_eq_to_ne,Halide.h,13330,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_gt_to_le,resize_generator.cpp,41,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_lt_to_ge,Halide.h,13312,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_logical_or_to_and,resize_generator.cpp,41,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_lt_to_le,resize_generator.cpp,41,31,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_lt_to_le,Halide.h,13312,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_mul_assign_to_div_assign,resize_generator.cpp,34,7,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+resize,generated,Halide_le_to_gt,Halide.h,13324,25,OK,1,1,OK,SURVIVED,KILLED,1,0,0.21,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,205,56,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,203,52,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,206,56,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.55,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_le_to_lt,Halide.h,13324,25,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,214,57,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.54,emitted header differs from baseline; driver recompiled
+resize,generated,Halide_logical_and_to_or,resize_generator.cpp,213,57,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.53,emitted header differs from baseline; driver recompiled
+resize,select_clamp,Halide_select_swap_branches,resize_generator.cpp,14,12,OK,1,1,OK,SURVIVED,KILLED,1,0,0.19,emitted header differs from baseline; driver recompiled
+resize,if_then_else,Halide_select_to_if_then_else,resize_generator.cpp,14,12,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.53,emitted header differs from baseline; driver recompiled
