@@ -1,1 +1,4 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_interior,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.30,emitted header differs from baseline; driver recompiled
+max_filter,boundary_conditions,Halide_repeat_edge_to_repeat_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,KILLED,1,0,5.28,emitted header differs from baseline; driver recompiled
+max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.32,emitted header differs from baseline; driver recompiled
