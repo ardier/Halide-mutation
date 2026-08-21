@@ -14,6 +14,7 @@ mutants are recorded as NOT_RUN rather than vanishing.
 
 Paths come from the environment so the driver is not tied to one machine.
 """
+import fcntl
 import os
 import subprocess
 import sys
@@ -73,8 +74,17 @@ def say(msg):
         print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
+# Lanes run concurrently and all commit to the same working tree, so git calls
+# are serialised across processes -- two `git add` runs interleaving would
+# collide on index.lock.
+GIT_LOCK = WORK / "git.lock"
+
+
 def git(args, **kw):
-    return subprocess.run(["git"] + args, cwd=str(HAL), capture_output=True, **kw)
+    with GIT_LOCK.open("w") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        return subprocess.run(["git"] + args, cwd=str(HAL),
+                              capture_output=True, **kw)
 
 
 def commit(app, status, dur, setup_note=""):

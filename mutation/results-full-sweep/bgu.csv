@@ -1,0 +1,77 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+bgu,generated,Halide_eq_to_ne,bgu_generator.cpp,255,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.34,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,410,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.65,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,411,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.67,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,409,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.69,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,404,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.83,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,407,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.83,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_max_to_min,bgu_generator.cpp,287,32,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.86,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,406,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.88,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_sub_assign_to_add_assign,bgu_generator.cpp,458,16,OK,1,1,OK,SURVIVED,KILLED,1,0,2.97,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_add_assign_to_sub_assign,bgu_generator.cpp,405,21,OK,1,1,OK,SURVIVED,KILLED,1,0,3.02,emitted header differs from baseline; driver recompiled
+bgu,generated,Halide_sub_assign_to_add_assign,bgu_generator.cpp,450,16,OK,1,1,OK,SURVIVED,KILLED,1,0,3.29,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,235,11,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,537,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,542,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,561,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,518,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,524,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_unroll,bgu_generator.cpp,531,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_unroll,bgu_generator.cpp,547,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_unroll,bgu_generator.cpp,556,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_vectorize,bgu_generator.cpp,531,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_unroll,bgu_generator.cpp,568,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_vectorize,bgu_generator.cpp,547,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_vectorize,bgu_generator.cpp,556,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_vectorize,bgu_generator.cpp,568,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,614,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,672,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,670,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,620,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,617,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,572,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_compute_at_to_store_at,bgu_generator.cpp,667,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,600,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,608,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,618,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,587,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,615,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,643,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,572,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+bgu,schedule,Halide_parallel_to_unroll,bgu_generator.cpp,555,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.54,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_store_at_to_compute_at,bgu_generator.cpp,560,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_parallel_to_vectorize,bgu_generator.cpp,555,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.56,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,550,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.55,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,661,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,668,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,587,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,600,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,521,22,OK,1,1,OK,SURVIVED,KILLED,1,0,6.07,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,608,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,615,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,618,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,643,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,661,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,668,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,521,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_parallel,bgu_generator.cpp,563,22,OK,1,1,OK,SURVIVED,KILLED,1,0,10.77,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,550,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_unroll_to_vectorize,bgu_generator.cpp,563,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.58,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,525,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.58,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,231,29,OK,1,1,OK,SURVIVED,KILLED,1,0,2.91,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,532,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.56,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,539,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.67,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,543,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.64,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,548,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.54,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,557,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.91,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,231,29,OK,1,1,OK,SURVIVED,KILLED,1,0,2.54,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,525,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.55,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,532,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.54,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,569,22,OK,1,1,OK,SURVIVED,KILLED,1,0,3.64,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,539,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,543,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,548,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.53,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,557,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.52,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,564,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.55,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_unroll,bgu_generator.cpp,569,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.57,emitted header differs from baseline; driver recompiled
+bgu,schedule,Halide_vectorize_to_parallel,bgu_generator.cpp,564,22,OK,1,1,OK,SURVIVED,KILLED,1,0,18.13,emitted header differs from baseline; driver recompiled

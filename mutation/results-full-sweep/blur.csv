@@ -2,15 +2,15 @@ app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,kill
 blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,109,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
 blur,schedule,Halide_parallel_to_unroll,halide_blur_generator.cpp,105,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
 blur,schedule,Halide_parallel_to_vectorize,halide_blur_generator.cpp,105,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+blur,schedule,Halide_parallel_to_unroll,halide_blur_generator.cpp,92,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_parallel_to_vectorize,halide_blur_generator.cpp,92,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,53,24,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_compute_at_to_store_at,halide_blur_generator.cpp,96,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-blur,schedule,Halide_parallel_to_unroll,halide_blur_generator.cpp,92,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_store_at_to_compute_at,halide_blur_generator.cpp,95,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_unroll_to_parallel,halide_blur_generator.cpp,65,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-blur,schedule,Halide_unroll_to_parallel,halide_blur_generator.cpp,76,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_unroll_to_vectorize,halide_blur_generator.cpp,65,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_unroll_to_vectorize,halide_blur_generator.cpp,76,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+blur,schedule,Halide_unroll_to_parallel,halide_blur_generator.cpp,76,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,106,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
 blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,93,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_store_at_to_compute_at,halide_blur_generator.cpp,108,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.52,emitted header differs from baseline; driver recompiled
@@ -18,35 +18,35 @@ blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,97,18,OK,0,
 blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,93,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,97,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
 blur,schedule,Halide_vectorize_to_parallel,halide_blur_generator.cpp,110,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.53,emitted header differs from baseline; driver recompiled
-blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,106,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.52,emitted header differs from baseline; driver recompiled
+blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,106,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.56,emitted header differs from baseline; driver recompiled
 blur,schedule,Halide_vectorize_to_unroll,halide_blur_generator.cpp,110,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,40,52,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,47,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,47,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,40,38,OK,1,1,OK,KILLED,KILLED,1,-6,0.53,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,55,OK,1,1,OK,KILLED,KILLED,1,-6,0.54,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.54,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,65,OK,1,1,OK,KILLED,KILLED,1,-6,0.56,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.53,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,47,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,55,OK,1,1,OK,KILLED,KILLED,1,-6,0.53,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,65,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.53,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.54,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,55,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,47,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_div,halide_blur_generator.cpp,40,71,OK,1,1,OK,KILLED,KILLED,1,-6,0.57,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,65,OK,1,1,OK,KILLED,KILLED,1,-6,0.55,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,39,65,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,38,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,71,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,52,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.56,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,47,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,55,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_mul,halide_blur_generator.cpp,40,71,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,37,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,55,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,39,65,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,38,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,52,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,38,OK,1,1,OK,KILLED,KILLED,1,-6,0.56,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,71,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_div_to_add,halide_blur_generator.cpp,39,74,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_div_to_add,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_add_to_sub,halide_blur_generator.cpp,40,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_div_to_add,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_div_to_add,halide_blur_generator.cpp,39,74,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_div_to_mul,halide_blur_generator.cpp,39,74,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_div_to_mul,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
 blur,arithmetic,Halide_div_to_sub,halide_blur_generator.cpp,39,74,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
-blur,arithmetic,Halide_div_to_sub,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_div_to_mul,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.52,emitted header differs from baseline; driver recompiled
+blur,arithmetic,Halide_div_to_sub,halide_blur_generator.cpp,40,77,OK,1,1,OK,KILLED,KILLED,1,-6,0.51,emitted header differs from baseline; driver recompiled
