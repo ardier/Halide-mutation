@@ -1,3 +1,6 @@
 app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
 c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
 c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
+c_backend,schedule,Halide_vectorize_to_parallel,pipeline_generator.cpp,21,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.03,
+c_backend,schedule,Halide_vectorize_to_unroll,pipeline_generator.cpp,21,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
+c_backend,generated,Halide_max_to_min,pipeline_generator.cpp,19,39,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,

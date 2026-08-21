@@ -1,0 +1,114 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+bgu             boundary_conditions    6       0      0      0    6       0       6     6   0.0% 100.0%
+bgu             if_then_else    1       0      0      1    0       0       0     0    n/a    n/a
+bgu             schedule       63       1      0      0    0       0       0     0    n/a    n/a
+bgu             select_clamp    4       0      0      0    4       0       4     4   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                boundary_conditions    6       0      0      0    6       0       6     6   0.0% 100.0%
+                if_then_else    1       0      0      1    0       0       0     0    n/a    n/a
+                schedule       63       1      0      0    0       0       0     0    n/a    n/a
+                select_clamp    4       0      0      0    4       0       4     4   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_repeat_edge_to_mirror_imageboundary_conditions    2       0      0    2       0       2  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    2       0      0    2       0       2  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    2       0      0    2       0       2  100.0%
+Halide_select_to_if_then_else     if_then_else    1       0      1    0       0       0     n/a
+Halide_compute_at_to_store_at     schedule       10       1      0    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        5       0      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        5       0      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        1       0      0    0       0       0     n/a
+Halide_unroll_to_parallel         schedule       12       0      0    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule       12       0      0    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        9       0      0    0       0       0     n/a
+Halide_vectorize_to_unroll        schedule        9       0      0    0       0       0     n/a
+Halide_clamp_swap_bounds          select_clamp    3       0      0    3       0       3  100.0%
+Halide_select_swap_branches       select_clamp    1       0      0    1       0       1  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:235:11      GEN_ERROR/OK  killed at generation time
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:556:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:561:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:580:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:633:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:636:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:639:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:686:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:689:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_compute_at_to_store_at   bgu_generator.cpp:691:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_unroll       bgu_generator.cpp:550:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_unroll       bgu_generator.cpp:566:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_unroll       bgu_generator.cpp:574:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_unroll       bgu_generator.cpp:575:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_unroll       bgu_generator.cpp:587:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_vectorize    bgu_generator.cpp:550:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_vectorize    bgu_generator.cpp:566:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_vectorize    bgu_generator.cpp:574:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_vectorize    bgu_generator.cpp:575:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_parallel_to_vectorize    bgu_generator.cpp:587:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_store_at_to_compute_at   bgu_generator.cpp:579:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:540:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:569:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:582:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:591:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:606:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:619:26      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:627:26      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:634:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:637:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:662:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:680:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_parallel       bgu_generator.cpp:687:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:540:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:569:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:582:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:591:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:606:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:619:26      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:627:26      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:634:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:637:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:662:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:680:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_unroll_to_vectorize      bgu_generator.cpp:687:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:231:29      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:544:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:551:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:558:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:562:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:567:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:576:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:583:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_parallel    bgu_generator.cpp:588:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:231:29      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:544:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:551:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:558:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:562:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:567:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:576:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:583:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bgu             schedule   Halide_vectorize_to_unroll      bgu_generator.cpp:588:22      NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
+
+NOT REACHED (wall-clock budget exhausted first)
+  bgu/generated
+  bgu/arithmetic
