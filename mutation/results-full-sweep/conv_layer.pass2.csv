@@ -8,3 +8,4 @@ conv_layer,arithmetic,Halide_add_to_sub,conv_layer_generator.cpp,25,78,OK,1,1,OK
 conv_layer,arithmetic,Halide_mul_to_add,conv_layer_generator.cpp,25,54,OK,1,1,OK,SURVIVED,SURVIVED,0,0,130.69,emitted header differs from baseline; driver recompiled
 conv_layer,arithmetic,Halide_mul_to_sub,conv_layer_generator.cpp,25,54,OK,1,1,OK,SURVIVED,SURVIVED,0,0,129.30,emitted header differs from baseline; driver recompiled
 conv_layer,arithmetic,Halide_mul_to_div,conv_layer_generator.cpp,25,54,OK,1,1,OK,SURVIVED,SURVIVED,0,0,193.35,emitted header differs from baseline; driver recompiled
+conv_layer,generated,Halide_max_to_min,conv_layer_generator.cpp,27,28,OK,1,1,OK,SURVIVED,SURVIVED,0,0,70.40,emitted header differs from baseline; driver recompiled
