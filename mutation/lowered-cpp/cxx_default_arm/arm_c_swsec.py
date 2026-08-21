@@ -38,13 +38,14 @@ Usage:
     python3 arm_c_swsec.py build  <app> ...     # phase 2, instrument + link
     python3 arm_c_swsec.py sweep  <app> ...     # phase 3, run every mutant
     python3 arm_c_swsec.py all    <app> ...     # 1+2+3
-Environment: ARMC_JOBS (sweep workers), ARMC_BUDGET (per-app seconds),
+Environment: ARMC_JOBS / ARMC_HEAVY_JOBS (sweep workers), ARMC_BUDGET (s/app),
              ARMC_HL_THREADS (Halide runtime threads per mutant run, >= 2).
 """
 import csv
 import json
 import os
 import re
+import random
 import shutil
 import subprocess
 import sys
@@ -67,6 +68,9 @@ IMG_LIBS = ["-lpng16", "-ljpeg"]
 BUDGET = int(os.environ.get("ARMC_BUDGET", "7200"))
 HL_THREADS = os.environ.get("ARMC_HL_THREADS", "2")
 JOBS = int(os.environ.get("ARMC_JOBS", "40"))
+# Apps flagged `heavy` get their own width: a bigger emitted file means a
+# bigger per-run working set, and their drivers run the pipeline for longer.
+HEAVY_JOBS = int(os.environ.get("ARMC_HEAVY_JOBS", "24"))
 
 sys.path.insert(0, LOWERED)
 from cxx_default_arm.bucket_mutants import region_bounds, classify  # noqa: E402
@@ -331,7 +335,7 @@ def sweep(app, budget=BUDGET, jobs=None):
     binary = meta["binary"]
     emitted = meta["emitted"]
     mutants = [l.strip() for l in open(f"{scratch}/mutants.txt") if l.strip()]
-    workers = jobs or (24 if c["heavy"] else JOBS)
+    workers = jobs or (HEAVY_JOBS if c["heavy"] else JOBS)
     image = f"{REPO}/{c['image']}" if c["image"] else None
     base_env = dict(os.environ, HL_NUM_THREADS=HL_THREADS)
 
@@ -404,9 +408,16 @@ def sweep(app, budget=BUDGET, jobs=None):
                 classify(int(parts[-2]), boiler_end, genspec_end),
                 rc, o1, o2, f"{wall:.3f}"]
 
+    # Sweep in a fixed shuffled order, not in mutation-point order. If the
+    # budget ever does cut a sweep short, the mutants that got a verdict are
+    # then an unbiased sample of the population rather than whichever mutators
+    # sort first alphabetically.
+    order = list(enumerate(mutants))
+    random.Random(0).shuffle(order)
+
     rows = []
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        for row in ex.map(one, list(enumerate(mutants))):
+        for row in ex.map(one, order):
             if row is not None:
                 rows.append(row)
 

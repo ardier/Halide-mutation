@@ -55,9 +55,14 @@ CORPUS = ["bgu", "bilateral_grid", "blur", "camera_pipe", "conv_layer",
           "depthwise_separable_conv", "harris", "hist", "iir_blur", "lens_blur",
           "max_filter", "nl_means", "unsharp"]
 
-# Verified with a bare `clang++ -fsyntax-only` on the emitted file: these two
-# do not compile as plain C++ at all, with no mutation tool involved.
-C_BACKEND_BROKEN = {"camera_pipe", "bgu"}
+# Benchmarks with no arm-C data, and the specific reason for each. See
+# ../../results-arm-c/BLOCKED.md for the evidence behind these one-liners.
+BLOCKED = {
+    "camera_pipe": "blocked: Halide C backend emits invalid C++ (void -> uint16_t)",
+    "bgu": "blocked: Halide C backend emits invalid C++ (float8 -> float)",
+    "lens_blur": "skipped: instrumentation compile killed at 2h04m / 84GB, no output",
+}
+C_BACKEND_BROKEN = set(BLOCKED)
 
 # Stock cxx_default's arithmetic swaps. Note the asymmetry, which is a real
 # finding and not a configuration slip: Mull ships 4 arithmetic operators
@@ -195,8 +200,8 @@ def main():
         cr = c_rows.get(app, [])
         c = arm_c_stats(cr)
         cg = arm_c_stats(cr, "generator_specific")
-        if app in C_BACKEND_BROKEN:
-            status = "arm C blocked (Halide C-backend bug)"
+        if app in BLOCKED:
+            status = BLOCKED[app]
         elif not cr:
             status = "arm C missing"
         else:
