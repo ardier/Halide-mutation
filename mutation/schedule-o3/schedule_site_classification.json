@@ -1,0 +1,2477 @@
+[
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 235,
+  "enclosing_function": "solve_symmetric",
+  "bucket": "other:solve_symmetric",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 556,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 561,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 580,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 633,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 636,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 639,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 686,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 689,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 691,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 550,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 566,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 574,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 575,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 587,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 579,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 540,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 569,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 582,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 591,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 606,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 619,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 627,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 634,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 637,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 662,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 680,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 687,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 231,
+  "enclosing_function": "solve_symmetric",
+  "bucket": "other:solve_symmetric",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 544,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 551,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 558,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 562,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 567,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 576,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 583,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bgu",
+  "file": "bgu_generator.cpp",
+  "line": 588,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 129,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 133,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 142,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 139,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 101,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 120,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 3,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 102,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 110,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 117,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 149,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 132,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 141,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 147,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 136,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 109,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 116,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 140,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 131,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 146,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "bilateral_grid",
+  "file": "bilateral_grid_generator.cpp",
+  "line": 150,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 109,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 96,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 105,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 92,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 53,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 95,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 65,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 76,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 108,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 106,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 93,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 97,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "blur",
+  "file": "halide_blur_generator.cpp",
+  "line": 110,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "c_backend",
+  "file": "pipeline_generator.cpp",
+  "line": 21,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 174,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 162,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 476,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 487,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 540,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 548,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 557,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 528,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 175,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 532,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 541,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 549,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 165,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 168,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 184,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 186,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 473,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 477,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 481,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 489,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 490,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 494,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 497,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 527,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 537,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 545,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 553,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 554,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 560,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 176,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 183,
+  "enclosing_function": "schedule",
+  "bucket": "formal-schedule-block",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 526,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 536,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 544,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 552,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "camera_pipe",
+  "file": "camera_pipe_generator.cpp",
+  "line": 559,
+  "enclosing_function": "CameraPipe::generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 181,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 194,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 199,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 113,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 96,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 180,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 179,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "conv_layer",
+  "file": "conv_layer_generator.cpp",
+  "line": 178,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 124,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 160,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 151,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 246,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 260,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 273,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 244,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 169,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 120,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 121,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 122,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 126,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 127,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 128,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 130,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 131,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 132,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 154,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 135,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 155,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 164,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 165,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 166,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 170,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 171,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 172,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 176,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 175,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 177,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 241,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 242,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 248,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 249,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 253,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 254,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 263,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 264,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 268,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 269,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 276,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 153,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 240,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 247,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 252,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 261,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 266,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "depthwise_separable_conv",
+  "file": "depthwise_separable_conv_generator.cpp",
+  "line": 275,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 87,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 91,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 81,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 94,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 115,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 118,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 121,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 112,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 99,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 104,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 114,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 80,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 117,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 84,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 120,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 85,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 89,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 90,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 93,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 96,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 101,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 102,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 106,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 107,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 88,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 100,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 105,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 119,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 122,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 116,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "harris",
+  "file": "harris_generator.cpp",
+  "line": 113,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 103,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 123,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 91,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 140,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 160,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 3,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 161,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 3,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 181,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 188,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 162,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 3,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 165,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 199,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 187,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 206,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 85,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 94,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 157,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 198,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 192,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 205,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 84,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 93,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 159,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 167,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 182,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 186,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 189,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 194,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 197,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "hist",
+  "file": "hist_generator.cpp",
+  "line": 207,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 51,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 46,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 47,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 79,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 108,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 91,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 94,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 56,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 59,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "iir_blur",
+  "file": "iir_blur_generator.cpp",
+  "line": 45,
+  "enclosing_function": "blur_cols_transpose",
+  "bucket": "other:blur_cols_transpose",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 112,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 107,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 105,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 106,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 111,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 108,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "max_filter",
+  "file": "max_filter_generator.cpp",
+  "line": 113,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 114,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 138,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 141,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 143,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 152,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 136,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 120,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 124,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 98,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 108,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 146,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 150,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 137,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 140,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 147,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 151,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 153,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "nl_means",
+  "file": "nl_means_generator.cpp",
+  "line": 142,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 80,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 98,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 101,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 104,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 96,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 86,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 102,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 105,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 81,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 83,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 79,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 84,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 87,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 0
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 99,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 1,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 95,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 100,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 103,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 2
+ },
+ {
+  "app": "unsharp",
+  "file": "unsharp_generator.cpp",
+  "line": 106,
+  "enclosing_function": "generate",
+  "bucket": "inline-in-generate",
+  "n_mutants_at_site": 2,
+  "n_unresolved_at_site": 1
+ }
+]

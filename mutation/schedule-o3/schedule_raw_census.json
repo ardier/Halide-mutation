@@ -1,0 +1,4688 @@
+{
+ "bgu": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 235,
+   "col": 11,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 556,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 561,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 580,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 633,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 636,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 639,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 686,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 689,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bgu_generator.cpp",
+   "line": 691,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 550,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 566,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 574,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 575,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 587,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 550,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 566,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 574,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 575,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 587,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "bgu_generator.cpp",
+   "line": 579,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 540,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 569,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 582,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 591,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 606,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 619,
+   "col": 26,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 627,
+   "col": 26,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 634,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 637,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 662,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 680,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 687,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 540,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 569,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 582,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 591,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 606,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 619,
+   "col": 26,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 627,
+   "col": 26,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 634,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 637,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 662,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 680,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bgu_generator.cpp",
+   "line": 687,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 231,
+   "col": 29,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 544,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 551,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 558,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 562,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 567,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 576,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 583,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bgu_generator.cpp",
+   "line": 588,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 231,
+   "col": 29,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 544,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 551,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 558,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 562,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 567,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 576,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 583,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bgu_generator.cpp",
+   "line": 588,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  }
+ ],
+ "bilateral_grid": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 129,
+   "col": 19,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 133,
+   "col": 23,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 142,
+   "col": 19,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 139,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 101,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 120,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 139,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 102,
+   "col": 77,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 110,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 117,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 149,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 132,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 149,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 141,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 102,
+   "col": 77,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 110,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 117,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 147,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 132,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 136,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 141,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 109,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 116,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 120,
+   "col": 57,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 147,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 140,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 131,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 146,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 109,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 116,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 120,
+   "col": 57,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 150,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 131,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 140,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 146,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 150,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "bilateral_grid_generator.cpp",
+   "line": 136,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "KILLED",
+   "o2": "KILLED"
+  }
+ ],
+ "blur": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "halide_blur_generator.cpp",
+   "line": 109,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "halide_blur_generator.cpp",
+   "line": 96,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 105,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 92,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "halide_blur_generator.cpp",
+   "line": 105,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "halide_blur_generator.cpp",
+   "line": 53,
+   "col": 24,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "halide_blur_generator.cpp",
+   "line": 92,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "halide_blur_generator.cpp",
+   "line": 95,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 65,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 76,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "halide_blur_generator.cpp",
+   "line": 108,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "halide_blur_generator.cpp",
+   "line": 65,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "halide_blur_generator.cpp",
+   "line": 76,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 106,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 93,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 97,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 93,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 97,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "halide_blur_generator.cpp",
+   "line": 110,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 106,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "halide_blur_generator.cpp",
+   "line": 110,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "c_backend": [
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "pipeline_generator.cpp",
+   "line": 21,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "pipeline_generator.cpp",
+   "line": 21,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "camera_pipe": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 174,
+   "col": 19,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 162,
+   "col": 19,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 476,
+   "col": 16,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 487,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 540,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 548,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 557,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 528,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 528,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 175,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 532,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 541,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "camera_pipe_generator.cpp",
+   "line": 549,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 165,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 168,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 184,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 186,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 473,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 477,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 481,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 489,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 490,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 494,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 497,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 527,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 537,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 545,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 553,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 554,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 560,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 165,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 168,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 184,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 186,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 473,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 477,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 481,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 489,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 490,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 494,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 497,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 527,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 537,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 545,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 553,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 554,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "camera_pipe_generator.cpp",
+   "line": 560,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 176,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 183,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 526,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 536,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 544,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 552,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "camera_pipe_generator.cpp",
+   "line": 559,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 176,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 183,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 526,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 536,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 544,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 552,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "camera_pipe_generator.cpp",
+   "line": 559,
+   "col": 14,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  }
+ ],
+ "conv_layer": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "conv_layer_generator.cpp",
+   "line": 181,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "conv_layer_generator.cpp",
+   "line": 194,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "conv_layer_generator.cpp",
+   "line": 199,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "conv_layer_generator.cpp",
+   "line": 113,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "conv_layer_generator.cpp",
+   "line": 96,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "conv_layer_generator.cpp",
+   "line": 180,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "conv_layer_generator.cpp",
+   "line": 179,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "conv_layer_generator.cpp",
+   "line": 178,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "conv_layer_generator.cpp",
+   "line": 179,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "depthwise_separable_conv": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 124,
+   "col": 33,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 160,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 151,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 246,
+   "col": 33,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 260,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 273,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 244,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 244,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 169,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 120,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 121,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 122,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 126,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 127,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 128,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 130,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 131,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 132,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 154,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 135,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 155,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 164,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 165,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 166,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 170,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 171,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 172,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 176,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 175,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 177,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 241,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 242,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 248,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 249,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 253,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 254,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 263,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 264,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 268,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 269,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 276,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 120,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 127,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 128,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 130,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 131,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 132,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 135,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 154,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 155,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 164,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 165,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 166,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 170,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 171,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 172,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 175,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 176,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 177,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 241,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 242,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 248,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 249,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 253,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 254,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 263,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 264,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 268,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 269,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 276,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 153,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 240,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 247,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 252,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 261,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 266,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 275,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 153,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 240,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 247,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 252,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 261,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 266,
+   "col": 18,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 275,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 121,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 122,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "depthwise_separable_conv_generator.cpp",
+   "line": 126,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  }
+ ],
+ "harris": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 87,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 91,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 81,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 94,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 115,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 118,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 121,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 112,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 112,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 99,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "harris_generator.cpp",
+   "line": 104,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "harris_generator.cpp",
+   "line": 114,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 80,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "harris_generator.cpp",
+   "line": 117,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "KILLED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 84,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "harris_generator.cpp",
+   "line": 120,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "KILLED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 85,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 89,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 90,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 93,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 96,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 101,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 102,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 107,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 80,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 84,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 85,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 89,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 90,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 93,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 96,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 101,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 102,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "harris_generator.cpp",
+   "line": 107,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 88,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 100,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 105,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 119,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 122,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 88,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 100,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 105,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 116,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "harris_generator.cpp",
+   "line": 113,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 113,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 116,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 119,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "harris_generator.cpp",
+   "line": 122,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "hist": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 103,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 123,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 91,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 140,
+   "col": 30,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 160,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 161,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 181,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 188,
+   "col": 27,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 162,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "hist_generator.cpp",
+   "line": 165,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 199,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 187,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 206,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 187,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 85,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 199,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 94,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 157,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 206,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 198,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 192,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 85,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 94,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 157,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 205,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 192,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 198,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 84,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 93,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 159,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 160,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 161,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 162,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 167,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "hist_generator.cpp",
+   "line": 205,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 182,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 186,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 189,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 194,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 197,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 84,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "hist_generator.cpp",
+   "line": 207,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 93,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 159,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 160,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 161,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 167,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 162,
+   "col": 43,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 182,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 197,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "hist_generator.cpp",
+   "line": 207,
+   "col": 22,
+   "stage2": "NOT_RUN",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  }
+ ],
+ "iir_blur": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "iir_blur_generator.cpp",
+   "line": 51,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "iir_blur_generator.cpp",
+   "line": 46,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "iir_blur_generator.cpp",
+   "line": 47,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "iir_blur_generator.cpp",
+   "line": 46,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "iir_blur_generator.cpp",
+   "line": 47,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "iir_blur_generator.cpp",
+   "line": 79,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "iir_blur_generator.cpp",
+   "line": 108,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "iir_blur_generator.cpp",
+   "line": 91,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "iir_blur_generator.cpp",
+   "line": 94,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "iir_blur_generator.cpp",
+   "line": 91,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "iir_blur_generator.cpp",
+   "line": 94,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "iir_blur_generator.cpp",
+   "line": 56,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "iir_blur_generator.cpp",
+   "line": 59,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "iir_blur_generator.cpp",
+   "line": 45,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "iir_blur_generator.cpp",
+   "line": 45,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "iir_blur_generator.cpp",
+   "line": 56,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "iir_blur_generator.cpp",
+   "line": 59,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "max_filter": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "max_filter_generator.cpp",
+   "line": 112,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "max_filter_generator.cpp",
+   "line": 107,
+   "col": 26,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "max_filter_generator.cpp",
+   "line": 105,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "max_filter_generator.cpp",
+   "line": 105,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "max_filter_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "max_filter_generator.cpp",
+   "line": 111,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "max_filter_generator.cpp",
+   "line": 108,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "max_filter_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "max_filter_generator.cpp",
+   "line": 108,
+   "col": 26,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "max_filter_generator.cpp",
+   "line": 111,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "max_filter_generator.cpp",
+   "line": 113,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "max_filter_generator.cpp",
+   "line": 113,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "nl_means": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 114,
+   "col": 20,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 138,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 141,
+   "col": 15,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 143,
+   "col": 33,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 152,
+   "col": 20,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 136,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 120,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "nl_means_generator.cpp",
+   "line": 136,
+   "col": 18,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "nl_means_generator.cpp",
+   "line": 124,
+   "col": 15,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 98,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 108,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "nl_means_generator.cpp",
+   "line": 98,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "nl_means_generator.cpp",
+   "line": 108,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 146,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "nl_means_generator.cpp",
+   "line": 146,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "nl_means_generator.cpp",
+   "line": 150,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 137,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 150,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 140,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 147,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 151,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 153,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 137,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 140,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "nl_means_generator.cpp",
+   "line": 142,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 142,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 147,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 151,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "nl_means_generator.cpp",
+   "line": 153,
+   "col": 18,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  }
+ ],
+ "unsharp": [
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 80,
+   "col": 23,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 98,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 101,
+   "col": 24,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 104,
+   "col": 23,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_unroll",
+   "file": "unsharp_generator.cpp",
+   "line": 96,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_parallel_to_vectorize",
+   "file": "unsharp_generator.cpp",
+   "line": 96,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 86,
+   "col": 24,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "unsharp_generator.cpp",
+   "line": 102,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "unsharp_generator.cpp",
+   "line": 105,
+   "col": 22,
+   "stage2": "GEN_ERROR",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_compute_at_to_store_at",
+   "file": "unsharp_generator.cpp",
+   "line": 81,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 83,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 79,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 84,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "unsharp_generator.cpp",
+   "line": 79,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 87,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "unsharp_generator.cpp",
+   "line": 84,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "unsharp_generator.cpp",
+   "line": 83,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_unroll_to_vectorize",
+   "file": "unsharp_generator.cpp",
+   "line": 87,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "0",
+   "o1": "NOT_RUN",
+   "o2": "NOT_RUN"
+  },
+  {
+   "mutator": "Halide_store_at_to_compute_at",
+   "file": "unsharp_generator.cpp",
+   "line": 99,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 95,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 100,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 103,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_parallel",
+   "file": "unsharp_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "unsharp_generator.cpp",
+   "line": 95,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "unsharp_generator.cpp",
+   "line": 100,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "unsharp_generator.cpp",
+   "line": 103,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "SURVIVED"
+  },
+  {
+   "mutator": "Halide_vectorize_to_unroll",
+   "file": "unsharp_generator.cpp",
+   "line": 106,
+   "col": 22,
+   "stage2": "OK",
+   "effective": "1",
+   "o1": "SURVIVED",
+   "o2": "KILLED"
+  }
+ ]
+}

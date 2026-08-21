@@ -1,0 +1,7 @@
+[bilateral_grid] stage1: instrumenting...
+[bilateral_grid] stage1 done: 37 mutants embedded
+[bilateral_grid] baseline median=2.1194s iqr=0.0058s threshold=0.0424s n=21
+[bilateral_grid] Halide_parallel_to_unroll        149:18   delta=+5.9243s (+279.5%) -> KILLED_O3
+[bilateral_grid] Halide_parallel_to_vectorize     149:18   delta=+7.3560s (+347.1%) -> KILLED_O3
+[bilateral_grid] Halide_unroll_to_parallel        132:18   delta=+11.1142s (+524.4%) -> KILLED_O3
+[bilateral_grid] Halide_unroll_to_parallel        141:18   delta=+16.6392s (+785.1%) -> KILLED_O3

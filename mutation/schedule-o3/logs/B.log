@@ -1,0 +1,23 @@
+[hist] stage1: instrumenting...
+[hist] stage1 done: 54 mutants embedded
+[hist] baseline median=1.7302s iqr=0.2028s threshold=0.6083s n=21
+[hist] Halide_parallel_to_unroll        187:22   delta=+0.0257s (+1.5%) -> SURVIVED_O3
+[hist] Halide_parallel_to_unroll        199:22   delta=+0.1848s (+10.7%) -> SURVIVED_O3
+[hist] Halide_parallel_to_unroll        206:22   delta=+0.2171s (+12.5%) -> SURVIVED_O3
+[hist] Halide_parallel_to_vectorize     187:22   delta=+0.0265s (+1.5%) -> SURVIVED_O3
+[hist] Halide_unroll_to_parallel        192:22   delta=+5.2486s (+303.3%) -> KILLED_O3
+[hist] Halide_unroll_to_parallel        198:22   delta=+0.0012s (+0.1%) -> SURVIVED_O3
+[hist] Halide_unroll_to_parallel        205:22   delta=+1.0084s (+58.3%) -> KILLED_O3
+[hist] Halide_unroll_to_vectorize       192:22   delta=-0.0027s (-0.2%) -> SURVIVED_O3
+[hist] Halide_unroll_to_vectorize       198:22   delta=+0.1689s (+9.8%) -> SURVIVED_O3
+[hist] Halide_unroll_to_vectorize       205:22   delta=-0.0104s (-0.6%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     182:22   delta=+0.3628s (+21.0%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     186:22   delta=-0.0510s (-3.0%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     189:22   delta=-0.1063s (-6.1%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     194:22   delta=-0.0112s (-0.6%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     197:22   delta=-0.0077s (-0.4%) -> SURVIVED_O3
+[hist] Halide_vectorize_to_parallel     207:22   delta=+0.2763s (+16.0%) -> SURVIVED_O3
+[max_filter] stage1: instrumenting...
+[max_filter] stage1 done: 12 mutants embedded
+[max_filter] baseline median=1.2291s iqr=0.2280s threshold=0.6840s n=21
+[max_filter] Halide_vectorize_to_parallel     106:22   delta=+3.6138s (+294.0%) -> KILLED_O3

@@ -1,0 +1,3 @@
+[bilateral_grid] stage1: instrumenting... (11 mutants to do)
+[bilateral_grid] stage1 done: 37 mutants embedded
+[bilateral_grid] baseline2 median=2.1542s iqr=0.0249s threshold=0.0747s rep_timeout=17.2s n=21

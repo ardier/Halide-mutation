@@ -1,0 +1,6 @@
+[conv_layer] stage1: instrumenting...
+[conv_layer] stage1 done: 67 mutants embedded
+[conv_layer] baseline median=6.9423s iqr=1.3197s threshold=3.9590s n=21
+[conv_layer] Halide_parallel_to_unroll        178:18   delta=-0.0362s (-0.5%) -> SURVIVED_O3
+[conv_layer] Halide_parallel_to_unroll        179:18   delta=+1.4074s (+20.3%) -> SURVIVED_O3
+[conv_layer] Halide_parallel_to_unroll        180:18   delta=+0.8881s (+12.8%) -> SURVIVED_O3

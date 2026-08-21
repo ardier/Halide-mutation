@@ -1,0 +1,11 @@
+[nl_means] stage1: instrumenting... (16 mutants to do)
+[nl_means] stage1 done: 29 mutants embedded
+[nl_means] baseline2 median=3.0056s iqr=0.0996s threshold=0.2988s rep_timeout=24.0s n=21
+[nl_means] UNEXPECTED ERROR:
+Traceback (most recent call last):
+  File "/mnt/scratch1/ardi/dsl_mut/sched-o3-sweep2.py", line 302, in main
+    process_app(app_name, targets, writer, outfh)
+  File "/mnt/scratch1/ardi/dsl_mut/sched-o3-sweep2.py", line 285, in process_app
+    print(f"[{app_name}] {r['mutator']:<32} {r['line']}:{r['col']:<4} "
+KeyError: 'col'
+

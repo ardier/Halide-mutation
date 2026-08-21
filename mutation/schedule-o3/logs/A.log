@@ -1,0 +1,27 @@
+[depthwise_separable_conv] stage1: instrumenting...
+[depthwise_separable_conv] stage1 done: 87 mutants embedded
+[depthwise_separable_conv] baseline median=0.3810s iqr=0.1136s threshold=0.3408s n=21
+[depthwise_separable_conv] Halide_unroll_to_parallel        241:18   delta=+0.4404s (+115.6%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        242:18   delta=+0.4085s (+107.2%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        248:18   delta=+0.5709s (+149.8%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        249:18   delta=+0.3425s (+89.9%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        253:18   delta=+2.5865s (+678.9%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        254:18   delta=+0.6144s (+161.3%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        263:18   delta=+0.5454s (+143.1%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        264:18   delta=+0.6026s (+158.2%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        268:18   delta=+1.4342s (+376.4%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        269:18   delta=+0.4586s (+120.4%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_parallel        276:18   delta=+1.3621s (+357.5%) -> KILLED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       241:18   delta=+0.0189s (+5.0%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       242:18   delta=+0.0229s (+6.0%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       248:18   delta=+0.0089s (+2.3%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       249:18   delta=+0.1644s (+43.1%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       253:18   delta=+0.2254s (+59.2%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       254:18   delta=-0.0070s (-1.8%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       263:18   delta=+0.0129s (+3.4%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       264:18   delta=-0.0056s (-1.5%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       268:18   delta=+0.0474s (+12.4%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       269:18   delta=+0.2449s (+64.3%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_unroll_to_vectorize       276:18   delta=+0.0459s (+12.1%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_parallel     240:18   delta=+0.6011s (+157.8%) -> KILLED_O3
+[depthwise_separable_conv] Halide_vectorize_to_parallel     247:18   delta=+0.5041s (+132.3%) -> KILLED_O3

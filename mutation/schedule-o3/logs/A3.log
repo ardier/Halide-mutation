@@ -1,0 +1,24 @@
+[conv_layer] stage1: instrumenting... (1 mutants to do)
+[conv_layer] stage1 done: 67 mutants embedded
+[conv_layer] baseline2 median=6.9116s iqr=2.2749s threshold=6.8246s rep_timeout=55.3s n=21
+[conv_layer] Halide_parallel_to_vectorize     179:18   n=4* delta=+24.4683s (+354.0%) -> KILLED_O3
+[depthwise_separable_conv] stage1: instrumenting... (10 mutants to do)
+[depthwise_separable_conv] stage1 done: 87 mutants embedded
+[depthwise_separable_conv] baseline2 median=0.6013s iqr=0.2004s threshold=0.6011s rep_timeout=5.0s n=21
+[depthwise_separable_conv] Halide_vectorize_to_parallel     252:18   n=4*T delta=+4.3987s (+731.5%) -> KILLED_O3
+[depthwise_separable_conv] Halide_vectorize_to_parallel     261:18   n=9 delta=+0.1510s (+25.1%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_parallel     266:18   n=4* delta=+3.2808s (+545.6%) -> KILLED_O3
+[depthwise_separable_conv] Halide_vectorize_to_parallel     275:18   n=4*T delta=+4.3987s (+731.5%) -> KILLED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       240:18   n=9 delta=-0.1500s (-24.9%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       247:18   n=9 delta=-0.1502s (-25.0%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       252:18   n=9 delta=-0.1501s (-25.0%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       261:18   n=9 delta=-0.1999s (-33.3%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       266:18   n=9 delta=-0.1502s (-25.0%) -> SURVIVED_O3
+[depthwise_separable_conv] Halide_vectorize_to_unroll       275:18   n=9 delta=-0.2002s (-33.3%) -> SURVIVED_O3
+[iir_blur] stage1: instrumenting... (4 mutants to do)
+[iir_blur] stage1 done: 17 mutants embedded
+[iir_blur] baseline2 median=6.8124s iqr=0.0759s threshold=0.2277s rep_timeout=54.5s n=21
+[iir_blur] Halide_vectorize_to_parallel     45:18   n=4* delta=+45.9964s (+675.2%) -> KILLED_O3
+[iir_blur] Halide_vectorize_to_unroll       45:18   n=9 delta=-0.0992s (-1.5%) -> SURVIVED_O3
+[iir_blur] Halide_vectorize_to_unroll       56:18   n=9 delta=+0.3013s (+4.4%) -> KILLED_O3
+[iir_blur] Halide_vectorize_to_unroll       59:18   n=9 delta=+0.3014s (+4.4%) -> KILLED_O3

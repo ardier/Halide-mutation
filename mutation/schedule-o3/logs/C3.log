@@ -1,0 +1,18 @@
+[nl_means] stage1: instrumenting... (15 mutants to do)
+[nl_means] stage1 done: 29 mutants embedded
+[nl_means] baseline2 median=3.0067s iqr=0.0521s threshold=0.1564s rep_timeout=24.1s n=21
+[nl_means] Halide_unroll_to_parallel        150:18   n=4*T delta=+21.0472s (+700.0%) -> KILLED_O3
+[nl_means] Halide_unroll_to_vectorize       146:18   n=9 delta=-0.0008s (-0.0%) -> SURVIVED_O3
+[nl_means] Halide_unroll_to_vectorize       150:18   n=9 delta=+0.2992s (+10.0%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_parallel     137:18   n=4* delta=+0.8505s (+28.3%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_parallel     140:18   n=4* delta=+9.8670s (+328.2%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_parallel     142:18   n=4*T delta=+21.0472s (+700.0%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_parallel     147:18   n=9 delta=-0.0507s (-1.7%) -> SURVIVED_O3
+[nl_means] Halide_vectorize_to_parallel     151:18   n=9 delta=+0.1994s (+6.6%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_parallel     153:18   n=9 delta=+0.2491s (+8.3%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_unroll       137:18   n=9 delta=-0.0510s (-1.7%) -> SURVIVED_O3
+[nl_means] Halide_vectorize_to_unroll       140:18   n=4* delta=+0.7751s (+25.8%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_unroll       142:18   n=9 delta=+0.4501s (+15.0%) -> KILLED_O3
+[nl_means] Halide_vectorize_to_unroll       147:18   n=9 delta=-0.0517s (-1.7%) -> SURVIVED_O3
+[nl_means] Halide_vectorize_to_unroll       151:18   n=9 delta=-0.0507s (-1.7%) -> SURVIVED_O3
+[nl_means] Halide_vectorize_to_unroll       153:18   n=9 delta=+0.0989s (+3.3%) -> SURVIVED_O3

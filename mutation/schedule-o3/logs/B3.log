@@ -1,0 +1,23 @@
+[bilateral_grid] stage1: instrumenting... (11 mutants to do)
+[bilateral_grid] stage1 done: 37 mutants embedded
+[bilateral_grid] baseline2 median=2.1542s iqr=0.0253s threshold=0.0758s rep_timeout=17.2s n=21
+[bilateral_grid] Halide_unroll_to_parallel        147:18   n=4*T delta=+15.0796s (+700.0%) -> KILLED_O3
+[bilateral_grid] Halide_unroll_to_vectorize       132:18   n=4* delta=+1.0523s (+48.9%) -> KILLED_O3
+[bilateral_grid] Halide_unroll_to_vectorize       136:18   n=9 delta=+0.1007s (+4.7%) -> KILLED_O3
+[bilateral_grid] Halide_unroll_to_vectorize       141:18   n=9 delta=+0.0517s (+2.4%) -> SURVIVED_O3
+[bilateral_grid] Halide_unroll_to_vectorize       147:18   n=9 delta=+0.0503s (+2.3%) -> SURVIVED_O3
+[bilateral_grid] Halide_vectorize_to_parallel     131:18   n=4* delta=+1.0274s (+47.7%) -> KILLED_O3
+[bilateral_grid] Halide_vectorize_to_parallel     140:18   n=4* delta=+7.5377s (+349.9%) -> KILLED_O3
+[bilateral_grid] Halide_vectorize_to_parallel     146:18   n=4*T delta=+13.5243s (+627.8%) -> KILLED_O3
+[bilateral_grid] Halide_vectorize_to_unroll       131:18   n=9 delta=-0.0001s (-0.0%) -> SURVIVED_O3
+[bilateral_grid] Halide_vectorize_to_unroll       146:18   n=9 delta=+0.0495s (+2.3%) -> SURVIVED_O3
+[bilateral_grid] Halide_vectorize_to_unroll       150:18   n=9 delta=-0.0500s (-2.3%) -> SURVIVED_O3
+[harris] stage1: instrumenting... (6 mutants to do)
+[harris] stage1 done: 50 mutants embedded
+[harris] baseline2 median=0.7515s iqr=0.2003s threshold=0.6009s rep_timeout=6.0s n=21
+[harris] Halide_store_at_to_compute_at    114:22   n=9 delta=+0.2005s (+26.7%) -> SURVIVED_O3
+[harris] Halide_vectorize_to_parallel     113:22   n=9 delta=+0.8515s (+113.3%) -> KILLED_O3
+[harris] Halide_vectorize_to_parallel     116:22   n=9 delta=+0.6012s (+80.0%) -> KILLED_O3
+[harris] Halide_vectorize_to_unroll       116:22   n=9 delta=+0.1508s (+20.1%) -> SURVIVED_O3
+[harris] Halide_vectorize_to_unroll       119:22   n=9 delta=+0.0004s (+0.1%) -> SURVIVED_O3
+[harris] Halide_vectorize_to_unroll       122:22   n=9 delta=+0.0008s (+0.1%) -> SURVIVED_O3
