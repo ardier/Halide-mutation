@@ -1,0 +1,18 @@
+app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,124,33,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,151,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,160,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,169,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,246,33,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,260,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_compute_at_to_store_at,depthwise_separable_conv_generator.cpp,273,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_unroll,depthwise_separable_conv_generator.cpp,244,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_parallel_to_vectorize,depthwise_separable_conv_generator.cpp,244,18,before,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,120,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,121,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,122,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,126,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,127,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,128,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,130,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+depthwise_separable_conv,schedule,Halide_unroll_to_parallel,depthwise_separable_conv_generator.cpp,131,18,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
