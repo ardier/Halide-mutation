@@ -1,0 +1,68 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+local_laplacian arithmetic    255       0      0     18  237      14     232   232   5.9%  97.9%
+local_laplacian boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+local_laplacian generated       4       2      0      0    2       0       2     2   0.0% 100.0%
+local_laplacian schedule       25       6      0      0   19       0      11    11   0.0%  57.9%
+local_laplacian select_clamp    3       0      0      0    3       1       3     3  33.3% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    255       0      0     18  237      14     232   232   5.9%  97.9%
+                boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+                generated       4       2      0      0    2       0       2     2   0.0% 100.0%
+                schedule       25       6      0      0   19       0      11    11   0.0%  57.9%
+                select_clamp    3       0      0      0    3       1       3     3  33.3% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     24       0      0   24       0      24  100.0%
+Halide_add_to_mul                 arithmetic     24       0      0   24       2      24  100.0%
+Halide_add_to_sub                 arithmetic     24       0      2   22       0      22  100.0%
+Halide_div_to_add                 arithmetic     15       0      1   14       4      14  100.0%
+Halide_div_to_mul                 arithmetic     15       0      0   15       4      15  100.0%
+Halide_div_to_sub                 arithmetic     15       0      7    8       4       8  100.0%
+Halide_mul_to_add                 arithmetic     31       0      5   26       0      26  100.0%
+Halide_mul_to_div                 arithmetic     31       0      0   31       0      31  100.0%
+Halide_mul_to_sub                 arithmetic     31       0      2   29       0      29  100.0%
+Halide_sub_to_add                 arithmetic     15       0      1   14       0      12   85.7%
+Halide_sub_to_div                 arithmetic     15       0      0   15       0      14   93.3%
+Halide_sub_to_mul                 arithmetic     15       0      0   15       0      13   86.7%
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_negate_to_bitwise_not      generated       1       1      0    0       0       0     n/a
+Halide_negate_to_not              generated       1       1      0    0       0       0     n/a
+Halide_rem_to_div                 generated       2       0      0    2       0       2  100.0%
+Halide_compute_at_to_store_at     schedule        2       2      0    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        5       2      0    3       0       0    0.0%
+Halide_parallel_to_vectorize      schedule        5       2      0    3       0       2   66.7%
+Halide_store_at_to_compute_at     schedule        1       0      0    1       0       0    0.0%
+Halide_vectorize_to_parallel      schedule        6       0      0    6       0       4   66.7%
+Halide_vectorize_to_unroll        schedule        6       0      0    6       0       5   83.3%
+Halide_clamp_swap_bounds          select_clamp    3       0      0    3       1       3  100.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  local_laplacian generated  Halide_negate_to_bitwise_not    local_laplacian_generator.cpp:25:37GEN_ERROR/OK  killed at generation time
+  local_laplacian generated  Halide_negate_to_not            local_laplacian_generator.cpp:25:37GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_compute_at_to_store_at   local_laplacian_generator.cpp:149:22GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_compute_at_to_store_at   local_laplacian_generator.cpp:153:28GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_parallel_to_unroll       local_laplacian_generator.cpp:134:57GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_parallel_to_unroll       local_laplacian_generator.cpp:156:44GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_parallel_to_vectorize    local_laplacian_generator.cpp:134:57GEN_ERROR/OK  killed at generation time
+  local_laplacian schedule   Halide_parallel_to_vectorize    local_laplacian_generator.cpp:156:44GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
