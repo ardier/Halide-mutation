@@ -24,11 +24,35 @@ ARM_ORDER = ["arithmetic", "schedule", "generated",
 
 
 def load_rows():
-    rows = []
+    """All result rows, with the two sweep passes merged.
+
+    Pass 2 revisited the families pass 1 ran out of budget for, so the same
+    mutant can appear twice: once as NOT_RUN from pass 1 and once with a real
+    verdict from pass 2. Keyed by identity, an evaluated row always wins over a
+    NOT_RUN one. Two evaluated rows for the same mutant would mean it was run
+    twice, which the gap selection does not do; the later file wins and the
+    count is reported so it is not silent.
+    """
+    merged = {}
+    dupes = 0
     for p in sorted(RESULTS.glob("*.csv")):
         with p.open(newline="") as fh:
-            rows += list(csv.DictReader(fh))
-    return rows
+            for r in csv.DictReader(fh):
+                key = (r["app"], r["arm"], r["mutator"], r["file"],
+                       r["line"], r["column"])
+                prev = merged.get(key)
+                if prev is None:
+                    merged[key] = r
+                    continue
+                if prev["stage2"] == "NOT_RUN" and r["stage2"] != "NOT_RUN":
+                    merged[key] = r
+                elif prev["stage2"] != "NOT_RUN" and r["stage2"] != "NOT_RUN":
+                    dupes += 1
+                    merged[key] = r
+    if dupes:
+        print(f"note: {dupes} mutants were evaluated in both passes; "
+              f"the later verdict was kept", file=sys.stderr)
+    return list(merged.values())
 
 
 def stats(rows):
