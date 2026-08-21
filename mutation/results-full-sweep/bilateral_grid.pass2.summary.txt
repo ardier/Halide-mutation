@@ -1,0 +1,223 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+bilateral_grid  arithmetic    195       0      0      1   10       0      10    10   0.0% 100.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic    195       0      0      1   10       0      10    10   0.0% 100.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic     31       0      1   10       0      10  100.0%
+Halide_add_to_mul                 arithmetic     34       0      0    0       0       0     n/a
+Halide_add_to_sub                 arithmetic     34       0      0    0       0       0     n/a
+Halide_div_to_add                 arithmetic     10       0      0    0       0       0     n/a
+Halide_div_to_mul                 arithmetic     10       0      0    0       0       0     n/a
+Halide_div_to_sub                 arithmetic     10       0      0    0       0       0     n/a
+Halide_mul_to_add                 arithmetic     13       0      0    0       0       0     n/a
+Halide_mul_to_div                 arithmetic     13       0      0    0       0       0     n/a
+Halide_mul_to_sub                 arithmetic     13       0      0    0       0       0     n/a
+Halide_sub_to_add                 arithmetic      9       0      0    0       0       0     n/a
+Halide_sub_to_div                 arithmetic      9       0      0    0       0       0     n/a
+Halide_sub_to_mul                 arithmetic      9       0      0    0       0       0     n/a
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:42:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:43:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:44:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:46:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:46:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:47:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:60:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:61:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:61:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:61:71NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:62:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:62:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:62:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:63:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:63:49NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:63:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:63:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               bilateral_grid_generator.cpp:63:83NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_div               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:22:40NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:22:73NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:25:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:33:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:34:60NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:35:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:36:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:36:60NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:37:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:38:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:39:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:40:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:41:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:41:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:42:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:43:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:44:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:46:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:46:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:47:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:60:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:61:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:61:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:61:71NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:62:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:62:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:62:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:63:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:63:49NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:63:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:63:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               bilateral_grid_generator.cpp:63:83NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_mul               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:22:40NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:22:73NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:25:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:33:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:34:60NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:35:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:36:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:36:60NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:37:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:38:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:39:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:40:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:41:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:41:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:42:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:43:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:44:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:45:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:46:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:46:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:47:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:60:59NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:61:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:61:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:61:71NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:62:45NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:62:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:62:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:63:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:63:49NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:63:67NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:63:75NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               bilateral_grid_generator.cpp:63:83NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_add_to_sub               Halide.h:13276:25             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:22:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:22:89NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:25:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:51:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:54:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:55:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:56:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:57:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               bilateral_grid_generator.cpp:67:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_add               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:22:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:22:89NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:25:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:51:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:54:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:55:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:56:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:57:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               bilateral_grid_generator.cpp:67:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_mul               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:22:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:22:89NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:25:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:51:31NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:54:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:55:44NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:56:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:57:21NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               bilateral_grid_generator.cpp:67:54NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_div_to_sub               Halide.h:13297:20             NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:22:30NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:22:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:25:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:34:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:35:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:36:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:39:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:40:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:41:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:44:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:46:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_add               bilateral_grid_generator.cpp:51:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:22:30NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:22:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:25:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:34:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:35:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:36:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:39:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:40:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:41:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:44:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:46:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_div               bilateral_grid_generator.cpp:51:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:22:30NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:22:63NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:25:33NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:34:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:35:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:36:56NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:39:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:40:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:41:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:44:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:45:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:46:52NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_mul_to_sub               bilateral_grid_generator.cpp:51:23NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:22:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:22:79NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:33:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:34:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:38:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:39:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:43:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:44:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_add               bilateral_grid_generator.cpp:53:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:22:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:22:79NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:33:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:34:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:38:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:39:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:43:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:44:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_div               bilateral_grid_generator.cpp:53:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:22:46NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:22:79NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:33:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:34:48NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:38:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:39:38NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:43:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:44:41NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+  bilateral_grid  arithmetic Halide_sub_to_mul               bilateral_grid_generator.cpp:53:22NOT_RUN/OK  wall-clock budget exhausted before this mutant was evaluated
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these
