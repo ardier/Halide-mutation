@@ -28,7 +28,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 CLANG = "/usr/lib/llvm-14/bin/clang++"
 BUILD_INC = f"{REPO}/build/include"
 TOOLS = f"{REPO}/tools"
-SCRATCH = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gap-lower/work"
+SCRATCH = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gap-lower2/work"
 LOWERED = f"{REPO}/mutation/lowered-cpp"
 
 
@@ -186,13 +186,20 @@ def lower_linear_blur():
     # linear_blur_generator.cpp's generate() is unconditionally:
     #   if (using_autoscheduler()) { ... } else { assert(false); abort(); }
     # so it can ONLY be lowered with an autoscheduler plugin engaged. None of
-    # Halide's autoscheduler .so plugins (Mullapudi2016/Adams2019/Li2018) are
-    # built in this repo's build/ dir (confirmed: find turned up nothing), so
-    # this is expected to fail here -- root-caused below rather than retried
-    # blindly against the budget.
+    # Halide's autoscheduler .so plugins were built in HM-armc-fix/build (that
+    # build dir is a SHARED symlink to /dev/shm/ardi_dslmut/halide16-build used
+    # by other worktrees/agents -- confirmed via CMakeCache.txt's
+    # CMAKE_HOME_DIRECTORY -- so we do not build autoschedulers *there*).
+    # Fixed by hand-compiling the Mullapudi2016 (and Li2018) plugin .so
+    # directly with clang++ against that build's already-built libHalide.so
+    # and headers (read-only), mirroring src/autoschedulers/mullapudi2016/
+    # Makefile's own recipe, output to a private scratch dir -- see
+    # as-plugins/ next to this worktree. -p loads it; -s was removed in this
+    # Halide version (16.0.0) in favor of the autoscheduler=NAME GeneratorParam
+    # already used below.
     try:
         results.append(lower_one(gen_bin, "linear_blur", "linear_blur", out_dir,
-                                  extra_args=["autoscheduler=Mullapudi2016"]))
+                                  extra_args=["-p", "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gap-lower2/as-plugins/libautoschedule_mullapudi2016.so", "autoscheduler=Mullapudi2016"]))
     except Exception as ex:
         results.append(dict(func="linear_blur (composed)", status="FAILED", error=str(ex)))
     return results
