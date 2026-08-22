@@ -1,0 +1,25 @@
+=== resize_box_uint8_down ===
+function                                              points    run  killed  equiv
+resize_box_uint8_down_par_for_output_s0_v1_v1__1        2027   2001       0     14
+resize_box_uint8_down_par_for_output_s0_v1_v1__2        1157   1131       0     14
+resize_box_uint8_down_par_for_output_s0_v1_v1            899    835     735     52
+_halide_buffer_retire_crops_after_extern_stage           404     48      29    349
+halide_profiler_pipeline_end                             204     14      10    162
+_halide_buffer_is_bounds_query                            44     13       1     27
+_halide_buffer_retire_crop_after_extern_stage             15      0       0     15
+_halide_buffer_get_max                                     6      0       0      6
+
+functions with at least one kill (executed): 4, 1551 points
+functions run but with ZERO kills (likely unexecuted specialisations): 2, 3184 points
+
+=== fft_forward_r2c ===
+function                                              points    run  killed  equiv
+fft_forward_r2c                                         1574   1484     845     90
+_halide_buffer_retire_crops_after_extern_stage           404     20      11    380
+halide_profiler_pipeline_end                             204      4       3    172
+_halide_buffer_is_bounds_query                            44     13       1     27
+_halide_buffer_retire_crop_after_extern_stage             15      0       0     15
+_halide_buffer_get_max                                     6      0       0      6
+
+functions with at least one kill (executed): 4, 2226 points
+functions run but with ZERO kills (likely unexecuted specialisations): 0, 0 points
