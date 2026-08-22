@@ -28,6 +28,7 @@ to compare did not "fail to kill", it did not run.
 import csv
 import glob
 import os
+import re
 import sys
 from collections import Counter, defaultdict
 
@@ -103,9 +104,10 @@ def normalise(r):
     return out
 
 
-def summarise(rows, label):
+def summarise(rows, label, pts_total=None):
     rows = [normalise(r) for r in rows]
     n = len(rows)
+    total = pts_total if pts_total is not None else n
 
     def stage(r, key):
         return (r.get(key) or "").strip()
@@ -127,7 +129,10 @@ def summarise(rows, label):
                    if r["equivalent"] or any(r[k] == "KILLED" for k in KINDS))
 
     print(f"\n=== {label} ===")
-    print(f"  points identified              {n}")
+    print(f"  points identified              {total}")
+    if total != n:
+        print(f"  NOT REACHED (still running)    {total - n}")
+    print(f"  points evaluated               {n}")
     print(f"  tool/compiler rejected mutant  {gen_fail}")
     print(f"  mutants generated              {n - gen_fail}")
     if genlink_fail:
@@ -135,13 +140,13 @@ def summarise(rows, label):
     if gen_no_pipe:
         print(f"    generator produced no pipeline {gen_no_pipe}")
     print(f"    equivalent (TCE)             {equiv}"
-          + (f"   ({100.0*equiv/n:.1f}% of points)" if n else ""))
+          + (f"   ({100.0*equiv/n:.1f}% of evaluated)" if n else ""))
     if link_fail:
         print(f"    driver link failed           {link_fail}")
     print(f"  mutants RUN                    {ran}")
     print(f"  mutants KILLED                 {killed}")
     print(f"  RESOLVED (killed or equiv)     {resolved}"
-          + (f"   ({100.0*resolved/n:.1f}%)" if n else ""))
+          + (f"   ({100.0*resolved/n:.1f}% of evaluated)" if n else ""))
 
     print("  per test kind:")
     for k in KINDS:
@@ -168,7 +173,7 @@ def summarise(rows, label):
               f"nothing) and are\n"
               f"                re-recorded NOT_RUN: nothing to compare is not "
               f"a kill.")
-    return dict(points=n, generated=n - gen_fail, run=ran, killed=killed,
+    return dict(points=total, evaluated=n, generated=n - gen_fail, run=ran, killed=killed,
                 equiv=equiv, resolved=resolved)
 
 
@@ -177,7 +182,7 @@ GEN2 = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen2/out"
 
 SUMMARY_FIELDS = [
     "route", "target_kind", "app", "driver_kind", "points_identified",
-    "mutants_generated", "mutants_run", "mutants_killed", "equivalent_tce",
+    "points_evaluated", "not_reached", "mutants_generated", "mutants_run", "mutants_killed", "equivalent_tce",
     "resolved",
     "test1_demo_ran", "test1_demo_killed", "test1_demo_killed_alone",
     "test2_added_ran", "test2_added_killed", "test2_added_killed_alone",
@@ -209,15 +214,17 @@ def driver_kind(app):
         return ""
 
 
-def app_stats(rows, route, tk, app, complete):
+def app_stats(rows, route, tk, app, complete, pts_total=None):
     """One summary row. Every denominator counts only mutants on which that
     kind actually RAN; NOT_RUN never enters one."""
     n = len(rows)
     bad = sum(1 for r in rows if (r.get("stage_compile") or "")
               in ("GEN_FAIL", "COMPILE_FAIL", "HARNESS_ERROR"))
+    total = pts_total if pts_total is not None else n
     row = {f: "" for f in SUMMARY_FIELDS}
     row.update(route=route, target_kind=tk, app=app,
-               driver_kind=driver_kind(app), points_identified=n,
+               driver_kind=driver_kind(app), points_identified=total,
+               points_evaluated=n, not_reached=max(0, total - n),
                mutants_generated=n - bad, complete=int(complete))
     row["equivalent_tce"] = sum(1 for r in rows if r["equivalent"])
     row["mutants_run"] = sum(1 for r in rows if any(
@@ -241,13 +248,33 @@ def app_stats(rows, route, tk, app, complete):
     return row
 
 
-def is_complete(csv_path):
+POINTS_RE = re.compile(r"\[\w+\]\s+(\d+) points identified")
+
+
+def log_facts(csv_path):
+    """(complete, points_identified) read from the run's own log.
+
+    For a run still in flight the CSV holds only the rows written so far.
+    Taking points_identified from the CSV would silently shrink the
+    denominator to whatever happened to be finished, which is the exact way a
+    partial result turns into an overstated rate. The log records the true
+    identified count at emit time, before any mutant was evaluated, so it is
+    the honest denominator; the difference between it and the rows written is
+    reported as NOT REACHED rather than folded into anything.
+    """
     log = os.path.join(os.path.dirname(os.path.dirname(csv_path)), "logs",
                        os.path.basename(csv_path).replace(".csv", ".log"))
+    complete, pts = False, None
     try:
-        return any(l.startswith("wall ") for l in open(log))
+        for line in open(log):
+            if line.startswith("wall "):
+                complete = True
+            m = POINTS_RE.search(line)
+            if m and pts is None:
+                pts = int(m.group(1))
     except OSError:
-        return False
+        pass
+    return complete, pts
 
 
 def main():
@@ -272,10 +299,11 @@ def main():
             if not raw:
                 print(f"\n=== {app} === (no rows yet)")
                 continue
-            done = is_complete(f)
-            s = summarise(raw, app + ("" if done else "  [PARTIAL]"))
+            done, pts = log_facts(f)
+            label = app if done else f"{app}  [PARTIAL]"
+            s = summarise(raw, label, pts)
             summary_rows.append(app_stats([normalise(r) for r in raw],
-                                          "ast_mutator", tk, app, done))
+                                          "ast_mutator", tk, app, done, pts))
             for k, v in s.items():
                 sub[k] += v
         print(f"\n  --- {title} TOTAL ---")
