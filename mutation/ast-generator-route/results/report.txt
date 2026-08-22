@@ -5,19 +5,19 @@
 
 === bilateral_grid  [PARTIAL] ===
   points identified              191
-  NOT REACHED (still running)    154
-  points evaluated               37
+  NOT REACHED (still running)    145
+  points evaluated               46
   tool/compiler rejected mutant  0
-  mutants generated              37
+  mutants generated              46
     equivalent (TCE)             0   (0.0% of evaluated)
-  mutants RUN                    37
-  mutants KILLED                 37
-  RESOLVED (killed or equiv)     37   (100.0% of evaluated)
+  mutants RUN                    46
+  mutants KILLED                 46
+  RESOLVED (killed or equiv)     46   (100.0% of evaluated)
   per test kind:
-    test1_demo   ran     37  killed      0 (  0.0% of run)  killed ALONE      0
-    test2_added  ran     37  killed     37 (100.0% of run)  killed ALONE     37
+    test1_demo   ran     46  killed      0 (  0.0% of run)  killed ALONE      0
+    test2_added  ran     46  killed     46 (100.0% of run)  killed ALONE     46
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 37}
+    test2_method                 {'output_compare': 46}
 
 === blur ===
   points identified              30
@@ -172,11 +172,11 @@
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
     points     817
-    generated  663
-    run        654
-    killed     628
+    generated  672
+    run        663
+    killed     637
     equiv      5
-    resolved   633
+    resolved   642
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
@@ -198,27 +198,27 @@
 
 === resize  [PARTIAL] ===
   points identified              8435
-  NOT REACHED (still running)    2827
-  points evaluated               5608
+  NOT REACHED (still running)    2745
+  points evaluated               5690
   tool/compiler rejected mutant  75
-  mutants generated              5533
-    equivalent (TCE)             639   (11.4% of evaluated)
-  mutants RUN                    4894
+  mutants generated              5615
+    equivalent (TCE)             639   (11.2% of evaluated)
+  mutants RUN                    4976
   mutants KILLED                 775
-  RESOLVED (killed or equiv)     1414   (25.2% of evaluated)
+  RESOLVED (killed or equiv)     1414   (24.9% of evaluated)
   per test kind:
-    test1_demo   ran   4894  killed     91 (  1.9% of run)  killed ALONE     88
-    test2_added  ran   4806  killed    687 ( 14.3% of run)  killed ALONE    684
+    test1_demo   ran   4976  killed     91 (  1.8% of run)  killed ALONE     88
+    test2_added  ran   4888  killed    687 ( 14.1% of run)  killed ALONE    684
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 4806}
+    test2_method                 {'output_compare': 4888}
     [corrected] 86 test2 'kills' were scored against a MISSING artifact
                 (golden run aborted / exited nonzero, wrote nothing) and are
                 re-recorded NOT_RUN: nothing to compare is not a kill.
 
   --- TARGET 2  AST mutator x emitted C++ (new apps) TOTAL ---
     points     10682
-    generated  7744
-    run        6415
+    generated  7826
+    run        6497
     killed     1635
     equiv      1329
     resolved   2964
