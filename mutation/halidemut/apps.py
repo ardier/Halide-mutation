@@ -19,6 +19,7 @@ reflects the mutation. This also removes the autoscheduler from the inner loop,
 which matters: it dominates generation time.
 """
 
+import dataclasses
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -90,6 +91,29 @@ class AppConfig:
     file is shared support code (e.g. fft's ``fft.cpp``) rather than another
     registered generator. Mutants are not seeded in these files."""
 
+    golden_driver_source: Optional[str] = None
+    """An artifact-dumping driver *we* added, for apps whose shipped driver
+    computes an output buffer and never writes it.
+
+    Those apps had no independent test-2 (golden) signal at all: with no
+    artifact on disk the golden test fell back to the driver's normalised
+    stdout, which carries no pipeline output, so its verdict could only restate
+    test 1's exit status. Any corpus-wide golden figure that included them was
+    quietly averaging in cells that were not measurements.
+
+    The fix is an added driver, not an edit: it is swapped in with
+    ``dataclasses.replace(app, driver_source=...)`` (see ``golden_variant``),
+    so the shipped driver stays untouched and still supplies test 1. blur is
+    the case that matters most -- its shipped test.cpp is the one real
+    correctness test in the corpus, and it skips a 64-pixel border, which is
+    why boundary mutants survive it."""
+
+    golden_output_artifact: Optional[str] = None
+    """Filename ``golden_driver_source`` writes."""
+
+    golden_driver_args: List[str] = field(default_factory=lambda: ["{output}"])
+    """argv for the golden driver; ``{output}`` is substituted at run time."""
+
 
 APPS = {
     # Self-checking: generates random input and compares the Halide pipeline
@@ -108,6 +132,10 @@ APPS = {
         input_image=None,
         output_artifact=None,
         needs_image_io=False,
+        # test.cpp checks only [64, w-64) x [64, h-64), so boundary mutants
+        # pass it. The dump writes the whole buffer, border included.
+        golden_driver_source="apps/blur/golden_dump.cpp",
+        golden_output_artifact="out.bin",
     ),
     "bilateral_grid": AppConfig(
         name="bilateral_grid",
@@ -206,6 +234,8 @@ APPS = {
         needs_image_io=False,
         run_timeout=900,
         generate_timeout=1200,
+        golden_driver_source="apps/conv_layer/golden_dump.cpp",
+        golden_output_artifact="out.bin",
     ),
     "depthwise_separable_conv": AppConfig(
         name="depthwise_separable_conv",
@@ -220,6 +250,9 @@ APPS = {
         output_artifact=None,
         needs_image_io=False,
         run_timeout=900,
+        golden_driver_source=(
+            "apps/depthwise_separable_conv/golden_dump.cpp"),
+        golden_output_artifact="out.bin",
     ),
     "hist": AppConfig(
         name="hist",
@@ -402,6 +435,35 @@ SKIPPED = {
 # Halide checkout: it lives only on the upstream side branch
 # `abadams/compositing_app` and was never merged into release/16.x. The corpus
 # reachable here is therefore 14 apps, not 15.
+def golden_variant(app: AppConfig) -> AppConfig:
+    """The app configured to run its added artifact-dumping driver.
+
+    Returns the app unchanged when it already saves an artifact of its own --
+    then the shipped driver serves test 1 and test 2 (golden) in one run and
+    nothing needs swapping. Where an added driver exists, this is the exact
+    ``dataclasses.replace`` mechanism experiment 2 uses for its written tests:
+    the shipped file is never edited, only bypassed for this one run.
+    """
+    if not app.golden_driver_source:
+        return app
+    return dataclasses.replace(
+        app,
+        driver_source=app.golden_driver_source,
+        driver_args=list(app.golden_driver_args),
+        output_artifact=app.golden_output_artifact,
+        extra_driver_outputs=[],
+    )
+
+
+def has_independent_golden(app: AppConfig) -> bool:
+    """Does test 2 (golden) observe pipeline output for this app at all?
+
+    False means the golden verdict can only restate test 1, and the app must be
+    excluded from any corpus-wide golden figure rather than averaged into it.
+    """
+    return bool(app.output_artifact or app.golden_driver_source)
+
+
 MISSING_FROM_CHECKOUT = {
     "compositing": "only on upstream branch abadams/compositing_app; not in release/16.x",
 }
