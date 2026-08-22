@@ -1,5 +1,5 @@
-route,target_kind,app,points_identified,mutants_generated,mutants_run,mutants_killed,equivalent_tce,resolved,test1_demo_ran,test1_demo_killed,test1_demo_killed_alone,test2_added_ran,test2_added_killed,test2_added_killed_alone,test2_method,test3_perf_ran,test3_perf_killed,complete
-ast_mutator,generator,conv_layer,9,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
-ast_mutator,generator,stencil_chain,8,8,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,0
-ast_mutator,emitted_cpp,fft,2247,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
-ast_mutator,emitted_cpp,resize,697,658,98,51,560,611,98,18,0,98,51,33,output_compare,0,0,0
+route,target_kind,app,driver_kind,points_identified,mutants_generated,mutants_run,mutants_killed,equivalent_tce,resolved,test1_demo_ran,test1_demo_killed,test1_demo_killed_alone,test2_added_ran,test2_added_killed,test2_added_killed_alone,test2_method,test3_perf_ran,test3_perf_killed,complete
+ast_mutator,generator,conv_layer,shipped,9,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
+ast_mutator,generator,stencil_chain,shipped,8,8,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,0
+ast_mutator,emitted_cpp,fft,added_assertion,2247,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
+ast_mutator,emitted_cpp,resize,added_assertion,935,884,305,183,579,762,305,51,0,305,183,132,output_compare,0,0,0

@@ -133,12 +133,37 @@ GEN1 = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen1/out"
 GEN2 = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen2/out"
 
 SUMMARY_FIELDS = [
-    "route", "target_kind", "app", "points_identified", "mutants_generated",
-    "mutants_run", "mutants_killed", "equivalent_tce", "resolved",
+    "route", "target_kind", "app", "driver_kind", "points_identified",
+    "mutants_generated", "mutants_run", "mutants_killed", "equivalent_tce",
+    "resolved",
     "test1_demo_ran", "test1_demo_killed", "test1_demo_killed_alone",
     "test2_added_ran", "test2_added_killed", "test2_added_killed_alone",
     "test2_method", "test3_perf_ran", "test3_perf_killed", "complete",
 ]
+
+
+def driver_kind(app):
+    """Is the driver behind test1_demo the app's OWN shipped driver?
+
+    test1_demo is defined as "the shipped driver's own verdict", and for 17 of
+    the 20 registered apps that is exactly what it is (test.cpp, filter.cpp,
+    process.cpp, run.cpp). Three apps -- resize, fft, wavelet -- register an
+    ADDED apps/<app>/mutation_driver.cpp as their primary driver instead, and
+    those added drivers carry real assertions (fft's has three `return 1`
+    paths against a closed-form magnitude/phase oracle). For those three the
+    test1_demo column is not measuring a shipped demo at all; it is measuring
+    a written assertion test, and its kill rate is not comparable with the
+    other apps'. Flagging it is the difference between a matrix cell that can
+    be read across a row and one that quietly cannot.
+    """
+    try:
+        sys.path.insert(0, "/mnt/scratch1/ardi/dsl_mut/"
+                           "Halide-mutation-wip-c/mutation")
+        from halidemut.apps import APPS
+        src = os.path.basename(APPS[app].driver_source)
+        return "added_assertion" if src.startswith("mutation_") else "shipped"
+    except Exception:
+        return ""
 
 
 def app_stats(rows, route, tk, app, complete):
@@ -148,7 +173,8 @@ def app_stats(rows, route, tk, app, complete):
     bad = sum(1 for r in rows if (r.get("stage_compile") or "")
               in ("GEN_FAIL", "COMPILE_FAIL", "HARNESS_ERROR"))
     row = {f: "" for f in SUMMARY_FIELDS}
-    row.update(route=route, target_kind=tk, app=app, points_identified=n,
+    row.update(route=route, target_kind=tk, app=app,
+               driver_kind=driver_kind(app), points_identified=n,
                mutants_generated=n - bad, complete=int(complete))
     row["equivalent_tce"] = sum(1 for r in rows if r["equivalent"])
     row["mutants_run"] = sum(1 for r in rows if any(
