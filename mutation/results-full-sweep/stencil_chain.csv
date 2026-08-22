@@ -1,0 +1,38 @@
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+stencil_chain,arithmetic,Halide_mul_to_add,stencil_chain_generator.cpp,27,46,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.66,emitted header differs from baseline; driver recompiled
+stencil_chain,arithmetic,Halide_mul_to_sub,stencil_chain_generator.cpp,27,46,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.66,emitted header differs from baseline; driver recompiled
+stencil_chain,arithmetic,Halide_add_to_sub,stencil_chain_generator.cpp,27,64,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.68,emitted header differs from baseline; driver recompiled
+stencil_chain,arithmetic,Halide_add_to_sub,stencil_chain_generator.cpp,27,71,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.64,emitted header differs from baseline; driver recompiled
+stencil_chain,arithmetic,Halide_mul_to_div,stencil_chain_generator.cpp,27,46,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,15.81,emitted header differs from baseline; driver recompiled
+stencil_chain,arithmetic,Halide_add_to_mul,stencil_chain_generator.cpp,27,64,GEN_TIMEOUT,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,arithmetic,Halide_add_to_div,stencil_chain_generator.cpp,27,64,GEN_TIMEOUT,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,arithmetic,Halide_add_to_mul,stencil_chain_generator.cpp,27,71,GEN_TIMEOUT,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,arithmetic,Halide_add_to_div,stencil_chain_generator.cpp,27,71,GEN_TIMEOUT,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,schedule,Halide_compute_at_to_store_at,stencil_chain_generator.cpp,140,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,schedule,Halide_parallel_to_unroll,stencil_chain_generator.cpp,134,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,schedule,Halide_parallel_to_vectorize,stencil_chain_generator.cpp,134,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+stencil_chain,schedule,Halide_unroll_to_parallel,stencil_chain_generator.cpp,70,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_vectorize,stencil_chain_generator.cpp,70,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_compute_at_to_store_at,stencil_chain_generator.cpp,98,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_vectorize,stencil_chain_generator.cpp,69,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_parallel,stencil_chain_generator.cpp,100,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_parallel,stencil_chain_generator.cpp,101,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_vectorize,stencil_chain_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_vectorize,stencil_chain_generator.cpp,101,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_parallel,stencil_chain_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_vectorize_to_parallel,stencil_chain_generator.cpp,82,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_compute_at_to_store_at,stencil_chain_generator.cpp,80,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_parallel,stencil_chain_generator.cpp,69,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_unroll_to_vectorize,stencil_chain_generator.cpp,100,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_vectorize_to_parallel,stencil_chain_generator.cpp,99,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_vectorize_to_unroll,stencil_chain_generator.cpp,82,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_vectorize_to_unroll,stencil_chain_generator.cpp,99,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+stencil_chain,schedule,Halide_store_at_to_compute_at,stencil_chain_generator.cpp,139,23,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.46,emitted header differs from baseline; driver recompiled
+stencil_chain,schedule,Halide_vectorize_to_unroll,stencil_chain_generator.cpp,135,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.52,emitted header differs from baseline; driver recompiled
+stencil_chain,schedule,Halide_vectorize_to_unroll,stencil_chain_generator.cpp,141,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.71,emitted header differs from baseline; driver recompiled
+stencil_chain,schedule,Halide_vectorize_to_parallel,stencil_chain_generator.cpp,135,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,58.87,emitted header differs from baseline; driver recompiled
+stencil_chain,schedule,Halide_vectorize_to_parallel,stencil_chain_generator.cpp,141,26,OK,1,1,OK,KILLED,NOT_RUN,NOT_RUN,NOT_RUN,test1_demo,1,,300.11,run timeout
+stencil_chain,generated,Halide_add_assign_to_sub_assign,stencil_chain_generator.cpp,27,23,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.65,emitted header differs from baseline; driver recompiled
+stencil_chain,boundary_conditions,Halide_repeat_edge_to_repeat_image,stencil_chain_generator.cpp,18,18,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.67,emitted header differs from baseline; driver recompiled
+stencil_chain,boundary_conditions,Halide_repeat_edge_to_mirror_image,stencil_chain_generator.cpp,18,18,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.67,emitted header differs from baseline; driver recompiled
+stencil_chain,boundary_conditions,Halide_repeat_edge_to_mirror_interior,stencil_chain_generator.cpp,18,18,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.67,emitted header differs from baseline; driver recompiled

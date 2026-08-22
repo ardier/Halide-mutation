@@ -1,5 +1,5 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-fft,schedule,Halide_compute_at_to_store_at,fft_generator.cpp,158,28,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-fft,schedule,Halide_compute_at_to_store_at,fft_generator.cpp,155,25,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-fft,schedule,Halide_unroll_to_vectorize,fft_generator.cpp,151,37,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,emitted header differs from baseline; driver recompiled
-fft,schedule,Halide_unroll_to_parallel,fft_generator.cpp,151,37,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,emitted header differs from baseline; driver recompiled
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+fft,schedule,Halide_compute_at_to_store_at,fft_generator.cpp,158,28,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+fft,schedule,Halide_compute_at_to_store_at,fft_generator.cpp,155,25,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+fft,schedule,Halide_unroll_to_vectorize,fft_generator.cpp,151,37,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.00,emitted header differs from baseline; driver recompiled
+fft,schedule,Halide_unroll_to_parallel,fft_generator.cpp,151,37,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.01,emitted header differs from baseline; driver recompiled

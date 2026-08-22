@@ -12,10 +12,10 @@ OUT=${OUT:-harris-cxx_default.csv}
 MUTOUT=${MUTOUT:-/tmp/harris_cxx_default_mut.png}
 STDERR_SCRATCH=${STDERR_SCRATCH:-/tmp/harris_cxx_default_last.stderr}
 
-echo "mutant_id,mutator,file,line,column,exit_code,o1_killed,o2_killed,wall_seconds" > "$OUT"
+echo "mutant_id,mutator,file,line,column,exit_code,test1_demo_killed,test2_golden_killed,wall_seconds" > "$OUT"
 n=0
-o1k=0
-o2k=0
+n_demo_kills=0
+n_gold_kills=0
 while IFS= read -r key; do
   [ -z "$key" ] && continue
   n=$((n+1))
@@ -30,21 +30,23 @@ while IFS= read -r key; do
   t1=$(date +%s.%N)
   wall=$(echo "$t1 $t0" | awk '{printf "%.3f", $1-$2}')
   if [ "$rc" -ne 0 ]; then
-    o1k=$((o1k+1))
-    o1=1
-    o2=1   # crashed => no output to compare, and it's already a kill
+    n_demo_kills=$((n_demo_kills+1))
+    k_demo=1
+    # Crashed, so nothing was written to compare against the snapshot. This
+    # restates the test-1 kill rather than observing anything of its own.
+    k_gold=1
   else
-    o1=0
+    k_demo=0
     if [ -f "$MUTOUT" ] && cmp -s "$MUTOUT" "$BASELINE"; then
-      o2=0
+      k_gold=0
     else
-      o2=1
-      o2k=$((o2k+1))
+      k_gold=1
+      n_gold_kills=$((n_gold_kills+1))
     fi
   fi
-  echo "\"$key\",$mutator,$(basename "$file"),$line,$col,$rc,$o1,$o2,$wall" >> "$OUT"
+  echo "\"$key\",$mutator,$(basename "$file"),$line,$col,$rc,$k_demo,$k_gold,$wall" >> "$OUT"
   if [ $((n % 50)) -eq 0 ]; then
-    echo "progress: $n mutants, o1_killed=$o1k o2_killed=$o2k so far" >&2
+    echo "progress: $n mutants, test1_demo=$n_demo_kills test2_golden=$n_gold_kills so far" >&2
   fi
 done < "$MUTLIST"
-echo "DONE: total=$n o1_killed=$o1k o2_killed=$o2k" >&2
+echo "DONE: total=$n test1_demo=$n_demo_kills test2_golden=$n_gold_kills" >&2

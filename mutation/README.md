@@ -35,16 +35,36 @@ directory. See `mull-ps/docs/linux-build.md`.
 `equiv` is not a survival. Every generator branches its schedule on the target
 (`has_gpu_feature()` / `has_feature(HVX)` / else), so a mutation inside a branch
 the chosen target does not take cannot affect anything. Counting those as
-survivors would understate every kill rate, so O1/O2 percentages are computed
-over `eff` only.
+survivors would understate every kill rate, so the per-kind percentages are
+computed over `eff` only. Such a mutant is *proven equivalent*, which counts
+as RESOLVED -- a positive result, not a shortfall.
 
-## Oracles
+## Test kinds
 
-- **O1** — the driver's exit status: crash, `abort()`, nonzero exit, or timeout.
-- **O2** — byte comparison of the driver's output artifact against a golden
-  snapshot taken once from the unmutated build. For apps that write no output
-  file (`blur`), it falls back to the driver's stdout with timing lines
-  stripped.
+All three are tests. A mutant is **resolved** if any kind kills it, or if it is
+proven equivalent. Each kind is scored independently and the *set* of kinds that
+killed a mutant is recorded (`killed_by`), not just the first to fire: "killed
+by X" and "X alone sufficed" are different questions.
+
+- **test 1 — demo program** (`test1_demo`) — the shipped driver's own verdict:
+  crash, `abort()`, nonzero exit, or timeout. Zero effort; it ships with the
+  app.
+- **test 2 — additional tests** — oracles we added, in two sub-tiers that are
+  never pooled, because the difference between them *is* the test-writing
+  effort being measured:
+  - `test2_golden` — snapshot the baseline output once, then byte-diff. Near
+    free.
+  - `test2_written` — hand-authored assertion drivers, swapped in with
+    `dataclasses.replace(app, driver_source=...)` so no shipped file is
+    touched. Real work.
+- **test 3 — performance** (`test3_perf`) — median wall time against a
+  threshold taken from that app's own baseline timing noise.
+
+`test2_golden` needs an output artifact. Where a driver writes none it falls
+back to normalised stdout, which carries no pipeline output and therefore only
+restates test 1. `blur`, `conv_layer` and `depthwise_separable_conv` are given
+an artifact-dumping driver variant so their golden column is a real, independent
+measurement.
 
 ## Deviation from the apps' own `make test`
 
@@ -64,5 +84,6 @@ which is what made `camera_pipe` slow and memory-hungry in earlier work.
 
 ## Not yet implemented
 
-O3 (performance oracle), the full stage-2 preservation-class taxonomy beyond
-`equiv`, and the ground-truth verification sampler.
+`test3_perf` (the performance kind: columns exist and are written `NOT_RUN`),
+the full stage-2 preservation-class taxonomy beyond `equiv`, and the
+ground-truth verification sampler.

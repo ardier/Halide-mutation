@@ -1,49 +1,49 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.34,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,KILLED,1,0,7.95,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,1,0,10.15,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.08,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,1,0,7.43,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.93,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,54,43,OK,1,1,OK,SURVIVED,KILLED,1,0,34.61,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,SURVIVED,0,0,48.68,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.74,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,1,0,6.63,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,1,0,83.77,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,1,0,6.07,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,1,0,41.25,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,54,43,OK,1,1,OK,KILLED,KILLED,1,-6,7.70,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,KILLED,1,0,7.23,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,1,0,6.99,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,KILLED,1,0,6.74,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,1,0,6.63,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,1,0,4.13,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_div_to_add,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,1,0,3.92,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_div_to_mul,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,54,43,OK,1,1,OK,SURVIVED,SURVIVED,0,0,9.24,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_div_to_sub,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-max_filter,arithmetic,Halide_div_to_add,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,7.13,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_div_to_mul,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,8.54,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_div_to_sub,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,8.95,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,38,53,OK,1,1,OK,SURVIVED,KILLED,1,0,6.72,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,1,0,7.29,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,38,53,OK,1,1,OK,KILLED,KILLED,1,-6,2.80,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,1,0,6.79,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,1,0,6.56,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,1,0,7.26,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,38,53,OK,1,1,OK,SURVIVED,KILLED,1,0,11.77,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,1,0,6.29,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,1,0,6.82,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,30,64,OK,1,1,OK,SURVIVED,KILLED,1,0,12.66,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,75,OK,1,1,OK,SURVIVED,KILLED,1,0,11.78,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,105,OK,1,1,OK,SURVIVED,KILLED,1,0,10.92,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,44,43,OK,1,1,OK,SURVIVED,KILLED,1,0,8.39,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,45,52,OK,1,1,OK,SURVIVED,KILLED,1,0,8.33,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,30,64,OK,1,1,OK,SURVIVED,KILLED,1,0,16.16,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,75,OK,1,1,OK,SURVIVED,KILLED,1,0,9.20,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,105,OK,1,1,OK,SURVIVED,KILLED,1,0,13.48,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,44,43,OK,1,1,OK,SURVIVED,KILLED,1,0,11.62,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.34,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.95,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,10.15,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.08,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.43,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.93,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,54,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,34.61,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,48.68,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.74,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.63,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,83.77,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.07,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,41.25,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,54,43,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,7.70,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,29,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.23,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,31,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.99,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.74,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.63,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.13,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_div_to_add,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,50,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.92,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_div_to_mul,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,54,43,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,9.24,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_div_to_sub,max_filter_generator.cpp,38,62,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+max_filter,arithmetic,Halide_div_to_add,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.13,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_div_to_mul,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,8.54,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_div_to_sub,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,8.95,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,38,53,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.72,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.29,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,38,53,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,2.80,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.79,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.56,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.26,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,38,53,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,11.77,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.29,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,50,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.82,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,30,64,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,12.66,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,75,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,11.78,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,105,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,10.92,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,44,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,8.39,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,45,52,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,8.33,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,30,64,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,16.16,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,75,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,9.20,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,105,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,13.48,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,44,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,11.62,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated

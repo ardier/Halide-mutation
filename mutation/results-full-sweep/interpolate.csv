@@ -1,183 +1,183 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,1,0,1.84,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.11,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,1,0,2.25,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,1,0,2.22,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,1,0,2.14,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,1,0,2.18,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,1,0,3.30,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,1,0,2.79,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,1,0,2.98,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,1,0,3.00,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,1,0,3.34,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,1,0,2.96,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.37,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.16,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,1,0,3.58,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,1,0,3.28,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,1,0,1.79,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.23,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,1,0,3.22,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.55,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,1,0,3.49,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,1,0,3.54,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.36,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,1,0,3.34,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,1,0,2.84,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.46,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,1,0,2.93,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,1,0,3.61,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,1,0,3.58,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,1,0,3.34,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,1,0,3.03,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,1,0,3.23,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,61,79,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,64,72,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,1,0,3.63,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.74,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.71,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,61,67,OK,1,1,OK,SURVIVED,KILLED,1,0,3.59,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,60,61,OK,1,1,OK,KILLED,KILLED,1,-6,0.72,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.25,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,61,67,OK,1,1,OK,KILLED,KILLED,1,-6,0.65,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,3.32,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.20,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.40,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,60,61,OK,1,1,OK,SURVIVED,KILLED,1,0,3.49,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,61,79,OK,1,1,OK,SURVIVED,KILLED,1,0,3.33,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,61,79,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,64,72,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,64,63,OK,1,1,OK,SURVIVED,KILLED,1,0,10.29,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,63,57,OK,1,1,OK,KILLED,KILLED,1,-6,0.54,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,63,57,OK,1,1,OK,SURVIVED,KILLED,1,0,9.62,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,64,63,OK,1,1,OK,KILLED,KILLED,1,-6,0.71,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,64,72,OK,1,1,OK,SURVIVED,KILLED,1,0,3.09,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,3.05,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.22,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.18,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.03,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,50,39,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,61,67,OK,1,1,OK,SURVIVED,KILLED,1,0,3.12,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,1,0,2.86,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,60,61,OK,1,1,OK,SURVIVED,KILLED,1,0,2.95,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_sub,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,1,0,3.57,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,54,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,1,0,4.97,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,55,67,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,64,63,OK,1,1,OK,SURVIVED,KILLED,1,0,10.50,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.77,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,63,57,OK,1,1,OK,SURVIVED,KILLED,1,0,10.15,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.76,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.51,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,50,39,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.46,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,1,0,3.43,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,1,0,1.42,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,1,0,3.81,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,54,45,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.51,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.52,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,1,0,1.84,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.32,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,51,57,OK,1,1,OK,SURVIVED,KILLED,1,0,1.59,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.20,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.03,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,55,67,OK,1,1,OK,SURVIVED,KILLED,1,0,1.68,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,1,0,3.24,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,1,0,6.99,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,1,0,1.78,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.01,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,1,0,7.63,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,1,0,7.37,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,1,0,3.23,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,1,0,3.06,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,50,39,OK,1,1,OK,SURVIVED,KILLED,1,0,2.98,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.13,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,1,0,2.89,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,55,67,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,54,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.99,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.89,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,66,31,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,1,0,3.40,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,1,0,2.99,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,1,0,1.57,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,1,0,2.45,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.77,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,66,31,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,1,0,2.85,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.89,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,arithmetic,Halide_sub_to_add,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,1,0,3.78,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,1,0,2.62,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_div,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.90,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.94,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,1,0,2.96,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,66,31,OK,1,1,OK,SURVIVED,KILLED,1,0,2.45,emitted header differs from baseline; driver recompiled
-interpolate,arithmetic,Halide_sub_to_mul,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.59,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,184,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,165,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_parallel_to_unroll,interpolate_generator.cpp,153,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_parallel_to_unroll,interpolate_generator.cpp,179,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_parallel_to_vectorize,interpolate_generator.cpp,153,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_parallel_to_vectorize,interpolate_generator.cpp,179,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,134,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,116,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,91,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,90,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,98,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,125,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,110,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,92,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,111,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,112,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,119,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,121,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,120,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,128,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,129,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,130,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,136,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,98,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,91,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,110,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,92,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,90,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,120,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,111,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,112,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,119,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_store_at_to_compute_at,interpolate_generator.cpp,183,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.99,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_store_at_to_compute_at,interpolate_generator.cpp,164,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.66,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,121,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,129,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,128,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,130,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,136,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,168,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.04,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,167,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.96,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,154,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.97,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,154,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.98,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,177,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.53,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,168,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.83,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,178,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.13,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,185,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,9.81,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,185,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.73,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,177,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,23.85,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,167,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,50.22,emitted header differs from baseline; driver recompiled
-interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,178,22,OK,1,1,OK,KILLED,KILLED,1,,300.13,run timeout
-interpolate,generated,Halide_lt_to_le,interpolate_generator.cpp,34,44,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.61,emitted header differs from baseline; driver recompiled
-interpolate,boundary_conditions,Halide_repeat_edge_to_mirror_image,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,1,0,2.89,emitted header differs from baseline; driver recompiled
-interpolate,boundary_conditions,Halide_repeat_edge_to_mirror_interior,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,1,0,3.03,emitted header differs from baseline; driver recompiled
-interpolate,boundary_conditions,Halide_repeat_edge_to_repeat_image,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,1,0,3.13,emitted header differs from baseline; driver recompiled
-interpolate,select_clamp,Halide_select_swap_branches,interpolate_generator.cpp,34,35,OK,1,1,OK,SURVIVED,KILLED,1,0,1.76,emitted header differs from baseline; driver recompiled
-interpolate,select_clamp,Halide_clamp_swap_bounds,interpolate_generator.cpp,46,61,OK,1,1,OK,SURVIVED,KILLED,1,0,2.63,emitted header differs from baseline; driver recompiled
-interpolate,select_clamp,Halide_clamp_swap_bounds,interpolate_generator.cpp,46,45,OK,1,1,OK,SURVIVED,KILLED,1,0,2.69,emitted header differs from baseline; driver recompiled
-interpolate,if_then_else,Halide_select_to_if_then_else,interpolate_generator.cpp,34,35,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.84,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.11,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.25,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.22,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.14,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.18,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.30,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.79,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.98,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.00,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.34,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.96,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.37,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.16,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_div,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.58,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.28,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.79,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.23,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.22,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.55,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.49,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_mul,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.54,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,55,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.36,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,51,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.34,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,53,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.84,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,49,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.46,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,60,72,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.93,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,50,59,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.61,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,54,69,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.58,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,64,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.34,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,63,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.03,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,61,62,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.23,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,61,79,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,64,72,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_add_to_sub,interpolate_generator.cpp,67,65,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.63,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.74,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.71,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,61,67,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.59,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,60,61,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,0.72,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.25,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,61,67,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,0.65,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.32,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.20,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.40,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,60,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.49,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,61,79,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.33,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,61,79,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,64,72,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,64,63,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,10.29,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,63,57,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,0.54,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_add,interpolate_generator.cpp,63,57,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,9.62,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,64,63,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,0.71,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,64,72,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.09,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.05,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,44,40,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.22,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_mul,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.18,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,45,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.03,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,50,39,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,61,67,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.12,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,72,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.86,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,60,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.95,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_sub,Halide.h,13294,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.57,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,54,45,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.97,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,55,67,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,64,63,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,10.50,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.77,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_div_to_sub,interpolate_generator.cpp,63,57,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,10.15,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.76,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.51,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,50,39,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.46,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.43,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.42,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.81,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,54,45,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_add,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.51,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.52,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.84,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.32,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,51,57,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.59,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.20,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.03,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,55,67,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.68,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.24,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.99,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.78,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.01,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.63,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_div,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.37,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,34,66,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.23,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,49,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.06,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,50,39,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.98,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,50,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.13,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,51,41,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.89,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,55,67,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,54,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.99,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,53,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.89,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,66,31,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,54,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.40,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,55,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.99,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.57,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_mul_to_sub,interpolate_generator.cpp,68,47,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.45,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.77,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,66,31,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.94,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_add,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.85,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,58,29,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.89,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,58,64,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,arithmetic,Halide_sub_to_add,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.78,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_div,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.62,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_div,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.90,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.94,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,53,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.96,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,interpolate_generator.cpp,66,31,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.45,emitted header differs from baseline; driver recompiled
+interpolate,arithmetic,Halide_sub_to_mul,Halide.h,13285,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.59,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,184,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,165,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_parallel_to_unroll,interpolate_generator.cpp,153,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_parallel_to_unroll,interpolate_generator.cpp,179,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_parallel_to_vectorize,interpolate_generator.cpp,153,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_parallel_to_vectorize,interpolate_generator.cpp,179,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,134,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,116,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,91,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,90,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,98,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_compute_at_to_store_at,interpolate_generator.cpp,125,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,110,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,92,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,111,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,112,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,119,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,121,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,120,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,128,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,129,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,130,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,136,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,98,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,91,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,110,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,92,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,90,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,120,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,111,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,112,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,119,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_store_at_to_compute_at,interpolate_generator.cpp,183,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.99,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_store_at_to_compute_at,interpolate_generator.cpp,164,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.66,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,121,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,129,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,128,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,130,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,136,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,168,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.04,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,167,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.96,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,154,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.97,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,154,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.98,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_unroll_to_vectorize,interpolate_generator.cpp,177,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.53,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,168,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.83,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,178,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.13,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,185,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,9.81,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_unroll,interpolate_generator.cpp,185,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.73,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,177,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,23.85,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_unroll_to_parallel,interpolate_generator.cpp,167,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,50.22,emitted header differs from baseline; driver recompiled
+interpolate,schedule,Halide_vectorize_to_parallel,interpolate_generator.cpp,178,22,OK,1,1,OK,KILLED,NOT_RUN,NOT_RUN,NOT_RUN,test1_demo,1,,300.13,run timeout
+interpolate,generated,Halide_lt_to_le,interpolate_generator.cpp,34,44,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.61,emitted header differs from baseline; driver recompiled
+interpolate,boundary_conditions,Halide_repeat_edge_to_mirror_image,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.89,emitted header differs from baseline; driver recompiled
+interpolate,boundary_conditions,Halide_repeat_edge_to_mirror_interior,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.03,emitted header differs from baseline; driver recompiled
+interpolate,boundary_conditions,Halide_repeat_edge_to_repeat_image,interpolate_generator.cpp,32,24,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.13,emitted header differs from baseline; driver recompiled
+interpolate,select_clamp,Halide_select_swap_branches,interpolate_generator.cpp,34,35,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.76,emitted header differs from baseline; driver recompiled
+interpolate,select_clamp,Halide_clamp_swap_bounds,interpolate_generator.cpp,46,61,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.63,emitted header differs from baseline; driver recompiled
+interpolate,select_clamp,Halide_clamp_swap_bounds,interpolate_generator.cpp,46,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.69,emitted header differs from baseline; driver recompiled
+interpolate,if_then_else,Halide_select_to_if_then_else,interpolate_generator.cpp,34,35,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped

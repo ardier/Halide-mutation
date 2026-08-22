@@ -1,0 +1,58 @@
+====================================================================================================
+PER APP x ARM
+====================================================================================================
+app             arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+stencil_chain   arithmetic      9       4      0      0    5       0       5     5   0.0% 100.0%
+stencil_chain   boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+stencil_chain   generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+stencil_chain   schedule       24       3      0     16    5       1       1     1  20.0%  20.0%
+
+====================================================================================================
+PER ARM (all apps)
+====================================================================================================
+                arm           mut genKill bldErr  equiv  eff  O1kill  O2kill   any    O1%    O2%
+----------------------------------------------------------------------------------------------------
+                arithmetic      9       4      0      0    5       0       5     5   0.0% 100.0%
+                boundary_conditions    3       0      0      0    3       0       3     3   0.0% 100.0%
+                generated       1       0      0      0    1       0       0     0   0.0%   0.0%
+                schedule       24       3      0     16    5       1       1     1  20.0%  20.0%
+
+====================================================================================================
+PER OPERATOR
+====================================================================================================
+mutator                           arm           mut genKill  equiv  eff  O1kill  O2kill     O2%
+----------------------------------------------------------------------------------------------------
+Halide_add_to_div                 arithmetic      2       2      0    0       0       0     n/a
+Halide_add_to_mul                 arithmetic      2       2      0    0       0       0     n/a
+Halide_add_to_sub                 arithmetic      2       0      0    2       0       2  100.0%
+Halide_mul_to_add                 arithmetic      1       0      0    1       0       1  100.0%
+Halide_mul_to_div                 arithmetic      1       0      0    1       0       1  100.0%
+Halide_mul_to_sub                 arithmetic      1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_mirror_interiorboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_repeat_edge_to_repeat_imageboundary_conditions    1       0      0    1       0       1  100.0%
+Halide_add_assign_to_sub_assign   generated       1       0      0    1       0       0    0.0%
+Halide_compute_at_to_store_at     schedule        3       1      2    0       0       0     n/a
+Halide_parallel_to_unroll         schedule        1       1      0    0       0       0     n/a
+Halide_parallel_to_vectorize      schedule        1       1      0    0       0       0     n/a
+Halide_store_at_to_compute_at     schedule        1       0      0    1       0       0    0.0%
+Halide_unroll_to_parallel         schedule        5       0      5    0       0       0     n/a
+Halide_unroll_to_vectorize        schedule        5       0      5    0       0       0     n/a
+Halide_vectorize_to_parallel      schedule        4       0      2    2       1       1   50.0%
+Halide_vectorize_to_unroll        schedule        4       0      2    2       0       0    0.0%
+
+====================================================================================================
+NON-STANDARD OUTCOMES
+====================================================================================================
+  stencil_chain   arithmetic Halide_add_to_div               stencil_chain_generator.cpp:27:64GEN_TIMEOUT/OK  killed at generation time
+  stencil_chain   arithmetic Halide_add_to_div               stencil_chain_generator.cpp:27:71GEN_TIMEOUT/OK  killed at generation time
+  stencil_chain   arithmetic Halide_add_to_mul               stencil_chain_generator.cpp:27:64GEN_TIMEOUT/OK  killed at generation time
+  stencil_chain   arithmetic Halide_add_to_mul               stencil_chain_generator.cpp:27:71GEN_TIMEOUT/OK  killed at generation time
+  stencil_chain   schedule   Halide_compute_at_to_store_at   stencil_chain_generator.cpp:140:26GEN_ERROR/OK  killed at generation time
+  stencil_chain   schedule   Halide_parallel_to_unroll       stencil_chain_generator.cpp:134:22GEN_ERROR/OK  killed at generation time
+  stencil_chain   schedule   Halide_parallel_to_vectorize    stencil_chain_generator.cpp:134:22GEN_ERROR/OK  killed at generation time
+
+genKill = rejected by the Halide compiler (a kill only staged compilation produces)
+equiv   = emitted .stmt byte-identical to baseline, so unkillable at this target
+eff     = effective mutants; O1%/O2% are over these

@@ -1,4 +1,4 @@
-"""Experiment 2 (thesis analog): kill O2-surviving mutants with targeted tests.
+"""Experiment 2 (thesis analog): kill golden-surviving mutants with written tests.
 
 For a chosen benchmark this re-runs a chosen set of mutants twice:
 
@@ -10,13 +10,15 @@ before/after pair measured on the same mutant with the same toolchain, not an
 assertion.
 
 The "after" test is written to be self-checking: it aborts or exits non-zero
-when the pipeline is wrong, so it is scored by O1 (exit status). That is a
-strictly stronger claim than an O2 golden-image difference -- the test *fails*,
-it does not merely produce different bytes.
+when the pipeline is wrong. It is scored as test 2 (written) -- the
+hand-authored sub-tier -- and never folded into test 1, which is reserved for
+the shipped driver's own verdict. A written test failing is a strictly stronger
+claim than a golden byte difference: the test *fails*, it does not merely
+produce different bytes.
 
 Everything reuses halidemut's own pipeline (stage 1 instrument, stage 2 emit per
 mutant, stage 3 link+run), so the mutant identity mechanism, the equivalence
-handling and the oracles are exactly the ones the full sweep used.
+handling and the test kinds are exactly the ones the full sweep used.
 
 Machine-portability note: every path is a flag with a default, so this runs
 unchanged on a bigger host (only --halide-root/--halide-build/--mull-output
@@ -44,7 +46,8 @@ from halidemut.pipeline import Pipeline, PipelineError  # noqa: E402
 FIELDS = [
     "app", "arm", "mutator", "file", "line", "column", "variant",
     "stage2", "stmt_differs", "effective", "stage3",
-    "o1", "o2", "killed", "exit_code", "wall_seconds", "note",
+    "test1_demo", "test2_golden", "test2_written", "test3_perf",
+    "killed_by", "killed", "exit_code", "wall_seconds", "note",
 ]
 
 
@@ -70,8 +73,8 @@ def parse_args():
                          "default is the app's own driver_args")
     ap.add_argument("--test-output-artifact", default="",
                     help="output artifact for the 'after' variant; empty means "
-                         "none, so O2 falls back to stdout and the test is "
-                         "scored purely on its own exit status")
+                         "none, so the written test is scored purely on its "
+                         "own exit status and stdout")
     ap.add_argument("--only", default=None,
                     help="comma-separated line:col filter, e.g. 38:26,39:26")
     ap.add_argument("--csv", required=True)
@@ -152,8 +155,11 @@ def main():
                 row = dict(app=app.name, arm=arm, mutator=m.mutator,
                            file=Path(m.path).name, line=m.line, column=m.column,
                            variant=which, stage2="OK", stmt_differs="",
-                           effective=0, stage3="OK", o1="NOT_RUN", o2="NOT_RUN",
-                           killed=0, exit_code="", wall_seconds="0.00", note="")
+                           effective=0, stage3="OK",
+                           test1_demo="NOT_RUN", test2_golden="NOT_RUN",
+                           test2_written="NOT_RUN", test3_perf="NOT_RUN",
+                           killed_by="", killed=0, exit_code="",
+                           wall_seconds="0.00", note="")
                 try:
                     st = p.stage2(app, generator, tmp, m)
                     row["stage2"] = st
@@ -176,15 +182,33 @@ def main():
                     code, sout, secs, timed = p.run_driver(va, dm, rd)
                     row["wall_seconds"] = f"{secs:.2f}"
                     row["exit_code"] = "" if code is None else code
+                    # "before" is the shipped driver, so its verdict is
+                    # test 1 plus, where the driver saves an artifact, test 2
+                    # (golden). "after" is the driver WE wrote: one
+                    # self-checking test, scored into test2_written alone.
+                    written = (which != "before")
                     if timed:
-                        row["o1"] = row["o2"] = "KILLED"
+                        if written:
+                            row["test2_written"] = "KILLED"
+                        else:
+                            row["test1_demo"] = "KILLED"
                         row["note"] = "run timeout"
                     else:
-                        row["o1"] = "KILLED" if code != 0 else "SURVIVED"
                         sig = p.oracle_signature(va, rd, sout)
-                        row["o2"] = "KILLED" if sig != golden else "SURVIVED"
-                    row["killed"] = int(row["o1"] == "KILLED"
-                                        or row["o2"] == "KILLED")
+                        differs = sig != golden
+                        if written:
+                            row["test2_written"] = (
+                                "KILLED" if (code != 0 or differs) else "SURVIVED")
+                        else:
+                            row["test1_demo"] = (
+                                "KILLED" if code != 0 else "SURVIVED")
+                            row["test2_golden"] = (
+                                "KILLED" if differs else "SURVIVED")
+                    row["killed_by"] = ";".join(
+                        k for k in ("test1_demo", "test2_golden",
+                                    "test2_written", "test3_perf")
+                        if row[k] == "KILLED")
+                    row["killed"] = int(bool(row["killed_by"]))
                 except Exception as exc:  # keep the batch alive
                     row["stage2"] = "HARNESS_ERROR"
                     row["note"] = f"{type(exc).__name__}: {exc}"[:200]
@@ -192,7 +216,8 @@ def main():
                     if not args.keep:
                         shutil.rmtree(tmp, ignore_errors=True)
                 print(f"   {which:6s} {m.mutator} {m.line}:{m.column} "
-                      f"eff={row['effective']} o1={row['o1']} o2={row['o2']}",
+                      f"eff={row['effective']} "
+                      f"killed_by={row['killed_by'] or '-'}",
                       flush=True)
                 w.writerow(row)
                 fh.flush()

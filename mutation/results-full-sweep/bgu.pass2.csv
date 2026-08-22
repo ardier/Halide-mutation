@@ -1,1 +1,1 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note

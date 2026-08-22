@@ -1,177 +1,177 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.71,emitted header differs from baseline; driver recompiled
-unsharp,boundary_conditions,Halide_repeat_edge_to_repeat_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.91,emitted header differs from baseline; driver recompiled
-unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_interior,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,1,0,2.58,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,80,23,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,98,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,101,24,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,104,23,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_parallel_to_unroll,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_parallel_to_vectorize,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,86,24,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,102,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,81,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,99,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.30,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.93,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.43,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.83,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.60,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.30,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,KILLED,1,0,3.09,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.01,emitted header differs from baseline; driver recompiled
-unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,KILLED,1,0,4.49,emitted header differs from baseline; driver recompiled
-unsharp,generated,Halide_negate_to_not,unsharp_generator.cpp,18,25,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-unsharp,generated,Halide_negate_to_bitwise_not,unsharp_generator.cpp,18,25,OK,1,1,OK,SURVIVED,KILLED,1,0,2.96,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,28,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.34,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,23,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.34,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,24,55,OK,1,1,OK,SURVIVED,KILLED,1,0,3.47,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,54,OK,1,1,OK,SURVIVED,KILLED,1,0,5.87,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,48,OK,1,1,OK,SURVIVED,KILLED,1,0,5.95,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,29,53,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,48,OK,1,1,OK,SURVIVED,KILLED,1,0,3.06,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,54,OK,1,1,OK,SURVIVED,KILLED,1,0,3.26,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,31,53,OK,1,1,OK,SURVIVED,KILLED,1,0,4.01,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,33,53,OK,1,1,OK,SURVIVED,KILLED,1,0,6.10,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,37,50,OK,1,1,OK,SURVIVED,KILLED,1,0,5.35,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,34,48,OK,1,1,OK,SURVIVED,KILLED,1,0,4.73,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,38,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.43,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,47,OK,1,1,OK,SURVIVED,KILLED,1,0,5.49,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,1,0,5.27,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,40,55,OK,1,1,OK,SURVIVED,KILLED,1,0,4.98,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,1,0,3.68,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,47,OK,1,1,OK,SURVIVED,KILLED,1,0,3.81,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,42,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.82,emitted header differs from baseline; driver recompiled
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,28,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,29,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,31,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,33,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,34,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,37,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,38,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,40,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,42,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,43,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,23,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,24,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,28,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,29,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,31,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,33,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,34,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,37,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,38,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,40,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,42,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,43,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_add,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_mul,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_div_to_sub,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_add,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_div,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.71,emitted header differs from baseline; driver recompiled
+unsharp,boundary_conditions,Halide_repeat_edge_to_repeat_image,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.91,emitted header differs from baseline; driver recompiled
+unsharp,boundary_conditions,Halide_repeat_edge_to_mirror_interior,unsharp_generator.cpp,20,30,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.58,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,80,23,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,98,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,101,24,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,104,23,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_parallel_to_unroll,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_parallel_to_vectorize,unsharp_generator.cpp,96,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,86,24,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,102,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,schedule,Halide_compute_at_to_store_at,unsharp_generator.cpp,81,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,79,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_parallel,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,84,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,83,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_unroll_to_vectorize,unsharp_generator.cpp,87,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+unsharp,schedule,Halide_store_at_to_compute_at,unsharp_generator.cpp,99,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.30,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.93,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.43,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.83,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_parallel,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.60,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,95,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.30,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,100,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.09,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,103,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.01,emitted header differs from baseline; driver recompiled
+unsharp,schedule,Halide_vectorize_to_unroll,unsharp_generator.cpp,106,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.49,emitted header differs from baseline; driver recompiled
+unsharp,generated,Halide_negate_to_not,unsharp_generator.cpp,18,25,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+unsharp,generated,Halide_negate_to_bitwise_not,unsharp_generator.cpp,18,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.96,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,28,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.34,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,23,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.34,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,24,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.47,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.87,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,30,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.95,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,29,53,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.98,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.06,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,32,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.26,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,31,53,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.01,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,33,53,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.10,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,37,50,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.35,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,34,48,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.73,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,38,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.43,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,47,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.49,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,39,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.27,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,40,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.98,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,56,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.68,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,41,47,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.81,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_div,unsharp_generator.cpp,42,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.82,emitted header differs from baseline; driver recompiled
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,28,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,29,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,30,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,31,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,32,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,33,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,34,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,37,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,38,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,39,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,40,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,41,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,42,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_mul,unsharp_generator.cpp,43,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,23,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,24,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,28,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,29,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,30,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,31,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,32,54,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,33,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,34,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,37,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,38,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,39,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,40,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,41,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,42,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_add_to_sub,unsharp_generator.cpp,43,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_add,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_add,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_mul,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_mul,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,32,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,18,55,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_sub,unsharp_generator.cpp,49,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_div_to_sub,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_add,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_div,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,37,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,18,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,23,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,24,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,25,30,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,28,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,29,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,31,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,33,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,37,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,38,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,40,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,42,35,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,46,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,unsharp_generator.cpp,51,39,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_add,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_div,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,29,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,31,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,33,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,38,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,40,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,42,47,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+unsharp,arithmetic,Halide_sub_to_mul,unsharp_generator.cpp,46,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
