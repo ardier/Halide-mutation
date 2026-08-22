@@ -1,0 +1,3 @@
+generator-stage failures: 4
+  GEN_TIMEOUT      4
+  stencil_chain: 4  at 27:64,27:71  -> operator+ -> operator*; operator+ -> operator/
