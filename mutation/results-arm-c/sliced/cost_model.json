@@ -1,0 +1,74 @@
+[
+  {
+    "app": "bgu",
+    "points_kept": 5565,
+    "cost_units": 62070395,
+    "cost_millions": 62.1,
+    "matched_points": 5533,
+    "unmatched_points": 46,
+    "top_function": "_ZL33bgu_par_for_blurz_s0_y_rebased__1PviPh",
+    "top_share": 0.797,
+    "top_kept": 3081,
+    "top_size": 16050
+  },
+  {
+    "app": "lens_blur",
+    "points_kept": 6308,
+    "cost_units": 105320174,
+    "cost_millions": 105.3,
+    "matched_points": 6269,
+    "unmatched_points": 90,
+    "top_function": "_ZL31lens_blur_par_for_f26_s0_v2_v18PviPh",
+    "top_share": 0.923,
+    "top_kept": 4129,
+    "top_size": 23545
+  },
+  {
+    "app": "interpolate",
+    "points_kept": 4767,
+    "cost_units": 41860813,
+    "cost_millions": 41.9,
+    "matched_points": 4735,
+    "unmatched_points": 32,
+    "top_function": "_ZL37interpolate_par_for_normalize_s0_y_v9PviPh",
+    "top_share": 0.863,
+    "top_kept": 2653,
+    "top_size": 13623
+  },
+  {
+    "app": "local_laplacian",
+    "points_kept": 7085,
+    "cost_units": 117617770,
+    "cost_millions": 117.6,
+    "matched_points": 7052,
+    "unmatched_points": 76,
+    "top_function": "_ZL39local_laplacian_par_for_output_s0_v1_v4PviPh",
+    "top_share": 0.854,
+    "top_kept": 3600,
+    "top_size": 27886
+  },
+  {
+    "app": "stencil_chain",
+    "points_kept": 7529,
+    "cost_units": 97310642,
+    "cost_millions": 97.3,
+    "matched_points": 7498,
+    "unmatched_points": 31,
+    "top_function": "_ZL40stencil_chain_par_for_stage_9_s0_x_v2_v4PviPh",
+    "top_share": 0.676,
+    "top_kept": 3601,
+    "top_size": 18264
+  },
+  {
+    "app": "nl_means",
+    "points_kept": 2128,
+    "cost_units": 15286935,
+    "cost_millions": 15.3,
+    "matched_points": 2096,
+    "unmatched_points": 42,
+    "top_function": "_ZL40nl_means_par_for_non_local_means_s0_y_tyPviPh",
+    "top_share": 0.958,
+    "top_kept": 1683,
+    "top_size": 8701
+  }
+]

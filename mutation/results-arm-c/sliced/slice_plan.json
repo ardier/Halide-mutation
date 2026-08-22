@@ -1,0 +1,56 @@
+[
+  {
+    "app": "nl_means",
+    "count": 2,
+    "max_points": 1077,
+    "min_points": 1051,
+    "max_slice_cost_millions": 7.79,
+    "predicted_peak_gb": 8.1,
+    "total_cost_millions": 15.3
+  },
+  {
+    "app": "interpolate",
+    "count": 6,
+    "max_points": 810,
+    "min_points": 763,
+    "max_slice_cost_millions": 7.1,
+    "predicted_peak_gb": 7.4,
+    "total_cost_millions": 41.9
+  },
+  {
+    "app": "bgu",
+    "count": 9,
+    "max_points": 628,
+    "min_points": 573,
+    "max_slice_cost_millions": 7.14,
+    "predicted_peak_gb": 7.4,
+    "total_cost_millions": 62.1
+  },
+  {
+    "app": "lens_blur",
+    "count": 16,
+    "max_points": 424,
+    "min_points": 350,
+    "max_slice_cost_millions": 7.13,
+    "predicted_peak_gb": 7.4,
+    "total_cost_millions": 105.3
+  },
+  {
+    "app": "stencil_chain",
+    "count": 14,
+    "max_points": 557,
+    "min_points": 498,
+    "max_slice_cost_millions": 7.2,
+    "predicted_peak_gb": 7.5,
+    "total_cost_millions": 97.3
+  },
+  {
+    "app": "local_laplacian",
+    "count": 17,
+    "max_points": 456,
+    "min_points": 361,
+    "max_slice_cost_millions": 7.68,
+    "predicted_peak_gb": 8.0,
+    "total_cost_millions": 117.6
+  }
+]

@@ -1,0 +1,2 @@
+app,tree,emitted,mull_commit,slice_count,cost_millions,points_identified,mutants_generated,mutants_run,not_run,test1_demo_killed,test1_demo_survived,test2_golden_killed,test2_golden_survived,timed_out,cores_per_process,sweep_workers,max_instr_peak_rss_mb,total_instr_seconds,partition_valid,reconciles,duplicates
+nl_means,HM-armc,nl_means.halide_generated.cpp,5eb72c8d,2,15.3,2128,1077,1077,0,215,862,738,339,11,,,9761.0,793.8,,True,0

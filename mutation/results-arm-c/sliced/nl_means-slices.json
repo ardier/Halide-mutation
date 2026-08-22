@@ -1,0 +1,36 @@
+[
+  {
+    "app": "nl_means",
+    "slice_index": 0,
+    "slice_count": 2,
+    "instrument_peak_rss_mb": 9761.0,
+    "instrument_seconds": 793.8,
+    "instrument_returncode": 0,
+    "mutants_generated": 1077,
+    "dump_kept": 1077,
+    "obj_matches_dump": true,
+    "baseline_seconds": 39.24,
+    "run": 1077,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/nl_means/nl_means-slice0of2.csv",
+    "total_seconds": 2380.5
+  },
+  {
+    "app": "nl_means",
+    "slice_index": 1,
+    "slice_count": 2,
+    "instrument_peak_rss_mb": 11264.1,
+    "instrument_seconds": 1065.2,
+    "instrument_returncode": 0,
+    "mutants_generated": 1051,
+    "dump_kept": 1051,
+    "obj_matches_dump": true,
+    "baseline_seconds": 71.86,
+    "run": 1051,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/nl_means/nl_means-slice1of2.csv",
+    "total_seconds": 3935.4
+  }
+]

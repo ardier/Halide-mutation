@@ -1,0 +1,4 @@
+app,region,mutants_run,test1_demo_killed,test2_golden_killed,test1_demo_survived,test2_golden_survived
+nl_means,boilerplate,14,3,7,11,7
+nl_means,generator_specific,1062,212,731,850,331
+nl_means,wrapper_metadata,1,0,0,1,1
