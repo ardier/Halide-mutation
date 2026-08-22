@@ -138,5 +138,25 @@
     "status": "COMPLETE",
     "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/bgu/bgu-slice6of9.csv",
     "kill_seconds": 134.2
+  },
+  {
+    "app": "bgu",
+    "slice_index": 7,
+    "slice_count": 9,
+    "instrument_peak_rss_mb": 10130.6,
+    "instrument_seconds": 572.7,
+    "instrument_returncode": 0,
+    "mutants_generated": 626,
+    "dump_kept": 626,
+    "obj_matches_dump": true,
+    "prepare_seconds": 577.9,
+    "baseline_seconds": 8.38,
+    "cores_per_process": null,
+    "sweep_workers": 54,
+    "run": 626,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/bgu/bgu-slice7of9.csv",
+    "kill_seconds": 183.3
   }
 ]
