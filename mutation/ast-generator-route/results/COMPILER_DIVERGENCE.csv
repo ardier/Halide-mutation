@@ -1,0 +1,5 @@
+app,op_id,file,line,column,target,stage_compile,stage_genlink,stage_generate,note
+stencil_chain,halide_arith_swap,stencil_chain_generator.cpp,27,64,operator+ -> operator*,OK,OK,GEN_TIMEOUT,"the mutated generator did not produce a pipeline; never became a runnable mutant, so it is NOT scored as a test kill"
+stencil_chain,halide_arith_swap,stencil_chain_generator.cpp,27,64,operator+ -> operator/,OK,OK,GEN_TIMEOUT,"the mutated generator did not produce a pipeline; never became a runnable mutant, so it is NOT scored as a test kill"
+stencil_chain,halide_arith_swap,stencil_chain_generator.cpp,27,71,operator+ -> operator*,OK,OK,GEN_TIMEOUT,"the mutated generator did not produce a pipeline; never became a runnable mutant, so it is NOT scored as a test kill"
+stencil_chain,halide_arith_swap,stencil_chain_generator.cpp,27,71,operator+ -> operator/,OK,OK,GEN_TIMEOUT,"the mutated generator did not produce a pipeline; never became a runnable mutant, so it is NOT scored as a test kill"
