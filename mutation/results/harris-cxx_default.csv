@@ -1,4 +1,4 @@
-app,arm,mutator,file,line,column,region,exit_code,o1_killed,o2_killed,wall_seconds
+app,arm,mutator,file,line,column,region,exit_code,test1_demo_killed,test2_golden_killed,wall_seconds
 harris,cxx_default_on_emitted_cpp,cxx_add_to_sub,harris.halide_generated.cpp,3576,19,generator_specific,139,1,1,1.249
 harris,cxx_default_on_emitted_cpp,cxx_add_to_sub,harris.halide_generated.cpp,3579,20,generator_specific,134,1,1,1.237
 harris,cxx_default_on_emitted_cpp,cxx_add_to_sub,harris.halide_generated.cpp,3596,21,generator_specific,134,1,1,1.236

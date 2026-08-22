@@ -67,9 +67,15 @@ def stats(rows):
         "not_run": sum(1 for r in rows if r["stage2"] == "NOT_RUN"),
         "equiv": len(runnable) - len(eff),
         "eff": len(eff),
-        "o1": sum(1 for r in eff if r["o1"] == "KILLED"),
-        "o2": sum(1 for r in eff if r["o2"] == "KILLED"),
-        "any": sum(1 for r in eff if r["o1"] == "KILLED" or r["o2"] == "KILLED"),
+        "t1": sum(1 for r in eff if r["test1_demo"] == "KILLED"),
+        "t2g": sum(1 for r in eff if r["test2_golden"] == "KILLED"),
+        "t2w": sum(1 for r in eff if r["test2_written"] == "KILLED"),
+        "t3p": sum(1 for r in eff if r["test3_perf"] == "KILLED"),
+        "any": sum(1 for r in eff if r["killed_by"]),
+        # resolved = killed by some kind, or proven equivalent. Equivalence is
+        # an answer, not a shortfall, so it belongs in the resolved figure.
+        "resolved": (sum(1 for r in eff if r["killed_by"])
+                     + len(runnable) - len(eff)),
     }
 
 
@@ -95,7 +101,8 @@ def cell_stats(app, arm, by):
 
 def agg(cells):
     out = {k: 0 for k in ("raw", "gen_kill", "bld", "harness", "not_run",
-                          "equiv", "eff", "o1", "o2", "any")}
+                          "equiv", "eff", "t1", "t2g", "t2w", "t3p", "any",
+                          "resolved")}
     for c in cells:
         for k in out:
             out[k] += c[k]
@@ -107,13 +114,15 @@ def pct(n, d):
 
 
 HDR = (f"{'raw':>5}{'notRun':>7}{'genKill':>8}{'bldErr':>7}{'equiv':>7}"
-       f"{'eff':>5}{'O1k':>5}{'O2k':>5}{'O1%':>8}{'O2%':>8}")
+       f"{'eff':>5}{'t1':>5}{'t2gold':>7}{'t2writ':>7}{'t3perf':>7}"
+       f"{'any':>5}{'resolvd':>8}")
 
 
 def fmt(s):
     return (f"{s['raw']:>5}{s['not_run']:>7}{s['gen_kill']:>8}{s['bld']:>7}"
-            f"{s['equiv']:>7}{s['eff']:>5}{s['o1']:>5}{s['o2']:>5}"
-            f"{pct(s['o1'], s['eff']):>8}{pct(s['o2'], s['eff']):>8}")
+            f"{s['equiv']:>7}{s['eff']:>5}{s['t1']:>5}{s['t2g']:>7}"
+            f"{s['t2w']:>7}{s['t3p']:>7}{s['any']:>5}"
+            f"{pct(s['resolved'], s['eff'] + s['equiv']):>8}")
 
 
 def main():
@@ -164,8 +173,8 @@ def main():
     out.append("PER OPERATOR (operators with >=1 mutation point in the corpus)")
     out.append("=" * 120)
     out.append(f"{'operator':<38}{'family':<28}{'raw':>5}{'notRun':>7}"
-               f"{'genKill':>8}{'equiv':>7}{'eff':>5}{'O1k':>5}{'O2k':>5}"
-               f"{'O2%':>8}")
+               f"{'genKill':>8}{'equiv':>7}{'eff':>5}{'t1':>5}{'t2gold':>7}"
+               f"{'t2writ':>7}{'t2gold%':>9}")
     out.append("-" * 120)
     by_op = {}
     for r in rows:
@@ -174,8 +183,8 @@ def main():
         s = stats(by_op[(arm, op)])
         out.append(f"{op:<38}{ARM_FAMILY[arm]:<28}{s['raw']:>5}"
                    f"{s['not_run']:>7}{s['gen_kill']:>8}{s['equiv']:>7}"
-                   f"{s['eff']:>5}{s['o1']:>5}{s['o2']:>5}"
-                   f"{pct(s['o2'], s['eff']):>8}")
+                   f"{s['eff']:>5}{s['t1']:>5}{s['t2g']:>7}{s['t2w']:>7}"
+                   f"{pct(s['t2g'], s['eff']):>9}")
 
     seen = {op for _, op in by_op}
     inert = [(arm, op) for arm in ARM_ORDER for op in ARMS[arm]
@@ -186,9 +195,10 @@ def main():
     for arm, op in inert:
         out.append(f"    {op:<42}({ARM_FAMILY[arm]})")
 
-    # O2 only means something for apps whose driver saves an output artifact.
-    # For the rest it falls back to normalised stdout, which carries no pipeline
-    # output, so it can only differ from O1 when the program also misbehaves.
+    # test 2 (golden) only means something for apps whose driver saves an
+    # output artifact. For the rest it falls back to normalised stdout, which
+    # carries no pipeline output, so it can only differ from test 1 when the
+    # program also misbehaves.
     blind = sorted(a for a in APPS if not APPS[a].output_artifact)
     eff_rows = [r for r in rows if r["stage2"] == "OK" and r["stage3"] == "OK"
                 and r["stmt_differs"] == "1"]
@@ -196,26 +206,29 @@ def main():
     for r in eff_rows:
         d = disagree.setdefault(r["app"], [0, 0])
         d[0] += 1
-        d[1] += (r["o1"] != r["o2"])
+        d[1] += (r["test1_demo"] != r["test2_golden"])
     out.append("")
     out.append("=" * 120)
-    out.append("ORACLE INDEPENDENCE")
+    out.append("TEST-KIND INDEPENDENCE")
     out.append("=" * 120)
-    out.append("O2 compares the driver's saved output against a golden "
-               "snapshot. Where a driver saves no artifact it falls back to")
-    out.append("normalised stdout, which carries no pipeline output -- so O2 "
-               "cannot diverge from O1 and its column is really O1 again.")
+    out.append("test 2 (golden) compares the driver's saved output against a "
+               "baseline snapshot. Where a driver saves no artifact it falls")
+    out.append("back to normalised stdout, which carries no pipeline output -- "
+               "so the golden column cannot diverge from test 1 and is")
+    out.append("really test 1 again. Such apps are given an artifact-dumping "
+               "driver variant instead; see apps.py.")
     out.append("")
     for app in sorted(disagree):
         n, dis = disagree[app]
-        tag = ("no output artifact: O2 == O1 by construction"
-               if app in blind else "")
-        out.append(f"  {app:<26}eff={n:<5}O1 != O2 on {dis:<5}{tag}")
+        tag = ("no output artifact: test2_golden == test1_demo by "
+               "construction" if app in blind else "")
+        out.append(f"  {app:<26}eff={n:<5}test1 != test2(golden) on "
+                   f"{dis:<5}{tag}")
     out.append("")
     out.append(f"Apps with no output artifact ({len(blind)}): "
                f"{', '.join(blind)}")
-    out.append("Their O2 figures above should be read as O1, and the corpus O2 "
-               "rate is correspondingly conservative.")
+    out.append("Their golden figures above should be read as test 1, and the "
+               "corpus golden rate is correspondingly conservative.")
 
     out.append("")
     out.append("raw     = mutation points recorded for this cell")
@@ -223,10 +236,15 @@ def main():
                "budget never reached. Excluded from every rate.")
     out.append("genKill = the Halide compiler itself rejected the mutant -- a "
                "kill category only staged compilation produces")
-    out.append("equiv   = emitted .stmt byte-identical to baseline: unreachable "
-               "at target=host, unkillable by any oracle")
-    out.append("eff     = effective (reachable, code-changing) mutants. O1% and "
-               "O2% are over eff, never over raw.")
+    out.append("equiv   = emitted .stmt byte-identical to baseline: "
+               "unreachable at target=host, unkillable by any test kind. "
+               "Proven equivalent, so RESOLVED.")
+    out.append("eff     = effective (reachable, code-changing) mutants. Kind "
+               "counts are over eff, never over raw.")
+    out.append("t1/t2gold/t2writ/t3perf = mutants killed by that test kind. A "
+               "mutant may appear under several; 'any' is the union.")
+    out.append("resolvd = (killed by any kind + proven equivalent) / "
+               "(eff + equiv)")
 
     text = "\n".join(out) + "\n"
     print(text)

@@ -33,9 +33,9 @@ def summarize_harris(rows, filt=None):
     if filt:
         rows = [r for r in rows if filt(r)]
     n = len(rows)
-    o1 = sum(1 for r in rows if r["o1_killed"] == "1")
-    o2 = sum(1 for r in rows if r["o2_killed"] == "1")
-    return n, o1, o2, (100 * o1 / n if n else float("nan")), (100 * o2 / n if n else float("nan"))
+    t1 = sum(1 for r in rows if r["test1_demo_killed"] == "1")
+    t2g = sum(1 for r in rows if r["test2_golden_killed"] == "1")
+    return n, t1, t2g, (100 * t1 / n if n else float("nan")), (100 * t2g / n if n else float("nan"))
 
 
 def main():
@@ -52,12 +52,12 @@ def main():
 
     print()
     print("HARRIS (cxx_default on emitted C++):")
-    n, o1, o2, p1, p2 = summarize_harris(harris)
-    print(f"  whole-file:                            n={n:4} O1={o1:4}({p1:.1f}%) O2={o2:4}({p2:.1f}%)")
-    n, o1, o2, p1, p2 = summarize_harris(harris, lambda r: r["region"] == "generator_specific")
-    print(f"  generator-specific only:               n={n:4} O1={o1:4}({p1:.1f}%) O2={o2:4}({p2:.1f}%)")
-    n, o1, o2, p1, p2 = summarize_harris(harris, lambda r: r["mutator"] in ARITH_FAMILY)
-    print(f"  arithmetic-family only (whole-file):   n={n:4} O1={o1:4}({p1:.1f}%) O2={o2:4}({p2:.1f}%)")
+    n, t1, t2g, p1, p2 = summarize_harris(harris)
+    print(f"  whole-file:                            n={n:4} test1={t1:4}({p1:.1f}%) test2gold={t2g:4}({p2:.1f}%)")
+    n, t1, t2g, p1, p2 = summarize_harris(harris, lambda r: r["region"] == "generator_specific")
+    print(f"  generator-specific only:               n={n:4} test1={t1:4}({p1:.1f}%) test2gold={t2g:4}({p2:.1f}%)")
+    n, t1, t2g, p1, p2 = summarize_harris(harris, lambda r: r["mutator"] in ARITH_FAMILY)
+    print(f"  arithmetic-family only (whole-file):   n={n:4} test1={t1:4}({p1:.1f}%) test2gold={t2g:4}({p2:.1f}%)")
 
 
 if __name__ == "__main__":

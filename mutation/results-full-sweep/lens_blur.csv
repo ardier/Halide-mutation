@@ -1,14 +1,14 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,1,0,0.84,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,1,0,0.82,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,1,0,0.59,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.12,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,1,0,1.71,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.68,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,1,0,2.07,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,1,0,2.21,emitted header differs from baseline; driver recompiled
-lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.49,emitted header differs from baseline; driver recompiled
-lens_blur,if_then_else,Halide_select_to_if_then_else,lens_blur_generator.cpp,142,13,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.83,emitted header differs from baseline; driver recompiled
-lens_blur,select_clamp,Halide_clamp_swap_bounds,lens_blur_generator.cpp,117,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.31,emitted header differs from baseline; driver recompiled
-lens_blur,select_clamp,Halide_clamp_swap_bounds,lens_blur_generator.cpp,118,20,OK,1,1,OK,SURVIVED,KILLED,1,0,2.91,emitted header differs from baseline; driver recompiled
-lens_blur,select_clamp,Halide_select_swap_branches,lens_blur_generator.cpp,142,13,OK,1,1,OK,SURVIVED,KILLED,1,0,2.73,emitted header differs from baseline; driver recompiled
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.84,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.82,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.59,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_image,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.12,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.71,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_mirror_interior,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.68,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,29,21,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.07,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,30,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.21,emitted header differs from baseline; driver recompiled
+lens_blur,boundary_conditions,Halide_repeat_edge_to_repeat_image,lens_blur_generator.cpp,63,36,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.49,emitted header differs from baseline; driver recompiled
+lens_blur,if_then_else,Halide_select_to_if_then_else,lens_blur_generator.cpp,142,13,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.83,emitted header differs from baseline; driver recompiled
+lens_blur,select_clamp,Halide_clamp_swap_bounds,lens_blur_generator.cpp,117,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.31,emitted header differs from baseline; driver recompiled
+lens_blur,select_clamp,Halide_clamp_swap_bounds,lens_blur_generator.cpp,118,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.91,emitted header differs from baseline; driver recompiled
+lens_blur,select_clamp,Halide_select_swap_branches,lens_blur_generator.cpp,142,13,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.73,emitted header differs from baseline; driver recompiled

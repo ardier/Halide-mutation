@@ -7,11 +7,22 @@ stage 2  for each mutant, re-run the generator with that mutant's env var set to
 stage 3  link the app's own driver against the mutant's static library, run it,
          and score the result
 
-Oracles:
-  O1  the driver's exit status (crash, abort, nonzero exit, timeout)
-  O2  byte comparison of the driver's output artifact against a golden snapshot
-      taken once from the unmutated build; falls back to normalised stdout for
-      apps that write no output file
+Test kinds. Every kind is scored independently and the SET of kinds that
+killed a mutant is recorded, not just the first one to fire -- "killed by X"
+and "X alone sufficed" are different questions. A mutant is RESOLVED if any
+kind kills it, or if it is proven equivalent.
+
+  test1_demo     the shipped driver's own verdict: exit status, crash, abort,
+                 timeout. Zero effort, it ships with the app.
+  test2_golden   byte comparison of the driver's output artifact against a
+                 snapshot taken once from the unmutated build. Near-free.
+  test2_written  a hand-authored assertion driver we added, swapped in with
+                 dataclasses.replace(app, driver_source=...) so no shipped file
+                 is touched. Real work. Kept in its own column on purpose:
+                 pooling it with test2_golden would hide the test-writing
+                 effort difference that separation exists to measure.
+  test3_perf     median wall time against a threshold taken from that app's own
+                 baseline timing noise.
 """
 
 from __future__ import annotations
@@ -27,6 +38,9 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from .apps import AppConfig
+
+# The test kinds, in report order. A mutant carries one verdict per kind.
+TEST_KINDS = ["test1_demo", "test2_golden", "test2_written", "test3_perf"]
 
 # Mutant env-var keys look like  <mutator-id>:<file>:<line>:<column>
 # The instrumented object also contains a longer
@@ -62,15 +76,33 @@ class MutantResult:
     stage2: str = "OK"          # OK | GEN_ERROR | GEN_TIMEOUT
     stmt_differs: Optional[bool] = None
     stage3: str = "OK"          # OK | BUILD_ERROR
-    o1: str = "NOT_RUN"         # KILLED | SURVIVED | NOT_RUN
-    o2: str = "NOT_RUN"         # KILLED | SURVIVED | NOT_RUN
+    test1_demo: str = "NOT_RUN"      # KILLED | SURVIVED | NOT_RUN
+    test2_golden: str = "NOT_RUN"    # KILLED | SURVIVED | NOT_RUN
+    test2_written: str = "NOT_RUN"   # KILLED | SURVIVED | NOT_RUN
+    test3_perf: str = "NOT_RUN"      # KILLED | SURVIVED | NOT_RUN
     exit_code: Optional[int] = None
     wall_seconds: float = 0.0
     note: str = ""
 
     @property
+    def killed_by(self) -> List[str]:
+        """The set of test kinds that killed this mutant, in report order."""
+        return [k for k in TEST_KINDS if getattr(self, k) == "KILLED"]
+
+    @property
     def killed(self) -> bool:
-        return self.o1 == "KILLED" or self.o2 == "KILLED"
+        return bool(self.killed_by)
+
+    @property
+    def resolved(self) -> bool:
+        """Killed by at least one test kind, or proven equivalent.
+
+        Equivalence is a positive result, not a shortfall: a mutant whose
+        emitted code is byte-identical to baseline cannot be killed by any
+        test, and saying so is an answer.
+        """
+        return self.killed or (self.stage2 == "OK" and self.stage3 == "OK"
+                               and not self.effective)
 
     @property
     def effective(self) -> bool:
@@ -79,8 +111,9 @@ class MutantResult:
         A generator's schedule is branched on the target (GPU / HVX / CPU), so
         a mutation inside a branch the chosen target does not take leaves the
         emitted .stmt byte-identical. Such a mutant is equivalent *at this
-        target* by construction and cannot be killed by any oracle -- counting
-        it as "survived" would understate every kill rate. Reported separately.
+        target* by construction and cannot be killed by any test kind --
+        counting it as "survived" would understate every kill rate. It is
+        resolved, and reported separately.
         """
         return self.stage2 == "OK" and self.stage3 == "OK" and bool(self.stmt_differs)
 
@@ -350,7 +383,14 @@ class Pipeline:
         return hashlib.sha256(path.read_bytes()).hexdigest()
 
     def oracle_signature(self, app: AppConfig, rundir: Path, stdout: str) -> str:
-        """O2's observable: the output artifact if there is one, else stdout."""
+        """The test-2 observable: the output artifact if the driver writes one,
+        else its normalised stdout.
+
+        An app whose driver writes no artifact has no independent golden
+        signal -- the fallback restates what test 1 already saw. Three such
+        apps (blur, conv_layer, depthwise_separable_conv) are given an
+        artifact-dumping driver variant instead; see apps.py.
+        """
         if app.output_artifact:
             d = self.digest(rundir / app.output_artifact)
             return d or "<missing>"

@@ -30,8 +30,11 @@ def load(paths: List[Path]) -> List[MutantResult]:
                 r.stage2 = row["stage2"]
                 r.stage3 = row["stage3"]
                 r.stmt_differs = (row["stmt_differs"] == "1") if row["stmt_differs"] else None
-                r.o1 = row["o1"]
-                r.o2 = row["o2"]
+                # Legacy CSVs (pre-rename) carry o1/o2; read either.
+                r.test1_demo = row.get("test1_demo", row.get("o1", "NOT_RUN"))
+                r.test2_golden = row.get("test2_golden", row.get("o2", "NOT_RUN"))
+                r.test2_written = row.get("test2_written", "NOT_RUN")
+                r.test3_perf = row.get("test3_perf", "NOT_RUN")
                 r.exit_code = int(row["exit_code"]) if row["exit_code"] else None
                 r.wall_seconds = float(row["wall_seconds"] or 0.0)
                 r.note = row.get("note", "")

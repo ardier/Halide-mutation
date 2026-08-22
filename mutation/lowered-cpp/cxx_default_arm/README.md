@@ -85,7 +85,7 @@ clang++ -std=c++17 -O2 -Wall -I mutation/lowered-cpp/blur -I build/include -I to
 
 # harris: filter.cpp additionally links a second (native, unmutated)
 # harris_auto_schedule.a purely so it links -- it isn't part of this arm and
-# isn't exercised by either oracle.
+# isn't exercised by either test kind.
 <harris>.generator -g harris -f harris_auto_schedule -o native/ target=host-no_runtime
 clang++ -std=c++17 -O2 -Wall -I/usr/include/libpng16 \
   -I mutation/lowered-cpp/harris -I native -I build/include -I tools \
@@ -106,16 +106,16 @@ BIN=./harris_filter_instrumented MUTLIST=harris_cxx_mutants.txt \
   ./sweep_harris.sh
 ```
 
-## Oracles
+## Test kinds
 
-- **blur** -- O1 only. `apps/blur/test.cpp` has its own internal
+- **blur** -- test 1 (demo program) only. `apps/blur/test.cpp` has its own internal
   `abort()`-on-mismatch assertion (comparing against two independent
   reference C++ implementations in the same file); no separate golden-image
   artifact exists for this app (matches `mutation/halidemut/apps.py`'s
   `output_artifact=None` for blur).
-- **harris** -- O1 (exit code) and O2 (byte-compare of `out.png` against a
-  golden snapshot from one unmutated run). `apps/harris/filter.cpp` has no
-  internal assertion, same weak-oracle shape the Halide-native schedule arm
+- **harris** -- test 1 (exit code) and test 2 (golden: byte-compare of
+  `out.png` against a snapshot from one unmutated run). `apps/harris/filter.cpp` has no
+  internal assertion, same weak-test shape the Halide-native schedule arm
   already documented for this app.
 
 ## Results summary

@@ -1,172 +1,172 @@
 ========================================================================================================================
 PER BENCHMARK x OPERATOR FAMILY   (65 Halide-native operators, target=host)
 ========================================================================================================================
-benchmark                 operator family                   raw notRun genKill bldErr  equiv  eff  O1k  O2k     O1%     O2%
+benchmark                 operator family                   raw notRun genKill bldErr  equiv  eff   t1 t2gold t2writ t3perf  any resolvd
 ------------------------------------------------------------------------------------------------------------------------
-bgu                       arithmetic                          0      0       0      0      0    0    0    0       -       -
-                          schedule directive                 63     62       1      0      0    0    0    0       -       -
-                          relational/logical/bitwise/compound   12     12       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  6      0       0      0      0    6    0    6    0.0%  100.0%
-                          select/clamp                        4      0       0      0      0    4    0    4    0.0%  100.0%
-                          select->if_then_else                1      0       0      0      1    0    0    0       -       -
-                          ALL FAMILIES                       86     74       1      0      1   10    0   10    0.0%  100.0%
+bgu                       arithmetic                          0      0       0      0      0    0    0      0      0      0    0       -
+                          schedule directive                 63     62       1      0      0    0    0      0      0      0    0       -
+                          relational/logical/bitwise/compound   12     12       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  6      0       0      0      0    6    0      6      0      0    6  100.0%
+                          select/clamp                        4      0       0      0      0    4    0      4      0      0    4  100.0%
+                          select->if_then_else                1      0       0      0      1    0    0      0      0      0    0  100.0%
+                          ALL FAMILIES                       86     74       1      0      1   10    0     10      0      0   10  100.0%
 
-bilateral_grid            arithmetic                        195    184       0      0      1   10    0   10    0.0%  100.0%
-                          schedule directive                 37      0       5      0     14   18    1    3    5.6%   16.7%
-                          relational/logical/bitwise/compound    1      0       0      0      0    1    0    0    0.0%    0.0%
-                          BoundaryConditions                  3      0       0      0      0    3    0    3    0.0%  100.0%
-                          select/clamp                        2      0       0      0      0    2    0    2    0.0%  100.0%
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                      238    184       5      0     15   34    1   18    2.9%   52.9%
+bilateral_grid            arithmetic                        195    184       0      0      1   10    0     10      0      0   10  100.0%
+                          schedule directive                 37      0       5      0     14   18    1      2      0      0    3   53.1%
+                          relational/logical/bitwise/compound    1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          BoundaryConditions                  3      0       0      0      0    3    0      3      0      0    3  100.0%
+                          select/clamp                        2      0       0      0      0    2    0      2      0      0    2  100.0%
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                      238    184       5      0     15   34    1     17      0      0   18   67.3%
 
-blur                      arithmetic                         30      0       0      0      0   30   30   30  100.0%  100.0%
-                          schedule directive                 21      0       4      0     13    4    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound    0      0       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        0      0       0      0      0    0    0    0       -       -
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                       51      0       4      0     13   34   30   30   88.2%   88.2%
+blur                      arithmetic                         30      0       0      0      0   30   30     30      0      0   30  100.0%
+                          schedule directive                 21      0       4      0     13    4    0      0      0      0    0   76.5%
+                          relational/logical/bitwise/compound    0      0       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        0      0       0      0      0    0    0      0      0      0    0       -
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                       51      0       4      0     13   34   30     30      0      0   30   91.5%
 
-c_backend                 arithmetic                         27      0       0      0      0   27    4    4   14.8%   14.8%
-                          schedule directive                  2      0       0      0      0    2    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound    1      0       0      0      0    1    0    0    0.0%    0.0%
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        2      0       0      0      0    2    0    0    0.0%    0.0%
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                       32      0       0      0      0   32    4    4   12.5%   12.5%
+c_backend                 arithmetic                         27      0       0      0      0   27    4      4      0      0    4   14.8%
+                          schedule directive                  2      0       0      0      0    2    0      0      0      0    0    0.0%
+                          relational/logical/bitwise/compound    1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        2      0       0      0      0    2    0      0      0      0    0    0.0%
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                       32      0       0      0      0   32    4      4      0      0    4   12.5%
 
-camera_pipe               arithmetic                        502    493       0      0      0    9    0    9    0.0%  100.0%
-                          schedule directive                 61     57       1      0      3    0    0    0       -       -
-                          relational/logical/bitwise/compound   22     22       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                       15      0       0      0      2   13    1   13    7.7%  100.0%
-                          select->if_then_else                9      0       0      0      2    7    0    0    0.0%    0.0%
-                          ALL FAMILIES                      609    572       1      0      7   29    1   22    3.4%   75.9%
+camera_pipe               arithmetic                        502    493       0      0      0    9    0      9      0      0    9  100.0%
+                          schedule directive                 61     57       1      0      3    0    0      0      0      0    0  100.0%
+                          relational/logical/bitwise/compound   22     22       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                       15      0       0      0      2   13    1     13      0      0   13  100.0%
+                          select->if_then_else                9      0       0      0      2    7    0      0      0      0    0   22.2%
+                          ALL FAMILIES                      609    572       1      0      7   29    1     22      0      0   22   80.6%
 
-conv_layer                arithmetic                          9      0       0      0      0    9    6    6   66.7%   66.7%
-                          schedule directive                  9      0       3      0      2    4    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound    1      0       0      0      0    1    0    0    0.0%    0.0%
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        0      0       0      0      0    0    0    0       -       -
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                       19      0       3      0      2   14    6    6   42.9%   42.9%
+conv_layer                arithmetic                          9      0       0      0      0    9    6      6      0      0    6   66.7%
+                          schedule directive                  9      0       3      0      2    4    0      0      0      0    0   33.3%
+                          relational/logical/bitwise/compound    1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        0      0       0      0      0    0    0      0      0      0    0       -
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                       19      0       3      0      2   14    6      6      0      0    6   50.0%
 
-depthwise_separable_conv  arithmetic                         33     33       0      0      0    0    0    0       -       -
-                          schedule directive                 87      1       5      0     48   33    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound   17     17       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        3      0       0      0      0    3    0    0    0.0%    0.0%
-                          select->if_then_else                1      0       0      0      0    1    0    0    0.0%    0.0%
-                          ALL FAMILIES                      141     51       5      0     48   37    0    0    0.0%    0.0%
+depthwise_separable_conv  arithmetic                         33     33       0      0      0    0    0      0      0      0    0       -
+                          schedule directive                 87      1       5      0     48   33    0      0      0      0    0   59.3%
+                          relational/logical/bitwise/compound   17     17       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        3      0       0      0      0    3    0      0      0      0    0    0.0%
+                          select->if_then_else                1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          ALL FAMILIES                      141     51       5      0     48   37    0      0      0      0    0   56.5%
 
-harris                    arithmetic                        237    186       0      0      0   51    0   51    0.0%  100.0%
-                          schedule directive                 50      0       7      0     34    9    2    3   22.2%   33.3%
-                          relational/logical/bitwise/compound    0      0       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        0      0       0      0      0    0    0    0       -       -
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                      287    186       7      0     34   60    2   54    3.3%   90.0%
+harris                    arithmetic                        237    186       0      0      0   51    0     51      0      0   51  100.0%
+                          schedule directive                 50      0       7      0     34    9    2      3      0      0    3   86.0%
+                          relational/logical/bitwise/compound    0      0       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        0      0       0      0      0    0    0      0      0      0    0       -
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                      287    186       7      0     34   60    2     54      0      0   54   93.6%
 
-hist                      arithmetic                         90     46       0      0     13   31    0   31    0.0%  100.0%
-                          schedule directive                 51      2       2      0     28   19    0    3    0.0%   15.8%
-                          relational/logical/bitwise/compound    2      2       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        6      0       0      0      0    6    0    6    0.0%  100.0%
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                      149     50       2      0     41   56    0   40    0.0%   71.4%
+hist                      arithmetic                         90     46       0      0     13   31    0     31      0      0   31  100.0%
+                          schedule directive                 51      2       2      0     28   19    0      3      0      0    3   66.0%
+                          relational/logical/bitwise/compound    2      2       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        6      0       0      0      0    6    0      6      0      0    6  100.0%
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                      149     50       2      0     41   56    0     40      0      0   40   83.5%
 
-iir_blur                  arithmetic                         39      3       0      0      0   36    3   35    8.3%   97.2%
-                          schedule directive                 17      0       5      0      6    6    0    2    0.0%   33.3%
-                          relational/logical/bitwise/compound    0      0       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  0      0       0      0      0    0    0    0       -       -
-                          select/clamp                        0      0       0      0      0    0    0    0       -       -
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                       56      3       5      0      6   42    3   37    7.1%   88.1%
+iir_blur                  arithmetic                         39      3       0      0      0   36    3     35      0      0   35   97.2%
+                          schedule directive                 17      0       5      0      6    6    0      2      0      0    2   66.7%
+                          relational/logical/bitwise/compound    0      0       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  0      0       0      0      0    0    0      0      0      0    0       -
+                          select/clamp                        0      0       0      0      0    0    0      0      0      0    0       -
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                       56      3       5      0      6   42    3     37      0      0   37   89.6%
 
-lens_blur                 arithmetic                          1      0       0      0      0    1    0    0    0.0%    0.0%
-                          schedule directive                  0      0       0      0      0    0    0    0       -       -
-                          relational/logical/bitwise/compound    0      0       0      0      0    0    0    0       -       -
-                          BoundaryConditions                  9      0       0      0      0    9    0    6    0.0%   66.7%
-                          select/clamp                        3      0       0      0      0    3    0    3    0.0%  100.0%
-                          select->if_then_else                1      0       0      0      0    1    0    0    0.0%    0.0%
-                          ALL FAMILIES                       14      0       0      0      0   14    0    9    0.0%   64.3%
+lens_blur                 arithmetic                          1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          schedule directive                  0      0       0      0      0    0    0      0      0      0    0       -
+                          relational/logical/bitwise/compound    0      0       0      0      0    0    0      0      0      0    0       -
+                          BoundaryConditions                  9      0       0      0      0    9    0      6      0      0    6   66.7%
+                          select/clamp                        3      0       0      0      0    3    0      3      0      0    3  100.0%
+                          select->if_then_else                1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          ALL FAMILIES                       14      0       0      0      0   14    0      9      0      0    9   64.3%
 
-max_filter                arithmetic                         51      6       0      0      3   42    2   38    4.8%   90.5%
-                          schedule directive                 12      0       4      0      0    8    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound    6      0       0      0      0    6    0    5    0.0%   83.3%
-                          BoundaryConditions                  3      0       0      0      0    3    0    1    0.0%   33.3%
-                          select/clamp                        5      0       0      0      0    5    0    5    0.0%  100.0%
-                          select->if_then_else                1      0       0      0      0    1    0    0    0.0%    0.0%
-                          ALL FAMILIES                       78      6       4      0      3   65    2   49    3.1%   75.4%
+max_filter                arithmetic                         51      6       0      0      3   42    2     38      0      0   38   91.1%
+                          schedule directive                 12      0       4      0      0    8    0      0      0      0    0    0.0%
+                          relational/logical/bitwise/compound    6      0       0      0      0    6    0      5      0      0    5   83.3%
+                          BoundaryConditions                  3      0       0      0      0    3    0      1      0      0    1   33.3%
+                          select/clamp                        5      0       0      0      0    5    0      5      0      0    5  100.0%
+                          select->if_then_else                1      0       0      0      0    1    0      0      0      0    0    0.0%
+                          ALL FAMILIES                       78      6       4      0      3   65    2     49      0      0   49   76.5%
 
-nl_means                  arithmetic                          7      0       0      0      0    7    0    7    0.0%  100.0%
-                          schedule directive                 29      0       6      0      7   16    0    0    0.0%    0.0%
-                          relational/logical/bitwise/compound    4      3       0      0      0    1    0    1    0.0%  100.0%
-                          BoundaryConditions                  3      0       0      0      0    3    0    3    0.0%  100.0%
-                          select/clamp                        1      0       0      0      0    1    0    1    0.0%  100.0%
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                       44      3       6      0      7   28    0   12    0.0%   42.9%
+nl_means                  arithmetic                          7      0       0      0      0    7    0      7      0      0    7  100.0%
+                          schedule directive                 29      0       6      0      7   16    0      0      0      0    0   30.4%
+                          relational/logical/bitwise/compound    4      3       0      0      0    1    0      1      0      0    1  100.0%
+                          BoundaryConditions                  3      0       0      0      0    3    0      3      0      0    3  100.0%
+                          select/clamp                        1      0       0      0      0    1    0      1      0      0    1  100.0%
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                       44      3       6      0      7   28    0     12      0      0   12   54.3%
 
-unsharp                   arithmetic                        147     61       0      0     12   74    0   74    0.0%  100.0%
-                          schedule directive                 27      0       7      0     11    9    0    2    0.0%   22.2%
-                          relational/logical/bitwise/compound    2      0       1      0      0    1    0    1    0.0%  100.0%
-                          BoundaryConditions                  3      0       0      0      0    3    0    3    0.0%  100.0%
-                          select/clamp                        0      0       0      0      0    0    0    0       -       -
-                          select->if_then_else                0      0       0      0      0    0    0    0       -       -
-                          ALL FAMILIES                      179     61       8      0     23   87    0   80    0.0%   92.0%
+unsharp                   arithmetic                        147     61       0      0     12   74    0     74      0      0   74  100.0%
+                          schedule directive                 27      0       7      0     11    9    0      2      0      0    2   65.0%
+                          relational/logical/bitwise/compound    2      0       1      0      0    1    0      1      0      0    1  100.0%
+                          BoundaryConditions                  3      0       0      0      0    3    0      3      0      0    3  100.0%
+                          select/clamp                        0      0       0      0      0    0    0      0      0      0    0       -
+                          select->if_then_else                0      0       0      0      0    0    0      0      0      0    0       -
+                          ALL FAMILIES                      179     61       8      0     23   87    0     80      0      0   80   93.6%
 
 ========================================================================================================================
 PER OPERATOR FAMILY (whole corpus)
 ========================================================================================================================
-operator family           route   ops  apps  raw notRun genKill bldErr  equiv  eff  O1k  O2k     O1%     O2%
+operator family           route   ops  apps  raw notRun genKill bldErr  equiv  eff   t1 t2gold t2writ t3perf  any resolvd
 ------------------------------------------------------------------------------------------------------------------------
-arithmetic                ir       12    13 1368   1012       0      0     29  327   45  295   13.8%   90.2%
-schedule directive        ir        8    13  466    122      50      0    166  128    3   13    2.3%   10.2%
-relational/logical/bitwise/compoundir       30    10   68     56       1      0      0   11    0    7    0.0%   63.6%
-BoundaryConditions        ast      12     6   27      0       0      0      0   27    0   22    0.0%   81.5%
-select/clamp              ast       2     9   41      0       0      0      2   39    1   34    2.6%   87.2%
-select->if_then_else      ast       1     5   13      0       0      0      3   10    0    0    0.0%    0.0%
+arithmetic                ir       12    13 1368   1012       0      0     29  327   45    295      0      0  295   91.0%
+schedule directive        ir        8    13  466    122      50      0    166  128    3     12      0      0   13   60.9%
+relational/logical/bitwise/compoundir       30    10   68     56       1      0      0   11    0      7      0      0    7   63.6%
+BoundaryConditions        ast      12     6   27      0       0      0      0   27    0     22      0      0   22   81.5%
+select/clamp              ast       2     9   41      0       0      0      2   39    1     34      0      0   34   87.8%
+select->if_then_else      ast       1     5   13      0       0      0      3   10    0      0      0      0    0   23.1%
 ------------------------------------------------------------------------------------------------------------------------
-TOTAL                              65       1983   1190      51      0    200  542   49  371    9.0%   68.5%
+TOTAL                              65       1983   1190      51      0    200  542   49    370      0      0  371   77.0%
 
 ========================================================================================================================
 PER OPERATOR (operators with >=1 mutation point in the corpus)
 ========================================================================================================================
-operator                              family                        raw notRun genKill  equiv  eff  O1k  O2k     O2%
+operator                              family                        raw notRun genKill  equiv  eff   t1 t2gold t2writ  t2gold%
 ------------------------------------------------------------------------------------------------------------------------
-Halide_add_to_div                     arithmetic                    181     67       0      1  113   11  108   95.6%
-Halide_add_to_mul                     arithmetic                    182    115       0      0   67   11   61   91.0%
-Halide_add_to_sub                     arithmetic                    180    129       0      0   51   10   46   90.2%
-Halide_div_to_add                     arithmetic                     46     35       0      4    7    2    6   85.7%
-Halide_div_to_mul                     arithmetic                     45     34       0      3    8    2    7   87.5%
-Halide_div_to_sub                     arithmetic                     46     35       0      4    7    2    6   85.7%
-Halide_mul_to_add                     arithmetic                    116     80       0     15   21    0   19   90.5%
-Halide_mul_to_div                     arithmetic                    114    101       0      2   11    1    9   81.8%
-Halide_mul_to_sub                     arithmetic                    116    107       0      0    9    0    7   77.8%
-Halide_sub_to_add                     arithmetic                    103     89       0      0   14    2   12   85.7%
-Halide_sub_to_div                     arithmetic                    103     90       0      0   13    2   11   84.6%
-Halide_sub_to_mul                     arithmetic                    103     97       0      0    6    2    3   50.0%
-Halide_repeat_edge_to_mirror_image    BoundaryConditions              9      0       0      0    9    0    7   77.8%
-Halide_repeat_edge_to_mirror_interior BoundaryConditions              9      0       0      0    9    0    7   77.8%
-Halide_repeat_edge_to_repeat_image    BoundaryConditions              9      0       0      0    9    0    8   88.9%
-Halide_add_assign_to_sub_assign       relational/logical/bitwise/compound    1      0       0      0    1    0    0    0.0%
-Halide_lshift_to_rshift               relational/logical/bitwise/compound    2      0       0      0    2    0    2  100.0%
-Halide_lt_to_ge                       relational/logical/bitwise/compound    1      0       0      0    1    0    1  100.0%
-Halide_lt_to_le                       relational/logical/bitwise/compound    1      0       0      0    1    0    0    0.0%
-Halide_max_to_min                     relational/logical/bitwise/compound    4      0       0      0    4    0    2   50.0%
-Halide_negate_to_bitwise_not          relational/logical/bitwise/compound    2      0       0      0    2    0    2  100.0%
-Halide_negate_to_not                  relational/logical/bitwise/compound    4      3       1      0    0    0    0       -
-Halide_select_to_if_then_else         select->if_then_else           13      0       0      3   10    0    0    0.0%
-Halide_compute_at_to_store_at         schedule directive             74     12      27     35    0    0    0       -
-Halide_parallel_to_unroll             schedule directive             23      6       9      1    7    0    0    0.0%
-Halide_parallel_to_vectorize          schedule directive             21      6       9      1    5    0    2   40.0%
-Halide_store_at_to_compute_at         schedule directive             13      5       2      1    5    2    2   40.0%
-Halide_unroll_to_parallel             schedule directive             97     29       0     48   20    1    1    5.0%
-Halide_unroll_to_vectorize            schedule directive             97     29       0     48   20    0    0    0.0%
-Halide_vectorize_to_parallel          schedule directive             72     16       3     16   37    0    3    8.1%
-Halide_vectorize_to_unroll            schedule directive             69     19       0     16   34    0    5   14.7%
-Halide_clamp_swap_bounds              select/clamp                   28      0       0      2   26    1   22   84.6%
-Halide_select_swap_branches           select/clamp                   13      0       0      0   13    0   12   92.3%
+Halide_add_to_div                     arithmetic                    181     67       0      1  113   11    108      0    95.6%
+Halide_add_to_mul                     arithmetic                    182    115       0      0   67   11     61      0    91.0%
+Halide_add_to_sub                     arithmetic                    180    129       0      0   51   10     46      0    90.2%
+Halide_div_to_add                     arithmetic                     46     35       0      4    7    2      6      0    85.7%
+Halide_div_to_mul                     arithmetic                     45     34       0      3    8    2      7      0    87.5%
+Halide_div_to_sub                     arithmetic                     46     35       0      4    7    2      6      0    85.7%
+Halide_mul_to_add                     arithmetic                    116     80       0     15   21    0     19      0    90.5%
+Halide_mul_to_div                     arithmetic                    114    101       0      2   11    1      9      0    81.8%
+Halide_mul_to_sub                     arithmetic                    116    107       0      0    9    0      7      0    77.8%
+Halide_sub_to_add                     arithmetic                    103     89       0      0   14    2     12      0    85.7%
+Halide_sub_to_div                     arithmetic                    103     90       0      0   13    2     11      0    84.6%
+Halide_sub_to_mul                     arithmetic                    103     97       0      0    6    2      3      0    50.0%
+Halide_repeat_edge_to_mirror_image    BoundaryConditions              9      0       0      0    9    0      7      0    77.8%
+Halide_repeat_edge_to_mirror_interior BoundaryConditions              9      0       0      0    9    0      7      0    77.8%
+Halide_repeat_edge_to_repeat_image    BoundaryConditions              9      0       0      0    9    0      8      0    88.9%
+Halide_add_assign_to_sub_assign       relational/logical/bitwise/compound    1      0       0      0    1    0      0      0     0.0%
+Halide_lshift_to_rshift               relational/logical/bitwise/compound    2      0       0      0    2    0      2      0   100.0%
+Halide_lt_to_ge                       relational/logical/bitwise/compound    1      0       0      0    1    0      1      0   100.0%
+Halide_lt_to_le                       relational/logical/bitwise/compound    1      0       0      0    1    0      0      0     0.0%
+Halide_max_to_min                     relational/logical/bitwise/compound    4      0       0      0    4    0      2      0    50.0%
+Halide_negate_to_bitwise_not          relational/logical/bitwise/compound    2      0       0      0    2    0      2      0   100.0%
+Halide_negate_to_not                  relational/logical/bitwise/compound    4      3       1      0    0    0      0      0        -
+Halide_select_to_if_then_else         select->if_then_else           13      0       0      3   10    0      0      0     0.0%
+Halide_compute_at_to_store_at         schedule directive             74     12      27     35    0    0      0      0        -
+Halide_parallel_to_unroll             schedule directive             23      6       9      1    7    0      0      0     0.0%
+Halide_parallel_to_vectorize          schedule directive             21      6       9      1    5    0      2      0    40.0%
+Halide_store_at_to_compute_at         schedule directive             13      5       2      1    5    2      2      0    40.0%
+Halide_unroll_to_parallel             schedule directive             97     29       0     48   20    1      0      0     0.0%
+Halide_unroll_to_vectorize            schedule directive             97     29       0     48   20    0      0      0     0.0%
+Halide_vectorize_to_parallel          schedule directive             72     16       3     16   37    0      3      0     8.1%
+Halide_vectorize_to_unroll            schedule directive             69     19       0     16   34    0      5      0    14.7%
+Halide_clamp_swap_bounds              select/clamp                   28      0       0      2   26    1     22      0    84.6%
+Halide_select_swap_branches           select/clamp                   13      0       0      0   13    0     12      0    92.3%
 
 Operators with no mutation point anywhere in the swept corpus: 32 of 65
     Halide_eq_to_ne                           (relational/logical/bitwise/compound)
@@ -203,31 +203,34 @@ Operators with no mutation point anywhere in the swept corpus: 32 of 65
     Halide_mirror_interior_to_mirror_image    (BoundaryConditions)
 
 ========================================================================================================================
-ORACLE INDEPENDENCE
+TEST-KIND INDEPENDENCE
 ========================================================================================================================
-O2 compares the driver's saved output against a golden snapshot. Where a driver saves no artifact it falls back to
-normalised stdout, which carries no pipeline output -- so O2 cannot diverge from O1 and its column is really O1 again.
+test 2 (golden) compares the driver's saved output against a baseline snapshot. Where a driver saves no artifact it falls
+back to normalised stdout, which carries no pipeline output -- so the golden column cannot diverge from test 1 and is
+really test 1 again. Such apps are given an artifact-dumping driver variant instead; see apps.py.
 
-  bgu                       eff=10   O1 != O2 on 10   
-  bilateral_grid            eff=34   O1 != O2 on 17   
-  blur                      eff=34   O1 != O2 on 0    no output artifact: O2 == O1 by construction
-  c_backend                 eff=32   O1 != O2 on 0    no output artifact: O2 == O1 by construction
-  camera_pipe               eff=29   O1 != O2 on 21   
-  conv_layer                eff=14   O1 != O2 on 0    no output artifact: O2 == O1 by construction
-  depthwise_separable_conv  eff=37   O1 != O2 on 0    no output artifact: O2 == O1 by construction
-  harris                    eff=60   O1 != O2 on 52   
-  hist                      eff=56   O1 != O2 on 40   
-  iir_blur                  eff=42   O1 != O2 on 34   
-  lens_blur                 eff=14   O1 != O2 on 9    
-  max_filter                eff=65   O1 != O2 on 47   
-  nl_means                  eff=28   O1 != O2 on 12   
-  unsharp                   eff=87   O1 != O2 on 80   
+  bgu                       eff=10   test1 != test2(golden) on 10   
+  bilateral_grid            eff=34   test1 != test2(golden) on 18   
+  blur                      eff=34   test1 != test2(golden) on 0    no output artifact: test2_golden == test1_demo by construction
+  c_backend                 eff=32   test1 != test2(golden) on 0    no output artifact: test2_golden == test1_demo by construction
+  camera_pipe               eff=29   test1 != test2(golden) on 21   
+  conv_layer                eff=14   test1 != test2(golden) on 0    no output artifact: test2_golden == test1_demo by construction
+  depthwise_separable_conv  eff=37   test1 != test2(golden) on 0    no output artifact: test2_golden == test1_demo by construction
+  harris                    eff=60   test1 != test2(golden) on 52   
+  hist                      eff=56   test1 != test2(golden) on 40   
+  iir_blur                  eff=42   test1 != test2(golden) on 34   
+  lens_blur                 eff=14   test1 != test2(golden) on 9    
+  max_filter                eff=65   test1 != test2(golden) on 47   
+  nl_means                  eff=28   test1 != test2(golden) on 12   
+  unsharp                   eff=87   test1 != test2(golden) on 80   
 
 Apps with no output artifact (4): blur, c_backend, conv_layer, depthwise_separable_conv
-Their O2 figures above should be read as O1, and the corpus O2 rate is correspondingly conservative.
+Their golden figures above should be read as test 1, and the corpus golden rate is correspondingly conservative.
 
 raw     = mutation points recorded for this cell
 notRun  = real mutation points the benchmark's wall-clock budget never reached. Excluded from every rate.
 genKill = the Halide compiler itself rejected the mutant -- a kill category only staged compilation produces
-equiv   = emitted .stmt byte-identical to baseline: unreachable at target=host, unkillable by any oracle
-eff     = effective (reachable, code-changing) mutants. O1% and O2% are over eff, never over raw.
+equiv   = emitted .stmt byte-identical to baseline: unreachable at target=host, unkillable by any test kind. Proven equivalent, so RESOLVED.
+eff     = effective (reachable, code-changing) mutants. Kind counts are over eff, never over raw.
+t1/t2gold/t2writ/t3perf = mutants killed by that test kind. A mutant may appear under several; 'any' is the union.
+resolvd = (killed by any kind + proven equivalent) / (eff + equiv)

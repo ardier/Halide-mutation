@@ -1,58 +1,58 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,32,30,OK,1,1,OK,SURVIVED,KILLED,1,0,3.04,emitted header differs from baseline; driver recompiled
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,46,28,OK,1,1,OK,SURVIVED,KILLED,1,0,5.78,emitted header differs from baseline; driver recompiled
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,49,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.40,emitted header differs from baseline; driver recompiled
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,51,23,OK,1,1,OK,SURVIVED,KILLED,1,0,8.11,emitted header differs from baseline; driver recompiled
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,53,24,OK,1,1,OK,SURVIVED,KILLED,1,0,6.42,emitted header differs from baseline; driver recompiled
-hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,52,25,OK,1,1,OK,SURVIVED,KILLED,1,0,5.39,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,103,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,123,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,91,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,140,30,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,160,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,161,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,181,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,188,27,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,162,20,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,165,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,199,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.37,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,187,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.71,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,206,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.77,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,187,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.86,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,85,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,199,22,OK,1,1,OK,SURVIVED,KILLED,1,0,6.64,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,94,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,157,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,206,22,OK,1,1,OK,SURVIVED,KILLED,1,0,7.59,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,198,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.15,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,192,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,8.10,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,85,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,94,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,157,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,205,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.34,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,192,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.13,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,198,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.59,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,84,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,93,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,159,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,160,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,161,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,162,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,167,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,205,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.18,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,182,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,4.66,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,186,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.28,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,189,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.86,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,194,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.41,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,197,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,6.92,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,84,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,207,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.21,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,93,26,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,159,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,160,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,161,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,167,22,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,162,43,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,182,22,OK,1,1,OK,SURVIVED,KILLED,1,0,6.96,emitted header differs from baseline; driver recompiled
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,197,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,207,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,32,30,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.04,emitted header differs from baseline; driver recompiled
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,46,28,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.78,emitted header differs from baseline; driver recompiled
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,49,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.40,emitted header differs from baseline; driver recompiled
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,51,23,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,8.11,emitted header differs from baseline; driver recompiled
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,53,24,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.42,emitted header differs from baseline; driver recompiled
+hist,select_clamp,Halide_clamp_swap_bounds,hist_generator.cpp,52,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.39,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,103,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,123,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,91,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,140,30,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,160,20,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,161,20,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,181,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,188,27,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,162,20,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_compute_at_to_store_at,hist_generator.cpp,165,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,199,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.37,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,187,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.71,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_parallel_to_unroll,hist_generator.cpp,206,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.77,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,187,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.86,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,85,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,199,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.64,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,94,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,157,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_parallel_to_vectorize,hist_generator.cpp,206,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.59,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,198,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.15,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,192,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,8.10,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,85,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,94,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,157,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_unroll_to_parallel,hist_generator.cpp,205,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.34,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,192,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.13,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,198,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.59,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,84,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,93,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,159,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,160,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,161,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,162,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,167,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_unroll_to_vectorize,hist_generator.cpp,205,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.18,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,182,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,4.66,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,186,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.28,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,189,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.86,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,194,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.41,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,197,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,6.92,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,84,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_parallel,hist_generator.cpp,207,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.21,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,93,26,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,159,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,160,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,161,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,167,22,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,162,43,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,182,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.96,emitted header differs from baseline; driver recompiled
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,197,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,schedule,Halide_vectorize_to_unroll,hist_generator.cpp,207,22,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated

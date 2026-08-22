@@ -1,49 +1,49 @@
-app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,27,17,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,33,17,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,75,21,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.18,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,82,21,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.94,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,119,21,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.24,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,130,21,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.30,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,325,14,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.84,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,16,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.17,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,39,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.57,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,27,17,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,33,17,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,75,21,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,82,21,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,119,21,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,130,21,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,325,14,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,16,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.00,
-camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,39,after,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,246,22,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.50,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,321,15,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.07,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,330,34,before,OK,1,1,OK,SURVIVED,KILLED,1,0,0.61,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,355,33,before,OK,1,1,OK,KILLED,KILLED,1,-6,1.22,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,361,25,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,362,25,before,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,27,17,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.82,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,33,17,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.72,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,75,21,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.33,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,82,21,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.16,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,119,21,before,OK,1,1,OK,SURVIVED,KILLED,1,0,0.95,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,130,21,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.90,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,325,14,before,OK,1,1,OK,SURVIVED,KILLED,1,0,1.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,16,before,OK,1,1,OK,SURVIVED,KILLED,1,0,0.29,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,39,before,OK,1,1,OK,SURVIVED,KILLED,1,0,0.55,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,246,22,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,321,15,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.01,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,330,34,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.01,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,355,33,after,OK,1,1,OK,KILLED,KILLED,1,-6,1.15,
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,361,25,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,362,25,after,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged)
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,27,17,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,33,17,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.01,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,75,21,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,82,21,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,119,21,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,130,21,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,325,14,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,16,after,OK,1,1,OK,KILLED,KILLED,1,1,0.00,
-camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,39,after,OK,1,1,OK,SURVIVED,KILLED,1,0,0.00,
+app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,27,17,before,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,33,17,before,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,75,21,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.18,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,82,21,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.94,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,119,21,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.24,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,130,21,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.30,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,325,14,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.84,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,16,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.17,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,39,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.57,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,27,17,after,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,33,17,after,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,75,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.00,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,82,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.00,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,119,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.00,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,130,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.00,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,325,14,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.01,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,16,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.00,
+camera_pipe,if_then_else,Halide_select_to_if_then_else,camera_pipe_generator.cpp,332,39,after,OK,1,1,OK,NOT_RUN,NOT_RUN,SURVIVED,NOT_RUN,,0,0,0.01,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,246,22,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.50,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,321,15,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.07,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,330,34,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.61,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,355,33,before,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,1.22,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,361,25,before,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,362,25,before,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,27,17,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.82,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,33,17,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.72,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,75,21,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.33,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,82,21,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.16,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,119,21,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.95,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,130,21,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.90,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,325,14,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,16,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.29,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,39,before,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,0.55,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,246,22,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,1,0.00,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,321,15,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.01,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,330,34,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.01,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,355,33,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,-6,1.15,
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,361,25,after,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,select_clamp,Halide_clamp_swap_bounds,camera_pipe_generator.cpp,362,25,after,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged)
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,27,17,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,33,17,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.01,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,75,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,82,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,119,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,130,21,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,325,14,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,16,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,1,0.00,
+camera_pipe,select_clamp,Halide_select_swap_branches,camera_pipe_generator.cpp,332,39,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,0,0.00,

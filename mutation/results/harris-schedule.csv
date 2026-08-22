@@ -1,51 +1,51 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,81,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,87,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.20,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,91,20,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.40,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,94,20,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.35,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,99,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.67,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,104,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.54,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,115,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,118,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,121,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_parallel_to_unroll,harris_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_parallel_to_vectorize,harris_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,114,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.55,
-harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,117,20,OK,1,1,OK,KILLED,KILLED,1,-6,2.00,
-harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,120,20,OK,1,1,OK,KILLED,KILLED,1,-6,1.87,
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,80,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.57,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,84,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.58,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,85,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,0.90,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,89,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.29,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,90,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.88,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,93,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,96,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.25,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,101,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.35,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,102,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.73,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,106,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,2.02,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,107,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,0.79,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,80,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.19,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,84,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.86,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,85,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.62,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,89,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.20,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,90,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.30,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,93,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.56,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,96,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.40,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,101,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.17,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,102,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.07,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,106,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.52,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,107,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.39,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,88,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,0.83,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,100,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,0.94,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,105,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.57,
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,116,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.17,
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,119,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,122,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,88,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.36,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,100,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.56,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,105,22,OK,0,0,OK,SURVIVED,SURVIVED,0,0,1.57,equivalent at this target (emitted .stmt unchanged)
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,113,22,OK,1,1,OK,SURVIVED,KILLED,1,0,1.16,
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,116,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.91,
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,119,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.34,
-harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,122,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,1.30,
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,81,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,87,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.20,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,91,20,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.40,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,94,20,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.35,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,99,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.67,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,104,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.54,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,115,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,118,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_compute_at_to_store_at,harris_generator.cpp,121,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_parallel_to_unroll,harris_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_parallel_to_vectorize,harris_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,114,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.55,
+harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,117,20,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,2.00,
+harris,schedule,Halide_store_at_to_compute_at,harris_generator.cpp,120,20,OK,1,1,OK,KILLED,KILLED,NOT_RUN,NOT_RUN,test1_demo;test2_golden,1,-6,1.87,
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,80,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.57,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,84,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.58,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,85,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.90,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,89,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.29,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,90,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.88,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,93,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,96,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.25,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,101,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.35,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,102,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.73,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,106,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.02,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_parallel,harris_generator.cpp,107,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.79,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,80,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.19,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,84,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.86,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,85,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.62,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,89,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.20,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,90,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.30,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,93,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.56,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,96,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.40,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,101,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.17,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,102,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.07,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,106,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.52,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_unroll_to_vectorize,harris_generator.cpp,107,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.39,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,88,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.83,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,100,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.94,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,105,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.41,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.57,
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,116,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.17,
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,119,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_vectorize_to_parallel,harris_generator.cpp,122,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,88,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.36,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,100,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.56,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,105,22,OK,0,0,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.57,equivalent at this target (emitted .stmt unchanged)
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,113,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,1.16,
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,116,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.91,
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,119,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.34,
+harris,schedule,Halide_vectorize_to_unroll,harris_generator.cpp,122,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,1.30,

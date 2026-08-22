@@ -1,91 +1,91 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,1,0,3.69,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,1,0,6.42,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,5.81,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.97,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,3.40,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,4.97,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_div,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,5.74,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,2.42,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,1,0,2.01,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,1,0,6.38,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.12,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,5.84,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,1,0,3.47,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,6.97,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,7.00,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,1,0,5.84,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,1,0,4.62,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,1,0,4.27,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_div_to_add,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,1,0,6.51,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_div_to_add,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.92,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_div_to_sub,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_div_to_mul,hist_generator.cpp,49,55,OK,1,1,OK,SURVIVED,KILLED,1,0,5.72,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,17,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_div_to_mul,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.32,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,18,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,19,27,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_div_to_sub,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,49,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,1,0,5.98,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,77,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,53,48,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,73,OK,1,1,OK,SURVIVED,KILLED,1,0,5.69,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,1,0,4.11,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_add,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,1,0,5.35,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,17,27,OK,1,1,OK,SURVIVED,KILLED,1,0,6.38,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,18,27,OK,1,1,OK,SURVIVED,KILLED,1,0,4.34,emitted header differs from baseline; driver recompiled
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,51,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,52,49,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,52,77,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,53,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_div,Halide.h,13288,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_div,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,17,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,18,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,19,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,23,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,27,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,49,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,49,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,51,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,52,49,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,52,77,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,53,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,Halide.h,13288,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.69,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.42,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.81,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.97,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.40,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.97,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_div,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.74,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.42,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.01,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.38,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.12,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.84,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,17,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,3.47,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.97,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_mul,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.00,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,18,44,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.84,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,23,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,27,43,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.62,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,43,33,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.27,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,51,38,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_add,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_add_to_sub,hist_generator.cpp,53,39,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.51,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_add,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.92,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_div_to_sub,hist_generator.cpp,49,55,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_mul,hist_generator.cpp,49,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.72,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,17,27,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_mul,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.32,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,18,27,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,19,27,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_div_to_sub,Halide.h,13297,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,51,57,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,49,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,45,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.98,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,52,77,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,53,48,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_add,hist_generator.cpp,49,73,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.69,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,Halide.h,13291,20,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.11,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_add,Halide.h,13288,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.35,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,17,27,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.38,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,23,34,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,27,34,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,18,27,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.34,emitted header differs from baseline; driver recompiled
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,51,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,52,49,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,52,77,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_div,hist_generator.cpp,53,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_div,Halide.h,13288,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_div,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,17,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,18,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,19,27,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,23,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,27,34,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,49,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,49,73,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,51,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,52,49,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,52,77,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,hist_generator.cpp,53,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,Halide.h,13288,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_mul_to_sub,Halide.h,13291,20,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_add,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_div,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,23,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,27,23,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,43,28,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,51,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,40,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,61,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,68,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,52,89,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+hist,arithmetic,Halide_sub_to_mul,hist_generator.cpp,53,60,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated

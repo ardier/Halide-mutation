@@ -1,10 +1,10 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,181,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,194,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,199,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,113,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,96,18,OK,0,0,OK,NOT_RUN,NOT_RUN,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
-conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,180,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,83.49,emitted header differs from baseline; driver recompiled
-conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,85.91,emitted header differs from baseline; driver recompiled
-conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,178,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,71.75,emitted header differs from baseline; driver recompiled
-conv_layer,schedule,Halide_parallel_to_vectorize,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,0,0,333.19,emitted header differs from baseline; driver recompiled
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,181,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,194,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,199,18,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,113,18,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+conv_layer,schedule,Halide_compute_at_to_store_at,conv_layer_generator.cpp,96,18,OK,0,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,equivalent at this target (emitted .stmt unchanged); stages 3-4 skipped
+conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,180,18,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,83.49,emitted header differs from baseline; driver recompiled
+conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,85.91,emitted header differs from baseline; driver recompiled
+conv_layer,schedule,Halide_parallel_to_unroll,conv_layer_generator.cpp,178,18,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,71.75,emitted header differs from baseline; driver recompiled
+conv_layer,schedule,Halide_parallel_to_vectorize,conv_layer_generator.cpp,179,18,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,333.19,emitted header differs from baseline; driver recompiled

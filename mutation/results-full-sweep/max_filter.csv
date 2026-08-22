@@ -1,76 +1,76 @@
-app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_interior,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.30,emitted header differs from baseline; driver recompiled
-max_filter,boundary_conditions,Halide_repeat_edge_to_repeat_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,KILLED,1,0,5.28,emitted header differs from baseline; driver recompiled
-max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.32,emitted header differs from baseline; driver recompiled
-max_filter,if_then_else,Halide_select_to_if_then_else,max_filter_generator.cpp,50,32,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.69,emitted header differs from baseline; driver recompiled
-max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,45,54,OK,1,1,OK,SURVIVED,KILLED,1,0,4.49,emitted header differs from baseline; driver recompiled
-max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,43,22,OK,1,1,OK,SURVIVED,KILLED,1,0,7.52,emitted header differs from baseline; driver recompiled
-max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,31,58,OK,1,1,OK,SURVIVED,KILLED,1,0,6.83,emitted header differs from baseline; driver recompiled
-max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,54,55,OK,1,1,OK,SURVIVED,KILLED,1,0,2.30,emitted header differs from baseline; driver recompiled
-max_filter,select_clamp,Halide_select_swap_branches,max_filter_generator.cpp,50,32,OK,1,1,OK,SURVIVED,KILLED,1,0,4.63,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_compute_at_to_store_at,max_filter_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-max_filter,schedule,Halide_compute_at_to_store_at,max_filter_generator.cpp,107,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-max_filter,schedule,Halide_parallel_to_unroll,max_filter_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-max_filter,schedule,Halide_parallel_to_vectorize,max_filter_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,killed at generation time
-max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,11.19,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,111,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,11.51,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,108,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,17.04,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,8.74,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,108,26,OK,1,1,OK,SURVIVED,SURVIVED,0,0,2.97,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,111,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,3.95,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.40,emitted header differs from baseline; driver recompiled
-max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,0,0,52.39,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,45,62,OK,1,1,OK,SURVIVED,KILLED,1,0,6.36,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_lt_to_ge,Halide.h,13312,25,OK,1,1,OK,SURVIVED,KILLED,1,0,6.27,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,31,67,OK,1,1,OK,SURVIVED,KILLED,1,0,9.29,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_lt_to_le,Halide.h,13312,25,OK,1,1,OK,SURVIVED,SURVIVED,0,0,7.08,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_max_to_min,max_filter_generator.cpp,46,28,OK,1,1,OK,SURVIVED,KILLED,1,0,7.26,emitted header differs from baseline; driver recompiled
-max_filter,generated,Halide_max_to_min,Halide.h,16267,12,OK,1,1,OK,SURVIVED,KILLED,1,0,7.46,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,0,0,5.06,emitted header differs from baseline; driver recompiled
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,29,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,31,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,38,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,44,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,29,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,31,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,38,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,44,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_add,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_add,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_mul,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_mul,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_sub,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_div_to_sub,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
-max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+app,arm,mutator,file,line,column,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_interior,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.30,emitted header differs from baseline; driver recompiled
+max_filter,boundary_conditions,Halide_repeat_edge_to_repeat_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,5.28,emitted header differs from baseline; driver recompiled
+max_filter,boundary_conditions,Halide_repeat_edge_to_mirror_image,max_filter_generator.cpp,17,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.32,emitted header differs from baseline; driver recompiled
+max_filter,if_then_else,Halide_select_to_if_then_else,max_filter_generator.cpp,50,32,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.69,emitted header differs from baseline; driver recompiled
+max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,45,54,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.49,emitted header differs from baseline; driver recompiled
+max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,43,22,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.52,emitted header differs from baseline; driver recompiled
+max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,31,58,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.83,emitted header differs from baseline; driver recompiled
+max_filter,select_clamp,Halide_clamp_swap_bounds,max_filter_generator.cpp,54,55,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,2.30,emitted header differs from baseline; driver recompiled
+max_filter,select_clamp,Halide_select_swap_branches,max_filter_generator.cpp,50,32,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,4.63,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_compute_at_to_store_at,max_filter_generator.cpp,112,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+max_filter,schedule,Halide_compute_at_to_store_at,max_filter_generator.cpp,107,26,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+max_filter,schedule,Halide_parallel_to_unroll,max_filter_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+max_filter,schedule,Halide_parallel_to_vectorize,max_filter_generator.cpp,105,22,GEN_ERROR,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,killed at generation time
+max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,11.19,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,111,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,11.51,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,108,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,17.04,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,106,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,8.74,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,108,26,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,2.97,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,111,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,3.95,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_unroll,max_filter_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.40,emitted header differs from baseline; driver recompiled
+max_filter,schedule,Halide_vectorize_to_parallel,max_filter_generator.cpp,113,22,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,52.39,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,45,62,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.36,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_lt_to_ge,Halide.h,13312,25,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,6.27,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_lshift_to_rshift,max_filter_generator.cpp,31,67,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,9.29,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_lt_to_le,Halide.h,13312,25,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,7.08,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_max_to_min,max_filter_generator.cpp,46,28,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.26,emitted header differs from baseline; driver recompiled
+max_filter,generated,Halide_max_to_min,Halide.h,16267,12,OK,1,1,OK,SURVIVED,KILLED,NOT_RUN,NOT_RUN,test2_golden,1,0,7.46,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,38,57,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,5.06,emitted header differs from baseline; driver recompiled
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_div,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,29,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,31,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,38,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,44,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_mul,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,29,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,31,56,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,38,57,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,44,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,45,48,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,50,45,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_add_to_sub,max_filter_generator.cpp,54,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_add,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_add,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_mul,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_mul,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_sub,max_filter_generator.cpp,38,62,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_div_to_sub,Halide.h,13294,25,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_add,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_div,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,38,53,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,41,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_mul_to_sub,max_filter_generator.cpp,50,50,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_add,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_div,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,30,64,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,75,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,31,105,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,44,43,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated
+max_filter,arithmetic,Halide_sub_to_mul,max_filter_generator.cpp,45,52,NOT_RUN,,0,OK,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,,0,,0.00,wall-clock budget exhausted before this mutant was evaluated

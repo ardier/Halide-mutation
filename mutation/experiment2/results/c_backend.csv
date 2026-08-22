@@ -1,5 +1,5 @@
-app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,o1,o2,killed,exit_code,wall_seconds,note
-c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
-c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,before,OK,1,1,OK,SURVIVED,SURVIVED,0,0,0.01,
-c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,after,OK,1,1,OK,KILLED,KILLED,1,1,0.02,
-c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,after,OK,1,1,OK,KILLED,KILLED,1,1,0.02,
+app,arm,mutator,file,line,column,variant,stage2,stmt_differs,effective,stage3,test1_demo,test2_golden,test2_written,test3_perf,killed_by,killed,exit_code,wall_seconds,note
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.01,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,before,OK,1,1,OK,SURVIVED,SURVIVED,NOT_RUN,NOT_RUN,,0,0,0.01,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,26,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,1,0.02,
+c_backend,select_clamp,Halide_clamp_swap_bounds,pipeline_generator.cpp,17,70,after,OK,1,1,OK,NOT_RUN,NOT_RUN,KILLED,NOT_RUN,test2_written,1,1,0.02,
