@@ -129,19 +129,67 @@ def summarise(rows, label):
                 equiv=equiv, resolved=resolved)
 
 
+GEN1 = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen1/out"
+GEN2 = "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen2/out"
+
+SUMMARY_FIELDS = [
+    "route", "target_kind", "app", "points_identified", "mutants_generated",
+    "mutants_run", "mutants_killed", "equivalent_tce", "resolved",
+    "test1_demo_ran", "test1_demo_killed", "test1_demo_killed_alone",
+    "test2_added_ran", "test2_added_killed", "test2_added_killed_alone",
+    "test2_method", "test3_perf_ran", "test3_perf_killed", "complete",
+]
+
+
+def app_stats(rows, route, tk, app, complete):
+    """One summary row. Every denominator counts only mutants on which that
+    kind actually RAN; NOT_RUN never enters one."""
+    n = len(rows)
+    bad = sum(1 for r in rows if (r.get("stage_compile") or "")
+              in ("GEN_FAIL", "COMPILE_FAIL", "HARNESS_ERROR"))
+    row = {f: "" for f in SUMMARY_FIELDS}
+    row.update(route=route, target_kind=tk, app=app, points_identified=n,
+               mutants_generated=n - bad, complete=int(complete))
+    row["equivalent_tce"] = sum(1 for r in rows if r["equivalent"])
+    row["mutants_run"] = sum(1 for r in rows if any(
+        r[k] in ("KILLED", "SURVIVED") for k in KINDS))
+    row["mutants_killed"] = sum(1 for r in rows if any(
+        r[k] == "KILLED" for k in KINDS))
+    row["resolved"] = sum(1 for r in rows if r["equivalent"] or any(
+        r[k] == "KILLED" for k in KINDS))
+    for k in KINDS:
+        row[f"{k}_ran"] = sum(1 for r in rows
+                              if r[k] in ("KILLED", "SURVIVED"))
+        row[f"{k}_killed"] = sum(1 for r in rows if r[k] == "KILLED")
+        if k != "test3_perf":
+            row[f"{k}_killed_alone"] = sum(
+                1 for r in rows if r[k] == "KILLED"
+                and not any(r[o] == "KILLED" for o in KINDS if o != k))
+    ms = sorted({r.get("test2_method", "") for r in rows
+                 if r["test2_added"] in ("KILLED", "SURVIVED")
+                 and r.get("test2_method")})
+    row["test2_method"] = ";".join(ms)
+    return row
+
+
+def is_complete(csv_path):
+    log = os.path.join(os.path.dirname(os.path.dirname(csv_path)), "logs",
+                       os.path.basename(csv_path).replace(".csv", ".log"))
+    try:
+        return any(l.startswith("wall ") for l in open(log))
+    except OSError:
+        return False
+
+
 def main():
-    totals = defaultdict(int)
-    for route_dir, route_name, pat in (
-        (sys.argv[1] if len(sys.argv) > 1 else ".", "", "*.csv"),
-    ):
-        pass
     specs = [
-        ("/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen1/out",
-         "*-gen.csv", "TARGET 1  AST mutator x GENERATOR source"),
-        ("/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen2/out",
-         "*-emitted.csv", "TARGET 2  AST mutator x emitted C++ (new apps)"),
+        (GEN1, "*-gen.csv", "TARGET 1  AST mutator x GENERATOR source",
+         "generator"),
+        (GEN2, "*-emitted.csv",
+         "TARGET 2  AST mutator x emitted C++ (new apps)", "emitted_cpp"),
     ]
-    for d, pat, title in specs:
+    summary_rows = []
+    for d, pat, title, tk in specs:
         files = sorted(glob.glob(os.path.join(d, pat)))
         if not files:
             continue
@@ -151,18 +199,27 @@ def main():
         sub = defaultdict(int)
         for f in files:
             app = os.path.basename(f).rsplit("-", 1)[0]
-            rows = load(f)
-            if not rows:
+            raw = load(f)
+            if not raw:
                 print(f"\n=== {app} === (no rows yet)")
                 continue
-            s = summarise(rows, app)
+            done = is_complete(f)
+            s = summarise(raw, app + ("" if done else "  [PARTIAL]"))
+            summary_rows.append(app_stats([normalise(r) for r in raw],
+                                          "ast_mutator", tk, app, done))
             for k, v in s.items():
                 sub[k] += v
         print(f"\n  --- {title} TOTAL ---")
         for k in ("points", "generated", "run", "killed", "equiv", "resolved"):
             print(f"    {k:10s} {sub[k]}")
-        for k, v in sub.items():
-            totals[k] += v
+
+    out = os.path.join(GEN1, "SUMMARY.csv")
+    with open(out, "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=SUMMARY_FIELDS, lineterminator="\n")
+        w.writeheader()
+        for r in summary_rows:
+            w.writerow(r)
+    print(f"\nwrote {out}")
 
 
 if __name__ == "__main__":
