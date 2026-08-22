@@ -65,19 +65,19 @@
 
 === harris  [PARTIAL] ===
   points identified              231
-  NOT REACHED (still running)    34
-  points evaluated               197
+  NOT REACHED (still running)    9
+  points evaluated               222
   tool/compiler rejected mutant  0
-  mutants generated              197
+  mutants generated              222
     equivalent (TCE)             0   (0.0% of evaluated)
-  mutants RUN                    197
-  mutants KILLED                 197
-  RESOLVED (killed or equiv)     197   (100.0% of evaluated)
+  mutants RUN                    222
+  mutants KILLED                 222
+  RESOLVED (killed or equiv)     222   (100.0% of evaluated)
   per test kind:
-    test1_demo   ran    197  killed      0 (  0.0% of run)  killed ALONE      0
-    test2_added  ran    197  killed    197 (100.0% of run)  killed ALONE    197
+    test1_demo   ran    222  killed      0 (  0.0% of run)  killed ALONE      0
+    test2_added  ran    222  killed    222 (100.0% of run)  killed ALONE    222
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 197}
+    test2_method                 {'output_compare': 222}
 
 === hist ===
   points identified              90
@@ -187,11 +187,11 @@
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
     points     1048
-    generated  1014
-    run        1005
-    killed     978
+    generated  1039
+    run        1030
+    killed     1003
     equiv      5
-    resolved   983
+    resolved   1008
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
@@ -211,31 +211,46 @@
     test2_added  NOT RUN on any mutant
     test3_perf   NOT RUN on any mutant
 
-=== resize  [PARTIAL] ===
+=== resize ===
   points identified              8435
-  NOT REACHED (still running)    23
-  points evaluated               8412
+  points evaluated               8435
   tool/compiler rejected mutant  95
-  mutants generated              8317
+  mutants generated              8340
     equivalent (TCE)             739   (8.8% of evaluated)
-  mutants RUN                    7578
+  mutants RUN                    7601
   mutants KILLED                 1150
-  RESOLVED (killed or equiv)     1889   (22.5% of evaluated)
+  RESOLVED (killed or equiv)     1889   (22.4% of evaluated)
   per test kind:
-    test1_demo   ran   7578  killed    295 (  3.9% of run)  killed ALONE    291
-    test2_added  ran   7287  killed    859 ( 11.8% of run)  killed ALONE    855
+    test1_demo   ran   7601  killed    295 (  3.9% of run)  killed ALONE    291
+    test2_added  ran   7310  killed    859 ( 11.8% of run)  killed ALONE    855
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 7287}
+    test2_method                 {'output_compare': 7310}
     [corrected] 288 test2 'kills' were scored against a MISSING artifact
                 (golden run aborted / exited nonzero, wrote nothing) and are
                 re-recorded NOT_RUN: nothing to compare is not a kill.
 
+=== wavelet  [PARTIAL] ===
+  points identified              1524
+  NOT REACHED (still running)    1210
+  points evaluated               314
+  tool/compiler rejected mutant  36
+  mutants generated              278
+    equivalent (TCE)             212   (67.5% of evaluated)
+  mutants RUN                    66
+  mutants KILLED                 21
+  RESOLVED (killed or equiv)     233   (74.2% of evaluated)
+  per test kind:
+    test1_demo   ran     66  killed     14 ( 21.2% of run)  killed ALONE     14
+    test2_added  ran     52  killed      7 ( 13.5% of run)  killed ALONE      7
+    test3_perf   NOT RUN on any mutant
+    test2_method                 {'output_compare': 52}
+
   --- TARGET 2  AST mutator x emitted C++ (new apps) TOTAL ---
-    points     10682
-    generated  10528
-    run        9099
-    killed     2010
-    equiv      1429
-    resolved   3439
+    points     12206
+    generated  10829
+    run        9188
+    killed     2031
+    equiv      1641
+    resolved   3672
 
 wrote /mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen1/out/SUMMARY.csv
