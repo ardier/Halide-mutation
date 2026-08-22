@@ -1,7 +1,7 @@
 route,target_kind,app,driver_kind,points_identified,points_evaluated,not_reached,mutants_generated,mutants_run,mutants_killed,equivalent_tce,resolved,test1_demo_ran,test1_demo_killed,test1_demo_killed_alone,test2_added_ran,test2_added_killed,test2_added_killed_alone,test2_method,test3_perf_ran,test3_perf_killed,complete
 ast_mutator,generator,blur,shipped,30,30,0,30,30,30,0,30,30,30,6,24,24,0,output_compare,0,0,1
 ast_mutator,generator,conv_layer,shipped,9,9,0,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
-ast_mutator,generator,iir_blur,shipped,39,32,7,32,32,30,0,30,32,3,3,29,27,27,output_compare,0,0,0
+ast_mutator,generator,iir_blur,shipped,39,39,0,39,39,37,0,37,39,3,3,36,34,34,output_compare,0,0,1
 ast_mutator,generator,stencil_chain,shipped,12,12,0,12,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,1
 ast_mutator,emitted_cpp,fft,added_assertion,2247,2247,0,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
-ast_mutator,emitted_cpp,resize,added_assertion,8435,1779,6656,1720,1099,775,621,1396,1099,91,88,1011,687,684,output_compare,0,0,0
+ast_mutator,emitted_cpp,resize,added_assertion,8435,1880,6555,1817,1195,775,622,1397,1195,91,88,1107,687,684,output_compare,0,0,0
