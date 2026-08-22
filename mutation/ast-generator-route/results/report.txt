@@ -123,6 +123,22 @@
     test3_perf   NOT RUN on any mutant
     test2_method                 {'output_compare': 107}
 
+=== local_laplacian  [PARTIAL] ===
+  points identified              243
+  NOT REACHED (still running)    228
+  points evaluated               15
+  tool/compiler rejected mutant  0
+  mutants generated              15
+    equivalent (TCE)             0   (0.0% of evaluated)
+  mutants RUN                    15
+  mutants KILLED                 15
+  RESOLVED (killed or equiv)     15   (100.0% of evaluated)
+  per test kind:
+    test1_demo   ran     15  killed      0 (  0.0% of run)  killed ALONE      0
+    test2_added  ran     15  killed     15 (100.0% of run)  killed ALONE     15
+    test3_perf   NOT RUN on any mutant
+    test2_method                 {'output_compare': 15}
+
 === max_filter ===
   points identified              62
   points evaluated               62
@@ -185,12 +201,12 @@
     test2_method                 {'output_compare': 135}
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
-    points     1048
-    generated  1048
-    run        1039
-    killed     1012
+    points     1291
+    generated  1063
+    run        1054
+    killed     1027
     equiv      5
-    resolved   1017
+    resolved   1032
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
@@ -230,26 +246,26 @@
 
 === wavelet  [PARTIAL] ===
   points identified              1524
-  NOT REACHED (still running)    1019
-  points evaluated               505
+  NOT REACHED (still running)    665
+  points evaluated               859
   tool/compiler rejected mutant  36
-  mutants generated              469
-    equivalent (TCE)             214   (42.4% of evaluated)
-  mutants RUN                    255
-  mutants KILLED                 86
-  RESOLVED (killed or equiv)     300   (59.4% of evaluated)
+  mutants generated              823
+    equivalent (TCE)             231   (26.9% of evaluated)
+  mutants RUN                    592
+  mutants KILLED                 181
+  RESOLVED (killed or equiv)     412   (48.0% of evaluated)
   per test kind:
-    test1_demo   ran    255  killed     79 ( 31.0% of run)  killed ALONE     79
-    test2_added  ran    176  killed      7 (  4.0% of run)  killed ALONE      7
+    test1_demo   ran    592  killed    146 ( 24.7% of run)  killed ALONE    146
+    test2_added  ran    446  killed     35 (  7.8% of run)  killed ALONE     35
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 176}
+    test2_method                 {'output_compare': 446}
 
   --- TARGET 2  AST mutator x emitted C++ (new apps) TOTAL ---
     points     12206
-    generated  11020
-    run        9377
-    killed     2096
-    equiv      1643
-    resolved   3739
+    generated  11374
+    run        9714
+    killed     2191
+    equiv      1660
+    resolved   3851
 
 wrote /mnt/scratch1/ardi/dsl_mut/.priv-79c69961/gen1/out/SUMMARY.csv
