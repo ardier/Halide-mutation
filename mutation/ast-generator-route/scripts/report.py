@@ -39,6 +39,40 @@ def load(path):
         return list(csv.DictReader(fh))
 
 
+# A digest the harness could not actually read. Recorded rather than crashed
+# on, which is what makes the correction below possible after the fact.
+MISSING = ("<missing>", "<absent>", "")
+
+
+def _repair_missing_artifact(out, r):
+    """Un-score an output comparison that had no output to compare.
+
+    The emitted-C++ harness (b1/run_harness.py) guards only the TIMEOUT case
+    before scoring test2_golden. A golden run that ABORTS or exits nonzero
+    also writes no artifact, and its digest then reads "<missing>", which
+    compares unequal to the golden digest and is scored KILLED. That credits
+    the added test with a kill on a mutant the demo test had already caught,
+    and inflates exactly the number the added test exists to measure.
+
+    Measured: 62 of resize's 251 test2 kills, and 6 of 30 blur generator
+    mutants before the generator harness was fixed at source. The generator
+    harness now refuses to score these; this repairs rows written by the
+    emitted harness, which records artifact_digest and so still carries the
+    evidence needed to correct them.
+
+    A run that legitimately produced a different artifact is untouched -- it
+    has a real digest.
+    """
+    if out.get("test2_added") != "KILLED":
+        return 0
+    dig = (r.get("artifact_digest") or "").strip()
+    if dig in MISSING or dig.startswith("<"):
+        out["test2_added"] = "NOT_RUN"
+        out["_repaired"] = 1
+        return 1
+    return 0
+
+
 def normalise(r):
     """One row -> the current vocabulary, whichever harness wrote it."""
     out = dict(r)
@@ -65,6 +99,7 @@ def normalise(r):
                              else "")
     for k in KINDS:
         out[k] = (out.get(k) or "").strip() or "NOT_RUN"
+    _repair_missing_artifact(out, r)
     return out
 
 
@@ -125,6 +160,14 @@ def summarise(rows, label):
     if methods:
         print(f"    test2_method                 "
               f"{dict(m for m in methods.items() if m[0])}")
+    repaired = sum(int(r.get("_repaired") or 0) for r in rows)
+    if repaired:
+        print(f"    [corrected] {repaired} test2 'kills' were scored against a "
+              f"MISSING artifact\n"
+              f"                (golden run aborted / exited nonzero, wrote "
+              f"nothing) and are\n"
+              f"                re-recorded NOT_RUN: nothing to compare is not "
+              f"a kill.")
     return dict(points=n, generated=n - gen_fail, run=ran, killed=killed,
                 equiv=equiv, resolved=resolved)
 
