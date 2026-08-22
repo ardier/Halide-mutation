@@ -35,17 +35,21 @@ say "autocommit started, interval ${INTERVAL}s"
 
 while true; do
     python3 "$G1/report.py"     > "$G1/logs/report.txt"     2>&1
-    python3 "$G1/divergence.py" > "$G1/logs/divergence.txt" 2>&1
+    python3 "$G1/divergence.py"  > "$G1/logs/divergence.txt"  2>&1
+    python3 "$G1/equivalence.py" > "$G1/logs/equivalence.txt" 2>&1
 
     mkdir -p "$D/results" "$D/scripts"
     cp "$G1"/out/*-gen.csv        "$D/results/" 2>/dev/null
     cp "$G2"/out/*-emitted.csv    "$D/results/" 2>/dev/null
     cp "$G1"/out/SUMMARY.csv      "$D/results/" 2>/dev/null
     cp "$G1"/out/COMPILER_DIVERGENCE.csv "$D/results/" 2>/dev/null
+    cp "$G1"/out/VERDICT_RECONCILIATION.csv "$D/results/" 2>/dev/null
+    cp "$G1"/logs/equivalence.txt "$D/results/equivalence.txt" 2>/dev/null
     cp "$G1"/logs/report.txt      "$D/results/report.txt" 2>/dev/null
     cp "$G1"/logs/divergence.txt  "$D/results/divergence.txt" 2>/dev/null
     cp "$G1"/gen_harness.py "$G1"/report.py "$G1"/status.py \
-       "$G1"/divergence.py "$P"/gen2/autocommit.sh "$D/scripts/" 2>/dev/null
+       "$G1"/divergence.py "$G1"/equivalence.py \
+       "$P"/gen2/autocommit.sh "$D/scripts/" 2>/dev/null
 
     cd "$WT" || { say "worktree missing"; exit 1; }
     git add -A mutation/ast-generator-route 2>/dev/null
