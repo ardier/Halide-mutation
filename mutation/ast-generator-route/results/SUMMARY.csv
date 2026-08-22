@@ -1,5 +1,5 @@
 route,target_kind,app,driver_kind,points_identified,points_evaluated,not_reached,mutants_generated,mutants_run,mutants_killed,equivalent_tce,resolved,test1_demo_ran,test1_demo_killed,test1_demo_killed_alone,test2_added_ran,test2_added_killed,test2_added_killed_alone,test2_method,test3_perf_ran,test3_perf_killed,complete
-ast_mutator,generator,bilateral_grid,shipped,191,142,49,142,142,142,0,142,142,0,0,142,142,142,output_compare,0,0,0
+ast_mutator,generator,bilateral_grid,shipped,191,159,32,159,159,158,0,158,159,2,2,156,156,156,output_compare,0,0,0
 ast_mutator,generator,blur,shipped,30,30,0,30,30,30,0,30,30,30,6,24,24,0,output_compare,0,0,1
 ast_mutator,generator,conv_layer,shipped,9,9,0,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
 ast_mutator,generator,depthwise_separable_conv,shipped,77,77,0,77,76,65,1,66,76,22,22,54,43,43,output_compare,0,0,1
@@ -11,4 +11,4 @@ ast_mutator,generator,nl_means,shipped,55,55,0,55,55,55,0,55,55,4,4,51,51,51,out
 ast_mutator,generator,stencil_chain,shipped,12,12,0,12,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,1
 ast_mutator,generator,unsharp,shipped,135,135,0,135,135,135,0,135,135,0,0,135,135,135,output_compare,0,0,1
 ast_mutator,emitted_cpp,fft,added_assertion,2247,2247,0,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
-ast_mutator,emitted_cpp,resize,added_assertion,8435,6588,1847,6501,5838,775,663,1438,5838,91,88,5750,687,684,output_compare,0,0,0
+ast_mutator,emitted_cpp,resize,added_assertion,8435,6775,1660,6688,6013,775,675,1450,6013,91,88,5925,687,684,output_compare,0,0,0
