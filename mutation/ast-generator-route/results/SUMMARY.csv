@@ -10,4 +10,4 @@ ast_mutator,generator,nl_means,shipped,55,55,0,55,55,55,0,55,55,4,4,51,51,51,out
 ast_mutator,generator,stencil_chain,shipped,12,12,0,12,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,1
 ast_mutator,generator,unsharp,shipped,135,135,0,135,135,135,0,135,135,0,0,135,135,135,output_compare,0,0,1
 ast_mutator,emitted_cpp,fft,added_assertion,2247,2247,0,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
-ast_mutator,emitted_cpp,resize,added_assertion,8435,5238,3197,5163,4524,775,639,1414,4524,91,88,4436,687,684,output_compare,0,0,0
+ast_mutator,emitted_cpp,resize,added_assertion,8435,5325,3110,5250,4611,775,639,1414,4611,91,88,4523,687,684,output_compare,0,0,0
