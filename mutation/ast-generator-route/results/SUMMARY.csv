@@ -8,6 +8,6 @@ ast_mutator,generator,interpolate,shipped,117,117,0,117,115,107,2,109,115,4,4,10
 ast_mutator,generator,max_filter,shipped,62,62,0,62,60,55,2,57,60,6,6,54,49,49,output_compare,0,0,1
 ast_mutator,generator,nl_means,shipped,55,55,0,55,55,55,0,55,55,4,4,51,51,51,output_compare,0,0,1
 ast_mutator,generator,stencil_chain,shipped,12,12,0,12,8,8,0,8,8,1,1,7,7,7,output_compare,0,0,1
-ast_mutator,generator,unsharp,shipped,135,88,47,88,88,88,0,88,88,0,0,88,88,88,output_compare,0,0,0
+ast_mutator,generator,unsharp,shipped,135,89,46,89,89,89,0,89,89,0,0,89,89,89,output_compare,0,0,0
 ast_mutator,emitted_cpp,fft,added_assertion,2247,2247,0,2211,1521,860,690,1550,1521,860,860,0,0,0,,0,0,1
-ast_mutator,emitted_cpp,resize,added_assertion,8435,4995,3440,4920,4281,775,639,1414,4281,91,88,4193,687,684,output_compare,0,0,0
+ast_mutator,emitted_cpp,resize,added_assertion,8435,5001,3434,4926,4287,775,639,1414,4287,91,88,4199,687,684,output_compare,0,0,0
