@@ -5,19 +5,20 @@
 
 === bgu  [PARTIAL] ===
   points identified              439
-  NOT REACHED (still running)    42
-  points evaluated               397
+  NOT REACHED (still running)    11
+  points evaluated               428
   tool/compiler rejected mutant  0
-  mutants generated              397
-    equivalent (TCE)             23   (5.8% of evaluated)
-  mutants RUN                    374
-  mutants KILLED                 371
-  RESOLVED (killed or equiv)     394   (99.2% of evaluated)
+  mutants generated              428
+    generator produced no pipeline 11
+    equivalent (TCE)             24   (5.6% of evaluated)
+  mutants RUN                    393
+  mutants KILLED                 390
+  RESOLVED (killed or equiv)     414   (96.7% of evaluated)
   per test kind:
-    test1_demo   ran    374  killed      2 (  0.5% of run)  killed ALONE      2
-    test2_added  ran    372  killed    369 ( 99.2% of run)  killed ALONE    369
+    test1_demo   ran    393  killed      2 (  0.5% of run)  killed ALONE      2
+    test2_added  ran    391  killed    388 ( 99.2% of run)  killed ALONE    388
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 372}
+    test2_method                 {'output_compare': 391}
 
 === bilateral_grid ===
   points identified              191
@@ -232,11 +233,11 @@
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
     points     1983
-    generated  1941
-    run        1909
-    killed     1706
-    equiv      28
-    resolved   1734
+    generated  1972
+    run        1928
+    killed     1725
+    equiv      29
+    resolved   1754
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
