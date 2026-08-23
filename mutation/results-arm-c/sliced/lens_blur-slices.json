@@ -298,5 +298,25 @@
     "status": "COMPLETE",
     "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/lens_blur/lens_blur-slice14of16.csv",
     "kill_seconds": 129.2
+  },
+  {
+    "app": "lens_blur",
+    "slice_index": 15,
+    "slice_count": 16,
+    "instrument_peak_rss_mb": 7362.3,
+    "instrument_seconds": 701.3,
+    "instrument_returncode": 0,
+    "mutants_generated": 358,
+    "dump_kept": 358,
+    "obj_matches_dump": true,
+    "prepare_seconds": 706.0,
+    "baseline_seconds": 11.32,
+    "cores_per_process": null,
+    "sweep_workers": 54,
+    "run": 358,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/lens_blur/lens_blur-slice15of16.csv",
+    "kill_seconds": 127.7
   }
 ]
