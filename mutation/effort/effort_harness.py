@@ -596,11 +596,15 @@ def main(argv=None):
             asigs.append(pipe.oracle_signature(after_app, rd, sout))
             atimes.append(secs)
             shutil.rmtree(rd, ignore_errors=True)
-        if len(set(asigs)) != 1:
+        if after_app.output_artifact and len(set(asigs)) != 1:
             raise SystemExit(f"{a.app}: the ADDED test's artifact is NOT "
                              f"deterministic over {a.baseline_runs} runs -- no "
                              f"comparison verdict from it can be trusted")
-        after_sig = asigs[0]
+        # An assertion-only test writes no artifact. Its contract is "exit 0 on
+        # a correct pipeline", which the loop above has just checked three
+        # times; its stdout is NOT an oracle and is deliberately not required
+        # to be stable, so no comparison verdict is ever drawn from it.
+        after_sig = asigs[0] if after_app.output_artifact else None
         after_timeout = max(30.0, min(600.0, statistics.median(atimes) * 8))
         log(f"[{a.app}] baseline test2_added ({a.after_driver}): "
             f"sha={after_sig[:16]} deterministic over {a.baseline_runs} runs, "
