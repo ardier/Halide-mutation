@@ -1,5 +1,5 @@
-generator-stage failures: 15
-  GEN_ERROR        11
+generator-stage failures: 22
+  GEN_ERROR        18
   GEN_TIMEOUT      4
-  bgu: 11  at 499:48,499:52,500:48,501:48,501:52  -> operator* -> operator+; operator* -> operator-; operator* -> operator/; operator+ -> operator*; operator+ -> operator/
+  bgu: 18  at 499:48,499:52,500:48,501:48,501:52,502:48,502:52  -> operator* -> operator+; operator* -> operator-; operator* -> operator/; operator+ -> operator*; operator+ -> operator/
   stencil_chain: 4  at 27:64,27:71  -> operator+ -> operator*; operator+ -> operator/
