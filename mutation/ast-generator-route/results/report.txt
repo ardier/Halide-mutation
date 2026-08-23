@@ -51,19 +51,19 @@
 
 === camera_pipe  [PARTIAL] ===
   points identified              555
-  NOT REACHED (still running)    361
-  points evaluated               194
+  NOT REACHED (still running)    339
+  points evaluated               216
   tool/compiler rejected mutant  0
-  mutants generated              194
-    equivalent (TCE)             4   (2.1% of evaluated)
-  mutants RUN                    190
-  mutants KILLED                 187
-  RESOLVED (killed or equiv)     191   (98.5% of evaluated)
+  mutants generated              216
+    equivalent (TCE)             4   (1.9% of evaluated)
+  mutants RUN                    212
+  mutants KILLED                 209
+  RESOLVED (killed or equiv)     213   (98.6% of evaluated)
   per test kind:
-    test1_demo   ran    190  killed     16 (  8.4% of run)  killed ALONE     16
-    test2_added  ran    174  killed    171 ( 98.3% of run)  killed ALONE    171
+    test1_demo   ran    212  killed     17 (  8.0% of run)  killed ALONE     17
+    test2_added  ran    195  killed    192 ( 98.5% of run)  killed ALONE    192
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 174}
+    test2_method                 {'output_compare': 195}
 
 === conv_layer ===
   points identified              9
@@ -248,11 +248,11 @@
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
     points     2538
-    generated  2177
-    run        2122
-    killed     1916
+    generated  2199
+    run        2144
+    killed     1938
     equiv      33
-    resolved   1949
+    resolved   1971
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
