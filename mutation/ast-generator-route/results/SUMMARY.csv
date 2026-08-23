@@ -7,7 +7,7 @@ ast_mutator,generator,harris,shipped,231,231,0,231,231,231,0,231,231,0,0,231,231
 ast_mutator,generator,hist,shipped,90,90,0,90,90,90,0,90,90,1,1,89,89,89,output_compare,0,0,1
 ast_mutator,generator,iir_blur,shipped,39,39,0,39,39,37,0,37,39,3,3,36,34,34,output_compare,0,0,1
 ast_mutator,generator,interpolate,shipped,117,117,0,117,115,107,2,109,115,4,4,107,103,103,output_compare,0,0,1
-ast_mutator,generator,lens_blur,shipped,253,89,164,89,89,38,0,38,89,0,0,89,38,38,output_compare,0,0,0
+ast_mutator,generator,lens_blur,shipped,253,110,143,110,110,50,0,50,110,0,0,110,50,50,output_compare,0,0,0
 ast_mutator,generator,local_laplacian,shipped,243,243,0,243,243,238,0,238,243,15,15,228,223,223,output_compare,0,0,1
 ast_mutator,generator,max_filter,shipped,62,62,0,62,60,55,2,57,60,6,6,54,49,49,output_compare,0,0,1
 ast_mutator,generator,nl_means,shipped,55,55,0,55,55,55,0,55,55,4,4,51,51,51,output_compare,0,0,1
