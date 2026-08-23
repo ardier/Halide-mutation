@@ -1,5 +1,5 @@
-generator mutants with both signals: 1799
-  .stmt differs AND object differs   1772   (agree: really effective)
+generator mutants with both signals: 1826
+  .stmt differs AND object differs   1799   (agree: really effective)
   .stmt same   AND object same       25   (agree: really equivalent)
   .stmt differs BUT object identical 2   <-- generation stage called these EFFECTIVE; they are PROVABLY EQUIVALENT
   .stmt same   BUT object differs    0   <-- generation stage called these EQUIVALENT; they are not
