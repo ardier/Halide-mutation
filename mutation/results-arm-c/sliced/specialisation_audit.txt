@@ -1,6 +1,5 @@
-Specialisation-reachability audit -- Track A (emitted C++), 2026-08-23T01:05:25+02:00
-Signature sought: a function with many mutants run and ZERO killed.
-Name-independent; the __N convention is only a secondary check.
+Specialisation-reachability audit -- Track A, 2026-08-23T02:00:43+02:00
+Signature: a function with many mutants run and ZERO killed.
 
 === nl_means ===
   top functions by mutants run:
@@ -34,17 +33,17 @@ Name-independent; the __N convention is only a secondary check.
 
 === bgu ===
   top functions by mutants run:
-    bgu_par_for_blurz_s0_y_rebased__1                      run= 1033 killed=  837   81.0%
-    bgu_par_for_slice_s0_y_rebased                         run=  364 killed=  198   54.4%
-    bgu                                                    run=  273 killed=  133   48.7%
-    bgu_par_for_line_s0_y_rebased                          run=  147 killed=  137   93.2%
-    ix_y_s0_c_par_for_interpolated_matrix_y_s0_z_rebased   run=   19 killed=   18   94.7%
-    bgu_par_for_interpolated_matrix_y_s0_c                 run=    6 killed=    5   83.3%
-    halide_cpp_max                                         run=    4 killed=    2   50.0%
-    N12_GLOBAL__N_115NativeVectorOpsIfLm8EE3minEDv8_fS2_   run=    2 killed=    2  100.0%
+    bgu_par_for_blurz_s0_y_rebased__1                      run= 3081 killed= 2472   80.2%
+    bgu_par_for_slice_s0_y_rebased                         run= 1087 killed=  551   50.7%
+    bgu                                                    run=  803 killed=  356   44.3%
+    bgu_par_for_line_s0_y_rebased                          run=  479 killed=  450   93.9%
+    ix_y_s0_c_par_for_interpolated_matrix_y_s0_z_rebased   run=   65 killed=   55   84.6%
+    bgu_par_for_interpolated_matrix_y_s0_c                 run=   17 killed=   12   70.6%
+    N12_GLOBAL__N_115NativeVectorOpsIfLm8EE3minEDv8_fS2_   run=    5 killed=    3   60.0%
+    N12_GLOBAL__N_115NativeVectorOpsIiLm8EE3minEDv8_iS2_   run=    5 killed=    3   60.0%
   ZERO-KILL functions with >=20 runs : 0
   survivors in zero-kill functions   : 0
-  headline 1339/1861 = 72.0%   executed-only 1339/1861 = 72.0%
+  headline 3922/5579 = 70.3%   executed-only 3922/5579 = 70.3%
   __N-suffixed names in dump         : 1
     bgu_par_for_blurz_s0_y_rebased__1                      points=19959 family=1
 
