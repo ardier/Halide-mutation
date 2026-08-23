@@ -1,3 +1,5 @@
 app,op_id,file,line,column,target,stmt_differs,tce_lib,generation_stage_verdict,object_code_verdict,disagrees
+camera_pipe,halide_rel_swap,camera_pipe_generator.cpp,27,32,operator== -> operator<=,1,c7b39a30b433db48,EFFECTIVE,EQUIVALENT,1
+camera_pipe,halide_rel_swap,camera_pipe_generator.cpp,33,32,operator== -> operator<=,1,c7b39a30b433db48,EFFECTIVE,EQUIVALENT,1
 max_filter,halide_select_to_if_then_else,max_filter_generator.cpp,50,32,Halide::select -> Internal::Call::if_then_else,1,2773617e37bb0dca,EFFECTIVE,EQUIVALENT,1
 max_filter,halide_rel_swap,max_filter_generator.cpp,50,55,operator< -> operator<=,1,2773617e37bb0dca,EFFECTIVE,EQUIVALENT,1
