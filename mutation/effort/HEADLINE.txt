@@ -1,0 +1,28 @@
+                         generator (16 apps)  emitted C++ (3 apps)
+points identified                       2538                 12206
+mutants generated                       2516                 12039
+TCE-equivalent                     71 (2.8%)          1703 (14.1%)
+run                                     2445                 10336
+killed by the sweep             2224 (91.0%)          2316 (22.4%)
+SURVIVORS                  221 (8.7% of pts)   8020 (65.7% of pts)
+
+survivors per point: 8.7% vs 65.7% -- 7.5x more of the emitted population needs new tests written for it.
+
+Generator route after this experiment (mutation/effort/RESOLUTION.txt):
+  killed            2224 by the sweep + 177 by added drivers = 2401
+  equivalent        71 by TCE + 41 by argument = 112
+  detected by abort 3   (real detections; a crash writes no artifact,
+                         so neither test-2 mechanism returns a verdict)
+  stage losses      22  (never became runnable mutants)
+  UNRESOLVED        0
+
+Cost of clearing the 221 survivors: 11 added driver files were run
+against them, 4 of which were written for this experiment. 6 of the 11
+killed anything at all; the other 5 met only equivalent mutants.
+  159  lens_blur/mutation_test.cpp            pre-existing
+    8  interpolate/mutation_test.cpp          NEW
+    4  depthwise_separable_conv/mutation_test2.cpp  pre-existing
+    3  bgu/mutation_test.cpp                  NEW
+    2  iir_blur/mutation_test.cpp             pre-existing
+    1  bilateral_grid/mutation_test.cpp       NEW
+  = 177 mutants resolved by 6 files, ~30 mutants per file that worked.
