@@ -606,8 +606,11 @@ def main(argv=None):
         # to be stable, so no comparison verdict is ever drawn from it.
         after_sig = asigs[0] if after_app.output_artifact else None
         after_timeout = max(30.0, min(600.0, statistics.median(atimes) * 8))
-        log(f"[{a.app}] baseline test2_added ({a.after_driver}): "
-            f"sha={after_sig[:16]} deterministic over {a.baseline_runs} runs, "
+        how = (f"sha={after_sig[:16]} deterministic over {a.baseline_runs} "
+               f"runs" if after_sig is not None else
+               f"assertion-only (no artifact), exited 0 on "
+               f"{a.baseline_runs} unmutated runs")
+        log(f"[{a.app}] baseline test2_added ({a.after_driver}): {how}, "
             f"median {statistics.median(atimes):.2f}s, "
             f"timeout {after_timeout:.0f}s")
 
