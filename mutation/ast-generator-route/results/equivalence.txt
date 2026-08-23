@@ -1,9 +1,9 @@
-generator mutants with both signals: 1326
-  .stmt differs AND object differs   1321   (agree: really effective)
+generator mutants with both signals: 1353
+  .stmt differs AND object differs   1348   (agree: really effective)
   .stmt same   AND object same       3   (agree: really equivalent)
   .stmt differs BUT object identical 2   <-- generation stage called these EFFECTIVE; they are PROVABLY EQUIVALENT
   .stmt same   BUT object differs    0   <-- generation stage called these EQUIVALENT; they are not
-  disagreement rate 0.2%
+  disagreement rate 0.1%
 
 by operator (only rows where they disagree):
   halide_rel_swap                  1 of 50
