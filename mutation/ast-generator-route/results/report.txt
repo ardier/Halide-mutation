@@ -123,21 +123,36 @@
     test3_perf   NOT RUN on any mutant
     test2_method                 {'output_compare': 107}
 
-=== local_laplacian  [PARTIAL] ===
-  points identified              243
-  NOT REACHED (still running)    9
-  points evaluated               234
+=== lens_blur  [PARTIAL] ===
+  points identified              253
+  NOT REACHED (still running)    247
+  points evaluated               6
   tool/compiler rejected mutant  0
-  mutants generated              234
+  mutants generated              6
     equivalent (TCE)             0   (0.0% of evaluated)
-  mutants RUN                    234
-  mutants KILLED                 229
-  RESOLVED (killed or equiv)     229   (97.9% of evaluated)
+  mutants RUN                    6
+  mutants KILLED                 0
+  RESOLVED (killed or equiv)     0   (0.0% of evaluated)
   per test kind:
-    test1_demo   ran    234  killed     15 (  6.4% of run)  killed ALONE     15
-    test2_added  ran    219  killed    214 ( 97.7% of run)  killed ALONE    214
+    test1_demo   ran      6  killed      0 (  0.0% of run)  killed ALONE      0
+    test2_added  ran      6  killed      0 (  0.0% of run)  killed ALONE      0
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 219}
+    test2_method                 {'output_compare': 6}
+
+=== local_laplacian ===
+  points identified              243
+  points evaluated               243
+  tool/compiler rejected mutant  0
+  mutants generated              243
+    equivalent (TCE)             0   (0.0% of evaluated)
+  mutants RUN                    243
+  mutants KILLED                 238
+  RESOLVED (killed or equiv)     238   (97.9% of evaluated)
+  per test kind:
+    test1_demo   ran    243  killed     15 (  6.2% of run)  killed ALONE     15
+    test2_added  ran    228  killed    223 ( 97.8% of run)  killed ALONE    223
+    test3_perf   NOT RUN on any mutant
+    test2_method                 {'output_compare': 228}
 
 === max_filter ===
   points identified              62
@@ -201,12 +216,12 @@
     test2_method                 {'output_compare': 135}
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
-    points     1291
-    generated  1282
-    run        1273
-    killed     1241
+    points     1544
+    generated  1297
+    run        1288
+    killed     1250
     equiv      5
-    resolved   1246
+    resolved   1255
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
