@@ -125,19 +125,19 @@
 
 === local_laplacian  [PARTIAL] ===
   points identified              243
-  NOT REACHED (still running)    47
-  points evaluated               196
+  NOT REACHED (still running)    28
+  points evaluated               215
   tool/compiler rejected mutant  0
-  mutants generated              196
+  mutants generated              215
     equivalent (TCE)             0   (0.0% of evaluated)
-  mutants RUN                    196
-  mutants KILLED                 191
-  RESOLVED (killed or equiv)     191   (97.4% of evaluated)
+  mutants RUN                    215
+  mutants KILLED                 210
+  RESOLVED (killed or equiv)     210   (97.7% of evaluated)
   per test kind:
-    test1_demo   ran    196  killed      2 (  1.0% of run)  killed ALONE      2
-    test2_added  ran    194  killed    189 ( 97.4% of run)  killed ALONE    189
+    test1_demo   ran    215  killed      9 (  4.2% of run)  killed ALONE      9
+    test2_added  ran    206  killed    201 ( 97.6% of run)  killed ALONE    201
     test3_perf   NOT RUN on any mutant
-    test2_method                 {'output_compare': 194}
+    test2_method                 {'output_compare': 206}
 
 === max_filter ===
   points identified              62
@@ -202,11 +202,11 @@
 
   --- TARGET 1  AST mutator x GENERATOR source TOTAL ---
     points     1291
-    generated  1244
-    run        1235
-    killed     1203
+    generated  1263
+    run        1254
+    killed     1222
     equiv      5
-    resolved   1208
+    resolved   1227
 
 ########################################################################
 # TARGET 2  AST mutator x emitted C++ (new apps)
