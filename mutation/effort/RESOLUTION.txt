@@ -1,0 +1,83 @@
+app,survivors,killed,remaining,also_killed_by_shipped,crash_detected,drivers,new_here
+lens_blur,168,159,9,0,0,mutation_test.cpp + mutation_test2.cpp,0
+camera_pipe,18,0,18,0,2,mutation_test.cpp,0
+depthwise_separable_conv,11,4,7,0,1,mutation_test.cpp + mutation_test2.cpp,0
+interpolate,8,8,0,4,0,mutation_test.cpp,1
+local_laplacian,5,0,5,0,0,mutation_test.cpp,1
+max_filter,5,0,5,0,0,mutation_test.cpp,0
+bgu,3,3,0,0,0,mutation_test.cpp,1
+iir_blur,2,2,0,0,0,mutation_test.cpp,0
+bilateral_grid,1,1,0,1,0,mutation_test.cpp,1
+
+TOTAL survivors targeted   221
+      killed by added test 177
+      still surviving      44
+        of which detected by a runtime abort (not a comparison kill) 3
+      also killed by the SHIPPED driver's own oracle on re-run       5
+
+kills attributed to each added driver (first driver that killed it):
+   159  apps/lens_blur/mutation_test.cpp   [pre-existing]
+     8  apps/interpolate/mutation_test.cpp   [NEW]
+     4  apps/depthwise_separable_conv/mutation_test2.cpp   [pre-existing]
+     3  apps/bgu/mutation_test.cpp   [NEW]
+     2  apps/iir_blur/mutation_test.cpp   [pre-existing]
+     1  apps/bilateral_grid/mutation_test.cpp   [NEW]
+
+test files used: 11  (4 written here, 7 pre-existing)
+test files that killed at least one mutant: 6
+
+=== still surviving, by app and source position ===
+
+camera_pipe (18):
+  e8d847236349c0b6  halide_select_to_if_then_else    75:21   Halide::select -> Internal::Call::if_then_else
+  5b39b0b28cb36ba2  halide_select_to_if_then_else    82:21   Halide::select -> Internal::Call::if_then_else
+  c699cc7d6eb3a738  halide_select_to_if_then_else   119:21   Halide::select -> Internal::Call::if_then_else
+  ba44384014ad2de6  halide_select_to_if_then_else   130:21   Halide::select -> Internal::Call::if_then_else
+  90d3547a5ab2d199  halide_select_to_if_then_else   325:14   Halide::select -> Internal::Call::if_then_else
+  3bc75a393d7b0401  halide_rel_swap                 325:23   operator> -> operator>=
+  f5cfdc5db9f404f9  halide_select_to_if_then_else   332:16   Halide::select -> Internal::Call::if_then_else
+  2e5e764ee92e7c6f  halide_rel_swap                 332:25   operator<= -> operator<
+  870ef7dbfccc509d  halide_rel_swap                 332:25   operator<= -> operator==
+  91abea5824a22e9f  halide_select_to_if_then_else   332:39   Halide::select -> Internal::Call::if_then_else
+  44a72011bb0da8f7  halide_rel_swap                 332:48   operator> -> operator==
+  3e2ad6ed67999497  halide_rel_swap                 332:48   operator> -> operator>=
+  b04c6d53c7bccf38  halide_arith_swap               515:34   operator/ -> operator*   [added test died on signal 6]
+  819e0c92b1471ea5  halide_arith_swap               515:34   operator/ -> operator-   [added test died on signal 6]
+  ba012085491e29b2  halide_arith_swap               515:39   operator* -> operator/
+  6dcbd1a748e655cb  halide_arith_swap               525:43   operator/ -> operator+
+  47eee1672354779c  halide_arith_swap               525:43   operator/ -> operator-
+  b4758155dd54cde6  halide_arith_swap               525:43   operator/ -> operator*
+
+depthwise_separable_conv (7):
+  096fc6dc3bfd221a  halide_select_to_if_then_else    41:13   Halide::select -> Internal::Call::if_then_else
+  d183dfd7d86eaee1  halide_arith_swap                59:29   operator/ -> operator*   [added test died on signal 6]
+  9fef6d55d94ec966  halide_rel_swap                 288:53   operator== -> operator>=
+  c783653107585f3b  halide_rel_swap                 289:64   operator== -> operator<=
+  f51decec4feb8be1  halide_rel_swap                 289:64   operator== -> operator>=
+  2b5ae6b5f2a29a61  halide_rel_swap                 290:64   operator== -> operator<=
+  786b16caee52f986  halide_rel_swap                 290:64   operator== -> operator>=
+
+lens_blur (9):
+  8f34c788d123da60  halide_arith_swap                75:68   operator/ -> operator*
+  be143fac83beaf94  halide_arith_swap                75:68   operator/ -> operator-
+  031e7b727ba36388  halide_arith_swap                75:68   operator/ -> operator+
+  6096aab1255a3e9b  halide_arith_swap                98:73   operator+ -> operator-
+  6c6488935965d0f5  halide_arith_swap                99:81   operator+ -> operator-
+  4dc99402a2760f31  halide_rel_swap                 138:39   operator< -> operator<=
+  e2b79dffa0babec1  halide_select_to_if_then_else   142:13   Halide::select -> Internal::Call::if_then_else
+  144303683db92550  halide_arith_swap               292:50   operator* -> operator/
+  af169b3d786b09a1  halide_arith_swap               293:55   operator* -> operator/
+
+local_laplacian (5):
+  60ea7fd254f6ab02  halide_arith_swap                43:48   operator- -> operator/
+  472178d8efcc7dde  halide_arith_swap                43:48   operator- -> operator*
+  0845b2169b2d8970  halide_arith_swap                43:48   operator- -> operator+
+  62b7a1963b95135c  halide_arith_swap                68:57   operator- -> operator+
+  4232a3ba8e5b69d1  halide_arith_swap                68:57   operator- -> operator*
+
+max_filter (5):
+  7ba414224f0187bd  halide_boundary_conditions       17:22   Halide::BoundaryConditions::repeat_edge -> Halide::BoundaryConditions::mirror_image
+  034c2a44180c9820  halide_boundary_conditions       17:22   Halide::BoundaryConditions::repeat_edge -> Halide::BoundaryConditions::mirror_interior
+  d4232aafd2365fb4  halide_arith_swap                38:57   operator+ -> operator/
+  8fc3927bac06a4a3  halide_arith_swap                38:57   operator+ -> operator*
+  5d3683a337fcd24b  halide_arith_swap                54:43   operator+ -> operator-
