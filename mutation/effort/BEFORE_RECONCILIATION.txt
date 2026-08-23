@@ -1,0 +1,25 @@
+BEFORE verdicts: 216 reproduced exactly, 5 differ
+
+  bilateral_grid   abe5c865f0316a2b  56:21    halide_arith_swap           
+      sweep ('SURVIVED', 'NOT_RUN')  ->  re-run ('SURVIVED', 'KILLED')
+      sweep note: golden run timed out, no artifact to compare
+  interpolate      1f3c4d29274b7361  63:57    halide_arith_swap           
+      sweep ('SURVIVED', 'NOT_RUN')  ->  re-run ('SURVIVED', 'KILLED')
+      sweep note: golden run timed out, no artifact to compare
+  interpolate      91a4407022fccc60  63:57    halide_arith_swap           
+      sweep ('SURVIVED', 'NOT_RUN')  ->  re-run ('SURVIVED', 'KILLED')
+      sweep note: golden run timed out, no artifact to compare
+  interpolate      68208e768fe724e3  64:63    halide_arith_swap           
+      sweep ('SURVIVED', 'NOT_RUN')  ->  re-run ('SURVIVED', 'KILLED')
+      sweep note: golden run timed out, no artifact to compare
+  interpolate      a38949cee69e8dc6  64:63    halide_arith_swap           
+      sweep ('SURVIVED', 'NOT_RUN')  ->  re-run ('SURVIVED', 'KILLED')
+      sweep note: golden run timed out, no artifact to compare
+
+All five disagreements are the same case, and it is explained rather than
+noisy: in the sweep these mutants' golden runs hit the run timeout, and a run
+that times out writes no artifact, so the output comparison correctly declined
+to return a verdict (NOT_RUN, never 0). They were then counted as survivors
+because nothing had killed them. On re-run the same comparison completed and
+killed all five. They were never survivors of the oracle -- they were
+survivors of the clock, and they need no new test at all.
