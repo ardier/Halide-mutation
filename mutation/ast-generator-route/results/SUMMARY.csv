@@ -2,7 +2,7 @@ route,target_kind,app,driver_kind,points_identified,points_evaluated,not_reached
 ast_mutator,generator,bgu,shipped,439,439,0,439,397,394,24,418,397,2,2,395,392,392,output_compare,0,0,1
 ast_mutator,generator,bilateral_grid,shipped,191,191,0,191,191,190,0,190,191,2,2,188,188,188,output_compare,0,0,1
 ast_mutator,generator,blur,shipped,30,30,0,30,30,30,0,30,30,30,6,24,24,0,output_compare,0,0,1
-ast_mutator,generator,camera_pipe,shipped,555,278,277,278,274,270,4,274,274,35,35,239,235,235,output_compare,0,0,0
+ast_mutator,generator,camera_pipe,shipped,555,288,267,288,284,280,4,284,284,37,37,247,243,243,output_compare,0,0,0
 ast_mutator,generator,conv_layer,shipped,9,9,0,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
 ast_mutator,generator,depthwise_separable_conv,shipped,77,77,0,77,76,65,1,66,76,22,22,54,43,43,output_compare,0,0,1
 ast_mutator,generator,harris,shipped,231,231,0,231,231,231,0,231,231,0,0,231,231,231,output_compare,0,0,1
