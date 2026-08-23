@@ -118,5 +118,25 @@
     "status": "COMPLETE",
     "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/local_laplacian/local_laplacian-slice5of18.csv",
     "kill_seconds": 240.4
+  },
+  {
+    "app": "local_laplacian",
+    "slice_index": 6,
+    "slice_count": 18,
+    "instrument_peak_rss_mb": 7788.3,
+    "instrument_seconds": 1686.7,
+    "instrument_returncode": 0,
+    "mutants_generated": 425,
+    "dump_kept": 425,
+    "obj_matches_dump": true,
+    "prepare_seconds": 1692.0,
+    "baseline_seconds": 15.63,
+    "cores_per_process": 1.225,
+    "sweep_workers": 30,
+    "run": 425,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/local_laplacian/local_laplacian-slice6of18.csv",
+    "kill_seconds": 293.8
   }
 ]
