@@ -1,5 +1,5 @@
 route,target_kind,app,driver_kind,points_identified,points_evaluated,not_reached,mutants_generated,mutants_run,mutants_killed,equivalent_tce,resolved,test1_demo_ran,test1_demo_killed,test1_demo_killed_alone,test2_added_ran,test2_added_killed,test2_added_killed_alone,test2_method,test3_perf_ran,test3_perf_killed,complete
-ast_mutator,generator,bgu,shipped,439,345,94,345,322,322,23,345,322,0,0,322,322,322,output_compare,0,0,0
+ast_mutator,generator,bgu,shipped,439,349,90,349,326,324,23,347,326,0,0,326,324,324,output_compare,0,0,0
 ast_mutator,generator,bilateral_grid,shipped,191,191,0,191,191,190,0,190,191,2,2,188,188,188,output_compare,0,0,1
 ast_mutator,generator,blur,shipped,30,30,0,30,30,30,0,30,30,30,6,24,24,0,output_compare,0,0,1
 ast_mutator,generator,conv_layer,shipped,9,9,0,9,9,9,0,9,9,6,6,3,3,3,output_compare,0,0,1
