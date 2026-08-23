@@ -1,5 +1,4 @@
-Specialisation-reachability audit -- Track A, 2026-08-23T02:00:43+02:00
-Signature: a function with many mutants run and ZERO killed.
+Specialisation-reachability audit -- Track A, 2026-08-23T05:05:21+02:00
 
 === nl_means ===
   top functions by mutants run:
@@ -46,4 +45,23 @@ Signature: a function with many mutants run and ZERO killed.
   headline 3922/5579 = 70.3%   executed-only 3922/5579 = 70.3%
   __N-suffixed names in dump         : 1
     bgu_par_for_blurz_s0_y_rebased__1                      points=19959 family=1
+
+=== lens_blur ===
+  top functions by mutants run:
+    lens_blur_par_for_f26_s0_v2_v18                        run= 4129 killed=  679   16.4%
+    lens_blur                                              run= 1075 killed=  234   21.8%
+    lens_blur_par_for_f3_s0_v1_v1                          run=  457 killed=  196   42.9%
+    lens_blur_par_for_f48_s0_v1_v1_v1                      run=  235 killed=   73   31.1%
+    lens_blur_par_for_final_s0_v1_rebased                  run=  201 killed=  154   76.6%
+    lens_blur_par_for_f53_s0_v1_v1                         run=  171 killed=  154   90.1%
+    N12_GLOBAL__N_115NativeVectorOpsIfLm8EE3minEDv8_fS2_   run=    5 killed=    3   60.0%
+    2_GLOBAL__N_115NativeVectorOpsIhLm16EE3minEDv16_hS2_   run=    5 killed=    3   60.0%
+  ZERO-KILL functions with >=20 runs : 0
+  survivors in zero-kill functions   : 0
+  headline 1546/6359 = 24.3%   executed-only 1546/6359 = 24.3%
+  __N-suffixed names in dump         : 0
+
+=== stencil_chain: no data ===
+
+=== local_laplacian: no data ===
 
