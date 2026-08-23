@@ -1,0 +1,22 @@
+[
+  {
+    "app": "lens_blur",
+    "slice_index": 0,
+    "slice_count": 16,
+    "instrument_peak_rss_mb": 7810.8,
+    "instrument_seconds": 737.4,
+    "instrument_returncode": 0,
+    "mutants_generated": 416,
+    "dump_kept": 416,
+    "obj_matches_dump": true,
+    "prepare_seconds": 742.2,
+    "baseline_seconds": 11.33,
+    "cores_per_process": null,
+    "sweep_workers": 54,
+    "run": 416,
+    "not_run": 0,
+    "status": "COMPLETE",
+    "csv": "/mnt/scratch1/ardi/dsl_mut/.priv-79c69961/trackA/out/lens_blur/lens_blur-slice0of16.csv",
+    "kill_seconds": 125.9
+  }
+]
